@@ -6,7 +6,7 @@
 
 This repo is a place to discuss and debate various aspects of running the JSON Schema organisation, how we work as a community, and our expectations.
 
-The discussions will primerily take place using [Github Discussions](https://github.com/json-schema-org/community/discussions) for this repo.
+The discussions will primarily take place using [Github Discussions](https://github.com/json-schema-org/community/discussions) for this repo.
 
 Initially Github issues will be disabled as we evaluate how we should use them in this repo (through Discussions).
 
