@@ -1,4 +1,7 @@
 # JSON Schema Community
+![GitHub Discussions](https://img.shields.io/github/discussions/json-schema-org/community)
+
+[![part of ADR](https://img.shields.io/badge/part_of-ADR-blue)](https://adr.github.io)
 
 🚨This is a work in progress (2021/04 - @relequestual)🚨
 
