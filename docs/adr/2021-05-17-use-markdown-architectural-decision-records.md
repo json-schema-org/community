@@ -1,7 +1,7 @@
 # Use Markdown Architectural Decision Records
 
 * Status: accepted
-* Deciders: @gregsdennis, @Julian, @jdesrosiers, @karenetheridge
+* Deciders: @relequestual @gregsdennis, @Julian, @jdesrosiers, @karenetheridge
 * Date:  2021-06-17
 
 ## Context and Problem Statement
