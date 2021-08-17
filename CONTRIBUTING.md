@@ -6,7 +6,7 @@ We invite you to join us working on JSON Schema.
 
 The fastest way to get involved and become active in the community is to join our Slack server at https://json-schema.org/slack.
 
-If you have suggestions on how to improve our community, please do check out our (Community Discussions)[https://github.com/json-schema-org/community/discussions], and start a new discussion.
+If you have suggestions on how to improve our community, please do check out our [Community Discussions](https://github.com/json-schema-org/community/discussions), and start a new discussion.
 
 # General
 
@@ -16,7 +16,7 @@ While each repository may have its own guidance for contributing, the following 
 
 In most repositories, we would like to utilise [Architectural Decision Records (ADRs)](https://adr.github.io/) to help us work effectively.
 
-We agreed to do this and documented this decision as an ADR: https://github.com/json-schema-org/community/blob/59adf96a3ebd246246021a6ae7437949de1c0c49/docs/adr/2021-05-17-use-markdown-architectural-decision-records.md ([Community PR 21](https://github.com/json-schema-org/community/pull/21)).
+[We agreed](https://github.com/json-schema-org/community/blob/main/docs/adr/2021-05-17-use-markdown-architectural-decision-records.md) to do this and documented this decision as an ADR: ([Community PR 21](https://github.com/json-schema-org/community/pull/21)).
 
 ADRs are a lightweight way to record and track significant or noteworthy decisions and changes made in a project, including the considerations and people that lead to the decision.
 
@@ -34,7 +34,7 @@ A maintainer may add a label `adr-required` to the issue.
 
 ### Pull Requests
 
-When creating a Pull Request, the submitter should assert if they believe merging the PR will need an ADR or not. If the submitter is not a maintainer, a maintainer will confirm if one is required before merging by adding the appropriate label, either `adr-required` or `adr-unrquired`.
+When creating a Pull Request, the submitter should assert if they believe merging the PR will need an ADR or not. If the submitter is not a maintainer, a maintainer will confirm if one is required before merging by adding the appropriate label, either `adr-required` or `adr-not-required`.
 
 If a Pull Request has an issue associated with it (through the associated issue GitHub feature), it should inherit present `adr-required` labels.
 
@@ -47,4 +47,4 @@ The process is designed to be lightweight, and a template is provided for ease o
 
 ### Feedback
 
-Feedback on this process can be made informally through our (Slack server)[https://json-schema.org/slack] and formally using our (Community Discussions)[https://github.com/json-schema-org/community/discussions].
+Feedback on this process can be made informally through our [Slack server](https://json-schema.org/slack) and formally using our [Community Discussions](https://github.com/json-schema-org/community/discussions).
