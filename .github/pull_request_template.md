@@ -1,4 +1,6 @@
 
+<!-- In order to keep off topic discussion to a minimum, it helps if the "work to be done" is already agreed on. -->
+<!-- Ideally, a GitHub Issue with the label `Status: Consensus` will have been concluded, and linked to in this PR. -->
 **GitHub Issue:** # / NA
 
 **Summary**:
