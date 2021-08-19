@@ -12,6 +12,7 @@ about: Use this template for creating general issues
 **Do you think resolving this issue might require an [Architectural Decision Record (ADR)](https://github.com/json-schema-org/community/blob/main/CONTRIBUTING.md#key-architectural-decisions)? (significant or noteworthy)**
 
 Yes/No
+[JUSTIFICATION]
 
 **Details**:
 

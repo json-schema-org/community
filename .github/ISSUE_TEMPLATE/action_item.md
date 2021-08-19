@@ -16,6 +16,7 @@ Completing this work will mean...
 **Do you think this work might require an [Architectural Decision Record (ADR)](https://github.com/json-schema-org/community/blob/main/CONTRIBUTING.md#key-architectural-decisions)? (significant or noteworthy)**
 
 Yes/No
+[JUSTIFICATION]
 
 **Work Detail**:
 <!-- Each item in this list may be a single Pull Request or a single PR may cover multiple  -->
