@@ -20,7 +20,7 @@ Yes/No
 
 **Work Detail**:
 <!-- Each item in this list may be a single Pull Request or a single PR may cover multiple  -->
-- [] List of work
-- [] To be done
+- [ ] List of work
+- [ ] To be done
 
 **Any further requirements to resolve this issue**
