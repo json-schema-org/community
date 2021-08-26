@@ -26,9 +26,15 @@ We want to make people feel welcome, and so should have a formal CoC.
 
 ## Decision Outcome
 
-We decided to use the Contributor Covenant in conjunction with IETF BCP 54, because BCP 54 defines some specifics on how we should interact with each other which the Contributor Covenant does not.
+We decided to use the Contributor Covenant in conjunction with IETF BCP 54.
+
+The Contributor Covenant is well established and regarded as a brilliant de-factor Code of Conduct option for open source projects.
+
+BCP 54 defines some specifics on how we should interact with each other which the Contributor Covenant does not.
 
 For example: "We dispute ideas by using reasoned argument rather than through intimidation or personal attack."
+
+Further, should we choose to pursue publication throught the IETF, we would remain compatible in a sense.
 
 ## Links
 
