@@ -8,7 +8,7 @@
 
 To the best of my knowledge, JSON Schema has never formally had a Code of Conduct (CoC).
 
-I personally only recall one instance where a CoC may have been useful.
+I personally recall a few instances where a CoC may have been useful.
 
 We want to make people feel welcome, and so should have a formal CoC.
 
