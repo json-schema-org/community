@@ -28,7 +28,7 @@ We want to make people feel welcome, and so should have a formal CoC.
 
 We decided to use the Contributor Covenant in conjunction with IETF BCP 54.
 
-The Contributor Covenant is well established and regarded as a brilliant de-factor Code of Conduct option for open source projects.
+The Contributor Covenant is well established and regarded as a brilliant de-facto Code of Conduct option for open source projects.
 
 BCP 54 defines some specifics on how we should interact with each other which the Contributor Covenant does not.
 
