@@ -1,7 +1,7 @@
 # JSON Schema Community
 ![GitHub Discussions](https://img.shields.io/github/discussions/json-schema-org/community)
 
-[![part of ADR](https://img.shields.io/badge/part_of-ADR-blue)](https://adr.github.io)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md) [![part of ADR](https://img.shields.io/badge/part_of-ADR-blue)](https://adr.github.io)
 
 🚨This is a work in progress (2021/04 - @relequestual)🚨
 
