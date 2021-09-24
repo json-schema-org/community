@@ -39,7 +39,7 @@ Further, should we choose to pursue publication throught the IETF, we would rema
 
 ### Contributor Covenant
 
-The Contributor Covenant is well established and regarded as a brilliant de-factor Code of Conduct option for open source projects.
+The Contributor Covenant is well established and regarded as a de-facto Code of Conduct option for open source projects.
 
 * Good, because it is well known and recognised as a good and useful Code of Conduct base
 * Good, because the familiarty of it from other communities will make people feel more comfortable
