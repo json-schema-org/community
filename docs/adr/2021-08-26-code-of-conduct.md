@@ -66,7 +66,7 @@ It outlines behavioural and conduct expectations for individual contributors, in
 ### Combination of Contributor Covenant and IETF BCP 54
 
 * Good, because we can pick the parts from BCP 54 that are applicable to our organization
-* Good, because we have clear inforcement for conduct which covers the whole Code of Conduct
+* Good, because we have clear enforcement for conduct which covers the whole Code of Conduct
 
 ## Links
 
