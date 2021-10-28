@@ -5,6 +5,7 @@ This log lists the architectural decisions for JSON Schema Community.
 <!-- adrlog -- Regenerate the content by using "adr-log -i". You can install it via "npm install -g adr-log" -->
 
 * [ADR-2021-05-17](2021-05-17-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
+* [ADR-2021-08-26](2021-08-26-code-of-conduct.md.md) - Code of Conduct
 
 <!-- adrlogstop -->
 
