@@ -16,8 +16,8 @@ JSON Schema project lead and publisher of the latest version of JSON Schema.
 
 > A rough description of the project in less than 100 words.
 
-JSON Schema is a vocabulary that allows you to annotat and validate JSON documents.
-Written in JSON, a defined set of keywords allow you to express constrains in order to perform validation.
+JSON Schema is a vocabulary that allows you to annotate and validate JSON documents.
+Written in JSON, a defined set of keywords allow you to express constraints in order to perform validation.
 With the most popular implementation boasting over 50 million weekly downloads (npm), and out-of-the-box support in VSCode, JSON Schema continues to be the defacto specification to validate JSON.
 
 ## Reason for Applying
