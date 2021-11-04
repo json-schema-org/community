@@ -60,7 +60,7 @@ Organisations: Microsoft, Google, Amazon, Mozilla, SAP, IBM, HM Government, NIH.
 > What is the potential long term impact and adoption?
 
 We are at a critical juncture of JSON Schema evolution.
-The extension mechanism, JSON Schema Vocabularies, allows for the standardised extension of JSON Schema to cater for non-validation use cases.
+The extension mechanism, JSON Schema Vocabularies, allows for the standardised extension of JSON Schema to cater to non-validation use cases.
 
 Use cases such as code generation, form generation, database generation (and validation), have evolved, but are non-standard. We're already working with existing open source projects and major organisations to facilitate standardising these use cases.
 
