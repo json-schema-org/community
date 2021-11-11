@@ -55,7 +55,11 @@ GitHub reports roughly 9k dependent packages and over 9 million dependent reposi
 > Who are the biggest users of the project? (_if they are not JavaScript space, then will it ever expand to JavaScript space_)
 
 Libraries: eslint and webpack.
+Specifications: OpenAPI, AsyncAPI.
+Editors: Visual Studio Code, Eclipse IDE, Jetbrains IDEs.
 Organisations: Microsoft, Google, Amazon, Mozilla, SAP, IBM, HM Government, NIH.
+
+Additionally, as of OpenAPI 3.1, all these organizations: https://www.openapis.org/membership/members
 
 > What is the potential long term impact and adoption?
 
