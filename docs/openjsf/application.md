@@ -90,7 +90,7 @@ Beyond validation and annotation, we are actively supporting special interest gr
 
 > Please refer to [Section III, Stages - Definitions & Expectations](https://github.com/openjs-foundation/cross-project-council/blob/HEAD/PROJECT_PROGRESSION.md#iii-stages---definitions--expectations) of PROJECT_PROGRESSION.md.
 
-At Large, although with a view to move to Imapct.
+At Large, although with a view to move to Impact.
 
 ## Project Website
 
