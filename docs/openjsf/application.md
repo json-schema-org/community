@@ -57,7 +57,7 @@ GitHub reports roughly 9k dependent packages and over 9 million dependent reposi
 Libraries: eslint and webpack.
 Specifications: OpenAPI, AsyncAPI.
 Editors: Visual Studio Code, Eclipse IDE, Jetbrains IDEs.
-Organisations: Microsoft, Google, Amazon, Mozilla, SAP, IBM, HM Government, NIH.
+Organisations: Microsoft, Google, Amazon, Mozilla, SAP, IBM, HM Government, NIH, NASA, The Deutsche Bahn.
 
 Additionally, as of OpenAPI 3.1, all these organizations: https://www.openapis.org/membership/members
 
