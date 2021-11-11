@@ -138,7 +138,7 @@ Org wide CoC https://github.com/json-schema-org/.github
 
 Spec (primary repo) Contributing guide https://github.com/json-schema-org/json-schema-spec/blob/draft-next/CONTRIBUTING.md - Needs updating to reflect recent changes.
 
-As part of our open governance, we are forming our govenance in the open: https://github.com/json-schema-org/community
+As part of our open governance, we are forming our governance in the open: https://github.com/json-schema-org/community
 
 ## List of all repos that are part of the project
 
@@ -152,7 +152,7 @@ For each repository, please provide:
 > - optionally, the full list of vendored dependencies contained in the source tree, including license information.
 > - A full audit of all vendored dependencies will be required before your project can officially join the foundation, but this can be done later with foundation support.
 
-We may need some assitance with this.
+We may need some assistance with this.
 Although, we only have 13 repos in total.
 
 ## Existing Financial Sponsorship
