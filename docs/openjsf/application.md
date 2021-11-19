@@ -74,14 +74,13 @@ JSON Schema is a domain-specific declarative language for validating and annotat
 
 It cannot be compared to OpenAPI. OpenAPI 3.1 now defers the schema definitions to the most recent release of JSON Schema[1]. Nor can it be compared to JSON-LD, which is designed for linked data. Nor can it be compared to schema.org which provides data semantics.
 
-A possible comparison is to JSON Type Definition (RFC 8927), which is designed for code generation.
-By way of comparison, JSON Schema has an extensive test suite, many more implementations and languages supported, and has vastly more use in the ecosystem.
+JSON Type Definition (RFC 8927) is comparable but not an alternative, as it is designed only for code generation.
+JSON Schema has many more implementations and languages supported, and has vastly more use in the ecosystem.
 
 Protocol Buffers and Avro do not just specify a structure, but define the "over the wire" format and serialisation method. JSON Schema is designed for validation of JSON data rather than data definitions, enabling the definition of more complex validation constraints than would otherwise be possible.
 
 In comparison to Joi, a popular and well used Javascript validation library, JSON Schema offers a language agnostic and portable validation mechanism.
 
-Many times we see comparisons made from one solution to JSON Schema. Often, they miss several key understandings.
 In summary, JSON Schema is language agnostic, declarative constraints based, interoperable, validation and annotation for JSON.
 
 Beyond validation and annotation, we are actively supporting special interest groups to define new vocabularies and dialects to add additional semantics and mechanisms to JSON Schema in order to support other use cases, such as UI generation, code generation, and databases.
@@ -191,3 +190,7 @@ We do and will need assistance in terms of
 > What questions do you have? What questions might arise during your application?
 
 I have already had several calls with various people at the OpenJSF, and do not have any outstanding questions.
+
+[1]
+https://www.openapis.org/blog/2021/02/18/openapi-specification-3-1-released
+https://nordicapis.com/whats-new-in-openapi-3-1-0/
