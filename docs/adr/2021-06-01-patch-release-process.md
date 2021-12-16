@@ -1,7 +1,7 @@
 # Make two releases a year. One major, one patch
 
 * Status: accepted
-* Deciders: @handrews @jdesrosiers @relequestual @gregdennis @karenetheridge
+* Deciders: @handrews @jdesrosiers @relequestual @gregsdennis @karenetheridge
 * Date: 2021-06-01
 
 Technical Story: https://github.com/json-schema-org/community/discussions/7
