@@ -31,7 +31,7 @@ A formal documented release schedule gives us something to aim for, and it can b
 ### Positive Consequences <!-- optional -->
 
 JSON Schema has a release schedule plan which people can develop and plan around.
-This should make choosing a version, and planning upgrades, something that can be done with consideration of timelines.
+This should make choosing a version and planning upgrades something that can be done with consideration of timelines.
 
 ### Negative Consequences <!-- optional -->
 
