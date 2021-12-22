@@ -23,7 +23,6 @@ We didn't formally consider any other options. No alternative proposals were off
 
 ## Decision Outcome
 
-Chosen option: "[option 1]", because [justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force force | … | comes out best (see below)].
 
 There were several agreements and comments, but no objections.
 We felt this change and formal schedule of a release process made sense over "*shrugs* whatever".
