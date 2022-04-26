@@ -1,3 +1,5 @@
 {
-  "general": ":wave: Discuss and ask questions about all JSON Schema related things. Please see the full channel description and the @GreetBot introduction."
+  "channels": {
+    "general": ":wave: Discuss and ask questions about all JSON Schema related things. Please see the full channel description and the @GreetBot introduction."
+  }
 }
