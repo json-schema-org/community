@@ -1,32 +1,19 @@
 Hey {{Joiner}}, Welcome to the JSON Schema Slack Server!
 
 Whatever reason you chose to join us, we want you to know, you're welcome!
-We are in the process of formalising our Code of Conduct, but we already subscribe to the IETF CoC, BCP54/RFC7154: <https://www.rfc-editor.org/rfc/rfc7154.html>.
-Be nice, be kind, be respectful.
 
-If you need help, or you're looking to get stuck in with the JSON Schema community, you're in the right place.
+We have a formal Code of Conduct which we [invite you to review](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md). It is short, and reading it is respectful to the community you've chosen to enter.
+
+If you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.
 
 This server includes the specification authors, many implementers, and a large number of helpful individuals from the community.
 
-If you're looking for an implementation of JSON Schema, you should check out the <https://json-schema.org/implementations.html|implementations page>.
+If you're looking for an implementation of JSON Schema, you should check out the [implementations page](https://json-schema.org/implementations.html).
 
-If you're looking to learn the basics of JSON Schema, do check out our <https://json-schema.org/learn|learning resources>.
+If you're looking to learn the basics of JSON Schema, do check out our [learning resources](https://json-schema.org/learn).
 
 If you want to ask questions or discuss JSON Schema, the #general channel is the right place.
-We also recommend you join the #announcements channel, which is low traffic.
 
-Here are some of our other channels and why you might want to join them.
+For details on other channels, click on the plus icon on the left of the message text area, followed by "channel info", or you can view the same information on our [GitHub Repository](https://github.com/json-schema-org/community/tree/main/slack/other%20channels).
 
-If you have any questions about our community, please feel free to ask in #general, or DM {{@relequestual}}.
-
-#implementers - Those implementing the specification and questions about implementation details
-#specification - Potential changes to the JSON Schema specification
-#tests - Development of the official test suite
-#community - Development of the JSON Schema community and organisation
-#in-the-wild - Posting of any references to uses of JSON Schema by others for tracking
-
-#watercooler - Space to chat about anything off topic or just catch up
-#z-random - Anything that's really far off topic
-
-#stack-overflow - Automated feed of StackOverflow questions tagged with JSON Schema
-#github - Automated feed of Github Issues and Pull Requests
+For now, please let us know who you are, what you do, and why you've joined us today!
