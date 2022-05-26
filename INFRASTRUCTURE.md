@@ -12,7 +12,7 @@ First, let's address some details of this document.
 
   ## Why?
 
-  It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboarding-checklist).
+  It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboaghrding-checklist).
   It's also probably good practice.
 
   This enables members of the JSON Schema team, and the OpenJS Foundation, to have oversight and management of such infrastructure should it be required.
@@ -60,3 +60,18 @@ The redirection worker is called `blogredirect`.
 
 The main site and the understanding site get deploy previews via Netlify.
 Unfortunately, CloudFlare pages does not offer deployment previews on Pull Requests where the Pull Request comes from a fork of the project (while netlify does, and for free).
+
+The slack server has a number of bots which feed data into specific channels.
+
+The bot which feeds tweets containing JSON Schema from Twitter to #twitter-mentions channel was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it, and it currently (as of 2022-05-26) needs to be replaced as it's acting up.
+
+The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
+
+The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
+
+The #ghd-community channel bot uses Zapier to process webhooks for our Community repo's GitHub Discussions, and relay to Slack.
+The Zapier account is owned and paid for by Postman. If this ever might become a problem, we should move to our own licence.
+At the time, there was no official app integration.
+
+
+If you believe something is missing from this documentation, please file an issue.
