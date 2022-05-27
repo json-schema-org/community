@@ -20,7 +20,7 @@ First, let's address some details of this document.
   ## Who?
 
   This was mainly a list created by Ben Hutton (@relequestual).
-  Others are free to amend and update this (Via Pull Requests) as is required.
+  Others are free to amend and update this (via Pull Requests) as is required.
 
 </details>
 
