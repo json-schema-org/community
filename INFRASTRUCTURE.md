@@ -61,7 +61,7 @@ The redirection worker is called `blogredirect`.
 The main site and the understanding site get deploy previews via Netlify.
 Unfortunately, CloudFlare pages does not offer deployment previews on Pull Requests where the Pull Request comes from a fork of the project (while netlify does, and for free).
 
-The slack server has a number of bots which feed data into specific channels.
+The Slack server has a number of bots which feed data into specific channels.
 
 The bot which feeds tweets containing JSON Schema from Twitter to #twitter-mentions channel was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it, and it currently (as of 2022-05-26) needs to be replaced as it's acting up.
 
