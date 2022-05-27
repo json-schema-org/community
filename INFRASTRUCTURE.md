@@ -26,10 +26,10 @@ First, let's address some details of this document.
 
 JSON Schema mostly operates on GitHub and Slack.
 
-Our GitHub organisation is located at https://github.com/orgs/json-schema-org
+Our GitHub organisation is located at https://github.com/orgs/json-schema-org.
 
-Our Slack server is located at https://json-schema.slack.com
-(Anyone can join using https://json-schema.org/slack)
+Our Slack server is located at https://json-schema.slack.com.
+(Anyone can join using https://json-schema.org/slack.)
 
 The JSON Schema organisation maintains ONE domain name: json-schema.org.
 
@@ -40,15 +40,15 @@ The DNS mostly points to GitHub.
 
 The website is split into several applications for historical reasons.
 
-The main website is run through GitHub Pages. The source code is located at https://github.com/json-schema-org/json-schema-org.github.io
+The main website is run through GitHub Pages. The source code is located at https://github.com/json-schema-org/json-schema-org.github.io.
 
-The human friendly documentation for the specification, dubbed "Understanding JSON Schema", is located at https://json-schema.org/understanding-json-schema
-The source for this project is located at https://github.com/json-schema-org/understanding-json-schema
+The human friendly documentation for the specification, dubbed "Understanding JSON Schema", is located at https://json-schema.org/understanding-json-schema.
+The source for this project is located at https://github.com/json-schema-org/understanding-json-schema.
 
 Both of these sites are deployed by GitHub onto GitHub Pages.
 
-The JSON Schema blog is located at https://json-schema.org/blog
-The source code is located at https://github.com/json-schema-org/blog
+The JSON Schema blog is located at https://json-schema.org/blog.
+The source code is located at https://github.com/json-schema-org/blog.
 
 The blog is deployed on CloudFlare Pages.
 The blog URL is redirected using CloudFlare workers.
@@ -63,7 +63,7 @@ Unfortunately, CloudFlare pages does not offer deployment previews on Pull Reque
 
 The Slack server has a number of bots which feed data into specific channels.
 
-The bot which feeds tweets containing JSON Schema from Twitter to #twitter-mentions channel was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it, and it currently (as of 2022-05-26) needs to be replaced as it's acting up.
+The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-mentions channel was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it, and it currently (as of 2022-05-26) needs to be replaced as it's acting up.
 
 The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
