@@ -12,7 +12,7 @@ First, let's address some details of this document.
 
   ## Why?
 
-  It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboaghrding-checklist).
+  It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboarding-checklist).
   It's also probably good practice.
 
   This enables members of the JSON Schema team, and the OpenJS Foundation, to have oversight and management of such infrastructure should it be required.
@@ -49,13 +49,10 @@ Both of these sites are deployed by GitHub onto GitHub Pages.
 
 The JSON Schema blog is located at https://json-schema.org/blog.
 The source code is located at https://github.com/json-schema-org/blog.
-
 The blog is deployed on CloudFlare Pages.
-The blog URL is redirected using CloudFlare workers.
-
 The CloudFlare pages name is `json-schema-blog`.
+The blog URL is redirected using CloudFlare workers.
 The redirection worker is called `blogredirect`.
-
 (It may now be possible to do the redirect using URL rewriting, but it was broken at the time, and their community support suggested using Workers.)
 
 The main site and the understanding site get deploy previews via Netlify.
@@ -74,4 +71,4 @@ The Zapier account is owned and paid for by Postman. If this ever might become a
 At the time, there was no official app integration.
 
 
-If you believe something is missing from this documentation, please file an issue.
+If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
