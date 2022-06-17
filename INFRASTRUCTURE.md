@@ -42,6 +42,11 @@ The website is split into several applications for historical reasons.
 
 The main website is run through GitHub Pages. The source code is located at https://github.com/json-schema-org/json-schema-org.github.io.
 
+A key set of resources hosted by the site are the JSON Schema meta-schemas, which are used to indicate which schemas are themselves valid for each version of the specification.
+These resources are potentially heavily used or referred to by consumers of JSON Schema.
+Links to these resources can be found at https://json-schema.org/specification.html for the latest version of JSON Schema, and at https://json-schema.org/specification-links.html for older versions.
+The working location for these resources is in the specification repository at https://github.com/json-schema-org/json-schema-spec/, and they are then included into the aforementioned website repository for publishing using `git submodule`.
+
 The human friendly documentation for the specification, dubbed "Understanding JSON Schema", is located at https://json-schema.org/understanding-json-schema.
 The source for this project is located at https://github.com/json-schema-org/understanding-json-schema.
 
