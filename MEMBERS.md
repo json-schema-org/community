@@ -3,6 +3,7 @@ This document lists the names and GitHub usernames of public members of this Git
 This is informational only and does not necessarily mean that individuals on this list represent the project or may act on its behalf.
 
 <!-- rqosstools om2md:start -->
+<!-- This list is generated using https://github.com/Relequestual/om2md -->
 <!-- Content between start and end comment tags has been automatically generated -->
 # These are the organizations members
 
@@ -28,5 +29,3 @@ This is informational only and does not necessarily mean that individuals on thi
 Members list downloaded from GitHub on Mon Jul 25 2022 09:29:05 GMT+0100 (British Summer Time)
 <!-- Content between start and end comment tags has been automatically generated -->
 <!-- rqosstools om2md:end -->
-
-<!-- This list is generated using https://github.com/Relequestual/om2md -->
