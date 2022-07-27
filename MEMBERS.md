@@ -8,22 +8,22 @@ This is informational only and does not necessarily mean that individuals on thi
 
 | Name | Account | Role |
 | -- | -- | -- |
-| Austin Wright | @awwright | Owner |
-| Ben Hutton | @Relequestual | Owner |
-| Henry Andrews | @handrews | Owner |
-| Jason Desrosiers | @jdesrosiers | Owner |
-| Julian Berman | @Julian | Owner |
-| Beda Hammerschmidt | @bchammer | Member |
-| Denis Laxalde | @dlax | Member |
-| Evgeny Poberezkin | @epoberezkin | Member |
-| Jonas Lagoni | @jonaslagoni | Member |
-| Juan Cruz Viotti | @jviotti | Member |
-| Karen Etheridge | @karenetheridge | Member |
-| Lucian Buzzo | @LucianBuzzo | Member |
-| Michael Droettboom | @mdboom | Member |
-| Nikita Skovoroda | @ChALkeR | Member |
-| Shawn Silverman | @ssilverman | Member |
-| Srikrishnan Suresh | @SrikrishnanS | Member |
+| Austin Wright | [@awwright](https://github.com/awwright) | Owner |
+| Ben Hutton | [@Relequestual](https://github.com/Relequestual) | Owner |
+| Henry Andrews | [@handrews](https://github.com/handrews) | Owner |
+| Jason Desrosiers | [@jdesrosiers](https://github.com/jdesrosiers) | Owner |
+| Julian Berman | [@Julian](https://github.com/Julian) | Owner |
+| Beda Hammerschmidt | [@bchammer](https://github.com/bchammer) | Member |
+| Denis Laxalde | [@dlax](https://github.com/dlax) | Member |
+| Evgeny Poberezkin | [@epoberezkin](https://github.com/epoberezkin) | Member |
+| Jonas Lagoni | [@jonaslagoni](https://github.com/jonaslagoni) | Member |
+| Juan Cruz Viotti | [@jviotti](https://github.com/jviotti) | Member |
+| Karen Etheridge | [@karenetheridge](https://github.com/karenetheridge) | Member |
+| Lucian Buzzo | [@LucianBuzzo](https://github.com/LucianBuzzo) | Member |
+| Michael Droettboom | [@mdboom](https://github.com/mdboom) | Member |
+| Nikita Skovoroda | [@ChALkeR](https://github.com/ChALkeR) | Member |
+| Shawn Silverman | [@ssilverman](https://github.com/ssilverman) | Member |
+| Srikrishnan Suresh | [@SrikrishnanS](https://github.com/SrikrishnanS) | Member |
 
 Members list downloaded from GitHub on Mon Jul 25 2022 09:29:05 GMT+0100 (British Summer Time)
 <!-- Content between start and end comment tags has been automatically generated -->
