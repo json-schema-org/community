@@ -1,6 +1,6 @@
 ---
 name: Open Community Working Meeting
-about: Regular Open Community Working Meetings Issue
+about: Regular Open Community Working Meetings Issue - This template is for those setting up an OCWM only.
 ---
 
 # Open Community Working Meeting 2022-MM-DD - 14:00 PT
