@@ -23,7 +23,7 @@ If you'd like permission to commit to the repo, please do ask.
 
 If you're adding to the list for the first time, please copy the below template, and add your GitHub username in alphabetical order.
 
-<detail>
+<details>
   <summary>Show/hide template</summary>
 
 ```md
@@ -33,7 +33,7 @@ If you're adding to the list for the first time, please copy the below template,
   **What can we do?:** [What would you like us to do in relation to this thing?]<br/>
 ```
 
-</detail>
+</details>
 
 ### Show me the details
 
