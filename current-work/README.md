@@ -27,10 +27,10 @@ If you're adding to the list for the first time, please copy the below template,
   <summary>Show/hide template</summary>
 
 ```md
-  Link: [Link to Github Issue, Pull Request, or Discussion]
-  What?: [The most simplest basic explanation of what the thing is about. Think a single tweets length or less.]
-  Why does it matter?: [Pitch why people should care about this too. Why do you care about it?]
-  What can we do?: [What would you like us to do in relation to this thing?]
+  **Link:** [Link to Github Issue, Pull Request, or Discussion]<br/>
+  **What?:** [The most simplest basic explanation of what the thing is about. Think a single tweets length or less.]<br/>
+  **Why does it matter?:** [Pitch why people should care about this too. Why do you care about it?]<br/>
+  **What can we do?:** [What would you like us to do in relation to this thing?]<br/>
 ```
 
 </detail>
