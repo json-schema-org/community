@@ -17,7 +17,7 @@ We may introduce automations to assist in this at a later point, or a medium tha
 
 #### How should the file be updated?
 
-Initially, only those who are actively contributing should look at add items to the list.
+Initially, it's expected that only those who are actively contributing should look at add add items to the list.
 To add items to the list, either make commits directly, or make a PR and then nudge someone to approve it.
 If you'd like permission to commit to the repo, please do ask.
 
