@@ -18,8 +18,8 @@ We may introduce automations to assist in this at a later point, or a medium tha
 #### How should the file be updated?
 
 Initially, it's expected that only those who are actively contributing should look at add add items to the list.
-To add items to the list, either make commits directly, or make a PR and then nudge someone to approve it.
-If you'd like permission to commit to the repo, please do ask.
+To add items to the list, either make commits directly in this repo.
+If you'd like permission to commit to the repo, please do ask on our [Slack server](https://json-schema.org/slack) in the `#community` channel.
 
 If you're adding to the list for the first time, please copy the below template, and add your GitHub username in alphabetical order.
 
@@ -42,3 +42,7 @@ OK! Great! You want [the-list.md](./the-list.md)
 ## More?
 
 @relequestual had some ideas on how automation could make this easier to use and encourage engagement, but it lead to a rabbit hole of questions and looking at docs and there wasn't any low-hanging fruit to be had. He intends to write up some suggestions on this soon.
+
+## I have a suggestion on this process...
+
+Great, let's hear it! Create a new [Discussion](https://github.com/json-schema-org/community/discussions) and let's talk.
