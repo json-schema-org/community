@@ -17,7 +17,7 @@ We may introduce automations to assist in this at a later point, or a medium tha
 
 #### How should the file be updated?
 
-Initially, it's expected that only those who are actively contributing should look at add add items to the list.
+Initially, it's expected that only those who are actively contributing should look at or add items to the list.
 To add items to the list, either make commits directly in this repo.
 If you'd like permission to commit to the repo, please do ask on our [Slack server](https://json-schema.org/slack) in the `#community` channel.
 
