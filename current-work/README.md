@@ -3,11 +3,11 @@
 ## About
 ### What is this space?
 
-During an [Open Community Working Meeting](https://github.com/json-schema-org/community/issues/244), it was suggested that we could have a place for the core team (and maybe active community members?) to log their current areas of focus or interest in the form of GitHub Issues, Pull Requests, and Discussions.
+During an [Open Community Working Meeting](https://github.com/json-schema-org/community/issues/244), it was suggested that we could have a place for the core team (and maybe active community members?) to indicate which areas of their work most require attention from the core team members, in the form of GitHub Issues, Pull Requests, and Discussions.
 
 ### Why?
 
-We concluded there was a LOT of activity taking place, and it was hard to get people to focus on the "important things". It is indeed hard to focus on priority items when there are many new GitHub Issues and Discussions each week, especially for those who are community members or not working on JSON Schema full or even part time. It was suggested that by asking for one to three items of priority, we might find it easier to draw attention where we feel it is needed.
+We concluded there was a LOT of activity taking place, and it was hard to get people to respond to the most immediately important things. It is indeed hard to focus on priority items when there are many new GitHub Issues and Discussions each week, especially for those who are community members or not working on JSON Schema full or even part time. It was suggested that by asking for one to three items of priority, we might find it easier to draw attention where we feel it is needed.
 
 ### How?
 
@@ -18,7 +18,7 @@ We may introduce automations to assist in this at a later point, or a medium tha
 #### How should the file be updated?
 
 Initially, it's expected that only those who are actively contributing should look at or add items to the list.
-To add items to the list, either make commits directly in this repo.
+To add items to the list, make commits directly in this repo.
 If you'd like permission to commit to the repo, please do ask on our [Slack server](https://json-schema.org/slack) in the `#community` channel.
 
 If you're adding to the list for the first time, please copy the below template, and add your GitHub username in alphabetical order.
