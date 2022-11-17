@@ -42,7 +42,7 @@ I'm most likely to feel stressed when I feel like I haven't accomplished anythin
 It helps if I reframe "wasted time" as lessons learnt. I'll take learning as a win.
 It helps if my calendar schedule is full AND I can stick to the schedule.
 
-If you see my schedule looking empty or not full, that's a potentially a bad sign, but maybe not.
+If you see my schedule looking empty or not full, that's potentially a bad sign, but maybe not.
 I'm more apathetic when stressed, so may be slower to respond.
 (Although, I still encourage nagging. Specifically nagging which suggests adding a task which will auto add to my calendar.)
 
