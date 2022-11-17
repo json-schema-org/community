@@ -8,7 +8,7 @@ Please see the adjacent [README](./README.md).
 
 ### @relequestual
 
-**Link:** https://github.com/json-schema-org/community/pull/250<br/>
-**What?:** Creating this file and the guide on how to use it<br/>
-**Why does it matter?:** People feel it would be easier to see areas of focus if we highlight them<br/>
-**What can people do?:** Review and approve this PR! =]<br/>
+**Link:** https://github.com/json-schema-org/community/pull/269<br/>
+**What?:** User manuals for team and community members<br/>
+**Why does it matter?:** It should help us understand how we can best work with each other and reduce potential friction<br/>
+**What can people do?:** Review and approve the PR! =]<br/>
