@@ -12,3 +12,5 @@ Please see the adjacent [README](./README.md).
 **What?:** User manuals for team and community members<br/>
 **Why does it matter?:** It should help us understand how we can best work with each other and reduce potential friction<br/>
 **What can people do?:** Review and approve the PR! =]<br/>
+
+Automation!
