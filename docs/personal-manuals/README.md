@@ -17,3 +17,5 @@ This page will also list those files in alphabetical order below.
 (Please update this manually for now)
 
 ## Personal User Manual listing
+
+- [@Relequestual / Ben Hutton's Personal User Manual](relequestual--ben-hutton.md)
