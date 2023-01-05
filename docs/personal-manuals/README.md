@@ -18,5 +18,5 @@ This page will also list those files in alphabetical order below.
 
 ## Personal User Manual listing
 
-- [@Julian / Julian Berman's Personal User Manual](julian.md)
-- [@Relequestual / Ben Hutton's Personal User Manual](relequestual--ben-hutton.md)
+- [@Julian / Julian Berman's Personal User Manual](manuals/julian.md)
+- [@Relequestual / Ben Hutton's Personal User Manual](manuals/relequestual--ben-hutton.md)
