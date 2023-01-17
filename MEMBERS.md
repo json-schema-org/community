@@ -14,6 +14,7 @@ This is informational only and does not necessarily mean that individuals on thi
 | Henry Andrews | [@handrews](https://github.com/handrews) | Owner |
 | Jason Desrosiers | [@jdesrosiers](https://github.com/jdesrosiers) | Owner |
 | Julian Berman | [@Julian](https://github.com/Julian) | Owner |
+| Greg Dennis | [@gregsdennis](https://github.com/gregsdennis) | Owner |
 | Beda Hammerschmidt | [@bchammer](https://github.com/bchammer) | Member |
 | Denis Laxalde | [@dlax](https://github.com/dlax) | Member |
 | Evgeny Poberezkin | [@epoberezkin](https://github.com/epoberezkin) | Member |
