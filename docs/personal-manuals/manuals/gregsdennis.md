@@ -1,10 +1,10 @@
-# [Name]'s Personal User Manual
+# Greg Dennis's Personal User Manual
 
 ## Working Patterns
 
 If I'm not asleep, I'm usually online.  I'm "desk working" 8-3ish M-F, New Zealand time, which is generally UTC+12/13 depending on the time of year.
 
-While also my job, this is a passion project for me, so I'm quick to respond to most things, especially if I'm tagged directly, either in GitHub or Slack.  Contact me ad-hoc.  During my "desk" hours, I'm open for meetings and chats.  Outside of those, I'll probably still respond, but don't be surprised if you have to wait until the next day.
+While also my job, this is a passion project for me, so I'm quick to respond to most things either in GitHub or Slack, especially if I'm tagged directly.  Contact me ad-hoc.  During my "desk" hours, I'm open for meetings and chats.  Outside of those, I'll probably still respond, but don't be surprised if you have to wait until the next day.
 
 My time is also split across several projects (of which this is the primary), so I'm not here 100%.  If you're interested what else I have going, feel free to ask.
 
@@ -12,7 +12,9 @@ I seek thorough understanding of anything I work on, and I like to get other peo
 
 ## Requirements
 
-I try to at least take note of everything, even if I don't really read it.
+Please note the time difference.  I'm typically a few hours behind (and a day ahead) of US/Canada, and AM/PM-inverted for most places in Europe.
+
+I try to at least take note of everything, even if I don't thoroughly read it.
 
 I have notifications from GitHub and Slack piped through my phone, which is almost always within arm's reach.  Tag me in either if you really need me to see something.  Otherwise, I'll probably stumble across it in a short time frame.
 
