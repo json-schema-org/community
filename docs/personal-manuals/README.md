@@ -18,6 +18,7 @@ This page will also list those files in alphabetical order below.
 
 ## Personal User Manual listing
 
+- [@benjagm / Benjamin Granados' Personal User Manual](manuals/benjagm--benjamin-granados.md)
+- [@gregsdennis / Greg Dennis's Personal User Manual](manuals/gregsdennis.md)
 - [@Julian / Julian Berman's Personal User Manual](manuals/julian.md)
 - [@Relequestual / Ben Hutton's Personal User Manual](manuals/relequestual--ben-hutton.md)
-- [@gregsdennis / Greg Dennis's Personal User Manual](manuals/gregsdennis.md)
