@@ -9,7 +9,7 @@ I generally check email and Slack multiple times a day, and I have a zero-inbox 
 ## Requirements
 
 I work best when items of work are scheduled. I'm not likely to want ad-hoc immediate calls/meetings.
-I am careful about sending meeting invites in the proper timezones, during the right working hours, and only in empty sloths, and I appreciate when people do the same with me.
+I am careful about sending meeting invites in the proper timezones, during the right working hours, and only in empty slots, and I appreciate when people do the same with me.
 
 If you mention me in a conversation, please tag me.
 
