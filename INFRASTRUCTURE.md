@@ -69,6 +69,8 @@ The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-m
 
 The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
+The bot for #reddit-mentions runs from Zapier under @benjagm 's account. 
+
 The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
 
 The #ghd-community channel bot uses Zapier to process webhooks for our Community repo's GitHub Discussions, and relay to Slack.
