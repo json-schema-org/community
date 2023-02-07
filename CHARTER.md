@@ -43,14 +43,30 @@ Most large, complex open source communities have both a business and a technical
 
 Section Intentionally Left Blank
 
-## Section 3: ${PROJECT TSC} Governing Body
+## Section 3: JSON Schema Org Governing Body (TSC)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391284 -->
 
-_directions: describe the structure of the group responsible for managing_
-_the project and its respective organization and repositories. If there are_
-_specific rules for membership or participation in the group, list them here or_
-_by reference to a governance.md document._
+The TSC is initially established from the observed major contributors who are currently active and in good standing.
 
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-3-establishment-of-the-tsc)
+There is no maximum TSC membership size. The TSC must have a minimum of four members.
+
+Changes to TSC membership should be posted in the agenda, and may be suggested as any other agenda item.
+
+TSC memberships are not time-limited.
+
+While the project is not looking to obtain "Impact" project status within the OpenJS Foundation, there is no requirement set out to limit the number of TSC members by employer. It is in some cases considered difficult or even unhelpful for the project to limit the number or percentage of TSC members by employer (Especially when an employer has employed individuals already active in the community to work exclusivly on the open source project). While at this time there is no limits on TSC membership by employer, the TSC will strive to keep to at least less than 50%, ideally 33% (One third, one in three). The TSC will re-evaluate this specific clause at least every six months, and aim to revise it within one year to meet the "no more than 1/3 employer member affiliation" mandate.
+
+TSC members are expected to regularly participate in TSC activities.
+
+The TSC will meet regularly using virtual conferencing tools. The meeting will be directed by the TSC Chairperson(s). Responsibility for directing individual meetings may be delegated by a TSC Chairperson to any other TSC member. Minutes or an appropriate recording will be taken and made available to the community through accessible public postings.
+
+The TSC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TSC discussions and meetings.
+
+A TSC member may be removed by vote from the TSC if, during a 3-month period, all of the following are true:
+
+- They attend fewer than 25% of the regularly scheduled meetings
+- They do not participate in any TSC votes
+- They do not provide any form of excuse or no excuse is known for their absence
 
 ## Section 4: Roles & Responsibilities
 
