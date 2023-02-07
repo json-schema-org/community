@@ -11,14 +11,10 @@ The JSON Schema project is part of the OpenJS Foundation which operates transpar
 Having no structure in place usually leads to one that is informal and undocumeted, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
 
 ## Section 1: Scope
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391250 -->
 
-_directions: Include a 3-4 sentence summary of what the project does,_
-_and/or what problems it solves. Imagine trying to explain your work_
-_to a colleague who is familiar with related technical concepts but unfamiliar_
-_with the project. You may also want to describe the project's value to community_
-_and/or business stakeholders._
-
-ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#scope)
+JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows you to annotate and validate JSON documents.
+While JSON Schema's primary target is constraint based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond which it was designed for. We aim to enable these additional and emergent use cases.
 
 ### 1.1: In-scope (optional)
 
