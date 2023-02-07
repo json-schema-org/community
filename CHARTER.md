@@ -3,12 +3,12 @@
 
 <!-- While this document is being written, you can find the discussion to help determine what should be found here at https://github.com/json-schema-org/community/discussions/286 - This comment should be removed before merging -->
 
-## Section 0: Guiding Principles (optional)
+## Section 0: Guiding Principles
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391241 -->
 
-_directions: provide a concise, high-level statement about_
-_the project's long-term principles, values, or mission._
+The JSON Schema project is part of the OpenJS Foundation which operates transparently, openly, collaboratively, and ethically. We strive to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-1-guiding-principle)
+Having no structure in place usually leads to one that is informal and undocumeted, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
 
 ## Section 1: Scope
 
