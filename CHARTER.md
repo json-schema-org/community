@@ -1,10 +1,7 @@
-# ${PROJECT} Charter
+# JSON Schema Org Charter
+<!-- This document is managed in the json-schema-org/.github GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
-_note: the purpose of a project charter is to provide a brief introduction_
-_to the project from a technical, community, or business perspective. The_
-_document also connects a project's community leadership and governance with the_
-_OpenJS Foundation's governance._
-
+<!-- While this document is being written, you can find the discussion to help determine what should be found here at https://github.com/json-schema-org/community/discussions/286 - This comment should be removed before merging -->
 
 ## Section 0: Guiding Principles (optional)
 
