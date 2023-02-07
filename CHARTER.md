@@ -18,6 +18,8 @@ While JSON Schema's primary target is constraint-based data validation, it conti
 
 ### 1.1: In-scope (optional)
 
+https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391253
+
 _directions: list or bullet out problem spaces, use cases, repositories_
 _or other projects which are included with the work but may not be readily_
 _apparent. This may help differentiate the project from other solutions in the_
@@ -27,14 +29,9 @@ _phrase, 'Section Intentionally Left Blank'._
 ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#in-scope)
 
 ### 1.2: Out-of-Scope (optional)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391262 -->
 
-_directions: list or bullet out areas that may be seen to be related but are_
-_not included in the scope of this project. This may help clarify the kind of_
-_features, contributions, issues or problems the project is looking for._
-_If you are not using this section, please indicate your intent with the_
-_phrase, 'Section Intentionally Left Blank'._
-
-ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#out-of-scope)
+Section Intentionally Left Blank
 
 ## Section 2: Relationship with OpenJS Foundation CPC.
 
