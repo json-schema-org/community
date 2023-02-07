@@ -9,7 +9,7 @@ Zoom Meeting link: https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d
 
 **Meeting accesibility**:
 - We would like to record the meeting, for future reference and for those who are not able to attend in person. 
-- We invite you feel comfortable to challenge any language or behaviour that is harmful or not inclusive during this meeting. 
+- We encourage you to challenge any language or behavior that is harmful or not inclusive during this meeting. 
 - We look forward to your participation but please consider... 
   - Remaining on mute when not speaking. 
   - Use the Zoom meeting raised hand feature to notify you wish to speak. 
