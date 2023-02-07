@@ -13,8 +13,8 @@ Having no structure in place usually leads to one that is informal and undocumet
 ## Section 1: Scope
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391250 -->
 
-JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows you to annotate and validate JSON documents.
-While JSON Schema's primary target is constraint based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond which it was designed for. We aim to enable these additional and emergent use cases.
+JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows annotation and validation of JSON documents.
+While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. We aim to enable these additional and emergent use cases.
 
 ### 1.1: In-scope (optional)
 
