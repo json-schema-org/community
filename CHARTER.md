@@ -34,11 +34,9 @@ ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/
 Section Intentionally Left Blank
 
 ## Section 2: Relationship with OpenJS Foundation CPC.
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391266 -->
 
-_directions: describe how the project intersects with the Cross Project_
-_Council._
-
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-2-evolution-of-openjs-foundation-governance)
+Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
 
 ### 2.1 Other Formal Project Relationships (optional)
 
