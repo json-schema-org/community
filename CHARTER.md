@@ -39,11 +39,9 @@ Section Intentionally Left Blank
 Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
 
 ### 2.1 Other Formal Project Relationships (optional)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391271 -->
 
-_directions: describe any additional affiliations or groups that liaise with_
-_the project in a formal way (such as a W3C Community Group, for example)._
-_If you are not using this section, please indicate your intent with the_
-_phrase, 'Section Intentionally Left Blank'._
+Section Intentionally Left Blank
 
 ## Section 3: ${PROJECT TSC} Governing Body
 
