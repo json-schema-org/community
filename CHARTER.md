@@ -83,14 +83,9 @@ The TSC has final authority over this project including:
 - Mediating technical conflicts
 
 ### Section 4.1 Project Operations & Management (optional)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391290 -->
 
-_directions: use this section to describe any other specific tasks the_
-_${PROJECT} Governing Body may be responsible for regarding process or project_
-_operations and management. If you are not using this section, please indicate_
-_your intent with the phrase, 'Section Intentionally Left Blank'._
-
-ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#roles-and-organization-management)
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-5-nodejs-project-operations)
+The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
 ### Section 4.2: Decision-making, Voting, and/or Elections (optional)
 
