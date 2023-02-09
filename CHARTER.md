@@ -69,11 +69,18 @@ A TSC member may be removed by vote from the TSC if, during a 3-month period, al
 - They do not provide any form of excuse or no excuse is known for their absence
 
 ## Section 4: Roles & Responsibilities
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391286 -->
 
-_directions: describe the roles and responsibilities of the ${PROJECT} Governing Body._
+The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
 
-ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#roles-and-organization-management)
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-4-responsibilities-of-the-tsc)
+The TSC has final authority over this project including:
+
+- Technical direction
+- Project governance and process (including this policy)
+- Contribution policy
+- GitHub repository hosting and administration
+- Establishment of and delegation to working groups or teams
+- Mediating technical conflicts
 
 ### Section 4.1 Project Operations & Management (optional)
 
