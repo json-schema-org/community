@@ -147,9 +147,9 @@ _phrase, 'Section Intentionally Left Blank'._
 ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-8-project-roles)
 
 ## Section 5: Definitions (optional)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391301 -->
 
-_directions: include any definitions that may help clarify terms or ideas found_
-_in this charter document. If you are not using this section, please indicate_
-_your intent with the phrase, 'Section Intentionally Left Blank'._
+The JSON Schema project: The project which is housed by the OpenJS Foundation which operates as The JSON Schema Org.
 
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-9-definitions)
+The JSON Schema Org: The people, policies, processes, activities, and artifacts, found within the GitHub json-schema-org.
+
