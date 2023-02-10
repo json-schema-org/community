@@ -153,3 +153,10 @@ The JSON Schema project: The project which is housed by the OpenJS Foundation wh
 
 The JSON Schema Org: The people, policies, processes, activities, and artifacts, found within the GitHub json-schema-org.
 
+---
+
+This work is a derivative of the [WebdriverIO Project Governance Model](https://github.com/webdriverio/webdriverio/blob/main/GOVERNANCE.md).
+
+Inspired by https://seedsforchange.org.uk/consensus
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales License](https://creativecommons.org/licenses/by-sa/2.0/uk/).
