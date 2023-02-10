@@ -87,14 +87,53 @@ The TSC has final authority over this project including:
 
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
-### Section 4.2: Decision-making, Voting, and/or Elections (optional)
+### Section 4.2: Decision-making and Voting
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391296 -->
+Note: See comments found in raw view...
+<!--
+  There are some changes required for this section.
+  See https://github.com/json-schema-org/community/discussions/286#discussioncomment-4886839
+ -->
 
-_directions: describe any provisions the project makes for decision-making_
-_or include the information by reference your governance.md document._
-_If you are not using this section, please indicate your intent with the_
-_phrase, 'Section Intentionally Left Blank'._
+The TSC follows a formal consensus seeking decision making model.
 
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-6-elections)
+When a TSC member looks for a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discression of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
+
+A decision discussion may be raised by creating an Issue in the community repo.
+--? OK with this being in the community repo or should we have a new TSC repo?--
+The Issue should include introductory information about the decision that needs to be made. It should follow the provided template, and must have the label tsc-decision.
+
+The TSC member who raised the call for a decision should indicate if they request the short consensus process. If they do, a vote is called to see if the other members agree. If the vote is unanimous, the short concensus model is started, otherwise, the standard consensus process is started.
+
+The short consensus process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the agenda item has at least one clear resolution to present. The agenda item owner should present the possible solution they are advocating for, and ask for a test for agreement. If consensus is not clearly reached, the short consensus process is ended and the standard consensus process is started.
+
+The standard consensus process is desgined for all non-trivial decisions.
+The standard consensus process should progress through the following seven stages.
+
+1. Introduction and clarify the issue
+2. Open the discussion - Share needs and perspecitves on the issue
+3. Explore ideas in a broad discussion
+4. Form a proposal
+5. Amend the proposal
+6. Test for agreement
+7. Determine resolution
+
+All decisions that go through the standard consensus process must also have an associated GitHub Issue, which allows those unable to attend meetings to participate.
+The Issue may spread into a GitHub Discussion for considering and discussing multiple proposals, allowing for threadded replies. The Discussion and Issue must be clearly linked.
+The opening comment of the Issue should be kept up to date as to the status of a decision.
+
+Any call for public TSC votes will be made by creating an Issue in the community repo with the tsc-vote label assigned. The Issue should use the provided template.
+--? Should public votes go in the community repo or a new TSC repo?--
+
+Once an Issue gains the label tsc-vote, all members of the TSC will be notified via a specific Slack channel (and by any additional method the TSC deems helpful). The votes will be collected by way of using GitHub Reactions on a specific comment, which must not be the first comment. The first comment must link to the voting comment in the same Issue.
+Voting will by default close after 7 days. Any member of the TSC may request a 7 day extension for any reason, moving the closing date back by 7 days. Any member of the TSC may request additioanl extensions, approved at the discretion of any TSC chair.
+
+If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
+At the discression of the TSC Chairs, a vote may made non-public, and will then be handled by creating a Discussion in the orgs TSC Team page (?-- Or should this be an Issue in a private repo? That might be preferable as they can then be closed--). The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
+
+Either initially, or at any point during the process, any TSC member may suggest the issue being discussed is "significant or noteworthy." If there are no objections, the resolution actions for the issue must include the creation of an Any Decision Record (Previously named Architectural Decision Record). The Any Decision Record (ADR) should include as much information as is thought to be useful, following the provided template. The Pull Request for the ADR must be approved by all those who were involved in the decision making process, which must also be documented in the ADR as the "deciders."
+
+(The short consensus process does not require a Decision Record, but the decision should be minuted.)
 
 ### Section 4.3: Other Project Roles (optional)
 
