@@ -7,14 +7,13 @@ about: Regular Open Community Working Meetings Issue - This template is for thos
 
 Zoom Meeting link: https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09
 
-**Meeting accesibility**:
-- We would like to record the meeting, for future reference and for those who are not able to attend in person. 
+[**Meeting accessibility**](https://raw.githubusercontent.com/json-schema-org/community/main/assets/jsonschema-ocwm-slide.jpg):
+- We would like to record the meeting for future reference and for those who are not able to attend in person. 
 - We encourage you to challenge any language or behavior that is harmful or not inclusive during this meeting. 
-- We look forward to your participation but please consider... 
+- We look forward to your participation, but please consider... 
   - Remaining on mute when not speaking. 
   - Use the Zoom meeting raised hand feature to notify you wish to speak. 
 - [JSON Schema Code of Conduct](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md)
-
 
 Agenda: Compiling!
 
