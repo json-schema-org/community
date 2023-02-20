@@ -8,7 +8,7 @@
 
 The JSON Schema project is part of the OpenJS Foundation which operates transparently, openly, collaboratively, and ethically. We strive to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
-Having no structure in place usually leads to one that is informal and undocumeted, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
+Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
 
 ## Section 1: Scope
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391250 -->
@@ -54,7 +54,7 @@ Changes to TSC membership should be posted in the agenda, and may be suggested a
 
 TSC memberships are not time-limited.
 
-While the project is not looking to obtain "Impact" project status within the OpenJS Foundation, there is no requirement set out to limit the number of TSC members by employer. It is in some cases considered difficult or even unhelpful for the project to limit the number or percentage of TSC members by employer (Especially when an employer has employed individuals already active in the community to work exclusivly on the open source project). While at this time there is no limits on TSC membership by employer, the TSC will strive to keep to at least less than 50%, ideally 33% (One third, one in three). The TSC will re-evaluate this specific clause at least every six months, and aim to revise it within one year to meet the "no more than 1/3 employer member affiliation" mandate.
+While the project is not looking to obtain "Impact" project status within the OpenJS Foundation, there is no requirement set out to limit the number of TSC members by employer. It is in some cases considered difficult or even unhelpful for the project to limit the number or percentage of TSC members by employer (Especially when an employer has employed individuals already active in the community to work exclusively on the open source project). While at this time there is no limits on TSC membership by employer, the TSC will strive to keep to at least less than 50%, ideally 33% (One third, one in three). The TSC will re-evaluate this specific clause at least every six months, and aim to revise it within one year to meet the "no more than 1/3 employer member affiliation" mandate.
 
 TSC members are expected to regularly participate in TSC activities.
 
@@ -97,21 +97,21 @@ Note: See comments found in raw view...
 
 The TSC follows a formal consensus seeking decision making model.
 
-When a TSC member looks for a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discression of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
+When a TSC member looks for a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
 
 A decision discussion may be raised by creating an Issue in the community repo.
 --? OK with this being in the community repo or should we have a new TSC repo?--
 The Issue should include introductory information about the decision that needs to be made. It should follow the provided template, and must have the label tsc-decision.
 
-The TSC member who raised the call for a decision should indicate if they request the short consensus process. If they do, a vote is called to see if the other members agree. If the vote is unanimous, the short concensus model is started, otherwise, the standard consensus process is started.
+The TSC member who raised the call for a decision should indicate if they request the short consensus process. If they do, a vote is called to see if the other members agree. If the vote is unanimous, the short consensus model is started, otherwise, the standard consensus process is started.
 
 The short consensus process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the agenda item has at least one clear resolution to present. The agenda item owner should present the possible solution they are advocating for, and ask for a test for agreement. If consensus is not clearly reached, the short consensus process is ended and the standard consensus process is started.
 
-The standard consensus process is desgined for all non-trivial decisions.
+The standard consensus process is designed for all non-trivial decisions.
 The standard consensus process should progress through the following seven stages.
 
 1. Introduction and clarify the issue
-2. Open the discussion - Share needs and perspecitves on the issue
+2. Open the discussion - Share needs and perspectives on the issue
 3. Explore ideas in a broad discussion
 4. Form a proposal
 5. Amend the proposal
@@ -119,17 +119,17 @@ The standard consensus process should progress through the following seven stage
 7. Determine resolution
 
 All decisions that go through the standard consensus process must also have an associated GitHub Issue, which allows those unable to attend meetings to participate.
-The Issue may spread into a GitHub Discussion for considering and discussing multiple proposals, allowing for threadded replies. The Discussion and Issue must be clearly linked.
+The Issue may spread into a GitHub Discussion for considering and discussing multiple proposals, allowing for threaded replies. The Discussion and Issue must be clearly linked.
 The opening comment of the Issue should be kept up to date as to the status of a decision.
 
 Any call for public TSC votes will be made by creating an Issue in the community repo with the tsc-vote label assigned. The Issue should use the provided template.
 --? Should public votes go in the community repo or a new TSC repo?--
 
 Once an Issue gains the label tsc-vote, all members of the TSC will be notified via a specific Slack channel (and by any additional method the TSC deems helpful). The votes will be collected by way of using GitHub Reactions on a specific comment, which must not be the first comment. The first comment must link to the voting comment in the same Issue.
-Voting will by default close after 7 days. Any member of the TSC may request a 7 day extension for any reason, moving the closing date back by 7 days. Any member of the TSC may request additioanl extensions, approved at the discretion of any TSC chair.
+Voting will by default close after 7 days. Any member of the TSC may request a 7 day extension for any reason, moving the closing date back by 7 days. Any member of the TSC may request additional extensions, approved at the discretion of any TSC chair.
 
 If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
-At the discression of the TSC Chairs, a vote may made non-public, and will then be handled by creating a Discussion in the orgs TSC Team page (?-- Or should this be an Issue in a private repo? That might be preferable as they can then be closed--). The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
+At the discretion of the TSC Chairs, a vote may made non-public, and will then be handled by creating a Discussion in the orgs TSC Team page (?-- Or should this be an Issue in a private repo? That might be preferable as they can then be closed--). The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
 
 Either initially, or at any point during the process, any TSC member may suggest the issue being discussed is "significant or noteworthy." If there are no objections, the resolution actions for the issue must include the creation of an Any Decision Record (Previously named Architectural Decision Record). The Any Decision Record (ADR) should include as much information as is thought to be useful, following the provided template. The Pull Request for the ADR must be approved by all those who were involved in the decision making process, which must also be documented in the ADR as the "deciders."
 
