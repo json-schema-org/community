@@ -122,11 +122,16 @@ All decisions that go through the standard consensus process must also have an a
 The Issue may spread into a GitHub Discussion for considering and discussing multiple proposals, allowing for threaded replies. The Discussion and Issue must be clearly linked.
 The opening comment of the Issue should be kept up to date as to the status of a decision.
 
+The "Test for agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
+Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
+
 Any call for public TSC votes will be made by creating an Issue in the community repo with the tsc-vote label assigned. The Issue should use the provided template.
 --? Should public votes go in the community repo or a new TSC repo?--
 
 Once an Issue gains the label tsc-vote, all members of the TSC will be notified via a specific Slack channel (and by any additional method the TSC deems helpful). The votes will be collected by way of using GitHub Reactions on a specific comment, which must not be the first comment. The first comment must link to the voting comment in the same Issue.
 Voting will by default close after 7 days. Any member of the TSC may request a 7 day extension for any reason, moving the closing date back by 7 days. Any member of the TSC may request additional extensions, approved at the discretion of any TSC chair.
+
+For a vote to carry, a quorum of 75% is required by default.
 
 If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
 At the discretion of the TSC Chairs, a vote may made non-public, and will then be handled by creating a Discussion in the orgs TSC Team page (?-- Or should this be an Issue in a private repo? That might be preferable as they can then be closed--). The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
@@ -158,5 +163,6 @@ The JSON Schema Org: The people, policies, processes, activities, and artifacts,
 This work is a derivative of the [WebdriverIO Project Governance Model](https://github.com/webdriverio/webdriverio/blob/main/GOVERNANCE.md).
 
 Inspired by https://seedsforchange.org.uk/consensus
+Informed by https://www.ic.org/busting-the-myth-that-consensus-with-unanimity-is-good-for-communities/
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales License](https://creativecommons.org/licenses/by-sa/2.0/uk/).
