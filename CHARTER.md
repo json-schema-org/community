@@ -90,22 +90,28 @@ The TSC and entire technical community will follow any processes as may be speci
 ### Section 4.2: Decision-making and Voting
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391296 -->
 Note: See comments found in raw view...
-<!--
-  There are some changes required for this section.
-  See https://github.com/json-schema-org/community/discussions/286#discussioncomment-4886839
- -->
 
 The TSC follows a formal consensus seeking decision making model.
+In some situations, a vote may be preferable, however a vote will not be used to make the vast majority of decisions.
+In the unlikely case where it seems that consensus cannot be reached after multiple attempts, the decision process may be moved to resolve via a vote. This is not expected to happen, but defined as a backup.
 
-When a TSC member looks for a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
+#### Decision-making via consensus
 
-A decision discussion may be raised by creating an Issue in the community repo.
---? OK with this being in the community repo or should we have a new TSC repo?--
-The Issue should include introductory information about the decision that needs to be made. It should follow the provided template, and must have the label tsc-decision.
+When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
 
-The TSC member who raised the call for a decision should indicate if they request the short consensus process. If they do, a vote is called to see if the other members agree. If the vote is unanimous, the short consensus model is started, otherwise, the standard consensus process is started.
+A decision discussion may be started by creating a Discussion in the Community repository.
+--? Should we have a new repo and limit the Discussions to that repo? TSC? ?--
+The Discussion should include introductory information about the decision that needs to be made. It should follow the provided template, and must have the label `tsc-decision`.
 
-The short consensus process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the agenda item has at least one clear resolution to present. The agenda item owner should present the possible solution they are advocating for, and ask for a test for agreement. If consensus is not clearly reached, the short consensus process is ended and the standard consensus process is started.
+##### Quick consensus process
+
+In the event a TSC member feels the need for a decision to be expedited, they may create the decision discussion, indicating that they wish to use the quick process rather than the standard consensus process.
+
+A vote is called to see if other members agree. The vote takes place on the opening comment. This vote is different from the decision-making voting process, and only requires 3 (additional) votes in favour and none against to carry. If the vote carries, the quick process is started, otherwise the standard consensus process is started.
+
+The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for, and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started.
+
+##### Standard consensus process
 
 The standard consensus process is designed for all non-trivial decisions.
 The standard consensus process should progress through the following seven stages.
@@ -118,12 +124,26 @@ The standard consensus process should progress through the following seven stage
 6. Test for agreement
 7. Determine resolution
 
-All decisions that go through the standard consensus process must also have an associated GitHub Issue, which allows those unable to attend meetings to participate.
-The Issue may spread into a GitHub Discussion for considering and discussing multiple proposals, allowing for threaded replies. The Discussion and Issue must be clearly linked.
-The opening comment of the Issue should be kept up to date as to the status of a decision.
+(These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while we test and firm up our specific requirements, and document them in our [Governance document](./GOVERNANCE.md))
+<!-- GOVERNANCE.md is not yet created. I would suggest that creating one which helps us through the seven stages of the consensus process be the first order of business. -->
 
-The "Test for agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
+All decisions that go through the standard consensus process must also have an associated GitHub Discussion, which allows those unable to attend meetings to participate.
+The opening comment of the Discussion should be kept up to date as to the status of a decision.
+
+Transition between stages may be requested by anyone, but must be called by the facilitator (either a TSC chair or TSC member delegated the facilitator role for a given decision discussion). The stage will be indicated in the opening comment of the discussion and using the appropriate label.
+
+Most of the discussion should happen within the same Discussion. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in the same Discussion, and any other relevant locations.
+
+Moving to the 'Form a proposal" stage should be approached when the group might feel able to combine ideas to form a single proposal. Multiple possible solutions should be discussed in the previous stage.
+
+The "Test for Agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
 Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
+
+If someone calls for a Test of Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using reactions on the comment.
+
+The "Determine resolution" step should result in the creation of an [Any Decision Record](./docs/adr/README.md).
+
+#### Decision-making via vote
 
 Any call for public TSC votes will be made by creating an Issue in the community repo with the tsc-vote label assigned. The Issue should use the provided template.
 --? Should public votes go in the community repo or a new TSC repo?--
@@ -162,7 +182,7 @@ The JSON Schema Org: The people, policies, processes, activities, and artifacts,
 
 This work is a derivative of the [WebdriverIO Project Governance Model](https://github.com/webdriverio/webdriverio/blob/main/GOVERNANCE.md).
 
-Inspired by https://seedsforchange.org.uk/consensus
+Inspired by https://seedsforchange.org.uk/consensus, https://seedsforchange.org.uk/quickconsensus
 Informed by https://www.ic.org/busting-the-myth-that-consensus-with-unanimity-is-good-for-communities/
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales License](https://creativecommons.org/licenses/by-sa/2.0/uk/).
