@@ -166,14 +166,16 @@ Non-public decisions should be documented (as an ADR or otherwise) in the privat
 
 ### Section 4.3: Other Project Roles (optional)
 
-_directions: describe other roles within the project, such as chairperson,_
-_tech lead, collaborator, contributor, maintainer, etc. and any responsibilities or_
-_rights such role confers. You can also include this information by_
-_reference to your governance.md document._
-_If you are not using this section, please indicate your intent with the_
-_phrase, 'Section Intentionally Left Blank'._
+The JSON Schema project recognises the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
 
-ex. [Node.js TSC Charter](https://github.com/nodejs/TSC/blob/HEAD/TSC-Charter.md#section-8-project-roles)
+The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognise the additional roles.
+
+The following responsibilities are recognised as those requiring roles to be defined by the TSC:
+- Community and Industry connections
+- Brand awareness, recognition, and health
+- Strategic allocation of funds and budgeting for investment in JSON Schema and its ecosystem
+- Education and training
+- Financial allocation approval, tracking, and auditing
 
 ## Section 5: Definitions (optional)
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391301 -->
