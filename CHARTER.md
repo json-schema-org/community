@@ -139,7 +139,9 @@ Moving to the 'Form a Proposal" stage should be approached when the group might 
 The "Test for Agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
 Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
 
-If someone calls for a Test for Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment. The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
+If someone calls for a Test for Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
+
+The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
 
 The blocker/s should be prepared to commit to trying to find a solution, but not necessarily form and present a solution by themselves. The TSC will look to facilitate a number of workshops to help understand the blocking objections, and form a new or amended proposal as a result.
 
