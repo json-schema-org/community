@@ -139,7 +139,24 @@ Moving to the 'Form a Proposal" stage should be approached when the group might 
 The "Test for Agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
 Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
 
-If someone calls for a Test of Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
+If someone calls for a Test for Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment. The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
+
+The blocker/s should be prepared to commit to trying to find a solution, but not necessarily form and present a solution by themselves. The TSC will look to facilitate a number of workshops to help understand the blocking objections, and form a new or amended proposal as a result.
+
+If someone feels a "Block" is being used for unfair reasons, such as targeting individuals or to gain some personal advantage, or any such reason that might be in breach of our Code of Conduct, they should immediately report it to the Code of Conduct committee. The Code of Conduct committee should report this to the TSC Chairs as soon as possible, and the decision is halted while the committee investigates the report.
+
+The Code of Conduct committee will report their findings and any remediation action to the TSC Chairs.
+Reports must remain anonymous, as per the Code of Conduct.
+
+The other signals that may be made when a Test For Agreement is called include "Reservations" and "Stand Aside". Both are signals which convey consent to let the proposal pass, however they may be conditional.
+
+Signalling "Reservations" means an agreement on the overall direction, however there is some desire to revise or amend the proposal somewhat. It is expected that the individuals signalling "Reservations" want to engage in reworking the proposal. The facilitator will check with each individual regarding the strength of the reservation, and later facilitate or direct discussion as required to amend and represent the proposal. If the individual/s do not wish to participate in reworking the proposal, their reservations should be logged as part of the decision record as unresolved.
+
+If "Reservations" is signalled three consecutive times by the same individual/s, anyone may call for no further attempts to remediate the reservations, and the proposal will pass.
+
+Signalling "Stand Aside" convey consent, but an unwillingness for whatever reason to be further involved. It could be for example that the individual does not have time to participate, or that they have limited opinions on the specific decision. The individual may provide a reason for standing aside. If the individual believes the reason can be remedied by the group, the group should seek to remedy the reason where possible, with help from the facilitator.
+
+The TSC will make every reasonable effort to reach unanimity based consensus. If unanimity seems unlikely after several failed attempts to revise the proposal and Test for Agreement, if the proposal is clear, the decision may be moved to a vote, at the discretion of the TSC Chairs. This is a last resort.
 
 The "Determine resolution" step should result in the creation of an [Any Decision Record](./docs/adr/README.md). More details in following sections.
 
