@@ -199,7 +199,7 @@ Either initially, or at any point during the process, any TSC member may suggest
 
 (The quick consensus process does not require a Decision Record, but the decision should be minuted.)
 
-Non-public decisions should be documented (as an ADR or otherwise) in the private `private-tsc` repo.
+Non-public decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
 ### Section 4.3: Other Project Roles (optional)
 
