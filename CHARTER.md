@@ -99,21 +99,38 @@ In the unlikely case where it seems that consensus cannot be reached after multi
 
 When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
 
-A decision discussion may be started by creating a Discussion in the Community repository.
---? Should we have a new repo and limit the Discussions to that repo? TSC? ?--
-The Discussion should include introductory information about the decision that needs to be made. It should follow the provided template, and must have the label `tsc-decision`.
+Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
+The Issue must:
+- Include brief introductory information about the decision that needs to be made
+- Be labelled with 'tsc-decision'
+- Use the provided template, unless there is a good reason not to do so
 
 ##### Quick consensus process
 
-In the event a TSC member feels the need for a decision to be expedited, they may create the decision discussion, indicating that they wish to use the quick process rather than the standard consensus process.
+In the event a TSC member feels the need for a decision to be expedited, they may create the decision discussion, indicating that they wish to use the quick process rather than the standard consensus process. This should be done by creating a new Issue in the TSC repository.
+In addition to the requirements above, the Issue must be labelled 'expedited'.
+
+While an associated Discussion is not required, if one is used, it must be clearly linked in both directions, and be labelled with 'tsc-decision'.
 
 A vote is called to see if other members agree. The vote takes place on the opening comment. This vote is different from the decision-making voting process, and only requires 3 (additional) votes in favour and none against to carry. If the vote carries, the quick process is started, otherwise the standard consensus process is started.
 
-The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for, and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started.
+The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for (in a follow up comment on the Issue. Not in the opening comment.), and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started. (Label 'expedited' should be removed and 'stage-1' added.)
 
 ##### Standard consensus process
 
 The standard consensus process is designed for all non-trivial decisions.
+
+A decision discussion may be started by creating an Issue and Discussion in the TSC repository.
+
+In addition to the requirements above, the Issue must:
+- Be labelled with 'stage-1'
+- Link to the associated initial Discussion
+
+The Discussion must:
+- Link to the associated Issue
+- Include detailed introductory information about the decision that needs to be made
+- Be labelled with 'tsc-decision'
+
 The standard consensus process should progress through the following seven stages.
 
 1. Introduction and clarify the issue
@@ -127,19 +144,19 @@ The standard consensus process should progress through the following seven stage
 (These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while we test and firm up our specific requirements, and document them in our [Governance document](./GOVERNANCE.md))
 <!-- GOVERNANCE.md is not yet created. I would suggest that creating one which helps us through the seven stages of the consensus process be the first order of business. -->
 
-All decisions that go through the standard consensus process must also have an associated GitHub Discussion, which allows those unable to attend meetings to participate.
-The opening comment of the Discussion should be kept up to date as to the status of a decision.
+All decisions that go through the standard consensus process must have an associated GitHub Issue, which allows those unable to attend meetings to participate.
+The opening comment of the Issue should be kept up to date as to the status of the decision.
 
-Transition between stages may be requested by anyone, but must be called by the facilitator (either a TSC chair or TSC member delegated the facilitator role for a given decision discussion). The stage will be indicated in the opening comment of the discussion and using the appropriate label.
+Transition between stages may be requested by anyone, but must be called by the facilitator (either a TSC chair or TSC member delegated the facilitator role for a given decision discussion). The stage will be indicated in the opening comment of the Issue and using the appropriate label.
 
-Most of the discussion should happen within the same Discussion. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in the same Discussion, and any other relevant locations.
+Most of the discussion should happen within the associated Discussion. The Issue should mostly be used to updated and report progress the consensus process. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in associated Discussion, and any other relevant locations.
 
 Moving to the 'Form a Proposal" stage should be approached when the group might feel able to combine ideas to form a single proposal. Multiple possible solutions should be discussed in the previous stage.
 
 The "Test for Agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
 Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
 
-If someone calls for a Test for Agreement, the facilitator for the Discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Discussion (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
+If someone calls for a Test for Agreement, the facilitator for the decision discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Issue (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
 
 The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
 
@@ -164,8 +181,7 @@ The "Determine resolution" step should result in the creation of an [Any Decisio
 
 #### Decision-making via vote
 
-Any call for public TSC votes will be made by creating an Issue in the community repo with the `tsc-vote` label assigned. The Issue should use the provided template.
---? Should public votes go in the community repo or a new TSC repo?--
+Any call for public TSC votes will be made by creating an Issue in the TSC repository with the `tsc-vote` label assigned. The Issue should use the provided template.
 
 Once an Issue gains the label `tsc-vote`, all members of the TSC will be notified via a specific Slack channel (and by any additional method the TSC deems helpful). The votes will be collected by way of using GitHub Reactions on a specific comment, which must not be the first comment. The first comment must link to the voting comment in the same Issue.
 Voting will by default close after 7 days. Any member of the TSC may request a 7 day extension for any reason, moving the closing date back by 7 days. Any member of the TSC may request additional extensions, approved at the discretion of any TSC chair.
@@ -173,7 +189,9 @@ Voting will by default close after 7 days. Any member of the TSC may request a 7
 For a vote to carry, a quorum of 75% is required by default.
 
 If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
-At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating a Discussion in the orgs TSC Team page (?-- Or should this be an Issue in a private repo? That might be preferable as they can then be closed--). The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
+At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating an Issue in the 'TSC-private' repository.
+
+The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
 
 #### Documenting decisions
 
