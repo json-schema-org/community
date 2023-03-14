@@ -17,16 +17,39 @@ JSON Schema aims to enable the confident and reliable use of the JSON data forma
 While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. We aim to enable these additional and emergent use cases.
 
 ### 1.1: In-scope (optional)
+<!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391253 -->
 
-https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391253
+The scope of the JSON Schema project is split into two sections: primary and secondary concerns.
+Primary concerns are areas we wish to give focus to, while secondary concerns are more likely to require the creation of a Special Interest Group.
 
-_directions: list or bullet out problem spaces, use cases, repositories_
-_or other projects which are included with the work but may not be readily_
-_apparent. This may help differentiate the project from other solutions in the_
-_space. If you are not using this section, please indicate your intent with the_
-_phrase, 'Section Intentionally Left Blank'._
+Primary Concerns
+- Publication of the JSON Schema standard
+  - Validation of JSON data
+  - Semantic annotation of JSON data
+  - Extensibility
+- Critical tooling
+  - Creation of new
+  - Ingestion of existing
+  - Long term support
+  - (Including linting)
+- Documentation
+- Test suite
+- Community
+  - Enabling schema authors
+  - Enabling implementers
+  - Engaging with industry
+  - Communicating value
+  - Ensuring the sustainability of the project
 
-ex. [K8s SIG Architecture Charter](https://github.com/kubernetes/community/blob/HEAD/sig-architecture/charter.md#in-scope)
+Secondary Concerns
+- Hypermedia
+- Generating JSON Schema
+- Using JSON Schema to generate
+  - Code (including types or classes)
+  - UI (including forms)
+  - Databases
+- Relational validation
+- Vocabularies registry
 
 ### 1.2: Out-of-Scope (optional)
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391262 -->
