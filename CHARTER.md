@@ -104,6 +104,7 @@ The TSC has final authority over this project including:
 - GitHub repository hosting and administration
 - Establishment of and delegation to working groups or teams
 - Mediating technical conflicts
+- Mediating non-technical conflicts (until a formal Code of Conduct Committee is established)
 
 ### Section 4.1 Project Operations & Management (optional)
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391290 -->
