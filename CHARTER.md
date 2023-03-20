@@ -221,7 +221,7 @@ The topic and nature of non-public votes may remain non-public, including the re
 
 Either initially, or at any point during the process, any TSC member may suggest the issue being discussed is "significant or noteworthy." If there are no objections, the resolution actions for the issue must include the creation of an Any Decision Record (Previously named Architectural Decision Record). The Any Decision Record (ADR) should include as much information as is thought to be useful, following the provided template. The Pull Request for the ADR must be approved by all those who were involved in the decision making process, which must also be documented in the ADR as the "deciders."
 
-(The quick consensus process does not require a Decision Record, but the decision should be minuted.)
+(The quick consensus process does not require an Any Decision Record, but the decision should be minuted.)
 
 Non-public decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
