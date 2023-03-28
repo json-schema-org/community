@@ -31,7 +31,6 @@ Primary Concerns
   - Creation of new
   - Ingestion of existing
   - Long term support
-  - (Including linting)
 - Documentation
 - Test suite
 - Community
