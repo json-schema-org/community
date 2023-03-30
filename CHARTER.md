@@ -105,6 +105,8 @@ The TSC has final authority over this project including:
 - Mediating technical conflicts
 - Mediating non-technical conflicts (until a formal Code of Conduct Committee is established)
 
+In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
+
 ### Section 4.1 Project Operations & Management (optional)
 <!-- https://github.com/json-schema-org/community/discussions/286#discussioncomment-4391290 -->
 
@@ -127,6 +129,8 @@ The Issue must:
 - Include brief introductory information about the decision that needs to be made
 - Be labelled with 'tsc-decision'
 - Use the provided template, unless there is a good reason not to do so
+
+At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signalling or voting. The TSC member must detail when they expect to return.
 
 ##### Quick consensus process
 
@@ -171,6 +175,8 @@ All decisions that go through the standard consensus process must have an associ
 The opening comment of the Issue should be kept up to date as to the status of the decision.
 
 Transition between stages may be requested by anyone, but must be called by the facilitator (either a TSC chair or TSC member delegated the facilitator role for a given decision discussion). The stage will be indicated in the opening comment of the Issue and using the appropriate label.
+
+Stages 1 and 6 are required to be open for at least 7 days or until every TSC member has confirmed they wish to progress to the next stage (Progression will still be "called", as above). This includes signals of abstaining given automatically via a notification of period of leave from TSC activity. For stage 2, any TSC member may request a 7 day extension to allow for further consideration. Should there be no reasonable objection (determined by a TSC Chair), the minimum time will be extended by 7 days. A TSC member may request multiple extensions, however lack of justification may result in the TSC member being asked to consider abstaining in stead. There are no other explicit time limits placed on the other stages of the process.
 
 Most of the discussion should happen within the associated Discussion. The Issue should mostly be used to updated and report progress the consensus process. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in associated Discussion, and any other relevant locations.
 
