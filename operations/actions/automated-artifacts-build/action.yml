@@ -1,0 +1,19 @@
+name: 'Run script'
+
+inputs:
+  AUTH_TOKEN:
+    description: 'Auth Token'
+    required: true
+  ORGANISATION:
+    description: 'Organisation'
+    required: true
+  REPOSITORIES:
+    description: 'Repositories'
+    required: true
+  LABELS:
+    description: 'labels'
+    required: true
+runs:
+  using: 'node16'
+  main: 'build/index.js'
+
