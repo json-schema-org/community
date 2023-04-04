@@ -1,20 +1,48 @@
-# automated-artifacts-build
-Artifact to update OCWM labelled Work Meetings with pull requests/issues with label agenda
+# Github Action for adding labeled requests/issues to the agenda of the upcoming OCWM
 
-To run the Workflow Manually :
-1. Go to Secret and variables > Actions 
-2. Set repository sectrets to 
-a.  Name : AUTH_TOKEN 
-b.  Value : <YOUR_PAT>
+A GitHub Action that search for PRs and issues with an specific label and adds them as agenda items for the upcoming OCWM.
 
-Note : The organisation should grant you the access to be able to make changes in the issue 
+## Prerequisites
 
-Settings > third party accesss >  Personal Access Token > Settings > (under) Personal access token (classic) > (select) <'Allow access via personal access tokens (classic)'>
+The action requires a github auth token to call github API
 
-3. Set Repository variables as 
-a.  Name : ORGANISATION
-    Value : <NAME_OF_ORGANISATION>
-b.  Name: REPOSITORIES
-    VALUE: <NAME_OF_REPOSITORY>,<NAME_OF_REPOSITORY>
+> Settings > third party accesss >  Personal Access Token > Settings >
+> (under) Personal access token (classic) > (select) <'Allow access via
+> personal access tokens (classic)'>
 
-Note: u can add the repos that u want the issues/PR's to be be appended to the latest Open community work meeting
+The security scopes required in this token are:
+<br>
+<img width="626" alt="Screenshot 2023-04-04 at 14 38 23" src="https://user-images.githubusercontent.com/40007659/229800559-fd722029-86bf-4ee3-aafe-44386a747f3f.png">
+
+## Setup
+
+Go to Secret and `variables > Actions` and set repository secrets to:
+* `AUTH_TOKEN` : `<YOUR_TOKEN>`
+
+Go to Repository variables `variables > Actions` and configure the required repository variables:
+* `ORGANISATION` : `<NAME_OF_ORGANISATION>`
+* `REPOSITORIES` : `<NAME_OF_REPOSITORY>,<NAME_OF_REPOSITORY>`
+* `LABELS`:  `<THE_LABEL_GIVEN_TO_PR_AND_ISSUES>`, `<THE_LABEL_GIVEN_TO_OCWM_ISSUE>`
+
+## Example Workflow Job
+
+```yaml
+name: Add labeled PRs to OCWM agenda
+on:
+  workflow_dispatch:
+jobs:
+  automated-artifact-buidl:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ./operations/actions/automated-artifacts-build
+      with: 
+        AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
+        ORGANISATION: ${{vars.ORGANISATION}}
+        REPOSITORIES: ${{vars.REPOSITORIES}}
+        LABELS: ${{vars.LABELS}}
+```
+
+## Run
+
+This github actions has to be run manually with no input parameters.
