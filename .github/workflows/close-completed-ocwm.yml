@@ -1,22 +1,76 @@
-name: Close OCWM Issues Without Tasks or Completed Tasks
+name: Close issues with no tasks and a specific label
+
 on:
   schedule:
-    # Run the action every week on Monday at midnight
-    - cron: '0 0 * * 1'
+    - cron: '0 0 * * 0'  # Runs every Sunday at midnight
+
   repository_dispatch:
     types: close-issues
+
 jobs:
   close-issues:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Close issues without tasks or completed tasks
-        uses: peter-evans/close-issue-comment@v1
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-state: open
-          comment: 'Closing issue due to no tasks or all tasks completed.'
-          regex: '^- \[[xX ]\] .*'
-          invert-matching: false
-          label: 'Working Meeting'
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install @octokit/core
+    - name: Close issues
+      uses: actions/github-script@v6
+      env:
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        MY_LABEL: ${{ vars.OCWM_LABEL }}
+      with:
+        script: |
+          const octokit = require('@octokit/core').Octokit
+          const mygithub = new octokit({ auth: process.env.MY_TOKEN })
+          const label = process.env.MY_LABEL
+
+          const sevenDaysAgo = new Date()
+          sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
+          const dateString = sevenDaysAgo.toISOString().split('T')[0]
+
+          const pattern = `label:"${label}" is:open created:<${dateString}`
+
+
+
+          try {
+            const { data: issues } = await mygithub.request('GET /search/issues', {
+              q: pattern,
+              per_page: 100,
+            })
+            console.log(`Number of issues found: ${issues.total_count}`)
+            if (!Array.isArray(issues.items)) {
+              throw new Error('Invalid issues.items value')
+            }
+            const closeIssues = async (issues) => {
+              for (const issue of issues) {
+                const { data: issueData } = await mygithub.request('GET /repos/{owner}/{repo}/issues/{issue_number}', {
+                  owner: issue.repository_url.split('/').slice(-2, -1)[0],
+                  repo: issue.repository_url.split('/').slice(-1)[0],
+                  issue_number: issue.number,
+                })
+                const taskListRegex = /^\s*- \[[\sX]\]\s+/gm
+                const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g
+                const hasTasks = taskListRegex.test(issueData.body)
+                const hasIncompleteTasks = incompleteTaskRegex.test(issueData.body)
+                if (!hasTasks || !hasIncompleteTasks) {
+                  console.log(`Closing issue #${issue.number}`)
+                  await mygithub.request('POST /repos/{owner}/{repo}/issues/{issue_number}/comments', {
+                    owner: issue.repository_url.split('/').slice(-2, -1)[0],
+                    repo: issue.repository_url.split('/').slice(-1)[0],
+                    issue_number: issue.number,
+                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                  })
+                  await mygithub.request('PATCH /repos/{owner}/{repo}/issues/{issue_number}', {
+                    owner: issue.repository_url.split('/').slice(-2, -1)[0],
+                    repo: issue.repository_url.split('/').slice(-1)[0],
+                    issue_number: issue.number,
+                    state: 'closed',
+                  })
+                }
+              }
+            }
+            await closeIssues(issues.items)
+          } catch (error) {
+            console.error(`Unhandled error: ${error.message}`)
+          }
