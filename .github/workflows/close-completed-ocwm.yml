@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * 0'  # Runs every Sunday at midnight
 
   repository_dispatch:
-    types: close-issues
+    types: close-issues-ocwm
 
 jobs:
   close-issues:
