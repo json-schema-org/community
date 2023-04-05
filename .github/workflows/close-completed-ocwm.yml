@@ -1,0 +1,22 @@
+name: Close OCWM Issues Without Tasks or Completed Tasks
+on:
+  schedule:
+    # Run the action every week on Monday at midnight
+    - cron: '0 0 * * 1'
+  repository_dispatch:
+    types: close-issues
+jobs:
+  close-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Close issues without tasks or completed tasks
+        uses: peter-evans/close-issue-comment@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-state: open
+          comment: 'Closing issue due to no tasks or all tasks completed.'
+          regex: '^- \[[xX ]\] .*'
+          invert-matching: false
+          label: 'Working Meeting'
