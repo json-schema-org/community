@@ -189,7 +189,7 @@ If someone calls for a Test for Agreement, the facilitator for the decision disc
 
 The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
 
-The blocker/s should be prepared to commit to trying to find a solution, but not necessarily form and present a solution by themselves. The TSC will look to facilitate a number of workshops to help understand the blocking objections, and form a new or amended proposal as a result.
+The blocker/s should be prepared to commit to trying to find a solution, but not necessarily form and present a solution by themselves. The TSC will look to facilitate a number of workshops to help understand the blocking objections, and form a new or amended proposal as a result. If the blocker/s are unable or unwilling to participate in attempts to find a solution, after multiple attempts, the original proposal is moved to a vote, as defined in this document, but additionally requiring a 75% super majority to pass. This will be at the discression of the TSC Chairs.
 
 If someone feels a "Block" is being used for unfair reasons, such as targeting individuals or to gain some personal advantage, or any such reason that might be in breach of our Code of Conduct, they should immediately report it to the Code of Conduct committee. The Code of Conduct committee should report this to the TSC Chairs as soon as possible, and the decision is halted while the committee investigates the report.
 
