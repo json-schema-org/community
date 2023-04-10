@@ -19,6 +19,8 @@ jobs:
       env:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
         MY_LABEL: ${{ vars.OCWM_LABEL }}
+        OWNER: ${{ vars.ORGANISATION }}
+        REPO_NAMES: ${{ vars.REPOSITORIES }}
       with:
         script: |
           const octokit = require('@octokit/core').Octokit
@@ -29,7 +31,7 @@ jobs:
           sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
           const dateString = sevenDaysAgo.toISOString().split('T')[0]
 
-          const pattern = `label:"${label}" is:open created:<${dateString}`
+          const pattern = `label:"${label}" is:open created:<${dateString} repo:${{ env.REPO_NAMES }} org:${{ env.OWNER }}`
 
 
 
@@ -44,27 +46,24 @@ jobs:
             }
             const closeIssues = async (issues) => {
               for (const issue of issues) {
-                const { data: issueData } = await mygithub.request('GET /repos/{owner}/{repo}/issues/{issue_number}', {
-                  owner: issue.repository_url.split('/').slice(-2, -1)[0],
-                  repo: issue.repository_url.split('/').slice(-1)[0],
-                  issue_number: issue.number,
-                })
+                console.log('Issue:' + JSON.stringify(issue));
+                const repo = issue.repository_url.split('/').slice(-1)[0];
+                const issue_number = issue.number;
+
+                console.log('Repo:' + repo);
                 const taskListRegex = /^\s*- \[[\sX]\]\s+/gm
                 const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g
-                const hasTasks = taskListRegex.test(issueData.body)
-                const hasIncompleteTasks = incompleteTaskRegex.test(issueData.body)
+                const hasTasks = taskListRegex.test(issue.body)
+                const hasIncompleteTasks = incompleteTaskRegex.test(issue.body)
                 if (!hasTasks || !hasIncompleteTasks) {
                   console.log(`Closing issue #${issue.number}`)
-                  await mygithub.request('POST /repos/{owner}/{repo}/issues/{issue_number}/comments', {
-                    owner: issue.repository_url.split('/').slice(-2, -1)[0],
-                    repo: issue.repository_url.split('/').slice(-1)[0],
-                    issue_number: issue.number,
+                  console.log(`POST /repos/${{env.OWNER}}/${repo}/issues/${issue_number}/comments`);
+                  console.log(`PATCH /repos/${{env.OWNER}}/${repo}/issues/${issue_number}`);
+
+                  await mygithub.request(`POST /repos/${{env.OWNER}}/${repo}/issues/${issue_number}/comments`, {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   })
-                  await mygithub.request('PATCH /repos/{owner}/{repo}/issues/{issue_number}', {
-                    owner: issue.repository_url.split('/').slice(-2, -1)[0],
-                    repo: issue.repository_url.split('/').slice(-1)[0],
-                    issue_number: issue.number,
+                  await mygithub.request(`PATCH /repos/${{env.OWNER}}/${repo}/issues/${issue_number}`, {
                     state: 'closed',
                   })
                 }
