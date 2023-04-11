@@ -31,7 +31,7 @@ jobs:
           sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
           const dateString = sevenDaysAgo.toISOString().split('T')[0]
 
-          const pattern = `label:"${label}" is:open created:<${dateString} repo:${{ env.REPO_NAMES }} org:${{ env.OWNER }}`
+          const pattern = `label:"${label}" is:open created:<${dateString} repo:${ process.env.REPO_NAMES } org:${ process.env.OWNER }`
 
 
 
@@ -57,13 +57,13 @@ jobs:
                 const hasIncompleteTasks = incompleteTaskRegex.test(issue.body)
                 if (!hasTasks || !hasIncompleteTasks) {
                   console.log(`Closing issue #${issue.number}`)
-                  console.log(`POST /repos/${{env.OWNER}}/${repo}/issues/${issue_number}/comments`);
-                  console.log(`PATCH /repos/${{env.OWNER}}/${repo}/issues/${issue_number}`);
+                  console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
+                  console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-                  await mygithub.request(`POST /repos/${{env.OWNER}}/${repo}/issues/${issue_number}/comments`, {
+                  await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   })
-                  await mygithub.request(`PATCH /repos/${{env.OWNER}}/${repo}/issues/${issue_number}`, {
+                  await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
                     state: 'closed',
                   })
                 }
