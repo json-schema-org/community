@@ -21,13 +21,13 @@ jobs:
         OWNER: ${{ vars.ORGANISATION }}
         REPO: 'community'
         REPO_NAMES: ${{ vars.REPOSITORIES }}
-        LABELS: ${{ vars.LABELS }}
+        AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
+        OCWM_LABEL: ${{ vars.OCWM_LABEL }}
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
           try {         
             const repoNames = process.env.REPO_NAMES;
-            const labels = process.env.LABELS;
             const placeholder = process.env.PLACEHOLDER;
             console.log("Placeholder:" + placeholder);
 
@@ -35,25 +35,29 @@ jobs:
             const mygithub = new octokit({ auth: process.env.MY_TOKEN })
 
             let repositories = repoNames.split(",")
-            let targetLabel = encodeURIComponent(labels.split(',')[0])
-            let appendLabel = encodeURIComponent(labels.split(',')[1])
+            let targetLabel = process.env.OCWM_LABEL;
+            let appendLabel = process.env.AGENDA_LABEL;
+
             console.log("Repositories:" + repositories);
+            
+            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`);
+
+            const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`, {
+            })
+
+            console.log("workMeetings:" + JSON.stringify(workMeetings));
+
             for (let r = 0; r < repositories.length; r++) {
               console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`);
-              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}&per_page=1`);
 
-              const { data: items2add } = await mygithub.request(`GET /repos/${{env.OWNER}}/${repositories[r]}/issues?labels=${targetLabel}`, {
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`, {
               });
 
               console.log("Items to add:" + JSON.stringify(items2add));
 
-              const { data: workMeetings } = await mygithub.request(`GET /repos/${{env.OWNER}}/${{env.REPO}}/issues?labels=${appendLabel}&per_page=1`, {
-              })
-
-              console.log("workMeetings:" + JSON.stringify(workMeetings));
-
               try {
                   let body = workMeetings[0].body;
+                  let changesFlag = false;
                   for (let i = 0; i < items2add.length; i++) {
                       let url = items2add[i].html_url;
                       let author = "@" + items2add[i].user.login;
@@ -62,18 +66,22 @@ jobs:
                           let startIndex = parseInt(JSON.stringify(body.indexOf(placeholder)))
                           let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `| ${url} | ${author} |\r\n` + body.substring(startIndex, body.length));
                           body = JSON.parse(json_text);
+                          changesFlag = true;
                       }
                   }
-                  let template = JSON.stringify(JSON.stringify(body));
-                  let parsed = JSON.parse(JSON.parse(template));
 
-                  console.log(`PATCH /repos/${{env.OWNER}}/${{env.REPO}}/issues/${workMeetings[0].number}`);
+                  if (changesFlag){
+                    let template = JSON.stringify(JSON.stringify(body));
+                    let parsed = JSON.parse(JSON.parse(template));
 
-                  await mygithub.request(`PATCH /repos/${{env.OWNER}}/${{env.REPO}}/issues/${workMeetings[0].number}`, {
-                      body: parsed,
-                      milestone: null,
-                      state: 'open',
-                  })
+                    console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
+
+                    await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
+                        body: parsed,
+                        milestone: null,
+                        state: 'open',
+                    })
+                  }
               }
               catch (err) {
                   console.error("Error:"+err.message);
