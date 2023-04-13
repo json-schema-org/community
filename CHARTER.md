@@ -1,7 +1,5 @@
 # JSON Schema Org Charter
-<!-- This document is managed in the json-schema-org/.github GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
-
-<!-- While this document is being written, you can find the discussion to help determine what should be found here at https://github.com/json-schema-org/community/discussions/286 - This comment should be removed before merging -->
+<!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## Section 0: Guiding Principles
 The JSON Schema project is part of the OpenJS Foundation which operates transparently, openly, collaboratively, and ethically. We strive to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
@@ -147,8 +145,7 @@ The standard consensus process should progress through the following seven stage
 6. Test for agreement
 7. Determine resolution
 
-(These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while we test and firm up our specific requirements, and document them in our [Governance document](./GOVERNANCE.md))
-<!-- GOVERNANCE.md is not yet created. I would suggest that creating one which helps us through the seven stages of the consensus process be the first order of business. -->
+(These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while we test and firm up our specific requirements, and document them in our yet to be created [Governance document](./GOVERNANCE.md))
 
 All decisions that go through the standard consensus process must have an associated GitHub Issue, which allows those unable to attend meetings to participate.
 The opening comment of the Issue should be kept up to date as to the status of the decision.
