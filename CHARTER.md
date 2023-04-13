@@ -10,7 +10,7 @@ Having no structure in place usually leads to one that is informal and undocumen
 JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows annotation and validation of JSON documents.
 While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. We aim to enable these additional and emergent use cases.
 
-### 1.1: In-scope (optional)
+### 1.1: In-scope
 The scope of the JSON Schema project is split into two sections: primary and secondary concerns.
 Primary concerns are areas we wish to give focus to, while secondary concerns are more likely to require the creation of a Special Interest Group.
 
@@ -42,13 +42,13 @@ Secondary Concerns
 - Relational validation
 - Vocabularies registry
 
-### 1.2: Out-of-Scope (optional)
+### 1.2: Out-of-Scope
 Section Intentionally Left Blank
 
 ## Section 2: Relationship with OpenJS Foundation CPC.
 Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
 
-### 2.1 Other Formal Project Relationships (optional)
+### 2.1 Other Formal Project Relationships
 Section Intentionally Left Blank
 
 ## Section 3: JSON Schema Org Governing Body (TSC)
@@ -89,7 +89,7 @@ The TSC has final authority over this project including:
 
 In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
 
-### Section 4.1 Project Operations & Management (optional)
+### Section 4.1 Project Operations & Management
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
 ### Section 4.2: Decision-making and Voting
@@ -206,7 +206,7 @@ Either initially, or at any point during the process, any TSC member may suggest
 
 Non-public decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
-### Section 4.3: Other Project Roles (optional)
+### Section 4.3: Other Project Roles
 
 The JSON Schema project recognises the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
 
@@ -219,7 +219,7 @@ The following responsibilities are recognised as those requiring roles to be def
 - Education and training
 - Financial allocation approval, tracking, and auditing
 
-## Section 5: Definitions (optional)
+## Section 5: Definitions
 The JSON Schema project: The project which is housed by the OpenJS Foundation which operates as The JSON Schema Org.
 
 The JSON Schema Org: The people, policies, processes, activities, and artifacts, found within the GitHub json-schema-org.
