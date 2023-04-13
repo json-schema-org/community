@@ -74,6 +74,8 @@ A TSC member may be removed by vote from the TSC if, during a 3-month period, al
 - They do not participate in any TSC votes
 - They do not provide any form of excuse or no excuse is known for their absence
 
+The initial TSC members are @relequestual, @awwright, @gregsdennis, @Julian, @jdesrosiers, @karenetheridge, with @relequestual being the initial chair.
+
 ## Section 4: Roles & Responsibilities
 The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
 
