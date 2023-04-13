@@ -156,14 +156,14 @@ Transition between stages may be requested by anyone, but must be called by the 
 
 Stages 1 and 6 are required to be open for at least 7 days or until every TSC member has confirmed they wish to progress to the next stage (Progression will still be "called", as above). This includes signals of abstaining given automatically via a notification of period of leave from TSC activity. For stage 2, any TSC member may request a 7 day extension to allow for further consideration. Should there be no reasonable objection (determined by a TSC Chair), the minimum time will be extended by 7 days. A TSC member may request multiple extensions, however lack of justification may result in the TSC member being asked to consider abstaining instead. There are no other explicit time limits placed on the other stages of the process.
 
-Most of the discussion should happen within the associated Discussion. The Issue should mostly be used to updated and report progress the consensus process. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in associated Discussion, and any other relevant locations.
+Most of the discussion should happen within the associated Discussion. The Issue should mostly be used to update and report the progress of the consensus process. Groups looking to form a proposal or amend a proposal (stages 4 and 5) may make use of other additional Discussions or Issues, but these must be clearly linked. The opening comment should be updated to include links to relevant specific threads and comments in associated Discussion, and any other relevant locations.
 
-Moving to the 'Form a Proposal" stage should be approached when the group might feel able to combine ideas to form a single proposal. Multiple possible solutions should be discussed in the previous stage.
+Moving to the "Form a Proposal" stage should be approached when the group might feel able to combine ideas to form a single proposal. Multiple possible solutions should be discussed in the previous stage.
 
-The "Test for Agreement" step is not voting, and is in stead asking for "signals", which enable the consensus process to continue.
+The "Test for Agreement" step is not voting, and is instead asking for "signals", which enable the consensus process to continue.
 Voting should be considered a last resort if the consensus process has failed for a particular issue, to enable the project to move forward.
 
-If someone calls for a Test for Agreement, the facilitator for the decision discussion will review current proposal and may call to Test for Agreement. The facilitator will post a comment on the Issue (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
+If someone calls for a Test for Agreement, the facilitator for the decision discussion will review the current proposal and may call to Test for Agreement. The facilitator will post a comment on the Issue (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
 
 The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
 
@@ -198,7 +198,7 @@ For a vote to carry, a quorum of 75% is required by default.
 If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
 At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating an Issue in the 'TSC-private' repository.
 
-The topic and nature of non-public votes may remain non-public, including the results.(It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
+The topic and nature of non-public votes may remain non-public, including the results. (It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
 
 #### Documenting decisions
 
@@ -210,9 +210,9 @@ Non-public decisions should be documented (as an ADR or otherwise) in the privat
 
 ### Section 4.3: Other Project Roles
 
-The JSON Schema project recognises the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
+The JSON Schema project recognizes the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
 
-The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognise the additional roles.
+The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognize the additional roles.
 
 The following responsibilities are recognised as those requiring roles to be defined by the TSC:
 - Community and Industry connections
