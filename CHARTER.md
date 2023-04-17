@@ -70,8 +70,7 @@ The TSC may, at its discretion, invite any number of non-voting observers to par
 
 A TSC member may be removed by vote from the TSC if, during a 3-month period, all of the following are true:
 
-- They attend fewer than 25% of the regularly scheduled meetings
-- They do not participate in any TSC votes
+- They do not participate in any TSC related discussions or votes
 - They do not provide any form of excuse or no excuse is known for their absence
 
 The initial TSC members are @relequestual, @awwright, @gregsdennis, @Julian, @jdesrosiers, @karenetheridge, with @relequestual being the initial chair.
