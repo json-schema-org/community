@@ -164,7 +164,7 @@ Voting should be considered a last resort if the consensus process has failed fo
 
 If someone calls for a Test for Agreement, the facilitator for the decision discussion will review the current proposal and may call to Test for Agreement. The facilitator will post a comment on the Issue (using the provided template), linking to the current version of the proposal, and update the opening comment with a link to the new comment. TSC members will then be asked to signal their agreement using GitHub Reactions on the comment.
 
-The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the projects core principals or something that would harm the project.
+The signals include "Block". Any use of the "Block" signal will require a new or amended proposal to be worked on. A "Block" should be used to indicate a strong objection, such as something against the project's core principles or something that would harm the project.
 
 The blocker/s should be prepared to commit to trying to find a solution, but not necessarily form and present a solution by themselves. The TSC will look to facilitate a number of workshops to help understand the blocking objections, and form a new or amended proposal as a result. If the blocker/s are unable or unwilling to participate in attempts to find a solution, after multiple attempts, the original proposal is moved to a vote, as defined in this document, but additionally requiring a 75% super majority to pass. This will be at the discretion of the TSC Chairs.
 
