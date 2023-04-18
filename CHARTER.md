@@ -108,18 +108,18 @@ The Issue must:
 - Be labeled with `tsc-decision`
 - Use the provided template, unless there is a good reason not to do so
 
-At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signalling or voting. The TSC member must detail when they expect to return.
+At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signaling or voting. The TSC member must detail when they expect to return.
 
 ##### Quick consensus process
 
 In the event a TSC member feels the need for a decision to be expedited, they may create the decision discussion, indicating that they wish to use the quick process rather than the standard consensus process. This should be done by creating a new Issue in the TSC repository.
-In addition to the requirements above, the Issue must be labelled 'expedited'.
+In addition to the requirements above, the Issue must be labeled `expedited`.
 
-While an associated Discussion is not required, if one is used, it must be clearly linked in both directions, and be labelled with 'tsc-decision'.
+While an associated Discussion is not required, if one is used, it must be clearly linked in both directions, and be labeled with `tsc-decision`.
 
 A vote is called to see if other members agree. The vote takes place on the opening comment. This vote is different from the decision-making voting process, and only requires 3 (additional) votes in favour and none against to carry. If the vote carries, the quick process is started, otherwise the standard consensus process is started.
 
-The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for (in a follow up comment on the Issue. Not in the opening comment.), and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started. (Label 'expedited' should be removed and 'stage-1' added.)
+The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for (in a follow up comment on the Issue. Not in the opening comment.), and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started. (Label `expedited` should be removed and `stage-1` added.)
 
 ##### Standard consensus process
 
@@ -128,13 +128,13 @@ The standard consensus process is designed for all non-trivial decisions.
 A decision discussion may be started by creating an Issue and Discussion in the TSC repository.
 
 In addition to the requirements above, the Issue must:
-- Be labelled with 'stage-1'
+- Be labeled with `stage-1`
 - Link to the associated initial Discussion
 
 The Discussion must:
 - Link to the associated Issue
 - Include detailed introductory information about the decision that needs to be made
-- Be labelled with 'tsc-decision'
+- Be labeled with `tsc-decision`
 
 The standard consensus process should progress through the following seven stages.
 
@@ -175,7 +175,7 @@ Reports must remain anonymous, as per the Code of Conduct.
 
 The other signals that may be made when a Test For Agreement is called include "Reservations" and "Stand Aside". Both are signals which convey consent to let the proposal pass, however they may be conditional.
 
-Signalling "Reservations" means an agreement on the overall direction, however there is some desire to revise or amend the proposal somewhat. It is expected that the individuals signalling "Reservations" want to engage in reworking the proposal. The facilitator will check with each individual regarding the strength of the reservation, and later facilitate or direct discussion as required to amend and represent the proposal. If the individual/s do not wish to participate in reworking the proposal, their reservations should be logged as part of the decision record as unresolved.
+Signaling "Reservations" means an agreement on the overall direction, however there is some desire to revise or amend the proposal somewhat. It is expected that the individuals signalling "Reservations" want to engage in reworking the proposal. The facilitator will check with each individual regarding the strength of the reservation, and later facilitate or direct discussion as required to amend and represent the proposal. If the individual/s do not wish to participate in reworking the proposal, their reservations should be logged as part of the decision record as unresolved.
 
 If "Reservations" is signalled three consecutive times by the same individual/s, anyone may call for no further attempts to remediate the reservations, and the proposal will pass.
 
@@ -195,7 +195,7 @@ Voting will by default close after 7 days. Any member of the TSC may request a 7
 For a vote to carry, a quorum of 75% is required by default.
 
 If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
-At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating an Issue in the 'TSC-private' repository.
+At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating an Issue in the `TSC-private` repository.
 
 The topic and nature of non-public votes may remain non-public, including the results. (It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
 
@@ -221,6 +221,7 @@ The following responsibilities are recognised as those requiring roles to be def
 - Financial allocation approval, tracking, and auditing
 
 ## Section 5: Definitions
+
 The JSON Schema project: The project which is housed by the OpenJS Foundation which operates as The JSON Schema Org.
 
 The JSON Schema Org: The people, policies, processes, activities, and artifacts, found within the GitHub json-schema-org.
