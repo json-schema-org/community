@@ -105,7 +105,7 @@ When a TSC member looks for an issue to be discussed and a decision to be made, 
 Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
 The Issue must:
 - Include brief introductory information about the decision that needs to be made
-- Be labelled with 'tsc-decision'
+- Be labeled with `tsc-decision`
 - Use the provided template, unless there is a good reason not to do so
 
 At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signalling or voting. The TSC member must detail when they expect to return.
