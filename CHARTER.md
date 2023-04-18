@@ -1,12 +1,12 @@
 # JSON Schema Org Charter
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
-## Section 0: Guiding Principles
+## 0: Guiding Principles
 The JSON Schema project is part of the OpenJS Foundation which operates transparently, openly, collaboratively, and ethically. We strive to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
 Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
 
-## Section 1: Scope
+## 1: Scope
 JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows annotation and validation of JSON documents.
 While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. We aim to enable these additional and emergent use cases.
 
@@ -45,13 +45,13 @@ Secondary Concerns
 ### 1.2: Out-of-Scope
 Section Intentionally Left Blank
 
-## Section 2: Relationship with OpenJS Foundation CPC.
+## 2: Relationship with OpenJS Foundation CPC.
 Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
 
 ### 2.1 Other Formal Project Relationships
 Section Intentionally Left Blank
 
-## Section 3: JSON Schema Org Governing Body (TSC)
+## 3: JSON Schema Org Governing Body (TSC)
 The TSC is initially established from the observed major contributors who are currently active and in good standing.
 
 There is no maximum TSC membership size. The TSC must have a minimum of four members.
@@ -75,7 +75,7 @@ A TSC member may be removed by vote from the TSC if, during a 3-month period, al
 
 The initial TSC members are [Ben Hutton](https://github.com/relequestual), [Austin Wright](https://github.com/awwright), [Greg Dennis](https://github.com/gregsdennis), [Julian Berman](https://github.com/Julian), [Jason Desrosiers](https://github.com/jdesrosiers), and [Karen Etheridge](https://github.com/karenetheridge), with Ben Hutton being the initial chair.
 
-## Section 4: Roles & Responsibilities
+## 4: Roles & Responsibilities
 The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
 
 The TSC has final authority over this project including:
@@ -90,10 +90,10 @@ The TSC has final authority over this project including:
 
 In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
 
-### Section 4.1 Project Operations & Management
+### 4.1 Project Operations & Management
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
-### Section 4.2: Decision-making and Voting
+### 4.2: Decision-making and Voting
 The TSC follows a formal consensus seeking decision making model.
 In some situations, a vote may be preferable, however a vote will not be used to make the vast majority of decisions.
 In the unlikely case where it seems that consensus cannot be reached after multiple attempts, the decision process may be moved to resolve via a vote. This is not expected to happen, but defined as a backup.
@@ -207,7 +207,7 @@ Either initially, or at any point during the process, any TSC member may suggest
 
 Non-public decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
-### Section 4.3: Other Project Roles
+### 4.3: Other Project Roles
 
 The JSON Schema project recognizes the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
 
@@ -220,7 +220,7 @@ The following responsibilities are recognised as those requiring roles to be def
 - Education and training
 - Financial allocation approval, tracking, and auditing
 
-## Section 5: Definitions
+## 5: Definitions
 
 The JSON Schema project: The project which is housed by the OpenJS Foundation which operates as The JSON Schema Org.
 
