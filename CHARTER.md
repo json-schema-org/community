@@ -1,4 +1,4 @@
-# JSON Schema Org Charter
+# JSON Schema Charter
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## 0: Guiding Principles
@@ -51,7 +51,7 @@ Most large, complex open source communities have both a business and a technical
 ### 2.1 Other Formal Project Relationships
 Section Intentionally Left Blank
 
-## 3: JSON Schema Org Governing Body (TSC)
+## 3: JSON Schema Governing Body (TSC)
 The TSC is initially established from the observed major contributors who are currently active and in good standing.
 
 There is no maximum TSC membership size. The TSC must have a minimum of four members.
@@ -221,10 +221,6 @@ The following responsibilities are recognized as those requiring roles to be def
 - Financial allocation approval, tracking, and auditing
 
 ## 5: Definitions
-
-The JSON Schema project: The project which is housed by the OpenJS Foundation which operates as The JSON Schema Org.
-
-The JSON Schema Org: The people, policies, processes, activities, and artifacts, found within the GitHub json-schema-org.
 
 TSC: The Technical Steering Committee, delegated technical leadership for the JSON Schema project by the OpenJS Foundation.
 
