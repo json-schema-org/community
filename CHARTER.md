@@ -216,7 +216,6 @@ The TSC will look to create other roles as appropriate, and may update this docu
 The following responsibilities are recognized as those requiring roles to be defined by the TSC:
 - Community and Industry connections
 - Brand awareness, recognition, and health
-- Strategic allocation of funds and budgeting for investment in JSON Schema and its ecosystem
 - Education and training
 - Financial allocation approval, tracking, and auditing
 
