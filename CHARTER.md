@@ -217,7 +217,6 @@ The following responsibilities are recognized as those requiring roles to be def
 - Community and Industry connections
 - Brand awareness, recognition, and health
 - Education and training
-- Financial allocation approval, tracking, and auditing
 
 ## 5: Definitions
 
