@@ -2,7 +2,7 @@
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## 0: Guiding Principles
-The JSON Schema project is part of the OpenJS Foundation which operates transparently, openly, collaboratively, and ethically. We strive to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
+The JSON Schema project is part of the OpenJS Foundation. The JSON Schema project strives to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
 Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how we wish to operate. As such, we define the following charter which includes aspects of the governance model to which we subscribe and by which we operate.
 
