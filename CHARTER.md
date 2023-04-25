@@ -12,7 +12,7 @@ While JSON Schema's primary target is constraint-based data validation, it conti
 
 ### 1.1: In-scope
 The scope of the JSON Schema project is split into two sections: primary and secondary concerns.
-Primary concerns are areas we wish to give focus to, while secondary concerns are more likely to require the creation of a Special Interest Group.
+Primary concerns are areas we wish to give focus to, while secondary concerns are more likely to require the desire of the community to drive the work.
 
 Primary Concerns
 - Publication of the JSON Schema standard
