@@ -64,7 +64,7 @@ While the project is not looking to obtain "Impact" project status within the Op
 
 TSC members are expected to regularly participate in TSC activities.
 
-The TSC will meet regularly using virtual conferencing tools. The meeting will be directed by the TSC Chairperson(s). Responsibility for directing individual meetings may be delegated by a TSC Chairperson to any other TSC member. Minutes or an appropriate recording will be taken and made available to the community through accessible public postings.
+When the TSC meets using virtual conferencing tools, the meeting will be directed by the TSC Chairperson(s). Responsibility for directing individual meetings may be delegated by a TSC Chairperson to any other TSC member. Minutes or an appropriate recording will be taken and made available to the community through accessible public postings.
 
 The TSC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TSC discussions and meetings.
 
