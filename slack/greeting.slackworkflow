@@ -24,7 +24,7 @@
                   },
                   "has_button":true,
                   "button_label":"Do you like to intro yourself?",
-                  "message_text":":wave: Hey {{eec4a322-082c-4247-8cdd-b67d5eeee6aa==user}}, Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal Code of Conduct which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\n:mag: If you're looking for an implementation of JSON Schema, you should check out the implementations page.\n\n:book: If you're looking to learn the basics of JSON Schema, do check out our learning resources.\n\n:question: If you want to ask questions or discuss JSON Schema, the <#C5CF75URH> channel is the right place.\n\n:slack: For details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our GitHub Repository.\n\nFor now, please let us know who you are, what you do, and why you've joined us today by sharing your introduction at  <#C03HFKT0M4Z> channel or using the button below!",
+                  "message_text":":wave: Hey {{eec4a322-082c-4247-8cdd-b67d5eeee6aa==user}}, Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal Code of Conduct which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\n:mag: If you're looking for an implementation of JSON Schema, you should check out the implementations page.\n\n:book: If you're looking to learn the basics of JSON Schema, do check out our learning resources.\n\n:question: If you want to ask questions or discuss JSON Schema, the <#C5CF75URH> channel is the right place.\n\n:slack: For details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our GitHub Repository.\n\nFor now, please let us know who you are, what you do and why you've joined us today by introducing yourself in the <#C03HFKT0M4Z> channel or by using the button below!",
                   "message_blocks":[
                      {
                         "type":"rich_text",
@@ -127,7 +127,7 @@
                                     "type":"link"
                                  },
                                  {
-                                    "text":".\n\nFor now, please let us know who you are, what you do, and why you've joined us today by sharing your introduction at  ",
+                                    "text":".\n\nFor now, please let us know who you are, what you do and why you've joined us today by introducing yourself in the ",
                                     "type":"text"
                                  },
                                  {
@@ -135,7 +135,7 @@
                                     "channel_id":"C03HFKT0M4Z"
                                  },
                                  {
-                                    "text":" channel or using the button below!",
+                                    "text":" channel or by using the button below!",
                                     "type":"text"
                                  }
                               ]
