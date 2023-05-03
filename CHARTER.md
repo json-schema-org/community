@@ -100,7 +100,7 @@ In the unlikely case where it seems that consensus cannot be reached after multi
 
 #### Decision-making via consensus
 
-When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a non-public discussion and decision. The TSC member must reach out to the TSC chairs to request a non-public discussion and decision. A discussion and decision will be non-public at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be non-public in rare circumstances.
+When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a private discussion and decision. The TSC member must reach out to the TSC chairs to request a private discussion and decision. A discussion and decision will be private at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be private in rare circumstances.
 
 Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
 The Issue must:
@@ -194,10 +194,10 @@ Voting will by default close after 7 days. Any member of the TSC may request a 7
 
 For a vote to carry, a quorum of 75% is required by default.
 
-If a TSC member wants to call for a vote that they wish to be non-public, they must do so by contacting the TSC Chairs directly.
-At the discretion of the TSC Chairs, a vote may be made non-public, and will then be handled by creating an Issue in the `TSC-private` repository.
+If a TSC member wants to call for a vote that they wish to be private, they must do so by contacting the TSC Chairs directly.
+At the discretion of the TSC Chairs, a vote may be made private, and will then be handled by creating an Issue in the `TSC-private` repository.
 
-The topic and nature of non-public votes may remain non-public, including the results. (It is expected that vast majority of votes will be public. Non-public voting should only be used in exceptional circumstances.)
+The topic and nature of private votes may remain private, including the results. (It is expected that vast majority of votes will be public. Private voting should only be used in exceptional circumstances.)
 
 #### Documenting decisions
 
@@ -205,7 +205,7 @@ Either initially, or at any point during the process, any TSC member may suggest
 
 (The quick consensus process does not require an Any Decision Record, but the decision should be minuted.)
 
-Non-public decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
+Private decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
 ### 4.3: Other Project Roles
 
