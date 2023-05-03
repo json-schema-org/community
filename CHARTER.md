@@ -10,11 +10,11 @@ Having no structure in place usually leads to one that is informal and undocumen
 
 ## 1: Scope
 JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows annotation and validation of JSON documents.
-While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. We aim to enable these additional and emergent use cases.
+While JSON Schema's primary target is constraint-based data validation, it continues to be used across the whole stack, in different stages of a given project, and for purposes beyond its original design. The JSON Schema project aims to enable these additional and emergent use cases.
 
 ### 1.1: In-scope
 The scope of the JSON Schema project is split into two sections: primary and secondary concerns.
-Primary concerns are areas we wish to give focus to, while secondary concerns are more likely to require the desire of the community to drive the work.
+Primary concerns are areas the JSON Schema project wish to give focus to, while secondary concerns are more likely to require the desire of the community to drive the work.
 
 Primary Concerns
 - Publication of the JSON Schema standard
@@ -148,7 +148,7 @@ The standard consensus process should progress through the following seven stage
 6. Test for agreement
 7. Determine resolution
 
-(These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while we test and firm up our specific requirements, and document them in our yet to be created [Governance document](./GOVERNANCE.md))
+(These stages are those defined by the [Seeds For Change's Consensus Decision Making document](https://seedsforchange.org.uk/consensus). Please use that document as a rough guide for specific steps while the JSON Schema project tests and firms up our specific requirements, and document them in our yet to be created [Governance document](./GOVERNANCE.md))
 
 All decisions that go through the standard consensus process must have an associated GitHub Issue, which allows those unable to attend meetings to participate.
 The opening comment of the Issue should be kept up to date as to the status of the decision.
