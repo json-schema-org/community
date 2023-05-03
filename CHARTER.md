@@ -75,8 +75,6 @@ A TSC member may be removed by vote from the TSC if, during a 3-month period, al
 - They do not participate in any TSC related discussions or votes
 - They do not provide any form of excuse or no excuse is known for their absence
 
-The initial TSC members are [Ben Hutton](https://github.com/relequestual), [Austin Wright](https://github.com/awwright), [Greg Dennis](https://github.com/gregsdennis), [Julian Berman](https://github.com/Julian), [Jason Desrosiers](https://github.com/jdesrosiers), and [Karen Etheridge](https://github.com/karenetheridge), with Ben Hutton being the initial chair.
-
 ## 4: Roles & Responsibilities
 The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
 
