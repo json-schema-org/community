@@ -1,102 +1,199 @@
 {
-  "source_id": "414510517562912920",
-  "version": "1",
-  "workflow": {
-    "name": "Greeting",
-    "blueprint": {
-      "version": "1",
-      "trigger": {
-        "type": "member_joined_channel",
-        "id": "eec4a322-082c-4247-8cdd-b67d5eeee6aa",
-        "config": {
-          "channel": {
-            "value": "C5CF75URH"
-          }
-        }
-      },
-      "steps": [
-        {
-          "type": "message",
-          "id": "c795fd83-f6c7-48de-b11a-937a1702d785",
-          "config": {
-            "user": {
-              "ref": "eec4a322-082c-4247-8cdd-b67d5eeee6aa==user"
+   "source_id":"414510517562912920",
+   "version":"1",
+   "workflow":{
+      "name":"Welcome",
+      "blueprint":{
+         "version":"1",
+         "trigger":{
+            "type":"member_joined_channel",
+            "id":"eec4a322-082c-4247-8cdd-b67d5eeee6aa",
+            "config":{
+               "channel":{
+                  "value":"C5CF75URH"
+               }
+            }
+         },
+         "steps":[
+            {
+               "type":"message",
+               "id":"c795fd83-f6c7-48de-b11a-937a1702d785",
+               "config":{
+                  "user":{
+                     "ref":"eec4a322-082c-4247-8cdd-b67d5eeee6aa==user"
+                  },
+                  "has_button":true,
+                  "button_label":"Do you like to intro yourself?",
+                  "message_text":":wave: Hey {{eec4a322-082c-4247-8cdd-b67d5eeee6aa==user}}, Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal Code of Conduct which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\n:mag: If you're looking for an implementation of JSON Schema, you should check out the implementations page.\n\n:book: If you're looking to learn the basics of JSON Schema, do check out our learning resources.\n\n:question: If you want to ask questions or discuss JSON Schema, the <#C5CF75URH> channel is the right place.\n\n:slack: For details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our GitHub Repository.\n\nFor now, please let us know who you are, what you do and why you've joined us today by introducing yourself in the <#C03HFKT0M4Z> channel or by using the button below!",
+                  "message_blocks":[
+                     {
+                        "type":"rich_text",
+                        "elements":[
+                           {
+                              "type":"rich_text_section",
+                              "elements":[
+                                 {
+                                    "name":"wave",
+                                    "type":"emoji",
+                                    "unicode":"1f44b"
+                                 },
+                                 {
+                                    "text":" Hey ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "id":"eec4a322-082c-4247-8cdd-b67d5eeee6aa==user",
+                                    "type":"workflowtoken",
+                                    "property":"",
+                                    "data_type":"user"
+                                 },
+                                 {
+                                    "text":", Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "url":"https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md",
+                                    "text":"Code of Conduct",
+                                    "type":"link"
+                                 },
+                                 {
+                                    "text":" which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\n",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "name":"mag",
+                                    "type":"emoji",
+                                    "unicode":"1f50d"
+                                 },
+                                 {
+                                    "text":" If you're looking for an implementation of JSON Schema, you should check out the ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "url":"https://json-schema.org/implementations.html",
+                                    "text":"implementations page",
+                                    "type":"link"
+                                 },
+                                 {
+                                    "text":".\n\n",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "name":"book",
+                                    "type":"emoji",
+                                    "unicode":"1f4d6"
+                                 },
+                                 {
+                                    "text":" If you're looking to learn the basics of JSON Schema, do check out our ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "url":"https://json-schema.org/learn",
+                                    "text":"learning resources",
+                                    "type":"link"
+                                 },
+                                 {
+                                    "text":".\n\n",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "name":"question",
+                                    "type":"emoji",
+                                    "unicode":"2753"
+                                 },
+                                 {
+                                    "text":" If you want to ask questions or discuss JSON Schema, the ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "type":"channel",
+                                    "channel_id":"C5CF75URH"
+                                 },
+                                 {
+                                    "text":" channel is the right place.\n\n",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "name":"slack",
+                                    "type":"emoji"
+                                 },
+                                 {
+                                    "text":" For details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "url":"https://github.com/json-schema-org/community/tree/main/slack/other%20channels",
+                                    "text":"GitHub Repository",
+                                    "type":"link"
+                                 },
+                                 {
+                                    "text":".\n\nFor now, please let us know who you are, what you do and why you've joined us today by introducing yourself in the ",
+                                    "type":"text"
+                                 },
+                                 {
+                                    "type":"channel",
+                                    "channel_id":"C03HFKT0M4Z"
+                                 },
+                                 {
+                                    "text":" channel or by using the button below!",
+                                    "type":"text"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               }
             },
-            "has_button": false,
-            "message_text": "Hey {{eec4a322-082c-4247-8cdd-b67d5eeee6aa==user}}, Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal Code of Conduct which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\nIf you're looking for an implementation of JSON Schema, you should check out the implementations page.\n\nIf you're looking to learn the basics of JSON Schema, do check out our learning resources.\n\nIf you want to ask questions or discuss JSON Schema, the <#C5CF75URH|general> channel is the right place.\n\nFor details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our GitHub Repository.\n\nFor now, please let us know who you are, what you do, and why you've joined us today!",
-            "message_blocks": [
-              {
-                "type": "rich_text",
-                "elements": [
-                  {
-                    "type": "rich_text_section",
-                    "elements": [
-                      {
-                        "text": "Hey ",
-                        "type": "text"
-                      },
-                      {
-                        "id": "eec4a322-082c-4247-8cdd-b67d5eeee6aa==user",
-                        "type": "workflowtoken",
-                        "property": "",
-                        "data_type": "user"
-                      },
-                      {
-                        "text": ", Welcome to the JSON Schema Slack Server!\n\nWhatever the reason you chose to join us, we want you to know, we're glad you're here.\n\nWe have a formal ",
-                        "type": "text"
-                      },
-                      {
-                        "url": "https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md",
-                        "text": "Code of Conduct",
-                        "type": "link"
-                      },
-                      {
-                        "text": " which we invite you to review. It is short, and reading it is respectful to the community you've chosen to enter.\n\nIf you need help, or you're looking to get involved with the JSON Schema community, you're in the right place.\n\nThis server includes the specification authors, many implementers, and a large number of helpful individuals from the community.\n\nIf you're looking for an implementation of JSON Schema, you should check out the ",
-                        "type": "text"
-                      },
-                      {
-                        "url": "https://json-schema.org/implementations.html",
-                        "text": "implementations page",
-                        "type": "link"
-                      },
-                      {
-                        "text": ".\n\nIf you're looking to learn the basics of JSON Schema, do check out our ",
-                        "type": "text"
-                      },
-                      {
-                        "url": "https://json-schema.org/learn",
-                        "text": "learning resources",
-                        "type": "link"
-                      },
-                      {
-                        "text": ".\n\nIf you want to ask questions or discuss JSON Schema, the ",
-                        "type": "text"
-                      },
-                      {
-                        "type": "channel",
-                        "channel_id": "C5CF75URH"
-                      },
-                      {
-                        "text": " channel is the right place.\n\nFor details on other channels, click on the plus icon on the left of the message text area, followed by \"channel info\", or you can view the same information on our ",
-                        "type": "text"
-                      },
-                      {
-                        "url": "https://github.com/json-schema-org/community/tree/main/slack/other%20channels",
-                        "text": "GitHub Repository",
-                        "type": "link"
-                      },
-                      {
-                        "text": ".\n\nFor now, please let us know who you are, what you do, and why you've joined us today!",
-                        "type": "text"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    }
-  }
+            {
+               "type":"dialog",
+               "id":"07184126-9923-4037-a2b7-a804e90c07b6",
+               "config":{
+                  "user":{
+                     "ref":"eec4a322-082c-4247-8cdd-b67d5eeee6aa==user"
+                  },
+                  "dialog_title":"Welcome to the Community",
+                  "dialog_elements":[
+                     {
+                        "name":"6ed2382f-3bda-454b-ad26-4c434f7a4340",
+                        "type":"text",
+                        "label":"Your Name",
+                        "subtype":"",
+                        "optional":false,
+                        "placeholder":""
+                     },
+                     {
+                        "name":"bf69bbe3-23d9-442e-a052-34f15e327021",
+                        "type":"textarea",
+                        "label":"About you",
+                        "optional":true
+                     }
+                  ],
+                  "results_channel":{
+                     "value":"C03HFKT0M4Z"
+                  },
+                  "dialog_submit_label":"",
+                  "delivery_button_label":"Share your intro!",
+                  "delivery_message_text":"Tell us about yourself!",
+                  "delivery_dialog_blocks":[
+                     {
+                        "type":"rich_text",
+                        "elements":[
+                           {
+                              "type":"rich_text_section",
+                              "elements":[
+                                 {
+                                    "text":"Tell us about yourself!",
+                                    "type":"text"
+                                 }
+                              ]
+                           }
+                        ]
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }
 }
