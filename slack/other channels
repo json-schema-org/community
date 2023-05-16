@@ -1,13 +1,16 @@
-Here are some of our other channels and why you might want to join them.
+Here are some of our other channels and why you might want to join them:
 
-#implementers - Those implementing the specification and questions about implementation details
-#specification - Potential changes to the JSON Schema specification
-#tests - Development of the official test suite
-#community - Development of the JSON Schema community and organization
-#in-the-wild - Share references to observed uses of JSON Schemas in other applications or projects, and any JSON Schema related content
+* #implementers - Those implementing the specification and questions about implementation details
+* #specification - Potential changes to the JSON Schema specification
+* #tests - Development of the official test suite
+* #documentation - Discuss, brainstorm and recommend documentation on json-schema.org or elsewhere
 
-#watercooler - Space to chat about anything off topic or just catch up
-#z-random - Anything that's really far off topic
+* #announcements - Announcements from the JSON Schema organisation
+* #community-mgmt - Discussing the community itself, how it operates, and how we would like it to operate.
 
-#stack-overflow - Automated feed of StackOverflow questions tagged with JSON Schema
-#github - Automated feed of Github Issues and Pull Requests
+* #in-the-wild - Share references to observed uses of JSON Schemas in other applications or projects, and any JSON Schema related content
+* #stack-overflow - Automated feed of StackOverflow questions tagged with JSON Schema
+* #github - Automated feed of Github Issues and Pull Requests
+
+* #watercooler - Space to chat about anything off topic or just catch up
+* #z-random - Anything that's really far off topic
