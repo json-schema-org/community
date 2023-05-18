@@ -1,0 +1,94 @@
+name: Search for issues and PR labeled 'agenda' and add them to the agenda
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Runs every Sunday at midnight
+
+  repository_dispatch:
+    types: add-issues-ocwm
+
+jobs:
+  search_and_add:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm install @octokit/core
+    - name: Adding Issues
+      uses: actions/github-script@v6
+      env:
+        PLACEHOLDER: '<!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->'
+        OWNER: ${{ vars.ORGANISATION }}
+        REPO: 'community'
+        REPO_NAMES: ${{ vars.REPOSITORIES }}
+        AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
+        OCWM_LABEL: ${{ vars.OCWM_LABEL }}
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      with:
+        script: |
+          try {         
+            const repoNames = process.env.REPO_NAMES;
+            const placeholder = process.env.PLACEHOLDER;
+            console.log("Placeholder:" + placeholder);
+
+            const octokit = require('@octokit/core').Octokit  
+            const mygithub = new octokit({ auth: process.env.MY_TOKEN })
+
+            let repositories = repoNames.split(",")
+            let targetLabel = process.env.OCWM_LABEL;
+            let appendLabel = process.env.AGENDA_LABEL;
+
+            console.log("Repositories:" + repositories);
+            
+            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`);
+
+            const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`, {
+            })
+
+            console.log("workMeetings:" + JSON.stringify(workMeetings));
+
+            for (let r = 0; r < repositories.length; r++) {
+              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`);
+
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`, {
+              });
+
+              console.log("Items to add:" + JSON.stringify(items2add));
+
+              try {
+                  let body = workMeetings[0].body;
+                  let changesFlag = false;
+                  for (let i = 0; i < items2add.length; i++) {
+                      let url = items2add[i].html_url;
+                      let author = "@" + items2add[i].user.login;
+                      let search = parseInt(JSON.stringify(body).search(url));
+                      if (search === -1) {
+                          let startIndex = parseInt(JSON.stringify(body.indexOf(placeholder)))
+                          let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `| ${url} | ${author} |\r\n` + body.substring(startIndex, body.length));
+                          body = JSON.parse(json_text);
+                          changesFlag = true;
+                      }
+                  }
+
+                  if (changesFlag){
+                    let template = JSON.stringify(JSON.stringify(body));
+                    let parsed = JSON.parse(JSON.parse(template));
+
+                    console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
+
+                    await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
+                        body: parsed,
+                        milestone: null,
+                        state: 'open',
+                    })
+                  }
+              }
+              catch (err) {
+                  console.error("Error:"+err.message);
+                  console.log("There is no OCWM available");
+              }
+
+            }
+          } catch (error) {
+            console.error(`Unhandled error: ${error.message}`)
+          }   
