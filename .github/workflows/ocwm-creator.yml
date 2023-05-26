@@ -1,0 +1,59 @@
+name: Create OCWM weekly
+
+on:
+  schedule:
+    - cron: "0 9 * * 2"
+
+  repository_dispatch:
+    types: ocwm-creator
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+    - name: Generate Issue Title
+      id: create-title
+      run: |
+        date=$(date -u -d "6 days" +%Y-%m-%d)
+        echo "title=Open Community Working Meeting ${date} - 14:00 PT" >> "$GITHUB_OUTPUT"
+
+    - name: Create Issue using Template
+      id: create-issue
+      uses: peter-evans/create-issue-from-file@v4
+      with:
+        title: ${{ steps.create-title.outputs.title }}
+        content-filepath: .github/ISSUE_TEMPLATE/open_community_working_meeting.md
+        labels: 'Working Meeting'
+        token: ${{ secrets.AUTH_TOKEN }}
+
+    - name: Install dependencies
+      run: npm install @octokit/core
+
+    - name: Update Issue Body
+      uses: actions/github-script@v6
+      env:
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      with:
+        script: |
+          const octokit = require('@octokit/core').Octokit;  
+          const mygithub = new octokit({ auth: process.env.MY_TOKEN });
+          const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
+
+          const { data: ocwmissue } = await mygithub.request(`GET /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
+          })
+
+          console.log("OCWM Issue:" + JSON.stringify(ocwmissue));
+
+          const newBody = `## ${ocwmissue.title}\n\n${ocwmissue.body.split('\n').slice(6).join('\n')}`;
+          
+          await mygithub.request(`PATCH /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
+              body: newBody,
+              milestone: null,
+              state: 'open',
+          })
