@@ -35,22 +35,22 @@ jobs:
             const mygithub = new octokit({ auth: process.env.MY_TOKEN })
 
             let repositories = repoNames.split(",")
-            let targetLabel = process.env.OCWM_LABEL;
-            let appendLabel = process.env.AGENDA_LABEL;
+            let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
+            let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
 
             console.log("Repositories:" + repositories);
             
-            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`);
+            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
 
-            const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${appendLabel}&per_page=1`, {
+            const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`, {
             })
 
             console.log("workMeetings:" + JSON.stringify(workMeetings));
 
             for (let r = 0; r < repositories.length; r++) {
-              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`);
+              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
 
-              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${targetLabel}`, {
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {
               });
 
               console.log("Items to add:" + JSON.stringify(items2add));
@@ -64,7 +64,7 @@ jobs:
                       let search = parseInt(JSON.stringify(body).search(url));
                       if (search === -1) {
                           let startIndex = parseInt(JSON.stringify(body.indexOf(placeholder)))
-                          let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `| ${url} | ${author} |\r\n` + body.substring(startIndex, body.length));
+                          let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `\n| ${url} | ${author} |\r\n` + body.substring(startIndex, body.length));
                           body = JSON.parse(json_text);
                           changesFlag = true;
                       }
