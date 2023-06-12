@@ -23,6 +23,8 @@ Agenda: Compiling!
 | [TOPIC] [IssuePRDiscussion] | [owner] |
 <!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->
 
+You can have a PR or an issue added to this agenda by just adding them the `agenda` label.
+
 AOB?
 If you want to discuss any other business not on the agenda, please add comments during the meeting.
 If we do not complete the agenda, your discussion item will likely be rolled over to the next call.
