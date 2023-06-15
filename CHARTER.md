@@ -22,9 +22,6 @@ Primary Concerns
   - Semantic annotation of JSON data
   - Extensibility
 - Critical tooling
-  - Creation of new
-  - Ingestion of existing
-  - Long term support
 - Documentation
 - Test suite
 - Community
