@@ -65,6 +65,8 @@ TSC members are expected to regularly participate in TSC activities.
 
 When the TSC meets using virtual conferencing tools, the meeting will be directed by the TSC Chairperson(s). Responsibility for directing individual meetings may be delegated by a TSC Chairperson to any other TSC member. Minutes or an appropriate recording will be taken and made available to the community through accessible public postings.
 
+At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signaling or voting. The TSC member must detail when they expect to return.
+
 The TSC may, at its discretion, invite any number of non-voting observers to participate in the public portion of TSC discussions and meetings.
 
 A TSC member may be removed by vote from the TSC if, during a 3-month period, all of the following are true:
@@ -106,8 +108,6 @@ The Issue must:
 - Include brief introductory information about the decision that needs to be made
 - Be labeled with `tsc-decision`
 - Use the provided template, unless there is a good reason not to do so
-
-At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signaling or voting. The TSC member must detail when they expect to return.
 
 ##### Quick consensus process
 
