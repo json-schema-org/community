@@ -99,6 +99,8 @@ In the unlikely case where it seems that consensus cannot be reached after multi
 
 When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a private discussion and decision. The TSC member must reach out to the TSC chairs to request a private discussion and decision. A discussion and decision will be private at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be private in rare circumstances.
 
+The kinds of discussions which should be private include security reports or discussions with an entity where it might not be desireable to be made public knowledge to either party. This could include details of case studies or partnerships which are not yet concluded or published, where either party may need a final approval for publication or wishes for coordinated or scheduled public publication.
+
 Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
 The Issue must:
 - Include brief introductory information about the decision that needs to be made
@@ -195,6 +197,8 @@ If a TSC member wants to call for a vote that they wish to be private, they must
 At the discretion of the TSC Chairs, a vote may be made private, and will then be handled by creating an Issue in the `TSC-private` repository.
 
 The topic and nature of private votes may remain private, including the results. (It is expected that vast majority of votes will be public. Private voting should only be used in exceptional circumstances.)
+
+The kinds of votes which should be private include things related to security reports or discussions with an entity where it might not be desireable to be made public knowledge to either party. This could include details of case studies or partnerships which are not yet concluded or published, where either party may need a final approval for publication or wishes for coordinated or scheduled public publication.
 
 #### Documenting decisions
 
