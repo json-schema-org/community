@@ -83,7 +83,7 @@ The following responsibilities are recognized as those requiring roles to be def
 
 ## 5: Definitions
 
-TSC: The Technical Steering Committee, delegated technical leadership for the JSON Schema project by the OpenJS Foundation.
+TSC: The JSON Schema Technical Steering Committee, delegated technical leadership for the JSON Schema project by the OpenJS Foundation.
 
 ---
 
