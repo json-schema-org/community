@@ -20,6 +20,7 @@ Primary Concerns
 - Publication of the JSON Schema standard
   - Validation of JSON data
   - Semantic annotation of JSON data
+  - Interoperability
   - Extensibility
 - Critical tooling
 - Documentation
