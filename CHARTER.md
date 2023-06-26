@@ -61,25 +61,9 @@ See GOVERNANCE.md
 ### 4.1 Project Operations & Management
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
-### 4.2: Decision-making and Voting
-The TSC follows a formal consensus seeking decision making model.
-In some situations, a vote may be preferable, however a vote will not be used to make the vast majority of decisions.
-In the unlikely case where it seems that consensus cannot be reached after multiple attempts, the decision process may be moved to resolve via a vote. This is not expected to happen, but defined as a backup.
-
 #### Decision-making via consensus and voting, and documenting decisions
 
 See GOVERNANCE.md
-
-### 4.3: Other Project Roles
-
-The JSON Schema project recognizes the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
-
-The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognize the additional roles.
-
-The following responsibilities are recognized as those requiring roles to be defined by the TSC:
-- Community and Industry connections
-- Brand awareness, recognition, and health
-- Education and training
 
 ## 5: Definitions
 

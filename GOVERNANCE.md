@@ -49,6 +49,11 @@ In joining the TSC, members commit to communicate on a regular basis and respond
 
 ## Decision Making
 
+### Decision-making and Voting
+The TSC follows a formal consensus seeking decision making model.
+In some situations, a vote may be preferable, however a vote will not be used to make the vast majority of decisions.
+In the unlikely case where it seems that consensus cannot be reached after multiple attempts, the decision process may be moved to resolve via a vote. This is not expected to happen, but defined as a backup.
+
 ### Decision-making via consensus
 
 When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a private discussion and decision. The TSC member must reach out to the TSC chairs to request a private discussion and decision. A discussion and decision will be private at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be private in rare circumstances.
@@ -160,6 +165,17 @@ Either initially, or at any point during the process, any TSC member may suggest
 
 Private decisions should be documented (as an ADR or otherwise) in the private `TSC-private` repository.
 
+
+## Other Project Roles
+
+The JSON Schema project recognizes the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
+
+The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognize the additional roles.
+
+The following responsibilities are recognized as those requiring roles to be defined by the TSC:
+- Community and Industry connections
+- Brand awareness, recognition, and health
+- Education and training
 
 ---
 
