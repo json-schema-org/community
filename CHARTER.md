@@ -18,8 +18,8 @@ Primary concerns are areas the JSON Schema project wish to give focus to, while 
 
 Primary Concerns
 - Publication of the JSON Schema standard
-  - Validation of JSON data
-  - Semantic annotation of JSON data
+  - Validation of JSON-compatible data
+  - Semantic annotation of JSON-compatible data
   - Interoperability
   - Extensibility
 - Critical tooling
