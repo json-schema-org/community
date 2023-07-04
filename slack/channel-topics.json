@@ -27,6 +27,7 @@
     "specification": "Potential changes to the specification text of JSON Schema",
     "twitter-mentions": "This channel is only for JSON Schema's Twitter mentions. Kindly do not discuss anything here.",
     "hyper-schema": "Discussions and queries related to vocabulary for annotating JSON documents with hyperlinks.",
-    "github": "Github stream of activity. You probably want to switch notifications to mention only mode!"
+    "github": "Github stream of activity. You probably want to switch notifications to mention only mode!",
+    "tsc-discussion": "A public place for the Technical Steering Committee to discuss current activities."
   }
 }
