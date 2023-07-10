@@ -4,8 +4,6 @@
 ## 0: Guiding Principles
 The JSON Schema project is part of the OpenJS Foundation. The JSON Schema project strives to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
-Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC"). OpenJS Foundation's business leadership is the Board of Directors (the "Board").
-
 Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how the TSC wish to operate. As such, the JSON Schema project define the following charter which includes aspects of the governance model to which the TSC subscribe and by which the TSC operate.
 
 ## 1: Scope
