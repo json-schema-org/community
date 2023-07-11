@@ -27,6 +27,7 @@ Primary Concerns
   - Enabling schema authors
   - Enabling implementers
   - Engaging with industry
+  - Engaging with upstream and downstream standards and projects
   - Communicating value
   - Ensuring the sustainability of the project
 
@@ -41,7 +42,7 @@ Secondary Concerns
 - Vocabularies registry
 
 ### 1.2: Out-of-Scope
-While the JSON Schema project has no control over the specifications it uses (such as JSON and IRI), nor specifications that use JSON Schema (such as OpenAPI and AsyncAPI), the JSON Schema project has, and continues to, provide expert opinion, advice, and support, as time allows. JSON Schema recognizes the importance and value of the ecosystem surrounding JSON Schema, and JSON Schema encourage those developing standards and tooling to reach out at any time.
+Standards that the JSON Schema project uses (such as JSON and IRI), nor standards and projects that use JSON Schema (such as OpenAPI and AsyncAPI), are not things which the JSON Schema project has any control over.
 
 ## 2: Relationship with OpenJS Foundation CPC.
 Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
