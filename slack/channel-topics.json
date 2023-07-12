@@ -2,7 +2,7 @@
   "channels": {
     "announcements": "Announcements from the JSON Schema organisation",
     "asyncapi": "Shared channel for JSON Schema and AsyncAPI slack servers. Ask questions, get help.",
-    "community": "Discussing our community, how it operates, and how we would like it to operate.",
+    "community-mgmt": "Discussing our community, how it operates, and how we would like it to operate.",
     "documentation": "Discussing the documentation of JSON Schema itself",
     "draft-publication": "Discussions related to the drafts to be published next",
     "events": "Discussions and queries related to any events related to JSON Schema community.",
