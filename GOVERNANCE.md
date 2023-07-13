@@ -9,13 +9,7 @@ For context, see https://github.com/json-schema-org/community/pull/325
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## JSON Schema Governing Body (TSC)
-The JSON Schema Technical Steering Committee (TSC) is initially established from the observed major contributors who are currently active and in good standing.
-
-There is no maximum TSC membership size. The TSC must have a minimum of four members.
-
-Changes to TSC membership should be posted in the agenda, and may be suggested as any other agenda item.
-
-TSC memberships are not time-limited.
+--- content migrated to Charter.md
 
 While the project is not looking to obtain "Impact" project status within the OpenJS Foundation, there is no requirement set out to limit the number of TSC members by employer. It is in some cases considered difficult or even unhelpful for the project to limit the number or percentage of TSC members by employer (especially when an employer has employed individuals already active in the community to work exclusively on the open source project). While at this time there are no limits on TSC membership by employer, the TSC will strive to keep to at least less than 50%, ideally 33% (One third, one in three). The TSC will re-evaluate this specific clause at least every six months, and aim to revise it within one year to meet the "no more than 1/3 employer member affiliation" mandate.
 
@@ -31,6 +25,8 @@ A TSC member may be removed by vote from the TSC if, during a 3-month period, al
 
 - They do not participate in any TSC related discussions or votes
 - They do not provide any form of excuse or no excuse is known for their absence
+
+There may be other grounds for removal from the TSC, such as seriously violating the Code of Conduct.
 
 ## Roles & Responsibilities
 The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
