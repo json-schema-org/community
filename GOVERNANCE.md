@@ -9,13 +9,14 @@ For context, see https://github.com/json-schema-org/community/pull/325
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## JSON Schema Governing Body (TSC)
---- content migrated to Charter.md
 
 While the project is not looking to obtain "Impact" project status within the OpenJS Foundation, there is no requirement set out to limit the number of TSC members by employer. It is in some cases considered difficult or even unhelpful for the project to limit the number or percentage of TSC members by employer (especially when an employer has employed individuals already active in the community to work exclusively on the open source project). While at this time there are no limits on TSC membership by employer, the TSC will strive to keep to at least less than 50%, ideally 33% (One third, one in three). The TSC will re-evaluate this specific clause at least every six months, and aim to revise it within one year to meet the "no more than 1/3 employer member affiliation" mandate.
 
 TSC members are expected to regularly participate in TSC activities.
 
 When the TSC meets using virtual conferencing tools, the meeting will be directed by the TSC Chairperson(s). Responsibility for directing individual meetings may be delegated by a TSC Chairperson to any other TSC member. Minutes or an appropriate recording will be taken and made available to the community through accessible public postings.
+
+TSC meetings should have a clearly defined agenda.
 
 At any point, any TSC member may notify the TSC that they are taking a period of leave and should be considered to abstain from any signaling or voting. The TSC member must detail when they expect to return.
 
