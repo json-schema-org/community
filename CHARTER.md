@@ -51,8 +51,15 @@ Most large, complex open source communities have both a business and a technical
 Section Intentionally Left Blank
 
 ## 3: JSON Schema Governing Body (TSC)
+The JSON Schema Technical Steering Committee (TSC) is initially established from the observed major contributors who are currently active and in good standing.
 
-See GOVERNANCE.md
+The TSC must have a minimum of four members. There is no maximum TSC membership size.
+
+TSC memberships are not time-limited.
+
+The TSC follows the decision-making process defined in this charter unless otherwise documented.
+
+The TSC aims to work asynchronously. TSC meetings are pre-announced, public, and recorded. Minutes are taken and the recordings made available. If there is a reasonable reason (such as security or privacy), any portion of a meeting, its minutes, and recording, may be kept private.
 
 ## 4: Roles & Responsibilities
 
