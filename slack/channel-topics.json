@@ -1,6 +1,6 @@
 {
   "channels": {
-    "general": ":wave: Discuss and ask questions about all JSON Schema related things. Please see the full channel description and the @GreetBot introduction.",
+    "general": ":wave: Discuss and ask questions about all JSON Schema related things.",
     "announcements": "Announcements from the JSON Schema organisation",
     "jp": "コミュニティの日本語を話す友人と、JSONスキーマに関連するすべての会話について話し合い、参加します。完全なチャネルの説明を参照してください。",
     "implementers": "Development of validation libraries and other software tools. Questions about using these tools, and general schema authoring issues should go to #general",
@@ -27,6 +27,7 @@
     "specification": "Potential changes to the specification text of JSON Schema",
     "twitter-mentions": "This channel is only for JSON Schema's Twitter mentions. Kindly do not discuss anything here.",
     "hyper-schema": "Discussions and queries related to vocabulary for annotating JSON documents with hyperlinks.",
-    "github": "Github stream of activity. You probably want to switch notifications to mention only mode!"
+    "github": "Github stream of activity. You probably want to switch notifications to mention only mode!",
+    "tsc-discussion": "A public place for the Technical Steering Committee to discuss current activities."
   }
 }
