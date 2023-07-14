@@ -7,7 +7,7 @@ about: Regular Open Community Working Meetings Issue - This template is for thos
 
 Zoom Meeting link: https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09
 
-[**Meeting accessibility**](https://raw.githubusercontent.com/json-schema-org/community/main/assets/jsonschema-ocwm-slide.jpg):
+**Meeting accessibility**:
 - We would like to record the meeting for future reference and for those who are not able to attend in person. 
 - We encourage you to challenge any language or behaviour that is harmful or not inclusive during this meeting. 
 - We look forward to your participation, but please consider... 
