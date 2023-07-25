@@ -82,9 +82,22 @@ In joining the TSC, members commit to communicate on a regular basis and respond
 ### 4.1 Project Operations & Management
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
-#### Decision-making via consensus and voting, and documenting decisions
+#### Decision-making
 
-See GOVERNANCE.md
+The TSC follows a consensus-seeking decision making model in which joint decisions are agreed upon by all members whenever possible.
+In some situations, a vote may be preferable, however a formal vote is expected to be an infrequent occurrence invoked only when consensus cannot be reached after multiple attempts to reach TSC consensus.
+TSC discussions and decisions are to be assumed public by default, unless otherwise decided upon on a case-by-case basis by the TSC.
+Precise criteria for which decisions are to be left private are left to the TSC's discretion and assumed to include security-related reports or discussions with a third-party who wishes their interactions to remain private, such as when they concern yet unpublished case studies or partnerships which are not yet ready for announcement.
+
+The TSC is expected to agree upon and maintain specific process and procedure which facilitate labelling or communicating which decisions have been formally decided upon by the TSC.
+This process should include a mechanism for identifying ongoing TSC discussions and decision-making.
+When concluded, decisions should include reasoning and/or justification of the TSC, as well as indication of the consensus of the committee, or lack thereof in the case of a voted decision as indicated above.
+Private decisions should also be documented in a private location accessible to parties expected to have access to them.
+
+## Code of Conduct Findings & Violations
+
+Code of Conduct incidents must be reported to the TSC by the Code of Conduct committee.
+Reports must remain anonymous, as per the Code of Conduct, but should be documented in a manner similar to private TSC decisions as mentioned.
 
 ## 5: Definitions
 
