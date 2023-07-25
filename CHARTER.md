@@ -63,7 +63,21 @@ The TSC aims to work asynchronously. TSC meetings are pre-announced, public, and
 
 ## 4: Roles & Responsibilities
 
-See GOVERNANCE.md
+The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
+
+The TSC has final authority over this project including:
+
+- Technical direction
+- Project governance and process (including this policy)
+- Contribution policy
+- GitHub repository hosting and administration
+- Establishment of and delegation to working groups or teams
+- Mediating technical conflicts
+
+It is also responsible for establishing a Code of Conduct Committee suitable for mediating non-technical conflicts.
+In any period where such a committee is not yet formed, the TSC must assume temporary responsibility of mediating such conflicts in addition to responsibilities enumerated above.
+
+In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
 
 ### 4.1 Project Operations & Management
 The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
