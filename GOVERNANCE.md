@@ -31,16 +31,7 @@ There may be other grounds for removal from the TSC, such as seriously violating
 
 ## Decision Making
 
-### Decision-making and Voting
-The TSC follows a formal consensus seeking decision making model.
-In some situations, a vote may be preferable, however a vote will not be used to make the vast majority of decisions.
-In the unlikely case where it seems that consensus cannot be reached after multiple attempts, the decision process may be moved to resolve via a vote. This is not expected to happen, but defined as a backup.
-
 ### Decision-making via consensus
-
-When a TSC member looks for an issue to be discussed and a decision to be made, they must start by assessing if they feel it warrants potentially being a private discussion and decision. The TSC member must reach out to the TSC chairs to request a private discussion and decision. A discussion and decision will be private at the discretion of the TSC chairs. It is expected that decision discussions and voting will only be private in rare circumstances.
-
-The kinds of discussions which should be private include security reports or discussions with an entity where it might not be desireable to be made public knowledge to either party. This could include details of case studies or partnerships which are not yet concluded or published, where either party may need a final approval for publication or wishes for coordinated or scheduled public publication.
 
 Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
 The Issue must:
@@ -54,6 +45,8 @@ In the event a TSC member feels the need for a decision to be expedited, they ma
 In addition to the requirements above, the Issue must be labeled `expedited`.
 
 While an associated Discussion is not required, if one is used, it must be clearly linked in both directions, and be labeled with `tsc-decision`.
+
+#### Quick consensus process
 
 A vote is called to see if other members agree. The vote takes place on the opening comment. This vote is different from the decision-making voting process, and only requires 3 (additional) votes in favour and none against to carry. If the vote carries, the quick process is started, otherwise the standard consensus process is started.
 
