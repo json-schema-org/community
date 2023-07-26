@@ -71,10 +71,10 @@ jobs:
                   console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
                   console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-                  await octokit(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
+                  await octokit('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   });
-                  await octokit(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
+                  await octokit('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
                     state: 'closed',
                   });
                 }
@@ -88,3 +88,4 @@ jobs:
         };
 
         main();
+
