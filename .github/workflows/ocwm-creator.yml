@@ -51,7 +51,7 @@ jobs:
             request: { fetch: fetch,},
             headers: { authorization: `token ${process.env.MY_TOKEN}`}
           });
-
+          console.log("Token:" + process.env.MY_TOKEN);
           const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
 
           const { data: ocwmissue } = await mygithub.request(`GET /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
