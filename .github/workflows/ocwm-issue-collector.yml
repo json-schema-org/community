@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: 18    
     - name: Install dependencies
-      run: npm install @octokit/core
+      run: npm install @octokit/core axios
     - name: Adding Issues
       uses: actions/github-script@v6
       env:
@@ -29,13 +29,40 @@ jobs:
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
-        script: |       
+        script: |
+          const { Octokit } = require('@octokit/core');
+          const axios = require('axios').default;
+
+          const customFetch = async (url, options) => {
+            const res = await axios({
+              url,
+              method: options.method || 'GET',
+              headers: {
+                ...options.headers,
+                authorization: `token ${process.env.MY_TOKEN}`,
+              },
+              data: options.body,
+            });
+
+            return {
+              ok: res.status >= 200 && res.status <= 299,
+              status: res.status,
+              statusText: res.statusText,
+              json: () => res.data,
+              text: () => res.data,
+              headers: res.headers,
+            };
+          };
+
+          const mygithub = new Octokit({
+            request: {
+              fetch: customFetch,
+            },
+          });  
+          
           const repoNames = process.env.REPO_NAMES;
           const placeholder = process.env.PLACEHOLDER;
           console.log("Placeholder:" + placeholder);
-
-          const octokit = require('@octokit/core').Octokit  
-          const mygithub = new octokit({ auth: process.env.MY_TOKEN })
 
           let repositories = repoNames.split(",")
           let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
