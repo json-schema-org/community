@@ -12,62 +12,77 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Node 18
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v2
       with:
-        node-version: 18        
+        node-version: '18'
+
     - name: Install dependencies
       run: npm install @octokit/core
+
     - name: Close issues
-      uses: actions/github-script@v6
       env:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
+      uses: actions/github-script@v6
       with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const octokit = require('@octokit/core').Octokit
-          const mygithub = new octokit({ auth: process.env.MY_TOKEN })
-          const label = process.env.MY_LABEL
 
-          const sevenDaysAgo = new Date()
-          sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7)
-          const dateString = sevenDaysAgo.toISOString().split('T')[0]
+          const octokit = require('@octokit/core').Octokit  
+          const mygithub = new octokit({
+            request: { fetch: fetch,},
+            headers: { authorization: `token ${process.env.MY_TOKEN}`}
+          });
 
-          const pattern = `label:"${label}" is:open created:<${dateString} repo:${ process.env.REPO_NAMES } org:${ process.env.OWNER }`
+          const label = process.env.MY_LABEL;
 
-          const { data: issues } = await mygithub.request('GET /search/issues', {
-            q: pattern,
-            per_page: 100,
-          })
-          console.log(`Number of issues found: ${issues.total_count}`)
-          if (!Array.isArray(issues.items)) {
-            throw new Error('Invalid issues.items value')
-          }
-          const closeIssues = async (issues) => {
-            for (const issue of issues) {
-              console.log('Issue:' + JSON.stringify(issue));
-              const repo = issue.repository_url.split('/').slice(-1)[0];
-              const issue_number = issue.number;
+          const sevenDaysAgo = new Date();
+          sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+          const dateString = sevenDaysAgo.toISOString().split('T')[0];
 
-              console.log('Repo:' + repo);
-              const taskListRegex = /^\s*- \[[\sX]\]\s+/gm
-              const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g
-              const hasTasks = taskListRegex.test(issue.body)
-              const hasIncompleteTasks = incompleteTaskRegex.test(issue.body)
-              if (!hasTasks || !hasIncompleteTasks) {
-                console.log(`Closing issue #${issue.number}`)
-                console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
-                console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
+          const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
 
-                await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
-                  body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
-                })
-                await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
-                  state: 'closed',
-                })
+          try {
+            const response = await mygithub.request('GET /search/issues', {
+              q: pattern,
+              per_page: 100,
+            });
+
+            const issues = response.data.items;
+            console.log(`Number of issues found: ${issues.length}`);
+
+            const closeIssues = async (issues) => {
+              for (const issue of issues) {
+                console.log('Issue:' + JSON.stringify(issue));
+                const repo = issue.repository_url.split('/').slice(-1)[0];
+                const issue_number = issue.number;
+
+                console.log('Repo:' + repo);
+                const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
+                const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
+                const hasTasks = taskListRegex.test(issue.body);
+                const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
+
+                if (!hasTasks || !hasIncompleteTasks) {
+                  console.log(`Closing issue #${issue.number}`);
+                  console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
+                  console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
+
+                  await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                  });
+                  await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                    state: 'closed',
+                  });
+                }
               }
-            }
+            };
+            await closeIssues(issues);
+          } catch (error) {
+            console.error('Error occurred:', error.message);
+            process.exit(1);
           }
-          await closeIssues(issues.items)
