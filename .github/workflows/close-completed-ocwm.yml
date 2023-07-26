@@ -19,7 +19,7 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
-      run: npm install axios
+      run: npm install @octokit/core axios
 
     - name: Close issues
       uses: actions/github-script@v6
