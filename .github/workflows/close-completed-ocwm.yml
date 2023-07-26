@@ -35,11 +35,8 @@ jobs:
           const { Octokit } = require('@octokit/core');
 
           const mygithub = new Octokit({
-            request: {
-              fetch: fetch,
-            },
-            headers: {
-              authorization: `token ${process.env.MY_TOKEN}`
+            request: { fetch: fetch,},
+            headers: { authorization: `token ${process.env.MY_TOKEN}`}
           });
 
           const label = process.env.MY_LABEL;
