@@ -19,7 +19,7 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
-      run: npm install @octokit/core got
+      run: npm install axios
 
     - name: Close issues
       uses: actions/github-script@v6
@@ -31,24 +31,25 @@ jobs:
       with:
         script: |
           const { Octokit } = require('@octokit/core');
-          const got = require('got');
+          const axios = require('axios').default;
 
           const customFetch = async (url, options) => {
-            const res = await got(url, {
+            const res = await axios({
+              url,
               method: options.method || 'GET',
               headers: {
                 ...options.headers,
                 authorization: `token ${process.env.MY_TOKEN}`,
               },
-              body: options.body,
+              data: options.body,
             });
 
             return {
-              ok: res.statusCode >= 200 && res.statusCode <= 299,
-              status: res.statusCode,
-              statusText: res.statusMessage,
-              json: () => JSON.parse(res.body),
-              text: () => res.body,
+              ok: res.status >= 200 && res.status <= 299,
+              status: res.status,
+              statusText: res.statusText,
+              json: () => res.data,
+              text: () => res.data,
               headers: res.headers,
             };
           };
