@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install @octokit/request node-fetch
+      run: npm install @octokit/core
 
     - name: Close issues
       env:
@@ -31,14 +31,15 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const { request } = require('@octokit/request');
 
-          // Create the octokit instance with the custom fetch implementation
-          const octokit = request.with({
-            request: { fetch },
-            headers: {
-              authorization: `token ${process.env.MY_TOKEN}`,
+          const { Octokit } = require('@octokit/core');
+
+          const mygithub = new Octokit({
+            request: {
+              fetch: fetch,
             },
+            headers: {
+              authorization: `token ${process.env.MY_TOKEN}`
           });
 
           const label = process.env.MY_LABEL;
