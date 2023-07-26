@@ -19,7 +19,7 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
-      run: npm install @octokit/core node-fetch
+      run: npm install @octokit/core
 
     - name: Close issues
       uses: actions/github-script@v6
@@ -34,8 +34,8 @@ jobs:
 
           // Custom fetch implementation
           const customFetch = async (url, options) => {
-            const fetch = require('node-fetch');
-            const res = await fetch(url, {
+            const fetch = await import('node-fetch');
+            const res = await fetch.default(url, {
               ...options,
               headers: {
                 ...options.headers,
