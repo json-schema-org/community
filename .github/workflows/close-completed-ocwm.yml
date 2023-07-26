@@ -48,7 +48,7 @@ jobs:
           const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
 
           try {
-            const response = await octokit('GET /search/issues', {
+            const response = await mygithub('GET /search/issues', {
               q: pattern,
               per_page: 100,
             });
@@ -73,10 +73,10 @@ jobs:
                   console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
                   console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-                  await octokit('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                  await mygithub('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   });
-                  await octokit('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                  await mygithub('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
                     state: 'closed',
                   });
                 }
