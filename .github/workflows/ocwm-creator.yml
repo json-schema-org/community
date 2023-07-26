@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node 18
       uses: actions/setup-node@v2
       with:
-        node-version: 18
+        node-version: '18'
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -37,7 +37,7 @@ jobs:
         token: ${{ secrets.AUTH_TOKEN }}
 
     - name: Install dependencies
-      run: npm install @octokit/core axios
+      run: npm install @octokit/core 
 
     - name: Update Issue Body
       uses: actions/github-script@v6
@@ -45,34 +45,11 @@ jobs:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
-          const { Octokit } = require('@octokit/core');
-          const axios = require('axios').default;
+          const octokit = require('@octokit/core').Octokit  
 
-          const customFetch = async (url, options) => {
-            const res = await axios({
-              url,
-              method: options.method || 'GET',
-              headers: {
-                ...options.headers,
-                authorization: `token ${process.env.MY_TOKEN}`,
-              },
-              data: options.body,
-            });
-
-            return {
-              ok: res.status >= 200 && res.status <= 299,
-              status: res.status,
-              statusText: res.statusText,
-              json: () => res.data,
-              text: () => res.data,
-              headers: res.headers,
-            };
-          };
-
-          const mygithub = new Octokit({
-            request: {
-              fetch: customFetch,
-            },
+          const mygithub = new octokit({
+            request: { fetch: fetch,},
+            headers: { authorization: `token ${process.env.MY_TOKEN}`}
           });
 
           const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
