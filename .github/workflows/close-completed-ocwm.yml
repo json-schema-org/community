@@ -27,10 +27,12 @@ jobs:
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
-      run: |
-        const { request } = require('@octokit/request');
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const { request } = require('@octokit/request');
 
-        const main = async () => {
           const octokit = request.defaults({
             headers: {
               authorization: `token ${process.env.MY_TOKEN}`,
@@ -85,6 +87,3 @@ jobs:
             console.error('Error occurred:', error.message);
             process.exit(1);
           }
-        };
-
-        main();
