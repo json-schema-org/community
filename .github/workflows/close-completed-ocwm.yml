@@ -30,31 +30,26 @@ jobs:
         REPO_NAMES: ${{ vars.REPOSITORIES }}
       with:
         script: |
-          const { Octokit } = require('@octokit/core');
-          const got = require('got');
+          const axios = require('axios');
 
           const customFetch = async (url, options) => {
-            const res = await got(url, {
-              ...options,
+            const res = await axios({
+              url: url,
+              method: options.method || 'GET',
               headers: {
                 ...options.headers,
                 authorization: `token ${process.env.MY_TOKEN}`,
               },
+              data: options.body,
             });
 
             return {
-              ok: res.statusCode >= 200 && res.statusCode <= 299,
-              json: async () => JSON.parse(res.body),
-              text: async () => res.body,
+              ok: res.status >= 200 && res.status <= 299,
+              json: async () => res.data,
+              text: async () => res.data,
               headers: res.headers,
             };
           };
-
-          const mygithub = new Octokit({
-            request: {
-              fetch: customFetch,
-            },
-          });
 
           const label = process.env.MY_LABEL;
 
