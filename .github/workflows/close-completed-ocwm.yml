@@ -21,84 +21,84 @@ jobs:
       run: npm install @octokit/core node-fetch
 
     - name: Close issues
+      uses: actions/github-script@v6
       env:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
-      run: |
-        const { Octokit } = require('@octokit/core');
-        const fetch = require('node-fetch');
+      with:
+        script: |
+          const { Octokit } = require('@octokit/core');
+          const fetch = require('node-fetch');
 
-        // Create a custom fetch function for Octokit
-        const customFetch = async (url, options) => {
-          const res = await fetch(url, {
-            ...options,
-            headers: {
-              ...options.headers,
-              authorization: `token ${process.env.MY_TOKEN}`,
+          const customFetch = async (url, options) => {
+            const res = await fetch(url, {
+              ...options,
+              headers: {
+                ...options.headers,
+                authorization: `token ${process.env.MY_TOKEN}`,
+              },
+            });
+
+            if (!res.ok) {
+              throw new Error(`Request failed with status: ${res.status}`);
+            }
+
+            return res;
+          };
+
+          const mygithub = new Octokit({
+            request: {
+              fetch: customFetch,
             },
           });
 
-          if (!res.ok) {
-            throw new Error(`Request failed with status: ${res.status}`);
-          }
+          const label = process.env.MY_LABEL;
 
-          return res;
-        };
+          const sevenDaysAgo = new Date();
+          sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+          const dateString = sevenDaysAgo.toISOString().split('T')[0];
 
-        // Create Octokit instance with the custom fetch function
-        const mygithub = new Octokit({
-          request: {
-            fetch: customFetch,
-          },
-        });
+          const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
 
-        const label = process.env.MY_LABEL;
+          try {
+            const response = await mygithub.request('GET /search/issues', {
+              q: pattern,
+              per_page: 100,
+            });
 
-        const sevenDaysAgo = new Date();
-        sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-        const dateString = sevenDaysAgo.toISOString().split('T')[0];
+            const issues = response.data.items;
+            console.log(`Number of issues found: ${issues.length}`);
 
-        const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
+            const closeIssues = async (issues) => {
+              for (const issue of issues) {
+                console.log('Issue:' + JSON.stringify(issue));
+                const repo = issue.repository_url.split('/').slice(-1)[0];
+                const issue_number = issue.number;
 
-        try {
-          const response = await mygithub.request('GET /search/issues', {
-            q: pattern,
-            per_page: 100,
-          });
+                console.log('Repo:' + repo);
+                const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
+                const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
+                const hasTasks = taskListRegex.test(issue.body);
+                const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
 
-          const issues = response.data.items;
-          console.log(`Number of issues found: ${issues.length}`);
+                if (!hasTasks || !hasIncompleteTasks) {
+                  console.log(`Closing issue #${issue.number}`);
+                  console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
+                  console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-          const closeIssues = async (issues) => {
-            for (const issue of issues) {
-              console.log('Issue:' + JSON.stringify(issue));
-              const repo = issue.repository_url.split('/').slice(-1)[0];
-              const issue_number = issue.number;
-
-              console.log('Repo:' + repo);
-              const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
-              const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
-              const hasTasks = taskListRegex.test(issue.body);
-              const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
-
-              if (!hasTasks || !hasIncompleteTasks) {
-                console.log(`Closing issue #${issue.number}`);
-                console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
-                console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
-
-                await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
-                  body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
-                });
-                await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
-                  state: 'closed',
-                });
+                  await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
+                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                  });
+                  await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
+                    state: 'closed',
+                  });
+                }
               }
             }
+            await closeIssues(issues);
+          } catch (error) {
+            console.error('Error occurred:', error.message);
+            process.exit(1);
           }
-          await closeIssues(issues);
-        } catch (error) {
-          console.error('Error occurred:', error.message);
-          process.exit(1);
-        }
