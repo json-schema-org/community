@@ -19,7 +19,7 @@ jobs:
         node-version: 18
 
     - name: Install dependencies
-      run: npm install @octokit/core
+      run: npm install @octokit/core got
 
     - name: Close issues
       uses: actions/github-script@v6
@@ -30,26 +30,34 @@ jobs:
         REPO_NAMES: ${{ vars.REPOSITORIES }}
       with:
         script: |
-          const axios = require('axios');
+          const { Octokit } = require('@octokit/core');
+          const got = require('got');
 
           const customFetch = async (url, options) => {
-            const res = await axios({
-              url: url,
+            const res = await got(url, {
               method: options.method || 'GET',
               headers: {
                 ...options.headers,
                 authorization: `token ${process.env.MY_TOKEN}`,
               },
-              data: options.body,
+              body: options.body,
             });
 
             return {
-              ok: res.status >= 200 && res.status <= 299,
-              json: async () => res.data,
-              text: async () => res.data,
+              ok: res.statusCode >= 200 && res.statusCode <= 299,
+              status: res.statusCode,
+              statusText: res.statusMessage,
+              json: () => JSON.parse(res.body),
+              text: () => res.body,
               headers: res.headers,
             };
           };
+
+          const mygithub = new Octokit({
+            request: {
+              fetch: customFetch,
+            },
+          });
 
           const label = process.env.MY_LABEL;
 
