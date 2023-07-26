@@ -32,10 +32,10 @@ jobs:
         script: |
           const { Octokit } = require('@octokit/core');
 
-          // Custom fetch implementation
+          // Custom fetch implementation using the built-in fetch in Node.js
           const customFetch = async (url, options) => {
-            const fetch = await import('node-fetch');
-            const res = await fetch.default(url, {
+            const fetch = require('node:fetch');
+            const res = await fetch(url, {
               ...options,
               headers: {
                 ...options.headers,
