@@ -16,47 +16,28 @@ jobs:
     - name: Set up Node 18
       uses: actions/setup-node@v2
       with:
-        node-version: 18
+        node-version: '18'
 
     - name: Install dependencies
-      run: npm install @octokit/core axios
+      run: npm install @octokit/request node-fetch
 
     - name: Close issues
-      uses: actions/github-script@v6
       env:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
+      uses: actions/github-script@v6
       with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
-          const { Octokit } = require('@octokit/core');
-          const axios = require('axios').default;
+          const { request } = require('@octokit/request');
 
-          const customFetch = async (url, options) => {
-            const res = await axios({
-              url,
-              method: options.method || 'GET',
-              headers: {
-                ...options.headers,
-                authorization: `token ${process.env.MY_TOKEN}`,
-              },
-              data: options.body,
-            });
-
-            return {
-              ok: res.status >= 200 && res.status <= 299,
-              status: res.status,
-              statusText: res.statusText,
-              json: () => res.data,
-              text: () => res.data,
-              headers: res.headers,
-            };
-          };
-
-          const mygithub = new Octokit({
-            request: {
-              fetch: customFetch,
+          // Create the octokit instance with the custom fetch implementation
+          const octokit = request.with({
+            request: { fetch },
+            headers: {
+              authorization: `token ${process.env.MY_TOKEN}`,
             },
           });
 
@@ -69,10 +50,10 @@ jobs:
           const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
 
           try {
-            const response = await mygithub.request('GET /search/issues', {
+            const response = await octokit('GET /search/issues', {
               q: pattern,
               per_page: 100,
-            }); 
+            });
 
             const issues = response.data.items;
             console.log(`Number of issues found: ${issues.length}`);
@@ -94,15 +75,15 @@ jobs:
                   console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
                   console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-                  await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
+                  await octokit('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   });
-                  await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
+                  await octokit('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
                     state: 'closed',
                   });
                 }
               }
-            }
+            };
             await closeIssues(issues);
           } catch (error) {
             console.error('Error occurred:', error.message);
