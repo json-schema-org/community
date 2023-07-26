@@ -11,15 +11,15 @@ jobs:
   close-issues:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Set up Node 18
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: '18'
 
     - name: Install dependencies
-      run: npm install @octokit/request node-fetch
+      run: npm install @actions/github-script @octokit/request node-fetch
 
     - name: Close issues
       env:
@@ -28,9 +28,16 @@ jobs:
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
       run: |
+        const { Octokit } = require("@actions/github-script");
         const { request } = require('@octokit/request');
         const fetch = require('node-fetch');
 
+        // Create actions/github-script Octokit instance with authentication token
+        const octokit = new Octokit({
+          auth: process.env.MY_TOKEN,
+        });
+
+        // Create @octokit/request Octokit instance with custom fetch
         const mygithub = request.defaults({
           headers: {
             authorization: `token ${process.env.MY_TOKEN}`,
@@ -49,7 +56,8 @@ jobs:
         const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
 
         try {
-          const response = await mygithub('GET /search/issues', {
+          // Using actions/github-script for API request
+          const response = await octokit.request("GET /search/issues", {
             q: pattern,
             per_page: 100,
           });
@@ -74,10 +82,11 @@ jobs:
                 console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
                 console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-                await mygithub('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                // Using @octokit/request for more specific API requests
+                await mygithub(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`, {
                   body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                 });
-                await mygithub('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                await mygithub(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`, {
                   state: 'closed',
                 });
               }
