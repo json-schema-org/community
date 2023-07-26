@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install @octokit/request node-fetch
+      run: npm install @octokit/request
 
     - name: Close issues
       env:
@@ -27,66 +27,67 @@ jobs:
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
-      uses: actions/github-script@v6
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          const { request } = require('@octokit/request');
-          const fetch = require('node-fetch');
+      run: |
+        const { request } = require('@octokit/request');
 
-          // Create the octokit instance with the custom fetch implementation
-          const octokit = request.with({
-            request: { fetch },
-            headers: {
-              authorization: `token ${process.env.MY_TOKEN}`,
-            },
+        // Create a custom fetch function for @octokit/request
+        const customFetch = async (url, options) => {
+          const fetch = require('node-fetch');
+          return fetch(url, options);
+        };
+
+        const octokit = request.with({
+          request: { fetch: customFetch }, // Use the custom fetch function
+          headers: {
+            authorization: `token ${process.env.MY_TOKEN}`,
+          },
+        });
+
+        const label = process.env.MY_LABEL;
+
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+        const dateString = sevenDaysAgo.toISOString().split('T')[0];
+
+        const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
+
+        try {
+          const response = await octokit('GET /search/issues', {
+            q: pattern,
+            per_page: 100,
           });
 
-          const label = process.env.MY_LABEL;
+          const issues = response.data.items;
+          console.log(`Number of issues found: ${issues.length}`);
 
-          const sevenDaysAgo = new Date();
-          sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
-          const dateString = sevenDaysAgo.toISOString().split('T')[0];
+          const closeIssues = async (issues) => {
+            for (const issue of issues) {
+              console.log('Issue:' + JSON.stringify(issue));
+              const repo = issue.repository_url.split('/').slice(-1)[0];
+              const issue_number = issue.number;
 
-          const pattern = `label:"${label}" is:open created:<${dateString} repo:${process.env.REPO_NAMES} org:${process.env.OWNER}`;
+              console.log('Repo:' + repo);
+              const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
+              const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
+              const hasTasks = taskListRegex.test(issue.body);
+              const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
 
-          try {
-            const response = await octokit('GET /search/issues', {
-              q: pattern,
-              per_page: 100,
-            });
+              if (!hasTasks || !hasIncompleteTasks) {
+                console.log(`Closing issue #${issue.number}`);
+                console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
+                console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
 
-            const issues = response.data.items;
-            console.log(`Number of issues found: ${issues.length}`);
-
-            const closeIssues = async (issues) => {
-              for (const issue of issues) {
-                console.log('Issue:' + JSON.stringify(issue));
-                const repo = issue.repository_url.split('/').slice(-1)[0];
-                const issue_number = issue.number;
-
-                console.log('Repo:' + repo);
-                const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
-                const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
-                const hasTasks = taskListRegex.test(issue.body);
-                const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
-
-                if (!hasTasks || !hasIncompleteTasks) {
-                  console.log(`Closing issue #${issue.number}`);
-                  console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
-                  console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
-
-                  await octokit('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
-                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
-                  });
-                  await octokit('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
-                    state: 'closed',
-                  });
-                }
+                await octokit('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                  body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                });
+                await octokit('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                  state: 'closed',
+                });
               }
-            };
-            await closeIssues(issues);
-          } catch (error) {
-            console.error('Error occurred:', error.message);
-            process.exit(1);
-          }
+            }
+          };
+          await closeIssues(issues);
+        } catch (error) {
+          console.error('Error occurred:', error.message);
+          process.exit(1);
+        }
