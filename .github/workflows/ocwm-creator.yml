@@ -45,12 +45,13 @@ jobs:
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
-
-          const octokit = require('@octokit/core').Octokit  
+        
+          const octokit = require('@octokit/core').Octokit;
           const mygithub = new octokit({
             request: { fetch: fetch,},
-            headers: { authorization: `token ${process.env.MY_TOKEN}`}
+            auth: process.env.MY_TOKEN
           });
+
           console.log("Token:" + process.env.MY_TOKEN);
           const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
 
