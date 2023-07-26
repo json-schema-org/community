@@ -31,11 +31,10 @@ jobs:
       with:
         script: |
           const { Octokit } = require('@octokit/core');
+          const got = require('got');
 
-          // Custom fetch implementation using the built-in fetch in Node.js
           const customFetch = async (url, options) => {
-            const fetch = require('node:fetch');
-            const res = await fetch(url, {
+            const res = await got(url, {
               ...options,
               headers: {
                 ...options.headers,
@@ -43,11 +42,12 @@ jobs:
               },
             });
 
-            if (!res.ok) {
-              throw new Error(`Request failed with status: ${res.status}`);
-            }
-
-            return res;
+            return {
+              ok: res.statusCode >= 200 && res.statusCode <= 299,
+              json: async () => JSON.parse(res.body),
+              text: async () => res.body,
+              headers: res.headers,
+            };
           };
 
           const mygithub = new Octokit({
