@@ -12,13 +12,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Node 18 and Install dependencies
+
+    - name: Set up Node 18
       uses: actions/setup-node@v2
       with:
         node-version: 18
-        cache: 'npm'
-      run: |
-        npm install @octokit/core node-fetch
+
+    - name: Install dependencies
+      run: npm install @octokit/core node-fetch
 
     - name: Close issues
       uses: actions/github-script@v6
@@ -30,9 +31,10 @@ jobs:
       with:
         script: |
           const { Octokit } = require('@octokit/core');
-          const fetch = require('node-fetch');
 
+          // Custom fetch implementation
           const customFetch = async (url, options) => {
+            const fetch = require('node-fetch');
             const res = await fetch(url, {
               ...options,
               headers: {
