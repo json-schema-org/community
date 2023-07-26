@@ -34,7 +34,7 @@ jobs:
           const octokit = require('@octokit/core').Octokit  
           const mygithub = new octokit({
             request: { fetch: fetch,},
-            headers: { authorization: `token ${process.env.MY_TOKEN}`}
+            auth: process.env.MY_TOKEN
           });
           
           const repoNames = process.env.REPO_NAMES;
