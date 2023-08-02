@@ -42,7 +42,7 @@ Secondary Concerns
 - Vocabularies registry
 
 ### 1.2: Out-of-Scope
-Standards that the JSON Schema project uses (such as JSON and IRI), nor standards and projects that use JSON Schema (such as OpenAPI and AsyncAPI), are not things which the JSON Schema project has any control over.
+Neither standards that the JSON Schema project uses (such as JSON and IRI) nor standards or projects that use JSON Schema (such as OpenAPI or AsyncAPI) are in scope, nor does the JSON Schema project has any control over them.
 
 ## 2: Relationship with OpenJS Foundation CPC.
 Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
