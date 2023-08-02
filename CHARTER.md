@@ -68,7 +68,7 @@ The JSON Schema project is governed by a Technical Steering Committee (TSC) whic
 The TSC has final authority over this project including:
 
 - Technical direction
-- Project governance and process (including this policy)
+- Project governance and process (including this policy, though changes to this policy must be approved by the CPC)
 - Contribution policy
 - GitHub repository hosting and administration
 - Establishment of and delegation to working groups or teams
