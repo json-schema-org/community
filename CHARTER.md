@@ -80,7 +80,7 @@ In any period where such a committee is not yet formed, the TSC must assume temp
 In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
 
 ### 4.1 Project Operations & Management
-The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
+The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board or the CPC relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
 #### Decision-making
 
