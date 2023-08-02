@@ -63,7 +63,7 @@ The TSC aims to work asynchronously. TSC meetings are pre-announced, public, and
 
 ## 4: Roles & Responsibilities
 
-The JSON Schema project is jointly governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
+The JSON Schema project is governed by a Technical Steering Committee (TSC) which is responsible for high-level guidance of the project.
 
 The TSC has final authority over this project including:
 
