@@ -92,7 +92,7 @@ Precise criteria for which decisions are to be left private are left to the TSC'
 The TSC is expected to agree upon and maintain specific process and procedure which facilitate labelling or communicating which decisions have been formally decided upon by the TSC.
 This process should include a mechanism for identifying ongoing TSC discussions and decision-making.
 When concluded, decisions should include reasoning and/or justification of the TSC, as well as indication of the consensus of the committee, or lack thereof in the case of a voted decision as indicated above.
-Private decisions should also be documented in a private location accessible to parties expected to have access to them.
+Private decisions should also be documented in a private location accessible to parties expected to have access to them. In the spirit of transparency, the TSC will strive to make anonymized or redacted versions of these decisions publicly available.
 
 ## Code of Conduct Findings & Violations
 
