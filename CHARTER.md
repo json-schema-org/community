@@ -105,4 +105,4 @@ TSC: The JSON Schema Technical Steering Committee, delegated technical leadershi
 
 ---
 
-This work is licensed under a [Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales License](https://creativecommons.org/licenses/by-sa/2.0/uk/).
+CC-BY 4.0 (c) The JSON Schema Project contributors
