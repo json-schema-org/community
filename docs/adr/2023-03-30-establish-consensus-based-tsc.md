@@ -10,7 +10,7 @@ Story: In order to fully onboard with the OpenJS Foundation, and in order to hav
 
 It's essential that both the maintainers and community can see a clear and coherent statement about the JSON Schema project and its intentions. Currently it is not clear, and may be hard to determine.
 
-Lack of clear and document governance makes it very difficult in some situations to move some issues forward. The current "process" is mostly undocumented and ad-hoc, with loose collective will.
+Lack of clear and documented governance makes it very difficult in some situations to move some issues forward. The current "process" is mostly undocumented and ad-hoc, with loose collective will.
 As the number of people who can work on this full or part time grows, the organizational needs will evolve, requiring governance for long term sustainability.
 Having a clear and documented governance model will allow us to make clear progress with an unambiguous process defined.
 
