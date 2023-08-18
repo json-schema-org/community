@@ -110,7 +110,7 @@ Signaling "Reservations" means an agreement on the overall direction, however th
 
 If "Reservations" is signalled three consecutive times by the same individual/s, anyone may call for no further attempts to remediate the reservations, and the proposal will pass.
 
-Signaling "Stand Aside" convey consent, but an unwillingness for whatever reason to be further involved. It could be for example that the individual does not have time to participate, or that they have limited opinions on the specific decision. The individual may provide a reason for standing aside. If the individual believes the reason can be remedied by the group, the group should seek to remedy the reason where possible, with help from the facilitator.
+Signaling "Stand Aside" conveys consent, but an unwillingness for whatever reason to be further involved. It could be for example that the individual does not have time to participate, or that they have limited opinions on the specific decision. The individual may provide a reason for standing aside. If the individual believes the reason can be remedied by the group, the group should seek to remedy the reason where possible, with help from the facilitator.
 
 The TSC will make every reasonable effort to reach unanimity based consensus. If unanimity seems unlikely after several failed attempts to revise the proposal and Test for Agreement, if the proposal is clear, the decision may be moved to a vote, at the discretion of the TSC Chairs. This is a last resort.
 
