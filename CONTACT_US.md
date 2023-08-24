@@ -6,6 +6,6 @@ All members of the team can be reached via the [JSON Schema slack server](https:
 
 ## Contacts
 
-Marketing and Social Media: Benjamin Granados (@benjagm)
-Infrastructure: Ben Hutton (@relequestual)
+Marketing and Social Media: Benjamin Granados (@benjagm)\
+Infrastructure: Ben Hutton (@relequestual)\
 Legal/governance help: Ben Hutton (@relequestual)
