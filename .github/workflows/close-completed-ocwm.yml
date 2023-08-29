@@ -71,13 +71,17 @@ jobs:
                   console.log(`Closing issue #${issue.number}`);
                   console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
                   console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
-
-                  await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
-                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
-                  });
-                  await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
-                    state: 'closed',
-                  });
+                  try {
+                    await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                      body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                    });
+                    await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                      state: 'closed',
+                    });
+                  } catch (error) {
+                    console.error('Issue:', issue);
+                    console.error('Error occurred:', error.message);
+                  }
                 }
               }
             };
