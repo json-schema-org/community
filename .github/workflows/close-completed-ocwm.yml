@@ -77,9 +77,9 @@ jobs:
                   await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
                     state: 'closed',
                   });
+                  console.log(`Issue updated`);
                 } catch (error) {
-                  console.error('Issue:', issue);
-                  console.error('Error occurred:', error.message);
+                  console.error('Error occurred updating issue:', error.message);
                 }
               }
             }
