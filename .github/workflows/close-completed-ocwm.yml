@@ -55,37 +55,36 @@ jobs:
             const issues = response.data.items;
             console.log(`Number of issues found: ${issues.length}`);
 
-            const closeIssues = async (issues) => {
-              for (const issue of issues) {
-                console.log('Issue:' + JSON.stringify(issue));
-                const repo = issue.repository_url.split('/').slice(-1)[0];
-                const issue_number = issue.number;
+            for (const issue of issues) {
+              console.log('Issue:' + JSON.stringify(issue));
+              const repo = issue.repository_url.split('/').slice(-1)[0];
+              const issue_number = issue.number;
 
-                console.log('Repo:' + repo);
-                const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
-                const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
-                const hasTasks = taskListRegex.test(issue.body);
-                const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
+              console.log('Repo:' + repo);
+              const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
+              const incompleteTaskRegex = /-\s+\[[ ]\]\s+.+/g;
+              const hasTasks = taskListRegex.test(issue.body);
+              const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
 
-                if (!hasTasks || !hasIncompleteTasks) {
-                  console.log(`Closing issue #${issue.number}`);
-                  console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
-                  console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
-                  try {
-                    await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
-                      body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
-                    });
-                    await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
-                      state: 'closed',
-                    });
-                  } catch (error) {
-                    console.error('Issue:', issue);
-                    console.error('Error occurred:', error.message);
-                  }
+              if (!hasTasks || !hasIncompleteTasks) {
+                console.log(`Closing issue #${issue.number}`);
+                console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments`);
+                console.log(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}`);
+                try {
+                  await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue_number}/comments', {
+                    body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
+                  });
+                  await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue_number}', {
+                    state: 'closed',
+                  });
+                } catch (error) {
+                  console.error('Issue:', issue);
+                  console.error('Error occurred:', error.message);
                 }
               }
-            };
-            await closeIssues(issues);
+            }
+          };
+
           } catch (error) {
             console.error('Error occurred:', error.message);
             process.exit(1);
