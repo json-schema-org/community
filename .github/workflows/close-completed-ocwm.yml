@@ -58,7 +58,7 @@ jobs:
             for (const issue of issues) {
               console.log('Issue:' + JSON.stringify(issue));
               const repo = issue.repository_url.split('/').slice(-1)[0];
-              const issue_number = ;
+              const issue_number = issue.number;
 
               console.log('Repo:' + repo);
               const taskListRegex = /^\s*- \[[\sX]\]\s+/gm;
