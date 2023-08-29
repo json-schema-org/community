@@ -67,15 +67,15 @@ jobs:
               const hasIncompleteTasks = incompleteTaskRegex.test(issue.body);
 
               if (!hasTasks || !hasIncompleteTasks) {
-                console.log(`Closing issue #${issue.number}`);
+                console.log('Closing issue:' + ${issue.number});
 
                 try {
-                  await mygithub.request('POST /repos/${process.env.OWNER}/${repo}/issues/${issue.number}/comments', {
+                  await mygithub.request(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue.number}/comments`, {
                     body: 'Closing this issue as all tasks are completed. Thanks for your contributions!',
                   })
                   console.log(`POST /repos/${process.env.OWNER}/${repo}/issues/${issue.number}/comments`);
 
-                  await mygithub.request('PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue.number}', {
+                  await mygithub.request(`PATCH /repos/${process.env.OWNER}/${repo}/issues/${issue.number}`, {
                     state: 'closed',
                   })
                   
