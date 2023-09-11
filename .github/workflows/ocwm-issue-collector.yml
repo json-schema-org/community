@@ -102,7 +102,7 @@ jobs:
 
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
-                  let url = discussions[i].node.resourcePath;
+                  let url = "https://github.com/" + discussions[i].node.resourcePath;
                   let author = "@" + discussions[i].node.author.login;
                   let title = discussions[i].node.title;
                   let search = parseInt(JSON.stringify(body).search(url));
