@@ -40,9 +40,6 @@ jobs:
           const placeholder = process.env.PLACEHOLDER;
           console.log("Placeholder:" + placeholder);
 
-          const octokit = require('@octokit/core').Octokit  
-          const mygithub = new octokit({ auth: process.env.MY_TOKEN })
-
           let repositories = repoNames.split(",")
           let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
           let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
