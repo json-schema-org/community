@@ -11,24 +11,32 @@ jobs:
   search_and_add:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Node 18
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
-      - name: Install dependencies
-        run: npm install @octokit/core @octokit/graphql
-      - name: Adding Issues
-        env:
-          PLACEHOLDER: '<!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->'
-          OWNER: ${{ secrets.ORGANISATION }}
-          REPO: 'community'
-          REPO_NAMES: ${{ secrets.REPOSITORIES }}
-          AGENDA_LABEL: ${{ secrets.AGENDA_LABEL }}
-          OCWM_LABEL: ${{ secrets.OCWM_LABEL }}
-          MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
-        run: |
-          const { request } = require('@octokit/request');
+    - uses: actions/checkout@v2
+    - name: Set up Node 18
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: Install dependencies
+      run: npm install @octokit/core @octokit/graphql
+    - name: Adding Issues
+      uses: actions/github-script@v6
+      env:
+        PLACEHOLDER: '<!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->'
+        OWNER: ${{ vars.ORGANISATION }}
+        REPO: 'community'
+        REPO_NAMES: ${{ vars.REPOSITORIES }}
+        AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
+        OCWM_LABEL: ${{ vars.OCWM_LABEL }}
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      with:
+        script: |
+          const octokit = require('@octokit/core').Octokit  
+          const mygithub = new octokit({
+            request: { fetch: fetch,},
+            auth: process.env.MY_TOKEN
+          });
+
+          /*
           const graphql = require('@octokit/graphql').defaults({
             request: request.defaults({
               headers: {
@@ -36,64 +44,66 @@ jobs:
               },
             }),
           });
-      
-          async function run() {
-            const repoNames = process.env.REPO_NAMES.split(',');
-            const placeholder = process.env.PLACEHOLDER;
-            console.log("Placeholder:" + placeholder);
-      
-            let repositories = repoNames.split(",");
-            let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
-            let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
-      
-            console.log("Repositories:" + repositories);
-      
-            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
-      
-            const { data: workMeetings } = await request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
-      
-            console.log("workMeetings:" + JSON.stringify(workMeetings));
-      
-            for (let r = 0; r < repositories.length; r++) {
-              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-      
-              const items2add = [];
-              try {
-                const { data: items2add } = await request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-              }
-              catch (err) {
-                console.error("Error:"+err.message);
-              }
-      
-              console.log("Issues to add:" + JSON.stringify(items2add));
-      
-              let discussions = [];
-              try {
-                const query = `
-                  query {
-                    repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
-                      discussions(labels: ["${appendLabel}"], first: 10) {
-                        nodes {
-                          title
-                          body
-                        }
+          */
+
+          const repoNames = process.env.REPO_NAMES;
+          const placeholder = process.env.PLACEHOLDER;
+          console.log("Placeholder:" + placeholder);
+
+          let repositories = repoNames.split(",")
+          let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
+          let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
+
+          console.log("Repositories:" + repositories);
+          
+          console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
+
+          const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`, {
+          })
+
+          console.log("workMeetings:" + JSON.stringify(workMeetings));
+
+          for (let r = 0; r < repositories.length; r++) {
+
+            const items2add = [];
+            try {
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
+            }
+            catch (err) {
+              console.error("Error:"+err.message);
+            }
+            console.log("Issues to add:" + JSON.stringify(items2add));
+
+            const discussions = [];
+            /*
+            try {
+              const query = `
+                query {
+                  repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
+                    discussions(labels: ["${appendLabel}"], first: 10) {
+                      nodes {
+                        title
+                        body
                       }
                     }
                   }
-                `;
+                }
+              `;
       
-                const { repository } = await graphql(query);
-                discussions = repository.discussions.nodes;
-              }
-              catch (err) {
-                console.error("Error:"+err.message);
-              }
-              console.log("Discussions to add:" + JSON.stringify(discussions));
-      
-              try {
+              const { repository } = await graphql(query);
+              discussions = repository.discussions.nodes;
+            }
+            catch (err) {
+              console.error("Error:"+err.message);
+            }
+            */
+
+            console.log("Discussions to add:" + JSON.stringify(discussions));
+
+            try {
                 let body = workMeetings[0].body;
                 let changesFlag = false;
-      
+
                 // Loop through issues to add them to the agenda
                 for (let i = 0; i < items2add.length; i++) {
                     let url = items2add[i].html_url;
@@ -107,7 +117,7 @@ jobs:
                         changesFlag = true;
                     }
                 }
-      
+
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
                   let url = discussions[i].html_url;
@@ -121,26 +131,26 @@ jobs:
                     changesFlag = true;
                   }
                 }
-      
+
                 if (changesFlag){
                   let template = JSON.stringify(JSON.stringify(body));
                   let parsed = JSON.parse(JSON.parse(template));
-      
+
                   console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
-      
-                  await request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
+
+                  await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
                       body: parsed,
                       milestone: null,
                       state: 'open',
                   })
                 }
-              }
-              catch (err) {
-                  console.error("Error:"+err.message);
-                  console.log("There is no OCWM available");
-              }
             }
+
+
+
+            catch (err) {
+                console.error("Error:"+err.message);
+                console.log("There is no OCWM available");
+            }
+
           }
-      
-          run();
-      
