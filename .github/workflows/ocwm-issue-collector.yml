@@ -86,7 +86,7 @@ jobs:
               const response = await mygithub.graphql(query, {});
               console.log("Response:" + JSON.stringify(response));
               
-              const discussions = response.data.search.edges;
+              const discussions = response.search.edges;
               console.log("0Discussions to add:" + JSON.stringify(discussions));
             }
             catch (err) {
