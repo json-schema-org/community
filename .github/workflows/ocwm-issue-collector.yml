@@ -36,7 +36,6 @@ jobs:
             auth: process.env.MY_TOKEN
           });
 
-          /*
           const graphql = require('@octokit/graphql').defaults({
             request: request.defaults({
               headers: {
@@ -44,7 +43,6 @@ jobs:
               },
             }),
           });
-          */
 
           const repoNames = process.env.REPO_NAMES;
           const placeholder = process.env.PLACEHOLDER;
