@@ -37,6 +37,10 @@ jobs:
           });
 
           const { graphql } = require("@octokit/graphql");
+          const mygithubgql = new graphql({
+            request: { fetch: fetch,},
+            auth: process.env.MY_TOKEN
+          });
 
           const repoNames = process.env.REPO_NAMES;
           const placeholder = process.env.PLACEHOLDER;
@@ -81,11 +85,7 @@ jobs:
                   }
                 }
               `;
-              const { repository } = await graphql(query, {
-                headers: {
-                  authorization: `Bearer ${process.env.MY_TOKEN}`,
-                },
-              });
+              const { repository } = await mygithubgql.graphql(query, {});
 
               discussions = repository.discussions.nodes;
             }
