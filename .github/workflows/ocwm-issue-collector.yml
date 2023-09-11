@@ -85,8 +85,6 @@ jobs:
                 }
               `;
               const response = await mygithub.graphql(query, {});
-
-              discussions = repository.discussions.nodes;
             }
             catch (err) {
               console.error("Error:"+err.message);
