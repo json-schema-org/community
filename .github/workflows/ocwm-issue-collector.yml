@@ -55,13 +55,24 @@ jobs:
 
           for (let r = 0; r < repositories.length; r++) {
             console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-            const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {
-            });
+
+            try {
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {
+              });
+            catch (err) {
+                console.error("Error:"+err.message);
+                const items2add = [];
+            }
+
             console.log("Issues to add:" + JSON.stringify(items2add));
 
-
-            const { data: discussions } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/discussions?labels=${appendLabel}`, {
-            });
+            try {
+              const { data: discussions } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/discussions?labels=${appendLabel}`, {
+              });
+              catch (err) {
+                console.error("Error:"+err.message);
+                const discussions = [];
+            }
             console.log("Discussions to add:" + JSON.stringify(discussions));
 
             try {
