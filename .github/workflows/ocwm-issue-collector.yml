@@ -69,13 +69,15 @@ jobs:
             try {
               const query = `
                 query {
-                  repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
-                    discussions( first: 10, label: "agenda") {
-                      nodes {
-                        title
-                        resourcePath
-                        author {
-                          login
+                  search(query: " label='agenda' repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
+                    edges {
+                      node {
+                        ... on Discussion {
+                          title
+                          body
+                          author {
+                            login
+                          }
                         }
                       }
                     }
