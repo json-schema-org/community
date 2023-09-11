@@ -70,10 +70,11 @@ jobs:
               const query = `
                 query {
                   repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
-                    discussions(labels: ["${appendLabel}"], first: 10) {
+                    discussions( first: 10, filter: { labels: "YOUR_LABEL" }) {
                       nodes {
                         title
-                        body
+                        resourcePath
+                        author
                       }
                     }
                   }
@@ -110,8 +111,8 @@ jobs:
 
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
-                  let url = discussions[i].html_url;
-                  let author = "@" + discussions[i].user.login;
+                  let url = discussions[i].url;
+                  let author = "@" + discussions[i].author;
                   let title = discussions[i].title;
                   let search = parseInt(JSON.stringify(body).search(url));
                   if (search === -1) {
