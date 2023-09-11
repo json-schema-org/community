@@ -85,7 +85,7 @@ jobs:
               }`;  // Missing closing curly brace for the `try` block
               const response = await mygithub.graphql(query, {});
               console.log("Response:" + JSON.stringify(response));
-              const discussions = response.data.search.edges;
+              const discussions = response.search.edges.map((edge) => edge.node);
             }
             catch (err) {
               console.error("Error:"+err.message);
