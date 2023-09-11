@@ -1,7 +1,7 @@
 # Adopters
 
-**📢 _If you're using JSON Schema in your organization, please add your company name to this list.**
-**🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact._**
+**📢 If you're using JSON Schema in your organization, please add your company name to this list.**
+**🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact.**
 
 Why add your company name?
 
