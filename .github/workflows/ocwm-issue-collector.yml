@@ -86,7 +86,7 @@ jobs:
                 }
               `;
               const discussions = await mygithub.graphql(query, {});
-
+              console.log("Response graphql:" + discussions);
             }
             catch (err) {
               console.error("Error:"+err.message);
