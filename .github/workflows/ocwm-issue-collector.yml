@@ -36,7 +36,7 @@ jobs:
             auth: process.env.MY_TOKEN
           });
 
-          const { graphql } = require("@octokit/graphql");
+          const graphql = require("@octokit/graphql");
           const mygithubgql = new graphql({
             request: { fetch: fetch,},
             auth: process.env.MY_TOKEN
