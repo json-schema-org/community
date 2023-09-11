@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: '18'
     - name: Install dependencies
-      run: npm install @octokit/core @octokit/graphql
+      run: npm install @octokit/core 
     - name: Adding Issues
       uses: actions/github-script@v6
       env:
@@ -32,12 +32,6 @@ jobs:
         script: |
           const octokit = require('@octokit/core').Octokit  
           const mygithub = new octokit({
-            request: { fetch: fetch,},
-            auth: process.env.MY_TOKEN
-          });
-
-          const graphql = require("@octokit/graphql");
-          const mygithubgql = new graphql({
             request: { fetch: fetch,},
             auth: process.env.MY_TOKEN
           });
@@ -85,7 +79,7 @@ jobs:
                   }
                 }
               `;
-              const { repository } = await mygithubgql.graphql(query, {});
+              const response = await mygithub.graphql(query, {});
 
               discussions = repository.discussions.nodes;
             }
