@@ -66,27 +66,27 @@ jobs:
 
             const discussions = [];
 
-            //search(query: " label='agenda' repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
             try {
-              const query = `
-                query {
-                  search(query: " repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
-                    edges {
-                      node {
-                        ... on Discussion {
+
+            const query = `
+              query {
+                search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
+                  edges {
+                    node {
+                      ... on Discussion {
                           title
                           body
                           author {
-                            login
+                              login
                           }
                         }
                       }
                     }
                   }
                 }
-              `;
-              const discussions = await mygithub.graphql(query, {});
-              console.log("Response graphql:" + discussions);
+              `}
+              const response = await mygithub.graphql(query, {});
+              const discussions = response.data.search.edges;
             }
             catch (err) {
               console.error("Error:"+err.message);
@@ -115,9 +115,9 @@ jobs:
 
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
-                  let url = discussions[i].url;
-                  let author = "@" + discussions[i].author.login;
-                  let title = discussions[i].title;
+                  let url = discussions[i].node.url;
+                  let author = "@" + discussions[i].node.author.login;
+                  let title = discussions[i].node.title;
                   let search = parseInt(JSON.stringify(body).search(url));
                   if (search === -1) {
                     let startIndex = parseInt(JSON.stringify(body.indexOf(placeholder)))
