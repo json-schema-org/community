@@ -36,13 +36,7 @@ jobs:
             auth: process.env.MY_TOKEN
           });
 
-          const graphql = require('@octokit/graphql').defaults({
-            request: request.defaults({
-              headers: {
-                authorization: `token ${process.env.MY_TOKEN}`,
-              },
-            }),
-          });
+          const { graphql } = require("@octokit/graphql");
 
           const repoNames = process.env.REPO_NAMES;
           const placeholder = process.env.PLACEHOLDER;
@@ -73,7 +67,7 @@ jobs:
             console.log("Issues to add:" + JSON.stringify(items2add));
 
             const discussions = [];
-            /*
+
             try {
               const query = `
                 query {
@@ -87,14 +81,18 @@ jobs:
                   }
                 }
               `;
-      
-              const { repository } = await graphql(query);
+              const { repository } = await graphql(query, {
+                headers: {
+                  authorization: `Bearer ${process.env.MY_TOKEN}`,
+                },
+              });
+
               discussions = repository.discussions.nodes;
             }
             catch (err) {
               console.error("Error:"+err.message);
             }
-            */
+            
 
             console.log("Discussions to add:" + JSON.stringify(discussions));
 
