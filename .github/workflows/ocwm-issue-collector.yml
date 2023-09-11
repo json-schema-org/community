@@ -66,10 +66,11 @@ jobs:
 
             const discussions = [];
 
+            //search(query: " label='agenda' repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
             try {
               const query = `
                 query {
-                  search(query: " label='agenda' repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
+                  search(query: " repo:${process.env.OWNER}/${repositories[r]}", type: DISCUSSION, first: 10) {
                     edges {
                       node {
                         ... on Discussion {
