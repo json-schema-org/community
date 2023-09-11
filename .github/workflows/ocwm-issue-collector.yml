@@ -67,24 +67,22 @@ jobs:
             const discussions = [];
 
             try {
-
-            const query = `
+              const query = `
               query {
                 search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
                   edges {
                     node {
                       ... on Discussion {
-                          title
-                          body
-                          author {
-                              login
-                          }
+                        title
+                        body
+                        author {
+                          login
                         }
                       }
                     }
                   }
                 }
-              `}
+              }`;  // Missing closing curly brace for the `try` block
               const response = await mygithub.graphql(query, {});
               const discussions = response.data.search.edges;
             }
@@ -140,9 +138,6 @@ jobs:
                   })
                 }
             }
-
-
-
             catch (err) {
                 console.error("Error:"+err.message);
                 console.log("There is no OCWM available");
