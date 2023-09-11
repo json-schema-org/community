@@ -37,59 +37,60 @@ jobs:
             }),
           });
       
-          const repoNames = process.env.REPO_NAMES.split(',');
-          const placeholder = process.env.PLACEHOLDER;
-          console.log("Placeholder:" + placeholder);
+          async function run() {
+            const repoNames = process.env.REPO_NAMES.split(',');
+            const placeholder = process.env.PLACEHOLDER;
+            console.log("Placeholder:" + placeholder);
       
-          let repositories = repoNames.split(",");
-          let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
-          let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
+            let repositories = repoNames.split(",");
+            let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
+            let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
       
-          console.log("Repositories:" + repositories);
+            console.log("Repositories:" + repositories);
       
-          console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
+            console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
       
-          const { data: workMeetings } = await request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
+            const { data: workMeetings } = await request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
       
-          console.log("workMeetings:" + JSON.stringify(workMeetings));
+            console.log("workMeetings:" + JSON.stringify(workMeetings));
       
-          for (let r = 0; r < repositories.length; r++) {
-            console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
+            for (let r = 0; r < repositories.length; r++) {
+              console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
       
-            const items2add = [];
-            try {
-              const { data: items2add } = await request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-            }
-            catch (err) {
-              console.error("Error:"+err.message);
-            }
+              const items2add = [];
+              try {
+                const { data: items2add } = await request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
+              }
+              catch (err) {
+                console.error("Error:"+err.message);
+              }
       
-            console.log("Issues to add:" + JSON.stringify(items2add));
+              console.log("Issues to add:" + JSON.stringify(items2add));
       
-            const discussions = [];
-            try {
-              const query = `
-                query {
-                  repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
-                    discussions(labels: ["${appendLabel}"], first: 10) {
-                      nodes {
-                        title
-                        body
+              let discussions = [];
+              try {
+                const query = `
+                  query {
+                    repository(owner: "${process.env.OWNER}", name: "${repositories[r]}") {
+                      discussions(labels: ["${appendLabel}"], first: 10) {
+                        nodes {
+                          title
+                          body
+                        }
                       }
                     }
                   }
-                }
-              `;
+                `;
       
-              const { repository } = await graphql(query);
-              discussions = repository.discussions.nodes;
-            }
-            catch (err) {
-              console.error("Error:"+err.message);
-            }
-            console.log("Discussions to add:" + JSON.stringify(discussions));
+                const { repository } = await graphql(query);
+                discussions = repository.discussions.nodes;
+              }
+              catch (err) {
+                console.error("Error:"+err.message);
+              }
+              console.log("Discussions to add:" + JSON.stringify(discussions));
       
-            try {
+              try {
                 let body = workMeetings[0].body;
                 let changesFlag = false;
       
@@ -133,9 +134,13 @@ jobs:
                       state: 'open',
                   })
                 }
-            }
-            catch (err) {
-                console.error("Error:"+err.message);
-                console.log("There is no OCWM available");
+              }
+              catch (err) {
+                  console.error("Error:"+err.message);
+                  console.log("There is no OCWM available");
+              }
             }
           }
+      
+          run();
+      
