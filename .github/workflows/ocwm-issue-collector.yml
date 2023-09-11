@@ -55,46 +55,31 @@ jobs:
 
           for (let r = 0; r < repositories.length; r++) {
 
-            const items2add = [];
-            try {
-              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-            }
-            catch (err) {
-              console.error("Error:"+err.message);
-            }
+
+            const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
             console.log("Issues to add:" + JSON.stringify(items2add));
 
-            const discussions = [];
-
-            try {
-              const query = `
-              query {
-                search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
-                  edges {
-                    node {
-                      ... on Discussion {
-                        title
-                        body
-                        author {
-                          login
-                        }
+            const query = `
+            query {
+              search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
+                edges {
+                  node {
+                    ... on Discussion {
+                      title
+                      body
+                      author {
+                        login
                       }
                     }
                   }
                 }
-              }`;  // Missing closing curly brace for the `try` block
-              const response = await mygithub.graphql(query, {});
-              console.log("Response:" + JSON.stringify(response));
-              
-              const discussions = response.search.edges;
-              console.log("0Discussions to add:" + JSON.stringify(discussions));
-            }
-            catch (err) {
-              console.error("Error:"+err.message);
-            }
+              }
+            }`;  // Missing closing curly brace for the `try` block
+            const response = await mygithub.graphql(query, {});
+            console.log("Response:" + JSON.stringify(response));
             
-
-            console.log("1Discussions to add:" + JSON.stringify(discussions));
+            const discussions = response.search.edges;
+            console.log("Discussions to add:" + JSON.stringify(discussions));
 
             try {
                 let body = workMeetings[0].body;
