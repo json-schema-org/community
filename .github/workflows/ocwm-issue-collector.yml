@@ -58,7 +58,7 @@ jobs:
 
             const items2add = [];
             try {
-              ({ data: items2add }) = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {});
+              const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {});
             }
             catch (err) {
               console.error("Error:"+err.message);
@@ -68,7 +68,7 @@ jobs:
 
             const discussions = [];
             try {
-              ({ data: discussions }) = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/discussions?labels=${appendLabel}`, {});
+              const { data: discussions } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/discussions?labels=${appendLabel}`, {});
             }
             catch (err) {
               console.error("Error:"+err.message);
