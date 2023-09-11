@@ -67,6 +67,7 @@ jobs:
                     ... on Discussion {
                       title
                       body
+                      resourcePath
                       author {
                         login
                       }
@@ -101,7 +102,7 @@ jobs:
 
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
-                  let url = discussions[i].node.url;
+                  let url = discussions[i].node.resourcePath;
                   let author = "@" + discussions[i].node.author.login;
                   let title = discussions[i].node.title;
                   let search = parseInt(JSON.stringify(body).search(url));
@@ -120,9 +121,9 @@ jobs:
                   console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
 
                   await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
-                      body: parsed,
-                      milestone: null,
-                      state: 'open',
+                    body: parsed,
+                    milestone: null,
+                    state: 'open',
                   })
                 }
             }
