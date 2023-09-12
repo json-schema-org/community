@@ -28,7 +28,7 @@ From exerience, these case studies can take some time to develop, write, get app
 
 JSON Schema is an [OpenJS Foundation](https://openjsf.org/about) Project, under [The Linux Foundation](https://www.linuxfoundation.org/). Both the OpenJS Foundation and The Linux Foundation are registered non-profit organizations (501(c)(6)).
 
-By supporting JSON Schema with a case study, you are documenting its success and your smarts in picking it as a solution. You'll join the ranks of organizations like GitHub, Postman, Microsoft, and Zapier. JSON Schema case studies help justify the ongoing financial support required to mature, develop, and support the JSON Schema ecosystem. Case studies also demonstrate the strength of the JSON Schema ecosystem in production today. The next case study could be you.
+By supporting JSON Schema with a case study, you are documenting its success and your smarts in picking it as a solution. JSON Schema case studies help justify the ongoing financial support required to mature, develop, and support the JSON Schema ecosystem. Case studies also demonstrate the strength of the JSON Schema ecosystem in production today. The next case study could be you.
 </details>
 
 | Organization | Contact | Description of Use / Reference |
