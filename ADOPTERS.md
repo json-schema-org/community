@@ -34,4 +34,3 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
 | GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
-
