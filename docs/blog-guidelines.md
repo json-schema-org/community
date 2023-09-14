@@ -48,7 +48,7 @@ JSON Schema will review the statement, as we do for the content for the blog, to
 Please feel free to share the blog on social media.
 
 ## How to submit for consideration ##
-Please submit your PR for consideration and we will start the PR process. If the article it’s not suitable for the JSON Schema blog, we will provide feedback and direction.
+Please submit your PR for consideration and we will start the PR process. If the article is not suitable for the JSON Schema blog, we will provide feedback and direction.
 
 ### Atribution
 These blog guidelines are adapted by the [CNCF blog guidelines](https://github.com/cncf/foundation/blob/main/blog-guidelines.md).
