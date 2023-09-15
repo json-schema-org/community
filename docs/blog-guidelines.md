@@ -1,6 +1,6 @@
 # JSON Schema Blog Guidelines #
 
-## JSN Schema Blog Overview ##
+## JSON Schema Blog Overview ##
 
 The JSON Schema blog serves as a channel for project maintainers and contributors, implementation maintainers and JSON Schema Champions to share content with the JSON Schema Community.
 
