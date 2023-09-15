@@ -14,7 +14,7 @@ The content on our blog consists of:
 
 Other topics are welcome, but it needs to have a direct link to the JSON Schema Community.
 
-We accept content from JSON Schema maintainers and contributors, implementation maintainers and JSON Schema Champions. 
+We accept content from JSON Schema maintainers and contributors, implementation maintainers, and JSON Schema Champions. 
 
 Blog type definitions:
 * Tooling blog: Any blog post on a JSON Schema implementation. 
