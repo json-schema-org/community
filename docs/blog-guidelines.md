@@ -42,7 +42,7 @@ Members can add 1-2 sentences at the end of their blog with a link to an externa
 
 Note: This is not a link to a JSON Schema website or form on the JSON Schema website.
 
-JSON Schema will review the statement, as we do for the content for the blog, to approve the content. If changes are needed, we will provide suggested changes. 
+The JSON Schema project will review the statement, as we do for the content for the blog, to approve the content. If changes are needed, we will provide feedback or suggested changes. 
 
 ## Promotion ##
 Please feel free to share the blog on social media.
