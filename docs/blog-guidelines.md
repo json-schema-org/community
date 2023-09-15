@@ -35,7 +35,7 @@ Some things to think about:
 * Your post must be your content, but can be published elsewhere with a right to republish. All content should have an author and be published Creative Commons with Attribution.
 
 Members can add 1-2 sentences at the end of their blog with a link to an external site such as their website or a gated asset. Examples for best practices:
-* Share contact info of  speaker - twitter, slack, email
+* Share contact info of speaker - twitter, slack, email
 * Links to company websites
 * Links to projects websites or Github
 * Can advertise if they are hiring and who to contact if interested
