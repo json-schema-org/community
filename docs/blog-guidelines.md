@@ -48,5 +48,8 @@ Please feel free to share the blog on social media.
 ## How to submit for consideration ##
 Please submit your PR for consideration and we will start the PR process. If the article is not suitable for the JSON Schema blog, we will provide feedback and direction.
 
+### Note on JSON Champions
+Until we publish an official definition of JSON Schema Champion, we consider JSON Schema Champions to experts, educators, authors, and event organizers relevant to the JSON Schema ecosystem.
+
 ### Atribution
 These blog guidelines are adapted by the [CNCF blog guidelines](https://github.com/cncf/foundation/blob/main/blog-guidelines.md).
