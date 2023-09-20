@@ -75,7 +75,7 @@ jobs:
                   }
                 }
               }
-            }`;  // Missing closing curly brace for the `try` block
+            }`;  
             const response = await mygithub.graphql(query, {});
             console.log("Response:" + JSON.stringify(response));
             
