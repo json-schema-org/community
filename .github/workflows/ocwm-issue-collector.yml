@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: '18'
     - name: Install dependencies
-      run: npm install @octokit/core
+      run: npm install @octokit/core 
     - name: Adding Issues
       uses: actions/github-script@v6
       env:
@@ -54,14 +54,32 @@ jobs:
           console.log("workMeetings:" + JSON.stringify(workMeetings));
 
           for (let r = 0; r < repositories.length; r++) {
-            console.log(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-            const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`, {
-            });
+
+
+            const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
             console.log("Issues to add:" + JSON.stringify(items2add));
 
-
-            const { data: discussions } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/discussions?labels=${appendLabel}`, {
-            });
+            const query = `
+            query {
+              search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
+                edges {
+                  node {
+                    ... on Discussion {
+                      title
+                      body
+                      resourcePath
+                      author {
+                        login
+                      }
+                    }
+                  }
+                }
+              }
+            }`;  
+            const response = await mygithub.graphql(query, {});
+            console.log("Response:" + JSON.stringify(response));
+            
+            const discussions = response.search.edges;
             console.log("Discussions to add:" + JSON.stringify(discussions));
 
             try {
@@ -84,9 +102,9 @@ jobs:
 
                 // Loop through discussions to add them to the agenda
                 for (let i = 0; i < discussions.length; i++) {
-                  let url = discussions[i].html_url;
-                  let author = "@" + discussions[i].user.login;
-                  let title = discussions[i].title;
+                  let url = "https://github.com/" + discussions[i].node.resourcePath;
+                  let author = "@" + discussions[i].node.author.login;
+                  let title = discussions[i].node.title;
                   let search = parseInt(JSON.stringify(body).search(url));
                   if (search === -1) {
                     let startIndex = parseInt(JSON.stringify(body.indexOf(placeholder)))
@@ -103,15 +121,12 @@ jobs:
                   console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
 
                   await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
-                      body: parsed,
-                      milestone: null,
-                      state: 'open',
+                    body: parsed,
+                    milestone: null,
+                    state: 'open',
                   })
                 }
             }
-
-
-
             catch (err) {
                 console.error("Error:"+err.message);
                 console.log("There is no OCWM available");
