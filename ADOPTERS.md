@@ -38,10 +38,10 @@ By supporting JSON Schema with a case study, you are documenting its success and
 
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
-| GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
-| Cookpad | [Kenshi Shiode](https://github.com/solt9029) | Cookpad JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/cookpad-case-study-en.md) |
-| Tyler Technology | [Andres Moreno](https://github.com/andmoredev) | Tyler Technology JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/tyler-technologies-case-study.md) |
-| W3C Web of Things | [Ege Korkan](https://github.com/egekorkan) | W3C Web of Things JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/w3c-wot-case-study.md) |
-| Remote | [Sandrina Pereira](https://github.com/sandrina-p) | Remote JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/remote-case-study.md) |
-| Postman | [Juan Cruz Viotti](https://github.com/jviotti) | Postman JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/postman-case-study.md) |
+| GitHub | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
+| Cookpad | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
+| Tyler Technology | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
+| W3C Web of Things | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
+| Remote | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
+| Postman | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
 
