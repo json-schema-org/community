@@ -44,4 +44,9 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | W3C Web of Things | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
 | Remote | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
 | Postman | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
-
+| OpenMetadata | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
+| Wundergraph | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
+| Zapier | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
+| Microsoft | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
+| F5 | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
+| Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
