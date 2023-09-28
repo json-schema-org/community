@@ -34,3 +34,4 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
 | GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
+| Automatic Data Processing (ADP) | [Jeremy Fiel](mailto:jeremy.fiel@adp.com?subject=I%20love%20JSON%20Schema%20too!) | [ADP Developer Resources](https://developers.adp.com/welcome) |
