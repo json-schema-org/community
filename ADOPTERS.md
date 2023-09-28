@@ -3,7 +3,7 @@
 **📢 If you're using JSON Schema in your organization, please add your company name to this list.**
 **🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact.**
 
-Why add your company name?
+## Why add your company name?
 
 - Demonstrates the real-world usage of JSON Schema.
 - Provides visibility to organizations that have successfully adopted JSON Schema.
@@ -11,6 +11,10 @@ Why add your company name?
 - Builds trust in the JSON Schema ecosystem.
 
 This document also lists the organizations that use JSON Schema based on public information available in blog posts, events, and videos. If any organization would like to be added or get removed please make a Pull Request.
+
+## How to add your company
+
+You can add your Company by using the [Adopter form](https://forms.gle/vyFskw1RshJ55LY46) or by editing this file after following the [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 Guidelines:
 - Please don't include your organization's logo or other trademarked material
@@ -34,3 +38,9 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
 | GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
+| Cookpad | [Kenshi Shiode](https://github.com/solt9029) | Cookpad JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/cookpad-case-study-en.md) |
+| Tyler Technology | [Andres Moreno](https://github.com/andmoredev) | Tyler Technology JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/tyler-technologies-case-study.md) |
+| W3C Web of Things | [Ege Korkan](https://github.com/egekorkan) | W3C Web of Things JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/w3c-wot-case-study.md) |
+| Remote | [Sandrina Pereira](https://github.com/sandrina-p) | Remote JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/remote-case-study.md) |
+| Postman | [Juan Cruz Viotti](https://github.com/jviotti) | Postman JSON Schema case study - [Validating documentation at GitHub](https://github.com/json-schema-org/blog/blob/main/pages/posts/postman-case-study.md) |
+
