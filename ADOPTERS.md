@@ -1,9 +1,10 @@
 # Adopters
 
 **📢 If you're using JSON Schema in your organization, please add your company name to this list.**
+
 **🙏 It really helps the project to gain momentum and credibility. It's a small contribution back to the project with a big impact.**
 
-Why add your company name?
+## Why add your company name?
 
 - Demonstrates the real-world usage of JSON Schema.
 - Provides visibility to organizations that have successfully adopted JSON Schema.
@@ -11,6 +12,10 @@ Why add your company name?
 - Builds trust in the JSON Schema ecosystem.
 
 This document also lists the organizations that use JSON Schema based on public information available in blog posts, events, and videos. If any organization would like to be added or get removed please make a Pull Request.
+
+## How to add your company
+
+You can add your Company by using the [Adopter form](https://forms.gle/vyFskw1RshJ55LY46) or by editing this file after following the [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 Guidelines:
 - Please don't include your organization's logo or other trademarked material
@@ -33,4 +38,15 @@ By supporting JSON Schema with a case study, you are documenting its success and
 
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
-| GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
+| GitHub | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
+| Cookpad | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
+| Tyler Technology | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
+| W3C Web of Things | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
+| Remote | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
+| Postman | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
+| OpenMetadata | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
+| Wundergraph | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
+| Zapier | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
+| Microsoft | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
+| F5 | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
+| Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
