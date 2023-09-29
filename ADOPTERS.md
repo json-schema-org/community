@@ -38,7 +38,6 @@ By supporting JSON Schema with a case study, you are documenting its success and
 
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
-| GitHub | [Rachael Sewell](https://github.com/rachmari)<br/>[Robert Sese](https://github.com/rsese) | Github JSON Schema case study - [Validating documentation at GitHub](https://json-schema.org/blog/posts/github-case-study) |
 | GitHub | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
 | Cookpad | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
 | Tyler Technology | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
