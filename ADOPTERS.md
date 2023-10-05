@@ -38,15 +38,15 @@ By supporting JSON Schema with a case study, you are documenting its success and
 
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
-| GitHub | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
-| Cookpad | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
-| Tyler Technology | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
-| W3C Web of Things | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
-| Remote | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
-| Postman | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
-| OpenMetadata | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
-| Wundergraph | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
-| Zapier | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
-| Microsoft | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
-| F5 | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
+| [GitHub](https://github.com/) | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
+| [Cookpad](https://cookpad.com/) | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
+| [Tyler Technology](https://www.tylertech.com/) | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
+| [W3C Web of Things](https://www.w3.org/WoT/) | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
+| [Remote](https://remote.com/) | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
+| [Postman](https://www.postman.com/) | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
+| [OpenMetadata](https://open-metadata.org/) | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
+| [Wundergraph](https://wundergraph.com/) | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
+| [Zapier](https://zapier.com/) | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
+| [Microsoft](https://www.microsoft.com/) | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
+| [F5](https://www.f5.com/) | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
 | Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
