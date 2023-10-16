@@ -50,4 +50,4 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | Microsoft | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
 | F5 | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
 | Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
-| Automatic Data Processing (ADP) | [Jeremy Fiel](mailto:jeremy.fiel@adp.com?subject=I%20love%20JSON%20Schema%20too!) | [ADP Developer Resources](https://developers.adp.com/welcome) |
+| [Automatic Data Processing (ADP)](https://www.adp.com/) | [Jeremy Fiel](mailto:jeremy.fiel@adp.com?subject=I%20love%20JSON%20Schema%20too!) | [ADP Developer Resources](https://developers.adp.com/welcome) |
