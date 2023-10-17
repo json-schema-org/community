@@ -142,7 +142,7 @@ Private decisions should be documented (as an ADR or otherwise) in the private `
 
 ## Other Project Roles
 
-The JSON Schema project recognizes the need for both technical and non-technical roles. While the OpenJS Foundation takes on business responsibilities as the legal entity hosting the project, there are other non-technical responsibilities.
+The JSON Schema project recognizes the need for both technical and non-technical roles. While the JSON Schema project has no legal entity nor is housed within an entity which can take on business responsibilities, the TSC shall take on those responsibilities as much is as feasible. There are other non-technical responsibilities
 
 The TSC will look to create other roles as appropriate, and may update this document in accordance with the requirements for doing so, to formally recognize the additional roles.
 
