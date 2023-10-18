@@ -50,3 +50,4 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | [Microsoft](https://www.microsoft.com/) | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
 | [F5](https://www.f5.com/) | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
 | Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
+| [Manfred](https://www.getmanfred.com/) | [David Bonilla](https://www.linkedin.com/in/dbonillaf/) | [The MAC is a standard open source format to define and share CVs](https://github.com/getmanfred/mac) |
