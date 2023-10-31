@@ -4,15 +4,17 @@ Once the decision to deprecate a feature has been made through an ADR , below is
 
 1. **Determine if you need an exception process**. Some features may require extended migration periods to allow customers extended time to fully adopt a new solution.
 
-2. **Craft the message & build the internal enablement document**. This document should include frequently asked questions, timelines, and any other relevant information.
+2. **Craft the message & build the internal enablement document**. This document should include frequently asked questions, timelines, and any other relevant information. The best approach here is to publish a blog post.
 
-3. **Share the message internally**. The best Slack channel for this announcement is #announcements. The announcement should communicate the timeline and the related ADR.
-
-4. **Share with users at minimum 30-days in advance**. It is recommended to start with a broad social media announcement including a blog post. The blog post should contain:
+3. **Share the message internally**. The best Slack channel for this announcement is #announcements. We will link a github announcement containing:
   - Why we’re deprecating the feature.
   - What is changing.
   - What do you need to do?.
   - When is this change comming into effect? The deprecation timeline.
+
+The announcement should communicate the timeline and the related ADR. This will be shared before sharing it publicly with users (This can be done in the same day).
+
+4. **Share with users at minimum 30-days in advance**. It is recommended to start with a broad social media announcement including a reference to a blog post with the same content than the Github announcement. 
 
 
 5. **Remind users twice**. 7 days and 1 day before. This is good practice to ensure that users hear the message and are following any migration steps required. The announcement will be shared in social media and Slack #announcements.
