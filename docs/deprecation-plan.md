@@ -1,3 +1,7 @@
+# Scope of this document
+
+This document is intenteded to describe the process to deprecate features other than changes in the Specification. Changes in the Specification are handled by the Specification development process.
+
 # The process of deprecating a feature
 
 Once the decision to deprecate a feature has been made through an ADR, below is a recommend set of actions:
@@ -49,3 +53,19 @@ Below are some examples of deprecation announcements:
 
     Have questions? Join us on slack!
 
+# Recommendations to communicate other non-breaking changes
+
+The process described before will cover breaking changes, however we can use some of the practices described to better handle other non-breaking changes. For those cases this is the recommended process:
+
+1. **Share the message internally**. The best Slack channel for this announcement is #announcements. We will link a github announcement containing:
+  - What is changing.
+  - What do you need to do?.
+  - When is this change comming into effect? The deprecation timeline.
+
+The announcement should communicate the timeline.
+
+2. **Share with users at minimum 30-days in advance**. We'll use again Slack #announcements and a GitHub announcement. 
+
+3. **Remind users twice**. 7 days and 1 day before. This is good practice to ensure that users hear the message. We'll use again Slack #announcements and a GitHub announcement. 
+
+4. **Execute the change**.
