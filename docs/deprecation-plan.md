@@ -4,7 +4,7 @@ Once the decision to deprecate a feature has been made through an ADR, below is 
 
 1. **Determine if you need an exception process**. Some features may require extended migration periods to allow customers extended time to fully adopt a new solution.
 
-2. **Craft the message & build the internal enablement document**. This document should include frequently asked questions, timelines, and any other relevant information. The best approach here is to publish a blog post.
+2. **Craft the message and build the internal enablement document**. This document should include frequently asked questions, timelines, and any other relevant information. The best approach here is to publish a blog post.
 
 3. **Share the message internally**. The best Slack channel for this announcement is #announcements. We will link a github announcement containing:
   - Why we’re deprecating the feature.
