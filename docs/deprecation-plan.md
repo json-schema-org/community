@@ -1,6 +1,6 @@
 # The process of deprecating a feature
 
-Once the decision to deprecate a feature has been made through an ADR , below is a recommend set of actions:
+Once the decision to deprecate a feature has been made through an ADR, below is a recommend set of actions:
 
 1. **Determine if you need an exception process**. Some features may require extended migration periods to allow customers extended time to fully adopt a new solution.
 
