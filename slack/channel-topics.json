@@ -12,7 +12,7 @@
     "github": "Github stream of activity. You probably want to switch notifications to mention only mode!",
     "hyper-schema": "Discussions and queries related to vocabulary for annotating JSON documents with hyperlinks.",
     "implementers": "Development of validation libraries and other software tools. Questions about using these tools, and general schema authoring issues should go to #general",
-    "adopters": "Discussions and queries related the JSON Schema Adopters and Case Studies"
+    "adopters": "Discussions and queries related the JSON Schema Adopters and Case Studies",
     "in-the-wild": "Share all and every use of JSON Schema you see in the wild. See https://json-schema.slack.com/archives/C020M2HR37G/p1620122275000700",
     "introductions": "Break the ice, introduce yourself to our amazing community, and connect with each other!",
     "jobs": "Post job openings related to JSON Schema or APIs.",
