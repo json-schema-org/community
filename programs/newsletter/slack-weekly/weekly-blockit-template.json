@@ -1,0 +1,111 @@
+{
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": "The JSON Schema Weekly! #43",
+				"emoji": true
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": ":wave: Hi *JSON Schema* Community! This is a quick recap of the best stuff of the week:"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "📰 *Community News*"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "<https://www.youtube.com/watch?v=JjAKtQGv1oM|*JSON Schema Validation*: A dating show between backend and frontend by Jorrik Klijnsma>"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "🌱 *Contributors Spotlight*"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Thanks @micshar1992 for <https://github.com/json-schema-org/website/pull/157|this> tutorial for unnevaluatedItems to improve the JSON Schema docs!"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "💬 *Community Discussions*"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "<https://github.com/orgs/json-schema-org/discussions/502|Extending definitions with other properties #502>"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "🗓 *Events*"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Past events: * Watch on Youtube the recording of the last Community Meeting `2023-10-16` <https://youtu.be/OKQnKIefRPA|Watch on Youtube>"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*Upcoming events:* Join us next Monday `2023-10-23` for the next Open Community Working Meeting. <https://github.com/json-schema-org/community/issues/499|Agenda> | <https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09|Zoom Link>"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "We are actively looking for contributors! Please join #contribute to get involved."
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Have a lovely weekend everyone! 🫶🫶🏽🫶🏾"
+			}
+		}
+	]
+}
