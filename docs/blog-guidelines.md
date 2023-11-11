@@ -2,7 +2,7 @@
 
 ## JSON Schema Blog Overview ##
 
-The JSON Schema blog serves as a channel for project maintainers and contributors, implementation maintainers, and JSON Schema Champions to share content with the JSON Schema Community.
+The JSON Schema blog serves as a channel for JSON Schema maintainers and contributors, implementation maintainers, and [Community Champions](#note-on-json-champions) to share content with the JSON Schema Community.
 
 The content on our blog consists of:
 * Use cases and success stories
