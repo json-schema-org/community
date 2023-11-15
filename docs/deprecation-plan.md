@@ -1,10 +1,10 @@
 # Scope of this document
 
-This document is intenteded to describe the process to deprecate features other than changes in the Specification. Changes in the Specification are handled by the Specification development process.
+This document is intenteded to describe the process to follow in case of breaking changes other than changes in the Specification. Changes in the Specification are handled by the Specification development process.
 
-# The process of deprecating a feature
+# The process for breaking changes
 
-Once the decision to deprecate a feature has been made through an ADR, below is a recommend set of actions:
+Once the decision to proceed with the breaking change has been made through an ADR, below is a recommend set of actions:
 
 1. **Determine if you need an exception process**. Some features may require extended migration periods to allow customers extended time to fully adopt a new solution.
 
@@ -53,9 +53,9 @@ Below are some examples of deprecation announcements:
 
     Have questions? Join us on slack!
 
-# Recommendations to communicate other non-breaking changes
+# Recommendations to communicate other critical changes
 
-The process described before will cover breaking changes, however we can use some of the practices described to better handle other non-breaking changes. For those cases this is the recommended process:
+The process described before will cover breaking changes, however we can use some of the practices described before to better handle other critical changes. For those cases this is the recommended process:
 
 1. **Share the message internally**. The best Slack channel for this announcement is #announcements. We will link a github announcement containing:
   - What is changing.
