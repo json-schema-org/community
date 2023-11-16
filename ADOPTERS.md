@@ -52,3 +52,4 @@ By supporting JSON Schema with a case study, you are documenting its success and
 | Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
 | [Automatic Data Processing (ADP)](https://www.adp.com/) | [Jeremy Fiel](mailto:jeremy.fiel@adp.com?subject=I%20love%20JSON%20Schema%20too!) | [ADP Developer Resources](https://developers.adp.com/welcome) |
 | [Manfred](https://www.getmanfred.com/) | [David Bonilla](https://www.linkedin.com/in/dbonillaf/) | [The MAC is a standard open source format created by Manfred to define and share CVs](https://github.com/getmanfred/mac) |
+| [HAPI Server](https://hapi-server.org/) | [Jeremy Faden](https://cottagesystems.com/) | [Server responses can be verified against a schema, accelerating development of correct servers](https://github.com/hapi-server/data-specification-schema) |
