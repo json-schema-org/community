@@ -23,7 +23,7 @@ The announcement should communicate the timeline and the related ADR. This will 
 
 5. **Remind users twice**. 7 days and 1 day before. This is good practice to ensure that users hear the message and are following any migration steps required. The announcement will be shared in social media and Slack #announcements.
 
-6. **Execute the deprecation**.
+6. **Execute the change**.
 
 ## Example Content
 
