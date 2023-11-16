@@ -40,32 +40,16 @@ The DNS mostly points to GitHub.
 
 The website is split into several applications for historical reasons.
 
-The main website is run through GitHub Pages. The source code is located at https://github.com/json-schema-org/json-schema-org.github.io.
+The main website is run through Cloudflare Pages. The source code is located at https://github.com/json-schema-org/website.
 
 A key set of resources hosted by the site are the JSON Schema meta-schemas, which are used to indicate which schemas are themselves valid for each version of the specification.
 These resources are potentially heavily used or referred to by consumers of JSON Schema.
 Links to these resources can be found at https://json-schema.org/specification.html for the latest version of JSON Schema, and at https://json-schema.org/specification-links.html for older versions.
 The working location for these resources is in the specification repository at https://github.com/json-schema-org/json-schema-spec/, and they are then included into the aforementioned website repository for publishing using `git submodule`.
 
-The human friendly documentation for the specification, dubbed "Understanding JSON Schema", is located at https://json-schema.org/understanding-json-schema.
-The source for this project is located at https://github.com/json-schema-org/understanding-json-schema.
-
-Both of these sites are deployed by GitHub onto GitHub Pages.
-
-The JSON Schema blog is located at https://json-schema.org/blog.
-The source code is located at https://github.com/json-schema-org/blog.
-The blog is deployed on CloudFlare Pages.
-The CloudFlare pages name is `json-schema-blog`.
-The blog URL is redirected using CloudFlare workers.
-The redirection worker is called `blogredirect`.
-(It may now be possible to do the redirect using URL rewriting, but it was broken at the time, and their community support suggested using Workers.)
-
-The main site and the understanding site get deploy previews via Netlify.
-Unfortunately, CloudFlare pages does not offer deployment previews on Pull Requests where the Pull Request comes from a fork of the project (while netlify does, and for free).
-
 The Slack server has a number of bots which feed data into specific channels.
 
-The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-mentions channel was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it, and it currently (as of 2022-05-26) needs to be replaced as it's acting up.
+The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-mentions is now inactive after the changes in the Twitter API. The bot was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it.
 
 The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
@@ -76,6 +60,8 @@ The #github channel bot uses the official Github Slack app, and runs all Github 
 The #ghd-community channel bot uses Zapier to process webhooks for our Community repo's GitHub Discussions, and relay to Slack.
 The Zapier account is owned and paid for by Postman. If this ever might become a problem, we should move to our own licence.
 At the time, there was no official app integration.
+
+The Community metrics previously available in Google Analytics are now in Plausible.
 
 
 If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
