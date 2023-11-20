@@ -1,8 +1,8 @@
 # Sponsors
 
-JSON Schema uses [OpenCollective](https://opencollective.com/json-schema) to gather money. This money is used to cover project expenses in a transparent way ([See the OpenCollective documentation](https://opencollective.com/how-it-works)), and your donation will help to sustain and grow the Project.
+JSON Schema uses [OpenCollective](https://opencollective.com/json-schema) and [GitHub Sponsors](https://github.com/sponsors) to gather money. This money is used to cover project expenses in a transparent way ([See the OpenCollective documentation](https://opencollective.com/how-it-works)), and your donation will help to sustain and grow the Project.
 
-Please go to our [OpenCollective page](https://opencollective.com/json-schema) to become a backer or a sponsor.
+Please go to our [OpenCollective page](https://opencollective.com/json-schema) or [GitHub Sponsors page](https://github.com/sponsors/json-schema-org) to become a backer or a sponsor.
 
 ## Benefits of being a backer
 
