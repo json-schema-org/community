@@ -51,7 +51,7 @@ Money will first be used to cover direct project costs:
 - New features development
 - Legal protection
 
-Then, money will be used to:
+Then, money will be used for:
 
 - Merchandising
 - Mentoring and Contributing programs
