@@ -2,11 +2,13 @@
 
 JSON Schema uses [OpenCollective](https://opencollective.com/json-schema) and [GitHub Sponsors](https://github.com/sponsors) to gather money. This money is used to cover project expenses in a transparent way ([See the OpenCollective documentation](https://opencollective.com/how-it-works)), and your donation will help to sustain and grow the Project.
 
+While donations can be done to both OpenCollective and GitHub Sponsors, the JSON Schema funds are fully managed in OpenCollective, therefore the donations received in GitHub Sponsors will be transferred to OpenCollective.
+
 Please go to our [OpenCollective page](https://opencollective.com/json-schema) or [GitHub Sponsors page](https://github.com/sponsors/json-schema-org) to become a backer or a sponsor.
 
-## Benefits of being a backer
+## Benefits of being an individual backer
 
-Backers donate $5 per month to the project, and get the following benefits:
+Individual backers donate $5 per month to the project, and get the following benefits:
 
 - Visibility on the GitHub main project page in the "sponsors" section.
 
@@ -26,8 +28,8 @@ There is a limit to 10 silver sponsors.
 Silver sponsors donate $500 per month to the project, and get the following benefits:
 
 - Same benefits as bronze sponsors.
-- Visibility on the Newsletter footer.
-- Visibility on release notes.
+- A mention on the Newsletter.
+- A mention on release notes.
 - Get a Swag Kit.
 
 ## Benefits of being a gold sponsor
@@ -37,19 +39,18 @@ There is a limit to 3 gold sponsors.
 Gold sponsors donate $1,000 per month to the project, and get the following benefits:
 
 - Same benefits as silver sponsors.
-- Company logos on all [https://json-schema.org](https://json-schema.org) page footers.
+- Company logo in the footer of the Newsletter.
+- Company logo on all [https://json-schema.org](https://json-schema.org) page footers.
 
 ## What will the project do with the money?
 
 As you can read in [the OpenCollective documentation](https://docs.opencollective.com), the way your money will be used will be public and totally transparent.
 
-Anyone can file an expense. If the expense makes sense for the development of the community, it will be "merged" in the ledger of our open collective by the core contributors and the person who filed the expense will be reimbursed.
-
 Money will first be used to cover direct project costs:
 
-- Infrastructure and hosting
+- [Infrastructure](https://github.com/json-schema-org/community/blob/main/INFRASTRUCTURE.md) and hosting
 - New feature development
-- Legal protection
+- Any administrative or legal costs
 
 Then, money will be used for:
 
