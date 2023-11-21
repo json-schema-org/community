@@ -48,7 +48,7 @@ Anyone can file an expense. If the expense makes sense for the development of th
 Money will first be used to cover direct project costs:
 
 - Infrastructure and hosting
-- New features development
+- New feature development
 - Legal protection
 
 Then, money will be used for:
