@@ -1,16 +1,16 @@
 # Guidelines for contributing to the JSON Schema project GitHub organisation
 
-🚨 Work in progress! (2021/07 - @relequestual)
-
 We invite you to join us working on JSON Schema.
 
-The fastest way to get involved and become active in the community is to join our Slack server at https://json-schema.org/slack.
+The fastest way to get involved and become active in the community is to join the `#contribute` channel in our Slack server at https://json-schema.org/slack.
 
 If you have suggestions on how to improve our community, please do check out our [Community Discussions](https://github.com/json-schema-org/community/discussions), and start a new discussion.
 
 # General
 
-While each repository may have its own guidance for contributing, the following sections apply organisation wide.
+The JSON Schema organization hosts different projects, and while most have similar  contributing guidelines as described in this document, the JSON Schema Specification development process follows different contributing guidelines. Please, check-out the [Spec repository](https://github.com/json-schema-org/json-schema-spec/blob/main/CONTRIBUTING.md) to know more. 
+
+The following sections apply organisation wide to all repositories.
 
 ## Key "Architectural" decisions
 
@@ -44,6 +44,10 @@ Once an ADR is part of a pull request which is labelled with `adr-required`, the
 
 
 The process is designed to be lightweight, and a template is provided for ease of use.
+
+### Triage
+
+Please check the [triage process](TRIAGE.md) to learn how we review and label incoming issues . 
 
 ### Feedback
 
