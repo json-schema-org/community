@@ -63,5 +63,7 @@ At the time, there was no official app integration.
 
 The Community metrics previously available in Google Analytics are now in Plausible.
 
+We are using mailfence to manage the email accounts associated to json-schema.org.
+
 
 If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
