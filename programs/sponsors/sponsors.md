@@ -31,7 +31,6 @@ Silver sponsors donate $500 per month to the project, and get the following bene
 
 - Same benefits as bronze sponsors.
 - A mention on the Newsletter.
-- A mention on release notes.
 - Get a Swag Kit.
 
 ## Benefits of being a gold sponsor
@@ -58,6 +57,12 @@ Then, money will be used for:
 
 - Merchandising
 - Mentoring and Contributing programs
+
+## Acceptance policy
+
+We don't accept sponsorship from the following types of companies: Adult websites, affiliate and review websites, Casinos and gambling, Insurance & financial products (credit), Pharmacy products (weight loss, anti-aging), and Essay writing services.
+
+Please, [contact us](mailto:info@json-schema.org) if you have further questions.
 
 References:
 - [JHipster - Sponsors](https://www.jhipster.tech/sponsors/)
