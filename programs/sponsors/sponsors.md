@@ -8,6 +8,12 @@ While donations can be made to both OpenCollective and GitHub Sponsors, the JSON
 
 Please go to our [OpenCollective page](https://opencollective.com/json-schema) or [GitHub Sponsors page](https://github.com/sponsors/json-schema-org) to become a backer or a sponsor.
 
+<div className='flex flex-wrap justify-center items-center gap-4 w-full'>
+ <a href="https://opencollective.com/json-schema/contribute" target="_blank">
+  <img src="https://opencollective.com/json-schema/contribute/button@2x.png?color=blue" width=300 />
+ </a>
+</div>
+
 ## Benefits of being an individual backer
 
 Individual backers donate $5 per month to the project, and get the following benefits:
@@ -64,6 +70,12 @@ We don't accept sponsorship from the following types of companies: Adult website
 
 Please, [contact us](mailto:info@json-schema.org) if you have further questions.
 
-References:
+<div className='flex flex-wrap justify-center items-center gap-4 w-full'>
+ <a href="https://opencollective.com/json-schema/contribute" target="_blank">
+  <img src="https://opencollective.com/json-schema/contribute/button@2x.png?color=blue" width=300 />
+ </a>
+</div>
+
+### References:
 - [JHipster - Sponsors](https://www.jhipster.tech/sponsors/)
 - [MUI Code - Sponsors and Backers](https://mui.com/material-ui/discover-more/backers/)
