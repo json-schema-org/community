@@ -1,4 +1,5 @@
-🚨 This document is not ratified 🚨
+# 🚨 This document is not ratified 🚨
+
 In the process of creating a charter, many "process" and governance related things were included in the draft of the charter. Feedback was that the charter should not include such content, and that it should be moved to a separate file. This is that file.
 The initial commit includes content already approved by the group, however some additional content will be added at a later point, and this comment removed.
 For context, see https://github.com/json-schema-org/community/pull/325
