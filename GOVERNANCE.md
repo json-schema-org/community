@@ -45,8 +45,6 @@ In addition to the requirements above, the Issue must be labeled `expedited`.
 
 While an associated Discussion is not required, if one is used, it must be clearly linked in both directions, and be labeled with `tsc-decision`.
 
-#### Quick consensus process
-
 A vote is called to see if other members agree. The vote takes place on the opening comment. This vote is different from the decision-making voting process, and only requires 3 (additional) votes in favour and none against to carry. If the vote carries, the quick process is started, otherwise the standard consensus process is started.
 
 The quick process is designed for small trivial issues where the resolution feels likely obvious, and the member who proposes the decision discussion has at least one clear resolution to present. The decision discussion owner should present the possible solution they are advocating for (in a follow up comment on the Issue. Not in the opening comment.), and ask to test for agreement. If consensus is not clearly reached, the quick process is ended and the standard consensus process is started. (Label `expedited` should be removed and `tsc-stage-1` added.)
