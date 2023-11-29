@@ -20,7 +20,7 @@ For each language, we wish to track whether one or more known implementations ex
     (This 2% number was chosen simply because it represents the dividing point between one cluster of implementations supported by Bowtie.
      Above this number is a collection of implementations failing larger orders of magnitude of tests).
   * Supports one of the most recent 2 releases of JSON Schema
-  * Has had a release of itself in the last 3 years (which is around the timeline on which JSON Schema itself has seen its last release)
+  * Has had a release of itself in the last 3 years
   * Has had some human-authored commit in the last year
   * Does not have explicit indication, by its maintainer or documentation, that it is not production ready
 
