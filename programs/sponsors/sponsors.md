@@ -74,8 +74,9 @@ Please, [contact us](mailto:info@json-schema.org) if you have further questions.
  <a href="https://opencollective.com/json-schema/contribute" target="_blank">
   <img src="https://opencollective.com/json-schema/contribute/button@2x.png?color=blue" width=300 />
  </a>
-</div>
+</div><br/><br/>
 
-### References:
+
+**References:**
 - [JHipster - Sponsors](https://www.jhipster.tech/sponsors/)
 - [MUI Code - Sponsors and Backers](https://mui.com/material-ui/discover-more/backers/)
