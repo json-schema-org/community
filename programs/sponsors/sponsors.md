@@ -76,6 +76,7 @@ Please, [contact us](mailto:info@json-schema.org) if you have further questions.
  </a>
 </div>
 
-### References:
+
+**References:**
 - [JHipster - Sponsors](https://www.jhipster.tech/sponsors/)
 - [MUI Code - Sponsors and Backers](https://mui.com/material-ui/discover-more/backers/)
