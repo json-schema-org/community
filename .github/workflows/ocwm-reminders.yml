@@ -2,7 +2,7 @@ name: Send reminders to join the OCWM the same day
 
 on:
   schedule:
-    - cron: '0 20 * * 1'  # Runs every Monday at 15:00
+    - cron: '0 15 * * 1'  # Runs every Monday at 15:00
 
   repository_dispatch:
     types: ocwm-reminders
