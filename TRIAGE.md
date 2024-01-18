@@ -56,7 +56,7 @@ Other labels:
 | ------------------------ | ------------------------------------------------------------------------- |
 | `good first issue`       | Indicates that the issue is suitable for newcomers to contribute to the project.|
 | `duplicate`              | Indicates that is duplicated.                                             |
-| `inf-required`           | Indicates that the issue lacks sufficient information to be able to act on it right now and requires additional details from the reporter. The maintainer for the area must remove the tag when more info is provided, or close it if it is too old.|
+| `info-required`          | Indicates that the issue lacks sufficient information to be able to act on it right now and requires additional details from the reporter. The maintainer for the area must remove the tag when more info is provided, or close it if it is too old.|
 
 ## Triage process
 
@@ -70,9 +70,9 @@ At the end of reading an issue, you should do one of the following:
 
 4. Move the issue to the correct repo if required.
 
-5. If it's not clear what the problem or issue is, add a note for the requestor (or occasionally some other user on the thread), and mark it as `question`. If a `question` issue persists for longer than a week or so (past a second followup), it's reasonable to `close` the issue and encourage the requester to reopen if they have more details.
+5. If it's not clear what the problem or issue is, add a note for the requestor (or occasionally some other user on the thread), and mark it as `info-required`. If a `info-required` issue persists for longer than 2 weeks or so (past a second followup), it's reasonable to `close` the issue using `Status: Abandoned` and encourage the requester to reopen if they have more details.
 
-6. If the request is infeasable, or complete,use `status: Completed`` follow up directly in the issue with the information, and `close` the issue.
+6. If the request is infeasable, or complete,use `status: Completed` follow up directly in the issue with the information, and `close` the issue.
 
 ### References
 
