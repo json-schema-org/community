@@ -28,7 +28,6 @@ Type labels help categorize issues based on their scope:
 | `👥 Team`                | Indicates issues for team collaboration.                                  |
 | `🗃️ Adr-required`        | Indicates issues requiring Architectural Decision Record                  |
 | `💬 Question`            | A query or seeking clarification. Probably doesn't need the attention of everyone, just a few to help bring clarification or explain intent.|
-| `🤝 Vote`                | Indicates issues for voting on an specific topic.                         |
 
 Priority labels:
 | Label                    | Description                                                               |
