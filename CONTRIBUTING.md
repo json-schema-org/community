@@ -12,6 +12,27 @@ The JSON Schema organization hosts different projects, and while most have simil
 
 The following sections apply organisation wide to all repositories.
 
+### Types of contributions
+
+JSON Schema is a community that lives on its contributors. As we grow, we need more people to help others. You can contribute in many ways, either in the specification development or in the wider ecosystem.
+
+Here are some areas where you can contribute:
+ * 🌱 [Specification development](https://github.com/json-schema-org/json-schema-spec)
+ * 🐞 Reporting Bugs
+ * 💡 Issues and feature requests
+ * 🧐 Reviewing PRs
+ * ❓ Answer questions
+ * 🙏 Join discussions and provide feedback
+ * 🛠️ [Add new JSON Schema tooling](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-add-a-new-implementation)
+ * ✍️ [Publish a blog post](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-publish-a-blog-post)
+ * 📈 [Publish a case study](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-publish-a-case-study)
+ * 📋 [Improving The Documentation](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-documentation)
+ * 🏗 [Website development](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.mdhttps://github.com/orgs/json-schema-org/projects/11/views/1)
+ * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
+ * 😍 [Collaborating with Community Management tasks](https://github.com/json-schema-org/community)
+ * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
+
+
 ## Key "Architectural" decisions
 
 In most repositories, we would like to utilise [Architectural Decision Records (ADRs)](https://adr.github.io/) to help us work effectively.
