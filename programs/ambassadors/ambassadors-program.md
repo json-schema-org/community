@@ -45,7 +45,7 @@ Examples:
 
 - Invitation to [the JSON Schema organization](https://github.com/orgs/json-schema-org/people).
 - Receive a special swag pack for Ambassadors (Swag availability date to be confirmed).
-- Receive swag for conference or workshop participants (Swag availability date to be confirmed).
+- Receive additional swag for conference or workshop participants (Swag availability date to be confirmed).
 - Community-wide recognition.
 - All our respects for your contribution!
 
