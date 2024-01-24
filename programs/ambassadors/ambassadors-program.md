@@ -47,7 +47,7 @@ Examples:
 - Receive a special swag pack for Ambassadors (Swag availability date to be confirmed).
 - Receive additional swag for conference or workshop participants (Swag availability date to be confirmed).
 - Community-wide recognition.
-- All our respects for your contribution!
+- All our respect for your contributions!
 
 ### Become an JSON Schema Ambassador
 
