@@ -31,6 +31,12 @@ There may be other grounds for removal from the TSC, such as seriously violating
 
 ## Decision Making
 
+The JSON Schema Project uses 2 different mechanism for decision making:
+
+1. **Consensus**: The JSON Schema Project tries by default to find consensus in all the strategic decision by using the consensus mechanism described below. 
+
+2. **Voting**: It is OK use the voting process for those cases when the discussion has already occurred or discussion and discovery is not required. Voting is a simple yet powerful mechanism. 
+
 ### Decision-making via consensus
 
 Both the Quick and Standard consensus process require the creation of an Issue in the TSC GitHub repository.
