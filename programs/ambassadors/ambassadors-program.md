@@ -24,7 +24,7 @@ Ambassadors can be invited to review content (i.e., articles, talks, videos) rel
 
 Some clarifications on the type of contributions:
     
-- Articles, videos, and podcasts can be published on [JSON Schema.com/blog](https://www.JSON Schema.com/blog) or other domains. 
+- Articles, videos, and podcasts can be published on [JSON-Schema.org/blog](https://json-schema.org/blog) or other domains. 
 - Talks and presentations can be displayed at different events or workshops. Within it, JSON Schema should appear at the core of the presentation. The presentation would never be used as a disguised marketing tool for other products/projects.
 - Special contributions should be driven to support the community or enhance its visibility (i.e., getting new sponsors or driving initiatives) 
 - If we did not identify the contributions, just let us know.
