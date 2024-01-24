@@ -66,7 +66,7 @@ Then, money will be used for:
 
 ## Acceptance policy
 
-We don't accept sponsorship from the following types of companies: Adult websites, affiliate and review websites, Casinos and gambling, Insurance & financial products (credit), Pharmacy products (weight loss, anti-aging), and Essay writing services.
+We don't accept sponsorship from the following types of companies: Adult websites, affiliate and review websites, fake news services, fake social media engagement services, casinos and gambling, insurance & financial products (credit), pharmacy products (weight loss, anti-aging), and essay writing services.
 
 Please, [contact us](mailto:info@json-schema.org) if you have further questions.
 
