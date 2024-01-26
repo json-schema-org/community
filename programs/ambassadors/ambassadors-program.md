@@ -1,10 +1,10 @@
-This document covers the organizational and operational aspects of the JSON Schema Ambassador Program.
+This document covers the organizational and operational aspects of the JSON Schema Ambassadors Program.
 
 ### What is the JSON Schema Ambassador Program?
 
 The JSON Schema Ambassador Program aims to bring JSON Schema closer to both current users and potential new project users. It also aims to provide users and community members with the necessary tools and resources to:
 
-- Promote collaboration among the JSON Schema user base.
+- Promote collaboration among the JSON Schema ecosystem.
 - Engage with the project in some way, either as a contributor, blogger, speaker, etc.
 - Speak at community events or write technical content (e.g. blog posts) that solves community needs.
 - Nurture community growth and a welcoming environment to spread knowledge about the project.
@@ -12,9 +12,8 @@ The JSON Schema Ambassador Program aims to bring JSON Schema closer to both curr
 ### How does the program work?
 
 - The ambassador selection process will be as transparent as possible.
-- The model currently in place for adding members to the Technical Steering Committee through PR will be used.
-- The TSC or delegated maintainers of community repositories will evaluate applications according to compliance requirements via a traditional PR flow.
-- All ambassador information will be displayed on the JSON Schema website in a list after the PR is merged.
+- The TSC and existing ambassadors will evaluate applications according to compliance requirements via a traditional PR flow.
+- All ambassadors information will be displayed on the JSON Schema website in a list after the PR is merged.
 
 ### Ambassador requirements
 
@@ -44,7 +43,7 @@ Examples:
 ### Ambassador benefits
 
 - Invitation to [the JSON Schema organization](https://github.com/orgs/json-schema-org/people).
-- Receive a special swag pack for Ambassadors (Swag availability date to be confirmed).
+- Receive a special swag pack for Ambassadors (The swag availability date to be confirmed).
 - Receive additional swag for conference or workshop participants (Swag availability date to be confirmed).
 - Community-wide recognition.
 - All our respect for your contributions!
@@ -57,6 +56,6 @@ That PR doesn't have to be created by the ambassador candidate; any community me
 
 Get on board and become an ambassador!
 
-#### References
+#### References and inspiration
 
 - [The AsynAPI Ambassadors Program](https://github.com/asyncapi/community/blob/master/AMBASSADOR_ORGANIZATION.md)
