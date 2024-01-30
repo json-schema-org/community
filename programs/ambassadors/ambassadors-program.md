@@ -30,8 +30,8 @@ Some clarifications on the type of contributions:
          
 Examples: 
 
-1. If contributors publish 3 articles and propel 1 initiative about JSON Schema in eight months, they will become ambassadors for the whole year.
-2. If contributors make 1 presentation, write 2 articles, and propel 1 initiative, they will become ambassadors for the whole year.
+1. If contributors publish 3 articles and drive 1 initiative about JSON Schema in eight months, they become ambassadors for the whole year.
+2. If contributors make 1 presentation, write 2 articles, and drive 1 initiative, they become ambassadors for the whole year.
 3. If you were accepted as ambassador on the 5th of May 2023, you have already fulfilled the requirements. On the 5th of May 2024, we will check if you qualify again after the 5th of May 2023.
    
 ### Ambassadors duties
