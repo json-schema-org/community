@@ -42,7 +42,7 @@ Examples:
 
 ### Ambassador benefits
 
-- Invitation to [the JSON Schema organization](https://github.com/orgs/json-schema-org/people).
+- Visibility in the JSON Schema Ambassadors page of the JSON Schema website.
 - Receive a special swag pack for Ambassadors (The swag availability date to be confirmed).
 - Receive additional swag for conference or workshop participants (Swag availability date to be confirmed).
 - Community-wide recognition.
