@@ -1,6 +1,5 @@
-<p align="center">
-<img src="https://jina.ai/assets/images/logo.svg" alt="GSoC banner" width="20%" >
-</p>
+
+![gsoc-banner](https://github.com/json-schema-org/community/assets/40007659/7d7d3f1d-6f4a-4139-98fb-96aa3354b777)
 
 ## 👋 What is JSON Schema ?
 
