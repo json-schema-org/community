@@ -31,8 +31,8 @@ Other benefits of choosing a JSON Schema project:
 
 ## 🤙 Getting in Contact
 
-- **GitHub:*- Please use [Issues](https://github.com/json-schema-org/community/issues?q=is%3Aopen+label%3Agsoc+sort%3Acreated-desc) to comment on project ideas, ask questions and collaborate.
-- **Slack:*- Please join us in our [slack workspace](https://json-schema.org/slack). All GSoC discussions are are hapenning in the [`#gsoc`](https://json-schema.slack.com/archives/C04MVQSRBRS) channel.
+- **GitHub:** Please use [Issues](https://github.com/json-schema-org/community/issues?q=is%3Aopen+label%3Agsoc+sort%3Acreated-desc) to comment on project ideas, ask questions and collaborate.
+- **Slack:** Please join us in our [slack workspace](https://json-schema.org/slack). All GSoC discussions are are hapenning in the [`#gsoc`](https://json-schema.slack.com/archives/C04MVQSRBRS) channel.
 
 Please see our [Code of Conduct](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md)
 
