@@ -1,6 +1,5 @@
-<p align="center">
-<img src="https://jina.ai/assets/images/logo.svg" alt="GSoC banner" width="20%" >
-</p>
+
+![gsoc-banner](https://github.com/json-schema-org/community/assets/40007659/7d7d3f1d-6f4a-4139-98fb-96aa3354b777)
 
 # Welcome to Google Summer of Code with JSON Schema!
 
@@ -9,6 +8,8 @@
 JSON Schema is a declarative language that provides a standardized way to describe and validate JSON data.
 
 We are a community JSON Schema entusiast dedicated to maintain, evolve and promote the JSON Schema specification. The Community consists of individuals, community members, tooling builders, schema designers, researchers, and representatives from companies and organizations who use or are considering using JSON Schema. 
+
+## 💡 GSoC Project Ideas
 
 ### Current GSoC edition (2024) project ideas
 
@@ -34,8 +35,8 @@ Other benefits of choosing a JSON Schema project:
 
 ## 🤙 Getting in Contact
 
-- **GitHub:*- Please use [Issues](https://github.com/json-schema-org/community/issues?q=is%3Aopen+label%3Agsoc+sort%3Acreated-desc) to comment on project ideas, ask questions and collaborate.
-- **Slack:*- Please join us in our [slack workspace](https://json-schema.org/slack). All GSoC discussions are are hapenning in the [`#gsoc`](https://json-schema.slack.com/archives/C04MVQSRBRS) channel.
+- **GitHub:** Please use [Issues](https://github.com/json-schema-org/community/issues?q=is%3Aopen+label%3Agsoc+sort%3Acreated-desc) to comment on project ideas, ask questions and collaborate.
+- **Slack:** Please join us in our [slack workspace](https://json-schema.org/slack). All GSoC discussions are are hapenning in the [`#gsoc`](https://json-schema.slack.com/archives/C04MVQSRBRS) channel.
 
 Please see our [Code of Conduct](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md)
 
