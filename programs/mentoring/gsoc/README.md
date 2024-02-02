@@ -2,6 +2,8 @@
 <img src="https://jina.ai/assets/images/logo.svg" alt="GSoC banner" width="20%" >
 </p>
 
+# Welcome to Google Summer of Code with JSON Schema!
+
 ## 👋 What is JSON Schema ?
 
 JSON Schema is a declarative language that provides a standardized way to describe and validate JSON data.
