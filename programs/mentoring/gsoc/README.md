@@ -4,7 +4,7 @@ JSON Schema is a declarative language that provides a standardized way to descri
 
 We are a community JSON Schema entusiast dedicated to maintain, evolve and promote the JSON Schema specification. The Community consists of individuals, community members, tooling builders, schema designers, researchers, and representatives from companies and organizations who use or are considering using JSON Schema. 
 
-### Current GSoC edition ((2024)) project ideas
+### Current GSoC edition (2024) project ideas
 
 You can find the project ideas for this year's program [here](gsoc-2024.md).
 
