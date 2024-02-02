@@ -51,5 +51,5 @@ Got a problem? Reach out to mentors or the community for assistance. Remember, m
 
 ## 🏗 Contributing Guidelines
 
-Please, check-out our [Contribution guidelines](https://github.com/json-schema-org/community/blob/main/CONTRIBUTING.md)
+Please, check-out the [GSoC Contributior guidelines](CONTRIBUTOR-GUIDANCE.md)
 
