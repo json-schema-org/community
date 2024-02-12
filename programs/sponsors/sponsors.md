@@ -37,6 +37,7 @@ Silver sponsors donate $500 per month to the project, and get the following bene
 
 - Same benefits as bronze sponsors.
 - A mention on the Newsletter.
+- Possibility of getting expert advice from the team.
 - Get a Swag Kit.
 
 ## Benefits of being a gold sponsor
