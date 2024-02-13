@@ -8,7 +8,7 @@ If you have suggestions on how to improve our community, please do check out our
 
 # General
 
-The JSON Schema organization hosts different projects, and while most have similar  contributing guidelines as described in this document, the JSON Schema Specification development process follows different contributing guidelines. Please, check-out the [Spec repository](https://github.com/json-schema-org/json-schema-spec/blob/main/CONTRIBUTING.md) to know more. 
+The JSON Schema organization hosts different projects, and while most have similar contributing guidelines as described in this document, the JSON Schema Specification development process follows different contributing guidelines. Please, check-out the [Spec repository](https://github.com/json-schema-org/json-schema-spec/blob/main/CONTRIBUTING.md) to know more. 
 
 The following sections apply organisation wide to all repositories.
 
