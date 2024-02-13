@@ -11,7 +11,7 @@ The governance document specifies two ways to make decisions, decision making vi
 This section details the workflow of the voting process.
 (The voting process may be different to the voting process found as part of the quick consensus process.)
 
-The following is a diagram generated from a Finite State Machine created in Stately.ai.
+The following is a diagram generated from a Finite State Machine (FSM) created in Stately.ai.
 One output is Mermaid, which is a diagram format rendered by GitHub!
 It is not as good as viewing the Finite State Machine on Stately, which I would recommend, but it does give you an idea of what to expect.
 
