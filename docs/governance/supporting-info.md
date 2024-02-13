@@ -2,7 +2,7 @@
 
 For the governance process of the JSON Schema Project, see the primary [GOVERNANCE.MD](https://github.com/json-schema-org/community/blob/main/GOVERNANCE.md) document.
 
-This document provides supporting resources.
+This document provides supporting resources in acknowledgement that parsing legalistic governance process documents can sometimes take considerable effort, and humans are error prone.
 
 ## Workflow for voting
 
