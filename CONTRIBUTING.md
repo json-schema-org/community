@@ -1,16 +1,10 @@
-# Guidelines for contributing to the JSON Schema project GitHub organisation
+# Guidelines for contributing to the JSON Schema Community
 
 We invite you to join us working on JSON Schema.
 
 The fastest way to get involved and become active in the community is to join the `#contribute` channel in our Slack server at https://json-schema.org/slack.
 
 If you have suggestions on how to improve our community, please do check out our [Community Discussions](https://github.com/json-schema-org/community/discussions), and start a new discussion.
-
-# General
-
-The JSON Schema organization hosts different projects, and while most have similar contributing guidelines as described in this document, the JSON Schema Specification development process follows different contributing guidelines. Please, check-out the [Spec repository](https://github.com/json-schema-org/json-schema-spec/blob/main/CONTRIBUTING.md) to know more. 
-
-The following sections apply organisation wide to all repositories.
 
 ### Types of contributions
 
@@ -26,8 +20,8 @@ Here are some areas where you can contribute:
  * 🛠️ [Add new JSON Schema tooling](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-add-a-new-implementation)
  * ✍️ [Publish a blog post](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-publish-a-blog-post)
  * 📈 [Publish a case study](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-publish-a-case-study)
- * 📋 [Improving The Documentation](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-documentation)
- * 🏗 [Website development](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.mdhttps://github.com/orgs/json-schema-org/projects/11/views/1)
+ * 📋 [Improving The Documentation](https://github.com/orgs/json-schema-org/projects/16)
+ * 🏗 [Website development](https://github.com/orgs/json-schema-org/projects/11/views/1)
  * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
  * 😍 [Collaborating with Community Management tasks](https://github.com/json-schema-org/community)
  * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
