@@ -32,10 +32,10 @@
 
 Welcome to the JSON Schema community! You've arrived at the perfect place to begin your journey as a contributor. Whether it's assisting with documentation, writing a blog post, enhancing the website, delivering presentations, or any other form of contribution, there's plenty of opportunities to get involved in the project. We are a friendly, collaborative group and look forward to working together.
 
-- [👋 Introduction](#introduction)
-- [💬 Discussions and slack](#discussions-and-slack)
-- [🗓 Community meetings](#community-meetings)
-- [🌱 Getting involved](#getting-involved)
+- 👋 [Introduction](#introduction)
+- 💬 [Discussions and slack](#discussions-and-slack)
+- 🗓 [Community meetings](#community-meetings)
+- 🌱 [Getting involved](#getting-involved)
 
 ## Introduction
 This repo is a place to discuss and debate various aspects of running the JSON Schema organisation, how we work as a community, and our expectations.
