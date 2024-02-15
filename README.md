@@ -42,15 +42,18 @@ This repo is a place to discuss and debate various aspects of running the JSON S
 
 ### Discussions and Slack
 
-Reach out with any questions you may have and we'll make sure to answer them as soon as possible and as a community member feel free to jump in and answer questions. JSON Schema utilizes Slack and GitHub Discussions to facilitate our communications, each serving unique purposes to support our community effectively.
+Reach out with any questions you may have and we'll make sure to answer them as soon as possible and as a community member feel free to jump in and answer questions. 
+
+JSON Schema utilizes Slack and GitHub Discussions to facilitate our communications, each serving unique purposes to support our community effectively.
 
 Slack is the go-to for lively conversations, channel announcements, one-on-one support, and immediate assistance, making real-time communication seamless and efficient. However, Slack isn't ideal for housing detailed discussions, long-term planning, or tracking the evolution of ideas and decisions.
 
 For more in-depth discussions, planning, and documenting significant decisions, we use GitHub Discussions. It allows us to work together on significant decisions more effectively and provides long standing point of reference for our discussions.
 
-| Platform  | Link        |
-|:----------|:------------|
+| Platforms  | Link        |
+|:----------|:-------------|
 | 💬 Slack (preferred) | https://json-schema.org/slack
+| 💬 Discussions       | https://github.com/orgs/json-schema-org/discussions
 
 ### Community meetings
 We hold monthly Office Hours and weekly Open Community Working Meetings. Office Hours are every first Tuesday of the month at 15:00 BST, and by appointment. Open Community Working Meetings are every Monday at 14:00 PT.
