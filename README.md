@@ -60,7 +60,7 @@ We hold monthly Office Hours and weekly Open Community Working Meetings. Office 
 
 **Office Hours (Monthly):**
 
-"Office Hours" provide time for the community for any questions, discussions, comments, or just to chat about JSON Schema. 
+"Office Hours" provide time for the community for questions, discussions, comments, or just to chat about JSON Schema. 
 
 More details [here](https://github.com/orgs/json-schema-org/discussions/34/).
 
