@@ -84,5 +84,14 @@ JSON Schema is a community that lives on its contributors. As we grow, we need m
 
 Please check out our [Contribution guidelines](CONTRIBUTING.md) to know more.
 
+### Contributors
+
+Thanks goes to these wonderful people who contributed to this website:
+<a href = "https://github.com/json-schema-org/community/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=json-schema-org/community"/>
+</a>
+
+<sub>Made with [contributors-img](https://contrib.rocks).</sub>
+
 ## Code of Conduct
 To get involved with our Community, please make sure you are familiar with our [Code of Conduct](https://github.com/json-schema-org/.github/blob/main/CODE_OF_CONDUCT.md).
