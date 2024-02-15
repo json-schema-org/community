@@ -60,18 +60,22 @@ We hold monthly Office Hours and weekly Open Community Working Meetings. Office 
 
 **Office Hours (Monthly):**
 
-"Office Hours" provide time for the community for any questions, discussions, comments, or just to chat about JSON Schema. More details [here](https://github.com/orgs/json-schema-org/discussions/34/).
+"Office Hours" provide time for the community for any questions, discussions, comments, or just to chat about JSON Schema. 
+
+More details [here](https://github.com/orgs/json-schema-org/discussions/34/).
 
 **Open Community Working Meeting (Weekly):**
 
-Open Community Working Meetings are a 1 hour, agenda'd only, with a focus on furthering the JSON Schema specification and organization. More details [here](https://github.com/orgs/json-schema-org/discussions/35).
+Open Community Working Meetings are a 1 hour, agenda'd only, with a focus on furthering the JSON Schema specification and organization. 
+
+More details [here](https://github.com/orgs/json-schema-org/discussions/35).
 
 You can always catch up offline by watching the recordings on the JSON Schema YouTube channel.
 
 | Asset | Link        |
 |:-----------|:------------|
-| 🔗 Office Hours Meeting Link | **Zoom Call:** https://postman.zoom.us/j/85358817067?pwd=NmFXTG5oL1paK0VyTEdrNU9TR2RMUT09<br>
-| 🔗 Open Community Working Meeting Link | **Zoom Call:** https://www.google.com/url?q=https://postman.zoom.us/j/89562933116?pwd%3DOWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09&sa=D&source=calendar&ust=1708431911262691&usg=AOvVaw14JoRXk9cLLBT-_wngWROA<br>
+| 🔗 Office Hours Meeting Link | [**Zoom Link**](https://postman.zoom.us/j/85358817067?pwd=NmFXTG5oL1paK0VyTEdrNU9TR2RMUT09)<br>
+| 🔗 Open Community Working Meeting Link | [**Zoom Link**](https://www.google.com/url?q=https://postman.zoom.us/j/89562933116?pwd%3DOWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09&sa=D&source=calendar&ust=1708431911262691&usg=AOvVaw14JoRXk9cLLBT-_wngWROA)<br>
 | 🎥 Meeting Recordings | https://www.youtube.com/@JSONSchemaOrgOfficial
 
 ## Getting involved
