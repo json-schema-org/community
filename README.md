@@ -86,7 +86,7 @@ Please check out our [Contribution guidelines](CONTRIBUTING.md) to know more.
 
 ### Contributors
 
-Thanks goes to these wonderful people who contributed to this website:
+Thanks goes to these wonderful people who contributed to this communtiy space:
 <a href = "https://github.com/json-schema-org/community/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=json-schema-org/community"/>
 </a>

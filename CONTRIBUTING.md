@@ -28,7 +28,7 @@ Here are some areas where you can contribute:
 
 #### Community management tasks
 
-To get involved in the Community management tasks, please join the `#community-mgmt` slack channel using this [link](#community-mgmt).
+To get involved in the Community management tasks, please join the [`#community-mgmt` slack channel](https://json-schema.slack.com/archives/C0209BTU2UQ).
 
 ## Key "Architectural" decisions
 
