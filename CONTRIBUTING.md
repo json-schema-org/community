@@ -1,16 +1,34 @@
-# Guidelines for contributing to the JSON Schema project GitHub organisation
-
-🚨 Work in progress! (2021/07 - @relequestual)
+# Guidelines for contributing to the JSON Schema Community
 
 We invite you to join us working on JSON Schema.
 
-The fastest way to get involved and become active in the community is to join our Slack server at https://json-schema.org/slack.
+The fastest way to get involved and become active in the community is to join the `#contribute` channel in our Slack server at https://json-schema.org/slack.
 
 If you have suggestions on how to improve our community, please do check out our [Community Discussions](https://github.com/json-schema-org/community/discussions), and start a new discussion.
 
-# General
+### Types of contributions
 
-While each repository may have its own guidance for contributing, the following sections apply organisation wide.
+JSON Schema is a community that lives on its contributors. As we grow, we need more people to help others. You can contribute in many ways, either in the specification development or in the wider ecosystem.
+
+Here are some areas where you can contribute:
+ * 🌱 [Specification development](https://github.com/json-schema-org/json-schema-spec)
+ * 🐞 Reporting Bugs
+ * 💡 Issues and feature requests
+ * 🧐 Reviewing PRs
+ * ❓ Answer questions
+ * 🙏 Join discussions and provide feedback
+ * 🛠️ [Add new JSON Schema tooling](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-add-a-new-implementation)
+ * ✍️ [Publish a blog post](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-publish-a-blog-post)
+ * 📈 [Publish a case study](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-publish-a-case-study)
+ * 📋 [Improving The Documentation](https://github.com/orgs/json-schema-org/projects/16)
+ * 🏗 [Website development](https://github.com/orgs/json-schema-org/projects/11/views/1)
+ * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
+ * 😍 [Collaborating with Community Management tasks](#community-management-tasks)
+ * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
+
+#### Community management tasks
+
+To get involved in the Community management tasks, please join the [`#community-mgmt` slack channel](https://json-schema.slack.com/archives/C0209BTU2UQ).
 
 ## Key "Architectural" decisions
 
@@ -44,6 +62,10 @@ Once an ADR is part of a pull request which is labelled with `adr-required`, the
 
 
 The process is designed to be lightweight, and a template is provided for ease of use.
+
+### Triage
+
+Please check the [triage process](https://github.com/json-schema-org/.github/blob/main/TRIAGE.md) to learn how we review and label incoming issues . 
 
 ### Feedback
 
