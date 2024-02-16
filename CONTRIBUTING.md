@@ -23,9 +23,12 @@ Here are some areas where you can contribute:
  * 📋 [Improving The Documentation](https://github.com/orgs/json-schema-org/projects/16)
  * 🏗 [Website development](https://github.com/orgs/json-schema-org/projects/11/views/1)
  * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
- * 😍 [Collaborating with Community Management tasks](https://github.com/json-schema-org/community)
+ * 😍 [Collaborating with Community Management tasks](#community-management-tasks)
  * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
 
+#### Community management tasks
+
+To get involved in the Community management tasks, please join the `#community-mgmt` slack channel using this [link](#community-mgmt).
 
 ## Key "Architectural" decisions
 

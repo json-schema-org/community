@@ -33,6 +33,10 @@ A community manager has the following responsibilities:
 
 * Add new analytics tools
 
+### Know more 
+
+Please join the `#community-mgmt` slack channel using this [link](#community-mgmt) if you like to know more.
+
 ### Atribution
 
 This document has been inspared by the [DAPR Community Manager document](https://github.com/dapr/community/blob/master/COMMUNITY-MANAGER.md).
