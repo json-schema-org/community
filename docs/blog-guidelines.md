@@ -46,7 +46,7 @@ The JSON Schema project will review the statement, as we do for the content for 
 Please feel free to share the blog on social media.
 
 ## How to submit for consideration ##
-Please submit your PR for consideration and we will start the PR process. If the article is not suitable for the JSON Schema blog, we will provide feedback and direction.
+Please submit your PR for consideration and we will start the PR process. If the article is not suitable for the JSON Schema blog, we will provide feedback and direction. Find here an example of [blog PR](https://github.com/json-schema-org/website/pull/177).
 
 ### Note on JSON Champions
 Until we publish an official definition of JSON Schema Champion, we consider JSON Schema Champions to experts, educators, authors, and event organizers relevant to the JSON Schema ecosystem.
