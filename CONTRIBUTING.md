@@ -65,7 +65,7 @@ The process is designed to be lightweight, and a template is provided for ease o
 
 ### Triage
 
-Please check the [triage process](TRIAGE.md) to learn how we review and label incoming issues . 
+Please check the [triage process](https://github.com/json-schema-org/.github/blob/main/TRIAGE.md) to learn how we review and label incoming issues . 
 
 ### Feedback
 
