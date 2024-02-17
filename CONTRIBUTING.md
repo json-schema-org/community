@@ -20,9 +20,9 @@ Here are some areas where you can contribute:
  * 🛠️ [Add new JSON Schema tooling](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-add-a-new-implementation)
  * ✍️ [Publish a blog post](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#%EF%B8%8F-publish-a-blog-post)
  * 📈 [Publish a case study](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-publish-a-case-study)
- * 📋 [Improving The Documentation](https://github.com/orgs/json-schema-org/projects/16)
- * 🏗 [Website development](https://github.com/orgs/json-schema-org/projects/11/views/1)
- * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
+ * 📋 [Improving the Documentation](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-documentation)
+ * 🏗 [Website development](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-website)
+ * 🎨 [Improving the Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
  * 😍 [Collaborating with Community Management tasks](#community-management-tasks)
  * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
 
@@ -30,7 +30,7 @@ Here are some areas where you can contribute:
 
 To get involved in the Community management tasks, please join the [`#community-mgmt` slack channel](https://json-schema.slack.com/archives/C0209BTU2UQ).
 
-## Key "Architectural" decisions
+### Key "Architectural" decisions
 
 In most repositories, we would like to utilise [Architectural Decision Records (ADRs)](https://adr.github.io/) to help us work effectively.
 
