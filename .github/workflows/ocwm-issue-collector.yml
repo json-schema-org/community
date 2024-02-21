@@ -97,6 +97,8 @@ jobs:
                         let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `\n| ${url} - ${title} | ${author} |\r\n` + body.substring(startIndex, body.length));
                         body = JSON.parse(json_text);
                         changesFlag = true;
+                        // Remove the 'agenda' label from the added issue
+                        await mygithub.request(`DELETE /repos/${process.env.OWNER}/${repositories[r]}/issues/${items2add[i].number}/labels/${appendLabel}`);
                     }
                 }
 
@@ -111,6 +113,8 @@ jobs:
                     let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `\n| ${url} - ${title} | ${author} |\r\n` + body.substring(startIndex, body.length));
                     body = JSON.parse(json_text);
                     changesFlag = true;
+                    // Remove the 'agenda' label from the added discussion
+                    await mygithub.request(`DELETE /repos/${process.env.OWNER}/${repositories[r]}/discussions/${discussions[i].node.id}/labels/${appendLabel}`);
                   }
                 }
 
