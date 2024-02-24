@@ -114,7 +114,7 @@ jobs:
                     body = JSON.parse(json_text);
                     changesFlag = true;
                     // Remove the 'agenda' label from the added discussion
-                    await mygithub.request(`DELETE /repos/${process.env.OWNER}/${repositories[r]}/discussions/${discussions[i].node.id}/labels/${appendLabel}`);
+                    await mygithub.request(`DELETE /repos/${process.env.OWNER}/${repositories[r]}/discussions/${discussions[i].number}/labels/${appendLabel}`);
                   }
                 }
 
