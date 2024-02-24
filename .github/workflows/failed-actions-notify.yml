@@ -1,0 +1,43 @@
+name: Slack Notifications for Failed GitHub Actions
+
+on:
+  workflow_run:
+    workflows: ["*"]
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Send Slack notification
+        if: failure()
+        run: |
+          const fetch = require('node-fetch');
+
+          const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
+          const context = JSON.parse(process.env.GITHUB_CONTEXT);
+
+          const slackMessage = {
+            issue: `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+            status: context.jobStatus,
+            workflow: context.workflow,
+            actor: context.actor
+          };
+
+          await fetch(SLACK_WEBHOOK_URL, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(slackMessage),
+          });
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
