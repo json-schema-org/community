@@ -39,5 +39,5 @@ jobs:
             body: JSON.stringify(slackMessage),
           });
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ vars.SLACK_WEBHOOK_FAIL_ACTIONS }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
