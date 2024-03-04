@@ -19,7 +19,7 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install @octokit/core
+      run: npm install @octokit/core@5.1.0
 
     - name: Close issues
       env:
