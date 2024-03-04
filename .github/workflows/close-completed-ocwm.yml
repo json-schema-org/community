@@ -1,12 +1,10 @@
 name: Close issues with no tasks and a specific label
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'  # Runs every Sunday at midnight
+  push:
+    branches:
+      - main
 
-  repository_dispatch:
-    types: close-issues-ocwm
-    
 jobs:
   close-issues:
     runs-on: ubuntu-latest
