@@ -1,7 +1,7 @@
 name: Close issues with no tasks and a specific label
 
 on:
-  push:
+  pull_request:
     branches:
       - '*'
 
