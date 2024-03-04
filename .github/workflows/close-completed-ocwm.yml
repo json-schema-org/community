@@ -3,7 +3,7 @@ name: Close issues with no tasks and a specific label
 on:
   push:
     branches:
-      - main
+      - '*'
 
 jobs:
   close-issues:
