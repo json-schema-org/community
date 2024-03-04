@@ -6,9 +6,7 @@ on:
 
   repository_dispatch:
     types: close-issues-ocwm
-  pull_request:
-    branches:
-      - '*'
+    
 jobs:
   close-issues:
     runs-on: ubuntu-latest
