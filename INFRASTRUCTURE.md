@@ -45,20 +45,26 @@ These resources are potentially heavily used or referred to by consumers of JSON
 Links to these resources can be found at https://json-schema.org/specification.html for the latest version of JSON Schema, and at https://json-schema.org/specification-links.html for older versions.
 The working location for these resources is in the specification repository at https://github.com/json-schema-org/json-schema-spec/, and they are then included into the aforementioned website repository for publishing using `git submodule`.
 
+We are capturing feedback in the website using a cloudflare worker to receive the data and send it to an Airtable database. The Airtable account is owned and paid for by Postman.
+
 ## Bots
 The Slack server has a number of bots which feed data into specific channels.
 
-The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-mentions is now inactive after the changes in the Twitter API. The bot was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it.
+* The bot which feeds tweets containing JSON Schema from Twitter to the #twitter-mentions is now inactive after the changes in the Twitter API. The bot was created by [Mike Ralphson](https://twitter.com/PermittedSoc). We have no access to it.
 
-The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
+* The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
-The bot for #reddit-mentions runs from Zapier under @benjagm 's account. 
+* The bot for #reddit-mentions runs from Zapier under @benjagm 's account. 
 
-The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
+* The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
 
-The #ghd-community channel bot uses Zapier to process webhooks for our Community repo's GitHub Discussions, and relay to Slack.
+* The #ghd-community channel bot uses Zapier to process webhooks for our Community repo's GitHub Discussions, and relay to Slack.
 The Zapier account is owned and paid for by Postman. If this ever might become a problem, we should move to our own licence.
 At the time, there was no official app integration.
+
+* The bot for notifying new youtube videos in the #announcements channel in Slack uses Zapier.
+
+* The notifications with website users feedback uses Airtable automations. 
 
 ## Metrics
 
