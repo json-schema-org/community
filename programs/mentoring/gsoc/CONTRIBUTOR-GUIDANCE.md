@@ -36,6 +36,16 @@ An ideal application will contain the following:
 4.  Information about your view on the chosen project. 
 5.  Information about other commitments that might affect your ability to work during the GSoC period. (e.g. classes, exams, job, holidays etc.) 
 
+## Selection Criteria
+
+We will select the best proposals based on the following criteria:
+(The quantity of students depends on the number of JSON Schema projects accepted in GSoC)
+
+- The quality of the proposal and its priority for JSON Schema Project.
+- Engagement of the student with the community and potential mentors.
+- Contributions by the student to the JSON Schema Project & Community.
+- Contributing to other Open Source Projects is a plus.
+
 ## Getting in Contact
 
 - **GitHub:** Please use [Issues](https://github.com/json-schema-org/community/issues?q=is%3Aopen+label%3Agsoc+sort%3Acreated-desc) to comment on project ideas, ask questions and collaborate.
