@@ -41,7 +41,7 @@ An ideal application will contain the following:
 We will select the best proposals based on the following criteria:
 (The quantity of students depends on the number of JSON Schema projects accepted in GSoC)
 
-- The quality of the proposal and its priority for JSON Schema Project.
+- The quality of the proposal and its priority for JSON Schema Project. This include the qualification task/tasks.
 - Engagement of the student with the community and potential mentors.
 - Contributions by the student to the JSON Schema Project & Community.
 - Contributing to other Open Source Projects is a plus.
