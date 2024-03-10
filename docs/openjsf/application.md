@@ -31,20 +31,6 @@ Our expectations include
 - enable and support our efforts to expand into providing software to our community
 - Facilitate collaboration and promote adoption. We struggle to get introductions to or interface with high profile users (such as VSCode)
 
-## Statement of alignment with OpenJS Foundation charter and mission
-
-> Please refer to [the Cross Project Council's Charter](https://github.com/openjs-foundation/cross-project-council/blob/HEAD/CPC-CHARTER.md).
-> Please keep your answer to less than 250 words.
-
-"We believe that it is essential to provide a neutral home for critical projects, with common principles of technical governance and accountability." - part of the OpenJSF mission statement.
-
-We, the JSON Schema collaborators, also believe this.
-
-We feel the approach laid out in the CPC charter is reasonable.
-
-We identify with the need for collaboration between JavaScript, web solutions, and related technologies.
-
-
 ## Impact and users of the project
 > What is the ecosystem impact of the project?
 
@@ -133,8 +119,6 @@ We are mostly open. We would seek to be more open where we are currently not, wh
 > Is the project willing to adopt the OpenJS Foundation Code of Conduct (CoC)?
 
 We recently established our own CoC based on the Contributor Covenant Code of Conduct and the IETF BCP 54 "IETF Guidelines for Conduct). We outlined our reasoning here: https://github.com/json-schema-org/community/blob/main/docs/adr/2021-08-26-code-of-conduct.md
-
-We would amend our enforcement section to detail escalation to the OpenJSF CoCP as per the OpenJSF CoC.
 
 Please advise if any other changes would be required.
 

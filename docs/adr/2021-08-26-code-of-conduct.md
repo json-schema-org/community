@@ -15,7 +15,6 @@ We want to make people feel welcome, and so should have a formal CoC.
 ## Decision Drivers
 
 * We have had a few instances where it would have been useful to have a CoC
-* Assuming we continue to join the OpenJS Foundation, they would expect us to have a CoC
 * Not having a CoC may make our community less welcoming
 
 ## Considered Options
@@ -44,7 +43,7 @@ The Contributor Covenant is well established and regarded as a de-facto Code of 
 * Good, because it is well known and recognised as a good and useful Code of Conduct base
 * Good, because the familiarty of it from other communities will make people feel more comfortable
 * Good, because we do not have unqiue needs as a community
-* Good, because we can discuss situations or get help from other projects/orgs (Such as OpenJSF) that use the same Code of Conduct
+* Good, because we can discuss situations or get help from other projects/orgs that use the same Code of Conduct
 * Good, because it can be modified / added to, and used as just a base
 
 ### BCP 54 / RFC 7154
