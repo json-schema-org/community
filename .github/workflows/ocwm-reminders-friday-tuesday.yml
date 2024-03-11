@@ -2,8 +2,8 @@ name: Send reminders to join the OCWM
 
 on:
   schedule:
-    - cron: '0 15 1-7 * 5'  
-    - cron: '0 15 1-7 * 2'  
+    - cron: '0 15 1-7 * 5' #Runs at 15:00, between day 1 and 7 of the month on Friday 
+    - cron: '0 15 1-7 * 2' #Runs at 15:00, between day 1 and 7 of the month on Tuesday
 
 jobs:
   ocwm-reminders:
