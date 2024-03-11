@@ -2,11 +2,8 @@ name: Send reminders to join the OCWM
 
 on:
   schedule:
-    - cron: '0 15 * * 5'  # Runs every Friday at 15:00
-    - cron: '0 9 * * 2'  # Runs every Tuesday at 9:00
-
-  repository_dispatch:
-    types: ocwm-reminders
+    - cron: '0 15 1-7 * 5'  
+    - cron: '0 15 1-7 * 2'  
 
 jobs:
   ocwm-reminders:
@@ -46,19 +43,36 @@ jobs:
 
           const issueNumber = workMeetings[0].number
           const newTitle = workMeetings[0].title;
-          const issueDate = newTitle.replace(/JSON Schema office hours /g, "");
+          const issueDate = newTitle.replace(/Open Community Working Meeting /g, "");
           
-          // Notify Slack
-          const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK;
-          const SLACK_MESSAGE = `{
-            "issue": "https://github.com/${process.env.OWNER}/${process.env.REPO}/issues/${issueNumber}",
-            "date": "${issueDate}"
-          }`;
+          //Date of the next meeting
+          const nextMeetingDate = new Date();
+          nextMeetingDate.setDate(nextMeetingDate.getDate() + (2 + 7 - nextMeetingDate.getDay()) % 7);
+          
+          const formattedDate = nextMeetingDate.toISOString().split('T')[0];
+          
+          const reminderText = (new Date().getDay() === 2) ? "today" : formattedDate;
+          
+          // Checking if the reminder should be sent
+          const today = new Date();
+          const firstTuesday = new Date(today.getFullYear(), today.getMonth(), 1);
+          firstTuesday.setDate(firstTuesday.getDate() + (2 + 7 - firstTuesday.getDay()) % 7);
+          const firstFriday = new Date(today.getFullYear(), today.getMonth(), 1);
+          firstFriday.setDate(firstFriday.getDate() + (5 + 7 - firstFriday.getDay()) % 7);
+          
+          if ((today.getDay() === 2 && today.getDate() === firstTuesday.getDate()) || (today.getDay() === 5 && today.getDate() === firstFriday.getDate() && firstFriday < firstTuesday)) {
+            // Notify Slack
+            const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK;
+            const SLACK_MESSAGE = `{
+              "issue": "https://github.com/${process.env.OWNER}/${process.env.REPO}/issues/${issueNumber}",
+              "date": "${reminderText}"
+            }`;
 
-          await fetch(SLACK_WEBHOOK_URL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: SLACK_MESSAGE,
-          });
+            await fetch(SLACK_WEBHOOK_URL, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: SLACK_MESSAGE,
+            });
+          }
