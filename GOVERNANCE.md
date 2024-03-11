@@ -33,9 +33,9 @@ There may be other grounds for removal from the TSC, such as seriously violating
 
 The JSON Schema Project uses 2 different mechanism for decision making:
 
-1. **Consensus**: The JSON Schema Project tries by default to find consensus in all the strategic decision by using the consensus mechanism described below. 
+1. **Consensus**: The JSON Schema Project tries by default to find consensus in all the strategic decision by using the consensus mechanism described below.
 
-2. **Voting**: It is OK use the voting process for those cases when the discussion has already occurred or discussion and discovery is not required. Voting is a simple yet powerful mechanism. 
+2. **Voting**: It is OK use the voting process for those cases when the discussion has already occurred or discussion and discovery is not required. Voting is a simple yet powerful mechanism.
 
 ### Decision-making via consensus
 
@@ -135,6 +135,8 @@ At the discretion of the TSC Chairs, a vote may be made private, and will then b
 The topic and nature of private votes may remain private, including the results. (It is expected that vast majority of votes will be public. Private voting should only be used in exceptional circumstances.)
 
 The kinds of votes which should be private include things related to security reports or discussions with an entity where it might not be desireable to be made public knowledge to either party. This could include details of case studies or partnerships which are not yet concluded or published, where either party may need a final approval for publication or wishes for coordinated or scheduled public publication.
+
+(You can view the "Decision-making via vote" process as a runnable interactive Finite State Machine in the [governance supporting information document](./docs/governance/supporting-info.md).)
 
 ### Documenting decisions
 
