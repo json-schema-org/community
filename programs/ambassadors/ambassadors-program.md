@@ -5,6 +5,7 @@ This document covers the organizational and operational aspects of the JSON Sche
 The JSON Schema Ambassador Program aims to bring JSON Schema closer to both current users and potential new project users. It also aims to provide users and community members with the necessary tools and resources to:
 
 - Promote collaboration among the JSON Schema ecosystem.
+- Promote JSON Schema adoption in other ecosystems.
 - Engage with the project in some way, either as a contributor, blogger, speaker, etc.
 - Speak at community events or write technical content (e.g. blog posts) that solves community needs.
 - Nurture community growth and a welcoming environment to spread knowledge about the project.
@@ -52,7 +53,7 @@ Examples:
 
 The process of becoming an ambassador is very simple. Go to the **community** repository and open a PR to edit the `ambassadors.json` file. The TSC will then evaluate your candidacy!
 
-That PR doesn't have to be created by the ambassador candidate; any community member may open a PR to submit someone's application to the JSON Schema Ambassador Program. 
+That PR doesn't have to be created by the ambassador candidate; any community member may open a PR to submit someone's application to the JSON Schema Ambassador Program. In these cases, the first step is to confirm the candidate's interest and once this as been clarified we'll proceed with the standard candidacy evaluation by the TSC.
 
 Get on board and become an ambassador!
 
