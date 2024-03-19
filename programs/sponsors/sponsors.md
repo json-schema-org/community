@@ -27,6 +27,7 @@ Community sponsors is a special tier for companies under 20 employees. Community
 - Visibility on the GitHub main project page in the "sponsors" section.
 - "Thank you" tweet from [@jsonschema](https://twitter.com/jsonschema).
 - "Thank you" post in Linkedin from [@jsonschema](https://www.linkedin.com/company/jsonschema).
+- A dedicated slack channel in our organization.
 
 ## Benefits of being a bronze sponsor
 
