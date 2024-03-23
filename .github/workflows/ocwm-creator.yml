@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: '20'
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.8'
     - name: Generate Issue Title
@@ -29,7 +29,7 @@ jobs:
 
     - name: Create Issue using Template
       id: create-issue
-      uses: peter-evans/create-issue-from-file@v4
+      uses: peter-evans/create-issue-from-file@v5
       with:
         title: ${{ steps.create-title.outputs.title }}
         content-filepath: .github/ISSUE_TEMPLATE/open_community_working_meeting.md

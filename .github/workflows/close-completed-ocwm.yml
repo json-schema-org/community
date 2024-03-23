@@ -11,12 +11,12 @@ jobs:
   close-issues:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Set up Node 18
-      uses: actions/setup-node@v2
+    - name: Set up Node 20
+      uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
 
     - name: Install dependencies
       run: npm install @octokit/core@5.1.0
@@ -27,7 +27,7 @@ jobs:
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
