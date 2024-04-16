@@ -126,7 +126,7 @@ jobs:
                   for (let i = 0; i < items2add.length; i++) {
                     await mygithub.graphql(`
                       mutation {
-                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${items2add[i].node_id}"}) {
+                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${items2add[i].number}"}) {
                           clientMutationId
                         }
                       }
