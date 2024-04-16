@@ -19,14 +19,15 @@ jobs:
     - name: Install dependencies
       run: npm install @octokit/core@5.1.0 
     - name: Adding Issues
+      id: add-issues
       uses: actions/github-script@v7
       env:
         PLACEHOLDER: '<!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->'
-        OWNER: ${{ vars.ORGANISATION }}
+        OWNER: ${{ secrets.ORGANIZATION }}
         REPO: 'community'
-        REPO_NAMES: ${{ vars.REPOSITORIES }}
-        AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
-        OCWM_LABEL: ${{ vars.OCWM_LABEL }}
+        REPO_NAMES: ${{ secrets.REPOSITORIES }}
+        AGENDA_LABEL: ${{ secrets.AGENDA_LABEL }}
+        OCWM_LABEL: ${{ secrets.OCWM_LABEL }}
         MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
@@ -38,27 +39,17 @@ jobs:
 
           const repoNames = process.env.REPO_NAMES;
           const placeholder = process.env.PLACEHOLDER;
-          console.log("Placeholder:" + placeholder);
 
           let repositories = repoNames.split(",")
           let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
           let appendLabel = encodeURIComponent(process.env.AGENDA_LABEL);
 
-          console.log("Repositories:" + repositories);
-          
-          console.log(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`);
-
           const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`, {
           })
 
-          console.log("workMeetings:" + JSON.stringify(workMeetings));
-
           for (let r = 0; r < repositories.length; r++) {
-
-
             const { data: items2add } = await mygithub.request(`GET /repos/${process.env.OWNER}/${repositories[r]}/issues?labels=${appendLabel}`);
-            console.log("Issues to add:" + JSON.stringify(items2add));
-
+            
             const query = `
             query {
               search(query: "repo:${process.env.OWNER}/${repositories[r]} is:open label:${appendLabel}", type: DISCUSSION, first: 5) {
@@ -77,10 +68,7 @@ jobs:
               }
             }`;  
             const response = await mygithub.graphql(query, {});
-            console.log("Response:" + JSON.stringify(response));
-            
             const discussions = response.search.edges;
-            console.log("Discussions to add:" + JSON.stringify(discussions));
 
             try {
                 let body = workMeetings[0].body;
@@ -118,13 +106,31 @@ jobs:
                   let template = JSON.stringify(JSON.stringify(body));
                   let parsed = JSON.parse(JSON.parse(template));
 
-                  console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
-
                   await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
                     body: parsed,
                     milestone: null,
                     state: 'open',
                   })
+
+                  // Remove 'agenda' label from added issues and discussions
+                  for (let i = 0; i < items2add.length; i++) {
+                    await mygithub.graphql(`
+                      mutation {
+                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${items2add[i].node_id}"}) {
+                          clientMutationId
+                        }
+                      }
+                    `);
+                  }
+                  for (let i = 0; i < discussions.length; i++) {
+                    await mygithub.graphql(`
+                      mutation {
+                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${discussions[i].node.node_id}"}) {
+                          clientMutationId
+                        }
+                      }
+                    `);
+                  }
                 }
             }
             catch (err) {
@@ -133,3 +139,22 @@ jobs:
             }
 
           }
+          
+    - name: Get Label ID
+      id: get-label-id
+      uses: actions/github-script@v7
+      env:
+        OWNER: ${{ secrets.ORGANIZATION }}
+        REPO: 'community'
+        LABEL_NAME: 'agenda'
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+      with:
+        script: |
+          const octokit = require('@octokit/core').Octokit  
+          const mygithub = new octokit({
+            auth: process.env.MY_TOKEN
+          });
+
+          const { data: label } = await mygithub.request('GET /repos/${process.env.OWNER}/${process.env.REPO}/labels/${process.env.LABEL_NAME}');
+          console.log(label.id);
+          console.log(`::set-env name=AGENDA_LABEL_ID::${label.id}`);
