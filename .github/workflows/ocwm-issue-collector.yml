@@ -28,7 +28,7 @@ jobs:
         REPO_NAMES: ${{ vars.REPOSITORIES }}
         AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
-        MY_TOKEN: ${{ vars.AUTH_TOKEN }}
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
           const octokit = require('@octokit/core').Octokit  
