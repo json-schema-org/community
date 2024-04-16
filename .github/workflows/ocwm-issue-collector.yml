@@ -93,6 +93,7 @@ jobs:
                         let json_text = JSON.stringify(body.substring(0, startIndex - 1) + `\n| ${url} - ${title} | ${author} |\r\n` + body.substring(startIndex, body.length));
                         body = JSON.parse(json_text);
                         changesFlag = true;
+                        await mygithub.request(`DELETE /repos/${process.env.OWNER}/${repositories[r]}/issues/${items2add[i].number}/labels/${appendLabel}`);
                     }
                 }
 
@@ -122,16 +123,6 @@ jobs:
                     state: 'open',
                   })
 
-                  // Remove 'agenda' label from added issues and discussions
-                  for (let i = 0; i < items2add.length; i++) {
-                    await mygithub.graphql(`
-                      mutation {
-                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${items2add[i].number}"}) {
-                          clientMutationId
-                        }
-                      }
-                    `);
-                  }
                   for (let i = 0; i < discussions.length; i++) {
                     await mygithub.graphql(`
                       mutation {
