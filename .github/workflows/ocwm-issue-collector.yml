@@ -157,7 +157,7 @@ jobs:
         OWNER: ${{ vars.ORGANIZATION }}
         REPO: 'community'
         LABEL_NAME: 'agenda'
-        MY_TOKEN: ${{ vars.AUTH_TOKEN }}
+        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
       with:
         script: |
           const octokit = require('@octokit/core').Octokit  
