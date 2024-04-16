@@ -23,12 +23,12 @@ jobs:
       uses: actions/github-script@v7
       env:
         PLACEHOLDER: '<!-- | [TOPIC] [IssuePRDiscussion] | [owner] | -->'
-        OWNER: ${{ secrets.ORGANIZATION }}
+        OWNER: ${{ vars.ORGANISATION }}
         REPO: 'community'
-        REPO_NAMES: ${{ secrets.REPOSITORIES }}
-        AGENDA_LABEL: ${{ secrets.AGENDA_LABEL }}
-        OCWM_LABEL: ${{ secrets.OCWM_LABEL }}
-        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        REPO_NAMES: ${{ vars.REPOSITORIES }}
+        AGENDA_LABEL: ${{ vars.AGENDA_LABEL }}
+        OCWM_LABEL: ${{ vars.OCWM_LABEL }}
+        MY_TOKEN: ${{ vars.AUTH_TOKEN }}
       with:
         script: |
           const octokit = require('@octokit/core').Octokit  
@@ -144,10 +144,10 @@ jobs:
       id: get-label-id
       uses: actions/github-script@v7
       env:
-        OWNER: ${{ secrets.ORGANIZATION }}
+        OWNER: ${{ vars.ORGANIZATION }}
         REPO: 'community'
         LABEL_NAME: 'agenda'
-        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        MY_TOKEN: ${{ vars.AUTH_TOKEN }}
       with:
         script: |
           const octokit = require('@octokit/core').Octokit  
