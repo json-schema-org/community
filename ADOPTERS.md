@@ -36,26 +36,28 @@ JSON Schema is an [OpenJS Foundation](https://openjsf.org/about) Project, under 
 By supporting JSON Schema with a case study, you are documenting its success and your smarts in picking it as a solution. JSON Schema case studies help justify the ongoing financial support required to mature, develop, and support the JSON Schema ecosystem. Case studies also demonstrate the strength of the JSON Schema ecosystem in production today. The next case study could be you.
 </details>
 
+(ordered alphabetically)
+
 | Organization | Contact | Description of Use / Reference |
 | --- | --- | --- |
-| [GitHub](https://github.com/) | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) |
-| [Cookpad](https://cookpad.com/) | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
-| [Tyler Technology](https://www.tylertech.com/) | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
-| [W3C Web of Things](https://www.w3.org/WoT/) | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
-| [Remote](https://remote.com/) | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
-| [Postman](https://www.postman.com/) | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
-| [OpenMetadata](https://open-metadata.org/) | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
-| [Wundergraph](https://wundergraph.com/) | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
-| [Zapier](https://zapier.com/) | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
-| [Microsoft](https://www.microsoft.com/) | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
-| [F5](https://www.f5.com/) | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
-| Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
 | [Automatic Data Processing (ADP)](https://www.adp.com/) | [Jeremy Fiel](mailto:jeremy.fiel@adp.com?subject=I%20love%20JSON%20Schema%20too!) | [ADP Developer Resources](https://developers.adp.com/welcome) |
-| [Manfred](https://www.getmanfred.com/) | [David Bonilla](https://www.linkedin.com/in/dbonillaf/) | [The MAC is a standard open source format created by Manfred to define and share CVs](https://github.com/getmanfred/mac) |
+| [Cookpad](https://cookpad.com/) | [Kenshi Shiode](https://www.linkedin.com/in/kenshi-shiode-b65922212/) | [Cookpad JSON Schema case study](https://json-schema.org/blog/posts/cookpad-case-study-en) |
 | [Cyclops](https://cyclops-ui.com/) | [Petar Cvitanović](https://www.linkedin.com/in/petar-cvit/) | [Cyclops is a powerful user interface for managing and interacting with Kubernetes clusters](https://cyclops-ui.com/blog/2023/11/13/JSON-schemas) |
-| [KrakenD](https://www.krakend.io/) | [Albert Lombarte](https://www.linkedin.com/in/alombarte/) | [KrakenD is a high-performance API Gateway offering JSON Schema validation in requests, responses, config validation, and documentation](https://www.krakend.io/blog/json-schema-use-case/) |
+| [F5](https://www.f5.com/) | [Kin Lane](https://www.linkedin.com/in/kinlane/) | [F5 - JSON Schema in production episode](https://youtu.be/pibZF049zqE) |
+| [GitHub](https://github.com/) | [Rachael Sewell](https://www.linkedin.com/in/rachaelsewell/)<br/>[Robert Sese](https://www.linkedin.com/in/rsese/) | [Github JSON Schema case study](https://json-schema.org/blog/posts/github-case-study) || [Tyler Technology](https://www.tylertech.com/) | [Andres Moreno](https://www.linkedin.com/in/andmoredev/) | [Tyler Technology JSON Schema case study](https://json-schema.org/blog/posts/tyler-technologies-case-study) |
 | [HAPI Specification](https://hapi-server.org/) | [Jeremy Faden](https://cottagesystems.com/) | [Server responses can be verified against a schema, accelerating development of correct servers](https://github.com/hapi-server/data-specification-schema) |
-| [Waylit](https://www.waylit.com/) | [Satya Mishra](https://www.linkedin.com/in/satyamishra/) | [WayLit helps customers and their employees by making immigration a bit easier. Waylit uses JSON Schema to generate nice-looking adaptive forms and validate all the collected data](https://www.waylit.com/post/more-than-1000-form-fields-and-growing-how-waylit-uses-json-schema) |
 | [Invopop](https://www.invopop.com/) | [Sam Lown](https://www.linkedin.com/in/samlown/) | [Invopop helps global companies comply with local tax reporting requirements. Invopop uses JSON Schema at the core of their GOBL SDK to build, share, and convert invoices globally](https://docs.gobl.org/introduction) |
 | [kickstartDS](https://www.kickstartDS.com/) | [Jonas Ulrich](https://www.linkedin.com/in/jonas-ulrich-b0a7b0222/) | [kickstartDS uses JSON Schema to document component APIs in Design Systems. Those get rewritten to headless CMS-specific configuration files through converters](https://dev.to/kickstartds/unlocking-the-frontend-a-call-for-standardizing-component-apis-pt2-e77) |
+| [KrakenD](https://www.krakend.io/) | [Albert Lombarte](https://www.linkedin.com/in/alombarte/) | [KrakenD is a high-performance API Gateway offering JSON Schema validation in requests, responses, config validation, and documentation](https://www.krakend.io/blog/json-schema-use-case/) |
+| [Manfred](https://www.getmanfred.com/) | [David Bonilla](https://www.linkedin.com/in/dbonillaf/) | [The MAC is a standard open source format created by Manfred to define and share CVs](https://github.com/getmanfred/mac) |
+| [Microsoft](https://www.microsoft.com/) | [Mads Kristensen](https://www.linkedin.com/in/madskvistkristensen/) | [Microsoft - JSON Schema in production episode](https://youtu.be/-yYTxLZZk58) |
+| [OpenMetadata](https://open-metadata.org/) | [Suresh Srinivas](https://www.linkedin.com/in/sureshsri/) | [OpenMetadata - JSON Schema in production episode](https://youtu.be/ZrVTZwmTR3k) |
+| [Postman](https://www.postman.com/) | [Juan Cruz Viotti](https://www.linkedin.com/in/jviotti/) | [Postman JSON Schema case study](https://json-schema.org/blog/posts/postman-case-study) |
+| [Remote](https://remote.com/) | [Sandrina Pereira](https://www.linkedin.com/in/sandrina-p/) | [Remote JSON Schema case study](https://json-schema.org/blog/posts/remote-case-study) |
 | [Stedi](https://www.stedi.com/) | [Brian Quinn](https://www.linkedin.com/in/bdquinn/) | [Stedi Guides – powered by JSON Schema](https://www.stedi.com/docs/edi-platform/operate/transform-json/guide-json#find-a-guides-json-schema) |
+| [W3C Web of Things](https://www.w3.org/WoT/) | [Ege Korkan](https://www.linkedin.com/in/ege-korkan/) | [W3C Web of Things JSON Schema case study](https://json-schema.org/blog/posts/w3c-wot-case-study) |
+| [Waylit](https://www.waylit.com/) | [Satya Mishra](https://www.linkedin.com/in/satyamishra/) | [WayLit helps customers and their employees by making immigration a bit easier. Waylit uses JSON Schema to generate nice-looking adaptive forms and validate all the collected data](https://www.waylit.com/post/more-than-1000-form-fields-and-growing-how-waylit-uses-json-schema) |
+| [Wundergraph](https://wundergraph.com/) | [Jens Neuse](https://www.linkedin.com/in/jens-neuse-706673195/) | [Wundergraph - JSON Schema in production episode](https://youtu.be/_TCU6da0GA8) |
+| [Zapier](https://zapier.com/) | [David Brownman](https://www.linkedin.com/in/xavdid/) | [Zapier - JSON Schema in production episode](https://youtu.be/yDL98sd4KVE) |
+| Zones | [Chuck Reeves](https://www.linkedin.com/in/charles-reeves-156953284/) | [Zones - JSON Schema in production episode](https://youtu.be/fkziMQD7pqQ) |
+
