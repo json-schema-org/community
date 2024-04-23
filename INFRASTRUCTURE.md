@@ -47,6 +47,9 @@ The working location for these resources is in the specification repository at h
 
 We are capturing feedback in the website using a cloudflare worker to receive the data and send it to an Airtable database. The Airtable account is owned and paid for by Postman.
 
+## The JSON Schema Calendar
+We are using a Google Calendar to share with the Community all the events. This Calendar has been created with a Google Account associated with the email info@json-schema.org.
+
 ## Bots
 The Slack server has a number of bots which feed data into specific channels.
 
