@@ -7,6 +7,11 @@ about: Regular Open Community Working Meetings Issue - This template is for thos
 
 Zoom Meeting link: https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09
 
+You can find these events scheduled on our **[JSON Schema Community Calendar](https://calendar.google.com/calendar/u/0/embed?src=info@json-schema.org)**.
+
+To add the events to your Google Calendar, use the link found in the bottom right of the above calendar.
+To add the events to another calendar, use the provided [ics/ical file](https://calendar.google.com/calendar/ical/info%40json-schema.org/public/basic.ics).
+
 **Meeting accessibility**:
 - We would like to record the meeting for future reference and for those who are not able to attend in person. 
 - We encourage you to challenge any language or behaviour that is harmful or not inclusive during this meeting. 
