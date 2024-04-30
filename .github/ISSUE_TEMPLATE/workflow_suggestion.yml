@@ -1,0 +1,40 @@
+name: "💡 Community Workflow Suggestion"
+description: "Suggest a new community workflow"
+title: "💡 Community Workflow proposal: "
+labels: ["✨ Enhancement", "Status: Triage"]
+
+body:
+- type: textarea
+  attributes:
+    label: "Description"
+    description: "A clear and concise description of the suggested workflow"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: "Objective"
+    description: "What is the main goal or purpose of this workflow?"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: "Steps"
+    description: "List the steps of the suggested workflow"
+    placeholder: |
+      1. Step 1
+      2. Step 2
+      3. Step 3
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: "Expected Outcome"
+    description: "A clear and concise description of what you expect to achieve with this workflow"
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: "Additional Context [optional]"
+    description: "Add any other context or information about the suggested workflow here"
+  validations:
+    required: false
