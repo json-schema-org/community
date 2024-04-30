@@ -1,7 +1,7 @@
-name: "💡 Workflow Suggestion"
+name: "💡 Community Workflow Suggestion"
 description: "Suggest a new community workflow"
-title: "💡 Workflow Suggestion: "
-labels: ["💡 Workflow Suggestion", "Status: Review"]
+title: "💡 Community Workflow proposal: "
+labels: ["✨ Enhancement", "Status: Triage"]
 
 body:
 - type: textarea
