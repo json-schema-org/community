@@ -1,6 +1,6 @@
 ### Twitter Template
 
-🎉🎉 We are so excited to announce the last addition to the JSON Schema Implementations page!
+🎉🎉 We are so excited to announce the latest addition to the JSON Schema Implementations page!
 
 ------- is a ------- by ------
 
@@ -10,7 +10,7 @@ For more tooling visit: https://json-schema.org/implementations
 
 ### Linkedin Template
 
-🎉🎉 We are so excited to announce the last addition to the JSON Schema Implementations page!
+🎉🎉 We are so excited to announce the latest addition to the JSON Schema Implementations page!
 
 ⭐️ ------- ⭐️ is a ------- by ------
 
@@ -20,7 +20,7 @@ Please, visit the JSON Schema Implementations page to explore all the implementa
 
 ### Slack
 
-🎉🎉 We are so excited to announce the last addition to the JSON Schema Implementations page!
+🎉🎉 We are so excited to announce the latest addition to the JSON Schema Implementations page!
 
 ⭐️ ------- ⭐️ is a ------- by ------
 
