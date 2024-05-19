@@ -62,6 +62,7 @@ jobs:
                 edges {
                   node {
                     ... on Discussion {
+                      id
                       title
                       body
                       resourcePath
@@ -117,6 +118,8 @@ jobs:
 
                   console.log(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`);
 
+                  const { data: label } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/labels/${process.env.AGENDA_LABEL}`);
+
                   await mygithub.request(`PATCH /repos/${process.env.OWNER}/${process.env.REPO}/issues/${workMeetings[0].number}`, {
                     body: parsed,
                     milestone: null,
@@ -126,7 +129,7 @@ jobs:
                   for (let i = 0; i < discussions.length; i++) {
                     await mygithub.graphql(`
                       mutation {
-                        removeLabelsFromLabelable(input: {labelIds: ["${process.env.AGENDA_LABEL_ID}"], labelableId: "${discussions[i].node.node_id}"}) {
+                        removeLabelsFromLabelable(input: {labelIds: ["${label.node_id}"], labelableId: "${discussions[i].node.id}"}) {
                           clientMutationId
                         }
                       }
