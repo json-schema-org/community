@@ -140,22 +140,3 @@ jobs:
             }
 
           }
-          
-    - name: Get Label ID
-      id: get-label-id
-      uses: actions/github-script@v7
-      env:
-        OWNER: ${{ vars.ORGANIZATION }}
-        REPO: 'community'
-        LABEL_NAME: 'agenda'
-        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
-      with:
-        script: |
-          const octokit = require('@octokit/core').Octokit  
-          const mygithub = new octokit({
-            auth: process.env.MY_TOKEN
-          });
-
-          const { data: label } = await mygithub.request('GET /repos/${process.env.OWNER}/${process.env.REPO}/labels/${process.env.LABEL_NAME}');
-          console.log(label.id);
-          console.log(`::set-env name=AGENDA_LABEL_ID::${label.id}`);
