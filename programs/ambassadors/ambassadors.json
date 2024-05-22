@@ -8,6 +8,17 @@
       "twitter": "iamthefirst",
       "linkedin": "iamthefirst",
       "company": "ACME",
-      "country": "🇺🇸"
+      "country": "🇺🇸",
+      "contributions": [
+        {
+          "type": "article",
+          "title": "Title of my first contribution",
+          "date": {
+            "year": 2024,
+            "month": "May"
+          },
+          "link": "link-to-my-contribution"
+        }
+      ]
     }
 ]
