@@ -1,23 +1,41 @@
 [
     {
-      "name": "I am the first Ambassador",
-      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
-      "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
-      "title": "Schema Designer at ACME",
-      "github": "iamthefirst",
-      "twitter": "iamthefirst",
-      "linkedin": "iamthefirst",
-      "company": "ACME",
-      "country": "🇺🇸",
+      "name": "Siddhartha Rajbongshi",
+      "img": "https://avatars.githubusercontent.com/u/84823234?v=4",
+      "bio": "I am a BS undergraduate student having a keen interest in Cybersecurity and DevOps.",
+      "title": "Cyber Security Practitioner and Open Source Advocate",
+      "github": "paras3c",
+      "twitter": "siddharthastwt",
+      "linkedin": "siddhartharajbongshi",
+      "company": "Gauhati University",
+      "country": "in",
       "contributions": [
         {
           "type": "article",
-          "title": "Title of my first contribution",
+          "title": "Deep-dive into APIs : Theoretical aspects",
           "date": {
-            "year": 2024,
-            "month": "May"
+            "year": 2023,
+            "month": "Jan"
           },
-          "link": "link-to-my-contribution"
+          "link": "https://mrsiddhartha.hashnode.dev/deep-dive-into-apis-theoretical-aspects"
+        }
+        {          {
+          "type": "article",
+          "title": "HTTP, HTTPS, and APIs: Understanding the Relationship",
+          "date": {
+            "year": 2023,
+            "month": "Jan"
+          },
+          "link": "https://mrsiddhartha.hashnode.dev/http-https-and-apis-understanding-the-relationship"
+        }
+            {          
+          "type": "event",
+          "title": "Mastering Git & GitHub: A GDSC Tech Session!",
+          "date": {
+            "year": 2023,
+            "month": "Nov"
+          },
+          "link": "https://www.youtube.com/watch?v=mkU3njbNuVo"
         }
       ]
     }
