@@ -59,4 +59,4 @@ Get on board and become an ambassador!
 
 #### References and inspiration
 
-- [The AsynAPI Ambassadors Program](https://github.com/asyncapi/community/blob/master/AMBASSADOR_ORGANIZATION.md)
+- [The AsyncAPI Ambassadors Program](https://github.com/asyncapi/community/blob/master/AMBASSADOR_ORGANIZATION.md)
