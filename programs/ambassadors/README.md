@@ -7,8 +7,8 @@ The JSON Schema Ambassador Program aims to bring JSON Schema closer to both curr
 - Promote collaboration among the JSON Schema ecosystem.
 - Promote JSON Schema adoption in other ecosystems.
 - Engage with the project in some way, either as a contributor, blogger, speaker, etc.
-- Speak at community events or write technical content (e.g. blog posts) that solves community needs.
-- Nurture community growth and a welcoming environment to spread knowledge about the project.
+- Speak at community events or write technical content (e.g. blog posts) that solves JSON Schema's community needs.
+- Nurture community growth and a welcoming environment to spread knowledge about JSON Schema.
 
 ### How does the program work?
 
