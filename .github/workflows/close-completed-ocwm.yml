@@ -18,12 +18,19 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Get Token 
+      uses: actions/create-github-app-token@v1
+      id: get_workflow_token
+      with:
+        app-id: ${{ vars.APP_ID }}
+        private-key: ${{ secrets.PRIVATE_KEY }}
+    
     - name: Install dependencies
       run: npm install @octokit/core@5.1.0
 
     - name: Close issues
       env:
-        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         MY_LABEL: ${{ vars.OCWM_LABEL }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO_NAMES: ${{ vars.REPOSITORIES }}
