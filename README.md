@@ -56,11 +56,16 @@ For more in-depth discussions, planning, and documenting significant decisions, 
 | 💬 Discussions       | https://github.com/orgs/json-schema-org/discussions
 
 ### Community meetings
-We hold monthly Office Hours and weekly Open Community Working Meetings. Office Hours are every first Tuesday of the month at 15:00 BST, and by appointment. Open Community Working Meetings are every Monday at 14:00 PT.
+We hold monthly Office Hours and weekly Open Community Working Meetings. Office Hours are every first Tuesday of the month, and by appointment. Open Community Working Meetings are every Monday at 14:00 PT.
 
 **Office Hours (Monthly):**
 
 **Office Hours** provide time for the community for questions, discussions, comments, or just to chat about JSON Schema. 
+
+We host two different alternate sessions:
+
+APAC/Americas friendly every 2 months - First Tuesday at 15:00 PT
+Europe/Americas friendly every 2 months - First Tuesday at 15:00 BST
 
 More details [here](https://github.com/orgs/json-schema-org/discussions/34/).
 
