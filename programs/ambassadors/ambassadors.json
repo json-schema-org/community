@@ -20,5 +20,45 @@
           "link": "link-to-my-contribution"
         }
       ]
+    },
+    {
+      "name": "Andreas Eberhart",
+      "img": "https://media.licdn.com/dms/image/C5603AQFwzjco4Zp2iw/profile-displayphoto-shrink_200_200/0/1522155839427?e=1723680000&v=beta&t=mzwGrHJqCu_doxI4tTZIkH2GtWIeW8iOTD-JDLxwYuA",
+      "bio": "With 25 years of professional experience, Andreas is very proficient in the areas of enterprise cloud, linked & big data, as well as systems architecture and development. He co-founded two startups and drove their growth resulting in two acquisitions by silicon valley giants HP and Veritas. Combined with his extensive background in cutting edge research, he has the unique ability to address projects from technical, time to market, and ROI angles. He holds a PhD in Computer Science from the University of Saarbrücken and a Master in Computer Science from Portland State University.",
+      "title": "CEO at Dashjoin",
+      "github": "aeberhart",
+      "twitter": "dashjoin",
+      "linkedin": "andreas-eberhart-94264a44",
+      "company": "Dashjoin",
+      "country": "🇩🇪",
+      "contributions": [
+        {
+          "type": "article",
+          "title": "JSON Schema, Schema.org, JSON-LD: What’s the Difference?",
+          "date": {
+            "year": 2020,
+            "month": "Aug"
+          },
+          "link": "https://medium.com/@dashjoin/json-schema-schema-org-json-ld-whats-the-difference-e30d7315686a"
+        },
+        {
+          "type": "video",
+          "title": "Supercharge your Angular Project with JSON Schema Forms",
+          "date": {
+            "year": 2020,
+            "month": "Aug"
+          },
+          "link": "https://www.youtube.com/watch?v=Xk9dxbbBFjo"
+        },
+        {
+          "type": "documentation",
+          "title": "Dashjoin Open Source & Cloud Native Low Code Development Platform",
+          "date": {
+            "year": 2024,
+            "month": "April"
+          },
+          "link": "https://dashjoin.github.io/platform/latest/"
+        }
+      ]
     }
 ]
