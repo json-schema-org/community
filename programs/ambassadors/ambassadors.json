@@ -51,14 +51,14 @@
           "link": "https://www.youtube.com/watch?v=Xk9dxbbBFjo"
         },
         {
-          "type": "documentation",
-          "title": "Dashjoin Open Source & Cloud Native Low Code Development Platform",
+          "type": "adopter",
+          "title": "Add Dashjoin to the JSON Schema Adopters list.",
           "date": {
             "year": 2024,
             "month": "April"
           },
-          "link": "https://dashjoin.github.io/platform/latest/"
-        }
+          "link": "https://landscape.json-schema.org/"
+        },
       ]
     }
 ]
