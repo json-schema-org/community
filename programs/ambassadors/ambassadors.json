@@ -54,7 +54,17 @@
             "month": "June"
           },
           "link": "https://github.com/json-schema-org/website/pull/679"
+        },
+        {
+          "type": "conference-talk",
+          "title": "Wielding the Double-Edged Sword of JSON Schema",
+          "date": {
+            "year": 2022,
+            "month": "Sempember"
+          },
+          "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
         }
+
 
       ]
     }
