@@ -16,7 +16,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Validate ambassadors.json
-        uses: actions/github-script@v7
         env:
           SLACK_WEBHOOK_URL: ${{ vars.SLACK_WEBHOOK_FAIL_ACTIONS }}
           GITHUB_CONTEXT: ${{ toJson(github) }}
