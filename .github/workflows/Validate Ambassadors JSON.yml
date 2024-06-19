@@ -19,12 +19,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
+      
       - name: Install AJV (Another JSON Validator) locally
         run: npm install ajv
 
       - name: Validate ambassadors.json
-        uses: actions/github-script@v7
+        required-packages: axios path fs
+        uses: satackey/action-js-inline@v0.0.2
         with:
           script: |
             const fs = require('fs');
