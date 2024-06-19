@@ -28,4 +28,4 @@ jobs:
 
       - name: Validate ambassadors.json
         run: |
-          node ./validate-ambassadors.js
+          node utils/validate-ambassadors.js
