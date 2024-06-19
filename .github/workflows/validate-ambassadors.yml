@@ -30,6 +30,7 @@ jobs:
           const Ajv = require('ajv');
           const path = require('path');
 
+          // Set the directory where ambassadors.json and ambassadors-schema.json reside
           const ambassadorsDir = path.join(process.env.GITHUB_WORKSPACE, 'programs', 'ambassadors');
           const schemaPath = path.join(ambassadorsDir, 'ambassadors-schema.json');
           const dataPath = path.join(ambassadorsDir, 'ambassadors.json');
