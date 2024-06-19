@@ -22,10 +22,14 @@ jobs:
           node-version: '16'
 
       - name: Install Dependencies
-        run: npm install ajv
+        run: npm install ajv ajv-formats
+
       - name: List directory contents
         run: ls -R
 
       - name: Validate ambassadors.json
         run: |
           node utils/validate-ambassadors.js
+        
+
+     
