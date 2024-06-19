@@ -31,6 +31,7 @@ jobs:
           const path = require('path');
 
           // Load schema and data files using __dirname
+          console.log("Hello")
           const schemaPath = path.join(__dirname, 'ambassadors-schema.json');
           const dataPath = path.join(__dirname, 'ambassadors.json');
           const schema = require(schemaPath);
