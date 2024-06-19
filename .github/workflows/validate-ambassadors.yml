@@ -51,4 +51,4 @@ jobs:
           } else {
               console.log('ambassadors.json is valid.');
           }
-        working-directory: ./
+        working-directory: ./programs/ambassadors
