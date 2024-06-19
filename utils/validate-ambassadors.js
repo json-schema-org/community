@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 // Set the directory where ambassadors.json and ambassadors-schema.json reside
-const ambassadorsDir = path.join(__dirname, 'programs', 'ambassadors');
+const ambassadorsDir = path.join(__dirname, '../programs', 'ambassadors');
 const schemaPath = path.join(ambassadorsDir, 'ambassadors-schema.json');
 const dataPath = path.join(ambassadorsDir, 'ambassadors.json');
 
