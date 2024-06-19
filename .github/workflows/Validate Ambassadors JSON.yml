@@ -1,0 +1,56 @@
+name: Validate Ambassadors JSON
+
+on:
+  push:
+    paths:
+      - 'programs/ambassadors/ambassadors.json'
+  pull_request:
+    paths:
+      - 'programs/ambassadors/ambassadors.json'
+
+jobs:
+  validate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Ensure correct Node.js version
+
+      - name: Install AJV (Another JSON Validator) globally
+        run: npm install -g ajv
+
+      - name: Validate ambassadors.json
+        run: |
+          const fs = require('fs');
+          const Ajv = require('ajv');
+          const path = require('path');
+
+          // Set the directory where ambassadors.json and ambassadors-schema.json reside
+          const ambassadorsDir = path.join(process.env.GITHUB_WORKSPACE, 'programs', 'ambassadors');
+          const schemaPath = path.join(ambassadorsDir, 'ambassadors-schema.json');
+          const dataPath = path.join(ambassadorsDir, 'ambassadors.json');
+          
+          // Load schema and data files
+          const schema = require(schemaPath);
+          const data = require(dataPath);
+
+          // Initialize AJV instance with options
+          const ajv = new Ajv({ allErrors: true }); // Validate all errors, not just the first one
+
+          // Compile the schema
+          const validate = ajv.compile(schema);
+
+          // Validate data against schema
+          const valid = validate(data);
+
+          if (!valid) {
+              console.error('Validation failed:', validate.errors);
+              process.exit(1); // Terminate with a non-zero exit code on validation failure
+          } else {
+              console.log('ambassadors.json is valid.');
+          }
