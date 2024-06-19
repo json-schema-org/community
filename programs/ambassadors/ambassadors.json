@@ -6,19 +6,19 @@
       "title": "Schema Designer at ACME",
       "github": "iamthefirst",
       "twitter": "iamthefirst",
-      "linkedin": "Ramish",
+      "linkedin": "iamthefirst",
       "company": "ACME",
       "country": "🇺🇸",
       "contributions": [
         {
           "type": "article",
-          "title": "Title of my hello hello",
+          "title": "Title of my first contribution",
           "date": {
             "year": 2024,
-            "month": "June"
+            "month": "May"
           },
-          "link": "http://github.com/hello/my-ramish-meri"
+          "link": "link-to-my-contribution"
         }
       ]
     }
-]
+  ]
