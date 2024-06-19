@@ -30,9 +30,11 @@ jobs:
           const Ajv = require('ajv');
           const path = require('path');
 
-          // Load schema and data files using __dirname
-          const schemaPath = path.join(__dirname, 'programs', 'ambassadors', 'ambassadors-schema.json');
-          const dataPath = path.join(__dirname, 'programs', 'ambassadors', 'ambassadors.json');
+          const ambassadorsDir = path.join(process.env.GITHUB_WORKSPACE, 'programs', 'ambassadors');
+          const schemaPath = path.join(ambassadorsDir, 'ambassadors-schema.json');
+          const dataPath = path.join(ambassadorsDir, 'ambassadors.json');
+          
+          // Load schema and data files
           const schema = require(schemaPath);
           const data = require(dataPath);
 
@@ -51,4 +53,3 @@ jobs:
           } else {
               console.log('ambassadors.json is valid.');
           }
-        working-directory: ${{ github.workspace }}
