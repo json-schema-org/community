@@ -16,14 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # Ensure correct Node.js version
-
-      - name: Install AJV (Another JSON Validator) globally
-        run: npm install -g ajv
-
       - name: Validate ambassadors.json
         run: |
           const fs = require('fs');
