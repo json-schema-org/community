@@ -21,8 +21,8 @@ jobs:
         with:
           node-version: '14'  # Ensure correct Node.js version
 
-      - name: Install AJV (Another JSON Validator)
-        run: npm install ajv
+      - name: Install AJV (Another JSON Validator) globally
+        run: npm install -g ajv
 
       - name: Validate ambassadors.json
         run: |
@@ -31,8 +31,8 @@ jobs:
           const path = require('path');
 
           // Load schema and data files using __dirname
-          const schemaPath = path.join(__dirname, 'ambassadors-schema.json');
-          const dataPath = path.join(__dirname, 'ambassadors.json');
+          const schemaPath = path.join(__dirname, 'programs', 'ambassadors', 'ambassadors-schema.json');
+          const dataPath = path.join(__dirname, 'programs', 'ambassadors', 'ambassadors.json');
           const schema = require(schemaPath);
           const data = require(dataPath);
 
@@ -51,4 +51,4 @@ jobs:
           } else {
               console.log('ambassadors.json is valid.');
           }
-        working-directory: ./programs/ambassadors
+        working-directory: ${{ github.workspace }}
