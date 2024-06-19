@@ -15,14 +15,13 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-      
     - name: Set up Node 20
       uses: actions/setup-node@v4
       with:
         node-version: '20'
     
-    - name: Install AJV (Another JSON Validator) locally
-      run: npm install ajv
+    - name: Install dependencies
+      run: npm install ajv fs path
 
     - name: Validate ambassadors.json
       uses: actions/github-script@v7
