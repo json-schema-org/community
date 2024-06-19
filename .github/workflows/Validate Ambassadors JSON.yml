@@ -13,13 +13,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
         with:
-          node-version: '22'  # Ensure correct Node.js version
+          node-version: '20'
 
       - name: Install AJV (Another JSON Validator) locally
         run: npm install ajv
