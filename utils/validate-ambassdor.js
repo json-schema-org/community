@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Load schema and data files using __dirname
-const schemaPath = path.join(__dirname, '..', 'programs', 'ambassadors', 'ambassadors-schema.json');
-const dataPath = path.join(__dirname, '..', 'programs', 'ambassadors', 'ambassadors.json');
+const schemaPath = path.join(__dirname, '.', 'programs', 'ambassadors', 'ambassadors-schema.json');
+const dataPath = path.join(__dirname, '.', 'programs', 'ambassadors', 'ambassadors.json');
 const schema = require(schemaPath);
 const data = require(dataPath);
 
