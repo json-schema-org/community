@@ -1,23 +1,23 @@
 [
     {
-      "name": "I am the first Ambassador",
+      "name": "Esther Okafor",
       "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
-      "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
-      "title": "Schema Designer at ACME",
-      "github": "iamthefirst",
-      "twitter": "iamthefirst",
-      "linkedin": "iamthefirst",
-      "company": "ACME",
-      "country": "🇺🇸",
+      "bio": "I am a QA engineer currently working with Storyblok. I am passionate about quality and making sure software design systems are developed with the highest standards",
+      "title": "Test engineer at Storyblok",
+      "github": "https://github.com/Estherokafor05/My-portfolio",
+      "twitter": "https://x.com/Estherokafor_",
+      "linkedin": "https://www.linkedin.com/in/okaforesther/",
+      "company": "Storyblok",
+      "country": "Nigeria",
       "contributions": [
         {
           "type": "article",
-          "title": "Title of my first contribution",
+          "title": "Postman Series - writing assertions and validating responses",
           "date": {
             "year": 2024,
             "month": "May"
           },
-          "link": "link-to-my-contribution"
+          "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
         }
       ]
     }
