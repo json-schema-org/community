@@ -1,23 +1,49 @@
 [
     {
-      "name": "I am the first Ambassador",
-      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
-      "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
-      "title": "Schema Designer at ACME",
-      "github": "iamthefirst",
-      "twitter": "iamthefirst",
-      "linkedin": "iamthefirst",
-      "company": "ACME",
-      "country": "🇺🇸",
+      "name": "Juan Cruz Viotti",
+      "img": "https://avatars.githubusercontent.com/u/2192773?v=4",
+      "bio": "CTO at Intelligence.AI, founder of Sourcemeta, consultant, and author",
+      "title": "Chief Technical Officer",
+      "github": "jviotti",
+      "linkedin": "jviotti",
+      "company": "Intelligence.AI",
+      "country": "🇧🇴",
       "contributions": [
         {
           "type": "article",
-          "title": "Title of my first contribution",
+          "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
+          "date": {
+            "year": 2022,
+            "month": "October"
+          },
+          "link": "https://json-schema.org/blog/posts/w3c-wot-case-study"
+        },
+        {
+          "type": "article",
+          "title": "Understanding JSON Schema Lexical and Dynamic Scopes",
           "date": {
             "year": 2024,
-            "month": "May"
+            "month": "February"
           },
-          "link": "link-to-my-contribution"
+          "link": "https://json-schema.org/blog/posts/understanding-lexical-dynamic-scopes"
+        },
+        {
+          "type": "book",
+          "title": "Unifying Business, Data, and Code: Designing Data Products with JSON Schema",
+          "date": {
+            "year": 2024,
+            "month": "January"
+          },
+          "link": "https://www.oreilly.com/library/view/unifying-business-data/9781098144999/"
+        },
+        {
+          "type": "initiative",
+          "title": "GSoC 2024: Upgrade/Downgrade Rules",
+          "date": {
+            "year": 2024,
+            "month": "March"
+          },
+          "link": "https://github.com/json-schema-org/community/issues/599"
         }
       ]
     }
