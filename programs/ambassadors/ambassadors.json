@@ -10,6 +10,15 @@
       "country": "🇧🇴",
       "contributions": [
         {
+          "type": "project",
+          "title": "Alterschema",
+          "date": {
+            "year": 2022,
+            "month": "May"
+          },
+          "link": "https://alterschema.sourcemeta.com"
+        },
+        {
           "type": "article",
           "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
           "date": {
@@ -17,6 +26,15 @@
             "month": "October"
           },
           "link": "https://json-schema.org/blog/posts/w3c-wot-case-study"
+        },
+        {
+          "type": "project",
+          "title": "Learn JSON Schema",
+          "date": {
+            "year": 2023,
+            "month": "March"
+          },
+          "link": "https://www.learnjsonschema.com"
         },
         {
           "type": "article",
