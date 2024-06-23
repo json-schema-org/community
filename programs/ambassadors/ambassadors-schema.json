@@ -31,6 +31,10 @@
         "type": "string",
         "description": "Twitter profile URL of the contributor"
       },
+      "mastodon": {
+        "type": "string",
+        "description": "Mastodon profile URL of the contributor"
+      },
       "linkedin": {
         "type": "string",
         "description": "LinkedIn profile URL of the contributor"
