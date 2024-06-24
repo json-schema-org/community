@@ -27,25 +27,20 @@ jobs:
       - name: Validate ambassadors.json
         run: |
           node -e "
-          const ajv = require("ajv/dist/2020")
+          const Ajv = require('ajv/dist/2020');
           const addFormats = require('ajv-formats');
           const path = require('path');
           const fs = require('fs');
-
           const ambassadorsDir = path.join(process.env.GITHUB_WORKSPACE, 'programs', 'ambassadors');
           const schemaPath = path.join(ambassadorsDir, 'ambassadors-schema.json');
           const dataPath = path.join(ambassadorsDir, 'ambassadors.json');
-
           try {
               const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf-8'));
               const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
-
               const ajv = new Ajv({ allErrors: true });
               addFormats(ajv);
-
               const validate = ajv.compile(schema);
               const valid = validate(data);
-
               if (!valid) {
                   console.error('Validation failed:', validate.errors);
                   process.exit(1);
@@ -56,5 +51,3 @@ jobs:
               console.error('Error validating ambassadors.json:', error);
               process.exit(1);
           }"
-
-      
