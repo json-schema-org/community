@@ -27,7 +27,7 @@ jobs:
       - name: Validate ambassadors.json
         run: |
           node -e "
-          const Ajv2020 = require("ajv/dist/2020")
+          const ajv = require("ajv/dist/2020")
           const addFormats = require('ajv-formats');
           const path = require('path');
           const fs = require('fs');
