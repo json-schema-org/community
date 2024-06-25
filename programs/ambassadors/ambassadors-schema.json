@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "description": "Array of contributor profiles",
+  "items": {
+    "type": "object",
+    "description": "Contributor profile",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Full name of the contributor"
+      },
+      "img": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL to the contributor's profile image"
+      },
+      "bio": {
+        "type": "string",
+        "description": "Brief biography of the contributor"
+      },
+      "title": {
+        "type": "string",
+        "description": "Professional title of the contributor"
+      },
+      "github": {
+        "type": "string",
+        "description": "GitHub profile URL of the contributor"
+      },
+      "twitter": {
+        "type": "string",
+        "description": "Twitter profile URL of the contributor"
+      },
+      "mastodon": {
+        "type": "string",
+        "description": "Mastodon profile URL of the contributor"
+      },
+      "linkedin": {
+        "type": "string",
+        "description": "LinkedIn profile URL of the contributor"
+      },
+      "company": {
+        "type": "string",
+        "description": "Company where the contributor works"
+      },
+      "country": {
+        "type": "string",
+        "description": "Country where the contributor is based"
+      },
+      "contributions": {
+        "type": "array",
+        "description": "List of contributions made by the contributor",
+        "items": {
+          "type": "object",
+          "description": "Details of a specific contribution",
+          "properties": {
+            "type": {
+              "type": "string",
+              "enum": ["article", "talk", "video", "other", "book", "paper", "initiative", "project", "working group"],
+              "description": "Type of the contribution"
+            },
+            "title": {
+              "type": "string",
+              "description": "Title of the contribution"
+            },
+            "date": {
+              "type": "object",
+              "description": "Date of the contribution",
+              "properties": {
+                "year": {
+                  "type": "integer",
+                  "minimum": 1900,
+                  "maximum": 2100,
+                  "description": "Year of the contribution"
+                },
+                "month": {
+                  "type": "string",
+                  "enum": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+                  "description": "Month of the contribution"
+                }
+              },
+              "required": ["year", "month"]
+            },
+            "link": {
+              "type": "string",
+              "format": "uri",
+              "description": "URL link to the contribution"
+            }
+          },
+          "required": ["type", "title", "date", "link"]
+        }
+      }
+    },
+    "required": ["name", "img", "bio", "title", "github", "company", "country", "contributions"]
+  }
+}

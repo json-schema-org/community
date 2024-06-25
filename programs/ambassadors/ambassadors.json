@@ -1,24 +1,24 @@
 [
-    {
-      "name": "I am the first Ambassador",
-      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
-      "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
-      "title": "Schema Designer at ACME",
-      "github": "iamthefirst",
-      "twitter": "iamthefirst",
-      "linkedin": "iamthefirst",
-      "company": "ACME",
-      "country": "🇺🇸",
-      "contributions": [
-        {
-          "type": "article",
-          "title": "Title of my first contribution",
-          "date": {
-            "year": 2024,
-            "month": "May"
-          },
-          "link": "link-to-my-contribution"
-        }
-      ]
-    }
+  {
+    "name": "I am the first Ambassador",
+    "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
+    "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
+    "title": "Schema Designer at ACME",
+    "github": "iamthefirst",
+    "twitter": "iamthefirst",
+    "linkedin": "iamthefirst",
+    "company": "ACME",
+    "country": "🇺🇸",
+    "contributions": [
+      {
+        "type": "article",
+        "title": "Title of my first contribution",
+        "date": {
+          "year": 2024,
+          "month": "May"
+        },
+        "link": "https://github.com/my-contri"
+      }
+    ]
+  }
 ]
