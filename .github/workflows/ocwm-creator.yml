@@ -17,6 +17,14 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '20'
+      
+    - name: Get Token 
+      uses: actions/create-github-app-token@v1
+      id: get_workflow_token
+      with:
+        app-id: ${{ vars.APP_ID }}
+        private-key: ${{ secrets.PRIVATE_KEY }}
+      
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -34,7 +42,7 @@ jobs:
         title: ${{ steps.create-title.outputs.title }}
         content-filepath: .github/ISSUE_TEMPLATE/open_community_working_meeting.md
         labels: 'Working Meeting'
-        token: ${{ secrets.AUTH_TOKEN }}
+        token: ${{ steps.get_workflow_token.outputs.token }}
 
     - name: Install dependencies
       run: npm install @octokit/core@5.1.0 
@@ -42,7 +50,7 @@ jobs:
     - name: Update Issue Body
       uses: actions/github-script@v7
       env:
-        MY_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         SLACK_WEBHOOK: ${{ vars.SLACK_WEBHOOK }}
       with:
         script: |

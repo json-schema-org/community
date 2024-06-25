@@ -1,31 +1,32 @@
 ### Twitter Template
 
-📣 🎉 We are pleased to welcome ____ to the official list of JSON Schema adopters!
+📣 We are pleased to welcome _______ to the JSON Schema adopters list!
 
-_______ is a 
+XXXXXXX is a _______
 
-More about JSON Schema Adopters list ➡️ https://github.com/json-schema-org/community/blob/main/ADOPTERS.md
+https://
 
-🧐🧵
-
-Know more about _______ use case :
+Visit our landscape and discover more orgnizations using JSON Schema : https://landscape.json-schema.org
 
 ### Linkedin Template
 
-📣 🎉 We are pleased to welcome ______ to the official list of JSON Schema adopters!
+📣 🎉 We are pleased to welcome _______ to the official list of JSON Schema adopters!
 
-________ is a 
+_______ is a ....
 
-Know more about ______ use case 💡 
+More about _______ 👉 https://
 
-More about JSON Schema Adopters list ➡️ https://github.com/json-schema-org/community/blob/main/ADOPTERS.md
+Check out the JSON Schema Landscape to explore the leading orgnizations using JSON Schema: https://landscape.json-schema.org/
+
+#ecosystem #jsonschema #adopters #production
+
 
 ### Slack
 
-:mega: :tada: We are pleased to welcome ______ to the official list of :star: JSON Schema adopters :star:!
+:mega: :tada: We are pleased to welcome _______ to the official list of JSON Schema adopters!
+
 ______ is a ....
 
-Know more about JSON Schema Adopters :arrow_right: https://github.com/json-schema-org/community/blob/main/ADOPTERS.md
-Know more about _____ use case :bulb: 
+Check out the JSON Schema Landscape to explore the leading orgnizations using JSON Schema: https://landscape.json-schema.org/
 
-Is your Organization using JSON Schema? Please join the [Adopters list](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md) and help us to grow the JSON Schema Ecosystem by sharing your use case.
+Is your Organization using JSON Schema? Please join the Adopters group in the JSON Schema Landscape and help us to grow the JSON Schema Ecosystem by sharing your use case.

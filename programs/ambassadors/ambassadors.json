@@ -1,27 +1,5 @@
 [
     {
-      "name": "I am the first Ambassador",
-      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
-      "bio": "I am the first JSON Schema Ambassador. I work as Schema Designer in ACME since 2002 and I am the implementer of the Turbo Implementation.",
-      "title": "Schema Designer at ACME",
-      "github": "iamthefirst",
-      "twitter": "iamthefirst",
-      "linkedin": "iamthefirst",
-      "company": "ACME",
-      "country": "🇺🇸",
-      "contributions": [
-        {
-          "type": "article",
-          "title": "Title of my first contribution",
-          "date": {
-            "year": 2024,
-            "month": "May"
-          },
-          "link": "link-to-my-contribution"
-        }
-      ]
-    },
-    {
       "name": "Andreas Eberhart",
       "img": "https://media.licdn.com/dms/image/C5603AQFwzjco4Zp2iw/profile-displayphoto-shrink_200_200/0/1522155839427?e=1723680000&v=beta&t=mzwGrHJqCu_doxI4tTZIkH2GtWIeW8iOTD-JDLxwYuA",
       "bio": "With 25 years of professional experience, Andreas is very proficient in the areas of enterprise cloud, linked & big data, as well as systems architecture and development. He co-founded two startups and drove their growth resulting in two acquisitions by silicon valley giants HP and Veritas. Combined with his extensive background in cutting edge research, he has the unique ability to address projects from technical, time to market, and ROI angles. He holds a PhD in Computer Science from the University of Saarbrücken and a Master in Computer Science from Portland State University.",
@@ -62,3 +40,4 @@
       ]
     }
 ]
+
