@@ -56,7 +56,7 @@
           "properties": {
             "type": {
               "type": "string",
-              "enum": ["article", "talk", "video", "other", "book", "paper", "initiative", "project", "working group"],
+              "enum": ["article", "talk", "adopter", "case study", "video", "other", "book", "paper", "initiative", "project", "working group"],
               "description": "Type of the contribution"
             },
             "title": {
