@@ -15,7 +15,7 @@
           "title": "JSON Schema, Schema.org, JSON-LD: What’s the Difference?",
           "date": {
             "year": 2020,
-            "month": "Aug"
+            "month": "August"
           },
           "link": "https://medium.com/@dashjoin/json-schema-schema-org-json-ld-whats-the-difference-e30d7315686a"
         },
@@ -24,7 +24,7 @@
           "title": "Supercharge your Angular Project with JSON Schema Forms",
           "date": {
             "year": 2020,
-            "month": "Aug"
+            "month": "August"
           },
           "link": "https://www.youtube.com/watch?v=Xk9dxbbBFjo"
         },
@@ -36,7 +36,7 @@
             "month": "April"
           },
           "link": "https://landscape.json-schema.org/"
-        },
+        }
       ]
     }
 ]
