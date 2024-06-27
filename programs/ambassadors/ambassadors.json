@@ -38,6 +38,65 @@
           "link": "https://landscape.json-schema.org/"
         }
       ]
+    },
+    {
+      "name": "Ege Korkan",
+      "img": "https://media.licdn.com/dms/image/D4D03AQG03-U--zDJpw/profile-displayphoto-shrink_200_200/0/1707341764311?e=1724889600&v=beta&t=xY0i-IncaI51wlZVJD7fEuSb0LMdR7j0-XlipV7EK6c",
+      "bio": "Research and standardization focused engineer at Siemens with a passion to drive interoperability across all levels.",
+      "title": "Web of Things Expert at Siemens",
+      "github": "egekorkan",
+      "twitter": "egekorkan",
+      "linkedin": "ege-korkan",
+      "mastodon":"https://mastodon.social/@egekorkan",
+      "company": "Siemens AG",
+      "country": "Germany",
+      "contributions": [
+        {
+          "type": "article",
+          "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
+          "date": {
+            "year": 2022,
+            "month": "October"
+          },
+          "link": "https://json-schema.org/blog/posts/w3c-wot-case-study"
+        },
+        {
+          "type": "project",
+          "title": "Web of Things Tutorial which contains a part on JSON Schema",
+          "date": {
+            "year": 2024,
+            "month": "January"
+          },
+          "link": "https://w3c.github.io/wot-cg/tutorials/whatiswot/docs/preliminary/json-schema/intro"
+        },
+        {
+          "type": "adopter",
+          "title": "Add Standards Category to the JSON Schema Adopters list.",
+          "date": {
+            "year": 2024,
+            "month": "May"
+          },
+          "link": "https://landscape.json-schema.org/"
+        },
+        {
+          "type": "working group",
+          "title": "Web of Things Working Group participation at the W3C, which is using JSON Schema",
+          "date": {
+            "year": 2018,
+            "month": "September"
+          },
+          "link": "https://www.w3.org/WoT/"
+        },
+        {
+          "type": "project",
+          "title": "JSON Spell-checker based on JSON Schema",
+          "date": {
+            "year": 2023,
+            "month": "January"
+          },
+          "link": "https://github.com/eclipse-thingweb/playground/tree/master/packages/json-spell-checker"
+        },
+      ]
     }
 ]
 
