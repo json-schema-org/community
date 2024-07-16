@@ -8,36 +8,30 @@ on:
     branches:
       - main
 
-jobs:
-  notify-slack:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+permissions:
+  actions: read
 
-      - name: Send Slack notification
+jobs:
+  on-failure:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event.workflow_run.conclusion == 'failure' || 
+      github.event.workflow_run.conclusion == 'timed_out') &&
+      github.event.workflow_run.name != 'Slack Notifications for Failed GitHub Actions'
+    timeout-minutes: 10
+    steps:
+      - name: Send Slack Notification
+        uses: ravsamhq/notify-slack-action@v2
+        with:
+          status: ${{ github.event.workflow_run.conclusion }}
+          notification_title: " ${{github.event.workflow_run.name}} - ${{github.event.workflow_run.conclusion}} on ${{github.event.workflow_run.head_branch}} - <${{github.server_url}}/${{github.repository}}/actions/runs/${{github.event.workflow_run.id}}|View Failure>"
+          message_format: ":fire: *${{github.event.workflow_run.name}}* ${{github.event.workflow_run.conclusion}} in <${{github.server_url}}/${{github.repository}}/${{github.event.workflow_run.head_branch}}|${{github.repository}}>"
+          footer: "Linked Repo <${{github.server_url}}/${{github.repository}}|${{github.repository}}> | <${{github.server_url}}/${{github.repository}}/actions/runs/${{github.event.workflow_run.id}}|View Failure>"
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_WORKFLOW_NOTIF }}
+      
+      - name: Check Slack Notification Status
         if: failure()
         run: |
-          const fetch = require('node-fetch');
-
-          const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK_URL;
-          const context = JSON.parse(process.env.GITHUB_CONTEXT);
-
-          const slackMessage = {
-            channel: '#github',
-            issue: `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
-            status: context.jobStatus,
-            text: `GitHub Actions workflow failed: ${context.workflow}`
-          };
-
-          await fetch(SLACK_WEBHOOK_URL, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(slackMessage),
-          });
-        env:
-          SLACK_WEBHOOK_URL: ${{ vars.SLACK_WEBHOOK_FAIL_ACTIONS }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          echo "Failed to send Slack notification"
+          echo "Workflow Run ID: ${{ github.event.workflow_run.id }}"
