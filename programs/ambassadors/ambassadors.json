@@ -1,5 +1,6 @@
 [
     {
+
       "name": "Esther Okafor",
       "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
       "bio": "I am a QA engineer currently working with Storyblok. I am passionate about quality and making sure software design systems are developed with the highest standards",
@@ -13,12 +14,9 @@
         {
           "type": "article",
           "title": "Postman Series - writing assertions and validating responses",
-          "date": {
-            "year": 2024,
-            "month": "May"
-          },
           "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
         }
       ]
     }
 ]
+
