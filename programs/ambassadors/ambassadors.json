@@ -1,106 +1,47 @@
 [
     {
-      "name": "Andreas Eberhart",
-      "img": "https://media.licdn.com/dms/image/C5603AQFwzjco4Zp2iw/profile-displayphoto-shrink_200_200/0/1522155839427?e=1723680000&v=beta&t=mzwGrHJqCu_doxI4tTZIkH2GtWIeW8iOTD-JDLxwYuA",
-      "bio": "With 25 years of professional experience, Andreas is very proficient in the areas of enterprise cloud, linked & big data, as well as systems architecture and development. He co-founded two startups and drove their growth resulting in two acquisitions by silicon valley giants HP and Veritas. Combined with his extensive background in cutting edge research, he has the unique ability to address projects from technical, time to market, and ROI angles. He holds a PhD in Computer Science from the University of Saarbrücken and a Master in Computer Science from Portland State University.",
-      "title": "CEO at Dashjoin",
-      "github": "aeberhart",
-      "twitter": "dashjoin",
-      "linkedin": "andreas-eberhart-94264a44",
-      "company": "Dashjoin",
-      "country": "🇩🇪",
+
+      "name": "Esther Okafor",
+      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
+      "bio": "I am a QA engineer currently working with Storyblok. I am passionate about quality and making sure software design systems are developed with the highest standards",
+      "title": "Test engineer at Storyblok",
+      "github": "https://github.com/Estherokafor05/My-portfolio",
+      "twitter": "https://x.com/Estherokafor_",
+      "linkedin": "https://www.linkedin.com/in/okaforesther/",
+      "company": "Storyblok",
+      "country": "Nigeria",
       "contributions": [
         {
           "type": "article",
-          "title": "JSON Schema, Schema.org, JSON-LD: What’s the Difference?",
-          "date": {
-            "year": 2020,
-            "month": "August"
-          },
-          "link": "https://medium.com/@dashjoin/json-schema-schema-org-json-ld-whats-the-difference-e30d7315686a"
+          "title": "Postman Series - writing assertions and validating responses",
+          "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
         },
         {
-          "type": "video",
-          "title": "Supercharge your Angular Project with JSON Schema Forms",
-          "date": {
-            "year": 2020,
-            "month": "August"
-          },
-          "link": "https://www.youtube.com/watch?v=Xk9dxbbBFjo"
-        },
-        {
-          "type": "adopter",
-          "title": "Add Dashjoin to the JSON Schema Adopters list.",
+          "type": "article",
+          "title": "Beyond Assertions: Data Validation using Cypress with JSON Schema in End-to-End Testing",
           "date": {
             "year": 2024,
-            "month": "April"
-          },
-          "link": "https://landscape.json-schema.org/"
-    },      
-    {
-      "name": "David Biesack",
-      "img": "https://avatars.githubusercontent.com/u/545944?s=400&u=26818946106e2d8ae8c0cb5e0b72d6c7f612d268&v=4",
-        "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog, https://apidesignmatters.substack.com/ ",
-      "title": "Chief API Officer",
-      "github": "DavidBiesack",
-      "mastodon": "@DavidBiesack@fosstodon.org",
-      "linkedin": "davdbiesack",
-      "company": "Apiture",
-      "country": "🇺🇸",
-      "contributions": [
-        {
-          "type": "article",
-          "title": "Composing API Models with JSON Schema",
-          "date": {
-            "year": 2023,
-            "month": "June"
-          },
-          "link": "https://apidesignmatters.substack.com/p/composing-api-models-with-json-schema"
-        },
-        {
-          "type": "article",
-          "title": "Master JSON Schema's Subtleties",
-          "date": {
-            "year": 2023,
-            "month": "July"
-          },
-          "link": "https://apidesignmatters.substack.com/p/master-json-schemas-subtleties"
-        },
-        {
-          "type": "article",
-          "title": "Master More JSON Schema's Subtleties",
-          "date": {
-            "year": 2023,
-            "month": "July"
-          },
-          "link": "https://apidesignmatters.substack.com/p/master-more-json-schemas-subtleties"
-        },
-        {
-          "type": "article",
-          "title": "Learning the Language of API Data",
-          "date": {
-            "year": 2023,
             "month": "May"
           },
-          "link": "https://apidesignmatters.substack.com/p/learning-the-language-of-api-data"
+          "link": "https://estherokafor.com/beyond-assertions-data-validation-using-cypress-with-json-schema-in-end-to-end-testing"
         },
         {
-          "type": "pull request review",
-          "title": "What is JSON Schema?",
+          "type": "article",
+          "title": "Beyond Basics: Leveraging JSON Schema for API Security Testing",
           "date": {
             "year": 2024,
             "month": "June"
           },
-          "link": "https://github.com/json-schema-org/website/pull/679"
+          "link": "https://estherokafor.com/beyond-basics-leveraging-json-schema-for-api-security-testing"
         },
         {
-          "type": "conference-talk",
-          "title": "Wielding the Double-Edged Sword of JSON Schema",
+          "type": "Talk",
+          "title": "Beyond Code: A qa's perspective to API design",
           "date": {
-            "year": 2022,
-            "month": "Sempember"
+            "year": 2024,
+            "month": "July"
           },
-          "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
+          "link": "https://www.canva.com/design/DAGJgnhNUYA/GLVTP-Yx7wcBVFjOhsN2uQ/edit?utm_content=DAGJgnhNUYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
         }
       ]
     }
