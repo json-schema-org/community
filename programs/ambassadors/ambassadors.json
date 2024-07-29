@@ -15,6 +15,33 @@
           "type": "article",
           "title": "Postman Series - writing assertions and validating responses",
           "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
+        },
+        {
+          "type": "article",
+          "title": "Beyond Assertions: Data Validation using Cypress with JSON Schema in End-to-End Testing",
+          "date": {
+            "year": 2024,
+            "month": "May"
+          },
+          "link": "https://estherokafor.com/beyond-assertions-data-validation-using-cypress-with-json-schema-in-end-to-end-testing"
+        },
+        {
+          "type": "article",
+          "title": "Beyond Basics: Leveraging JSON Schema for API Security Testing",
+          "date": {
+            "year": 2024,
+            "month": "June"
+          },
+          "link": "https://estherokafor.com/beyond-basics-leveraging-json-schema-for-api-security-testing"
+        },
+        {
+          "type": "Talk",
+          "title": "Beyond Code: A qa's perspective to API design",
+          "date": {
+            "year": 2024,
+            "month": "July"
+          },
+          "link": "https://www.canva.com/design/DAGJgnhNUYA/GLVTP-Yx7wcBVFjOhsN2uQ/edit?utm_content=DAGJgnhNUYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
         }
       ]
     }
