@@ -5,7 +5,7 @@ about: Regular Open Community Working Meetings Issue - This template is for thos
 
 # Open Community Working Meeting 2022-MM-DD - 14:00 PT
 
-Zoom Meeting link: https://postman.zoom.us/j/89562933116?pwd=OWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09
+Google Meet joining info - Video call link: https://meet.google.com/rag-mhbi-cgt
 
 You can find these events scheduled on our **[JSON Schema Community Calendar](https://calendar.google.com/calendar/u/0/embed?src=info@json-schema.org)**.
 
