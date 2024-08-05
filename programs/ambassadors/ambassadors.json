@@ -36,6 +36,8 @@
             "month": "April"
           },
           "link": "https://landscape.json-schema.org/"
+        }
+      ]
     },      
     {
       "name": "David Biesack",
@@ -85,7 +87,7 @@
           "link": "https://apidesignmatters.substack.com/p/learning-the-language-of-api-data"
         },
         {
-          "type": "pull request review",
+          "type": "other",
           "title": "What is JSON Schema?",
           "date": {
             "year": 2024,
@@ -94,15 +96,80 @@
           "link": "https://github.com/json-schema-org/website/pull/679"
         },
         {
-          "type": "conference-talk",
+          "type": "talk",
           "title": "Wielding the Double-Edged Sword of JSON Schema",
           "date": {
             "year": 2022,
-            "month": "Sempember"
+            "month": "September"
           },
           "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
         }
       ]
+    },
+    {
+      "name": "Juan Cruz Viotti",
+      "img": "https://avatars.githubusercontent.com/u/2192773?v=4",
+      "bio": "CTO at Intelligence.AI, founder of Sourcemeta, consultant, and author",
+      "title": "Chief Technical Officer",
+      "github": "jviotti",
+      "linkedin": "jviotti",
+      "company": "Intelligence.AI",
+      "country": "🇧🇴",
+      "contributions": [
+        {
+          "type": "project",
+          "title": "Alterschema",
+          "date": {
+            "year": 2022,
+            "month": "May"
+          },
+          "link": "https://alterschema.sourcemeta.com"
+        },
+        {
+          "type": "article",
+          "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
+          "date": {
+            "year": 2022,
+            "month": "October"
+          },
+          "link": "https://json-schema.org/blog/posts/w3c-wot-case-study"
+        },
+        {
+          "type": "project",
+          "title": "Learn JSON Schema",
+          "date": {
+            "year": 2023,
+            "month": "March"
+          },
+          "link": "https://www.learnjsonschema.com"
+        },
+        {
+          "type": "article",
+          "title": "Understanding JSON Schema Lexical and Dynamic Scopes",
+          "date": {
+            "year": 2024,
+            "month": "February"
+          },
+          "link": "https://json-schema.org/blog/posts/understanding-lexical-dynamic-scopes"
+        },
+        {
+          "type": "book",
+          "title": "Unifying Business, Data, and Code: Designing Data Products with JSON Schema",
+          "date": {
+            "year": 2024,
+            "month": "January"
+          },
+          "link": "https://www.oreilly.com/library/view/unifying-business-data/9781098144999/"
+        },
+        {
+          "type": "initiative",
+          "title": "GSoC 2024: Upgrade/Downgrade Rules",
+          "date": {
+            "year": 2024,
+            "month": "March"
+          },
+          "link": "https://github.com/json-schema-org/community/issues/599"
+        }
+      ]
     }
 ]
-
