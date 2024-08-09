@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "description": "Array of contractor profiles",
+  "items": {
+    "type": "object",
+    "description": "Contractor profile",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Full name of the contractor"
+      },
+      "bio": {
+        "type": "string",
+        "description": "Biography of the contractor"
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "description": "E-mail address of the contractor"
+      },
+      "website": {
+        "type": "string",
+        "format": "url",
+        "description": "Website URL of the contractor"
+      },
+      "github": {
+        "type": "string",
+        "description": "GitHub profile URL of the contractor"
+      },
+      "twitter": {
+        "type": "string",
+        "description": "Twitter profile URL of the contractor"
+      },
+      "mastodon": {
+        "type": "string",
+        "description": "Mastodon profile URL of the contractor"
+      },
+      "linkedin": {
+        "type": "string",
+        "description": "LinkedIn profile URL of the contractor"
+      },
+      "incorporatedIn": {
+        "type": "array",
+        "description": "Countries where the contractor is incorporated",
+        "items": {
+          "type": "string"
+        }
+      },
+      "type": {
+        "enum": [ "tsc", "ambassor" ],
+        "description": "Status of the contractor in the JSON Schema organization"
+      },
+      "links": {
+        "type": "array",
+        "description": "List of key links to showcase",
+        "items": {
+          "type": "object",
+          "description": "Details of a specific link",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Title of the link"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "The link URL"
+            }
+          },
+          "required": ["title", "url"]
+        }
+      }
+    },
+    "required": ["name", "bio", "type", "github", "incorporatedIn", "links"]
+  }
+}

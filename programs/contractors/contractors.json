@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Juan Cruz Viotti",
+    "github": "jviotti",
+    "linkedin": "jviotti",
+    "email": "jv@jviotti.com",
+    "website": "https://www.jviotti.com",
+    "type": "tsc",
+    "incorporatedIn": [ "UK", "US" ],
+    "bio": "I'm a TSC member of JSON Schema, did award-winning research at the University of Oxford in the space of binary serialization and compression using JSON Schema, co-authored an O'Reilly book covering JSON Schema, and own several projects in the ecosystem, ranging educational material like LearnJSONSchema.com to a high-performance C++ JSON Schema compiler and validator. I have experience helping organizations be successful with JSON Schema in the Data, API, and IoT spaces all the way from architecture and training to custom development. I'm eager to help you take your JSON Schema integrations to the next level!",
+    "links": [
+      {
+        "title": "O'Reilly Book: Unifying Business, Data, and Code: Designing Data Products with JSON Schema",
+        "url": "https://learning.oreilly.com/library/view/unifying-business-data/9781098144999/"
+      },
+      {
+        "title": "JSON Schema CLI: The CLI for working with JSON Schema. Covers formatting, linting, testing, bundling, and more for both local development and CI/CD pipelines",
+        "url": "https://github.com/intelligence-ai/jsonschema"
+      },
+      {
+        "title": "JSON BinPack: binary serialization with JSON Schema, more space-efficient than Protocol Buffers and similar alternatives (work in progress)",
+        "url": "https://jsonbinpack.sourcemeta.com"
+      },
+      {
+        "title": "Alterschema: Automatic upgrades between versions of JSON Schema (downgrades coming soon)",
+        "url": "https://alterschema.sourcemeta.com"
+      },
+      {
+        "title": "JSON Toolkit: a C++ implementation of JSON Schema, featuring a state-of-the-art schema compiler and a custom JSON parser",
+        "url": "https://github.com/sourcemeta/jsontoolkit"
+      },
+      {
+        "title": "Blog post: A deep dive on lexical and dynamic scopes, essential for understanding more advanced topics like dynamic referencing",
+        "url": "https://json-schema.org/blog/posts/understanding-lexical-dynamic-scopes"
+      }
+    ]
+  }
+]
