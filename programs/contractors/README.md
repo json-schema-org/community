@@ -11,7 +11,7 @@ The JSON Schema Contractor Program aims to promote official professional service
 
 ### Contractor requirements
 
-The participation will be determined and checked annually. The only requirement for being listed as a contractor is being a current TSC member or an current Ambassador.
+The participation will be determined and checked annually. The only requirement for being listed as a contractor is being a current TSC member or a current Ambassador.
 
 ### Become an JSON Schema Contractor
 
