@@ -28,9 +28,9 @@
         "type": "string",
         "description": "GitHub profile URL of the contractor"
       },
-      "twitter": {
+      "x": {
         "type": "string",
-        "description": "Twitter profile URL of the contractor"
+        "description": "X profile URL of the contractor"
       },
       "mastodon": {
         "type": "string",
