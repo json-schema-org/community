@@ -186,11 +186,11 @@
         {
           "type": "article",
           "title": "Postman Series - writing assertions and validating responses",
-          "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses",
            "date": {
             "year": 2024,
             "month": "May"
           },
+          "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
         },
         {
           "type": "article",
