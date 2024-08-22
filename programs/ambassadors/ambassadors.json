@@ -38,6 +38,188 @@
           "link": "https://landscape.json-schema.org/"
         }
       ]
+    },      
+    {
+      "name": "David Biesack",
+      "img": "https://avatars.githubusercontent.com/u/545944?s=400&u=26818946106e2d8ae8c0cb5e0b72d6c7f612d268&v=4",
+        "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog, https://apidesignmatters.substack.com/ ",
+      "title": "Chief API Officer",
+      "github": "DavidBiesack",
+      "mastodon": "@DavidBiesack@fosstodon.org",
+      "linkedin": "davdbiesack",
+      "company": "Apiture",
+      "country": "🇺🇸",
+      "contributions": [
+        {
+          "type": "article",
+          "title": "Composing API Models with JSON Schema",
+          "date": {
+            "year": 2023,
+            "month": "June"
+          },
+          "link": "https://apidesignmatters.substack.com/p/composing-api-models-with-json-schema"
+        },
+        {
+          "type": "article",
+          "title": "Master JSON Schema's Subtleties",
+          "date": {
+            "year": 2023,
+            "month": "July"
+          },
+          "link": "https://apidesignmatters.substack.com/p/master-json-schemas-subtleties"
+        },
+        {
+          "type": "article",
+          "title": "Master More JSON Schema's Subtleties",
+          "date": {
+            "year": 2023,
+            "month": "July"
+          },
+          "link": "https://apidesignmatters.substack.com/p/master-more-json-schemas-subtleties"
+        },
+        {
+          "type": "article",
+          "title": "Learning the Language of API Data",
+          "date": {
+            "year": 2023,
+            "month": "May"
+          },
+          "link": "https://apidesignmatters.substack.com/p/learning-the-language-of-api-data"
+        },
+        {
+          "type": "other",
+          "title": "What is JSON Schema?",
+          "date": {
+            "year": 2024,
+            "month": "June"
+          },
+          "link": "https://github.com/json-schema-org/website/pull/679"
+        },
+        {
+          "type": "talk",
+          "title": "Wielding the Double-Edged Sword of JSON Schema",
+          "date": {
+            "year": 2022,
+            "month": "September"
+          },
+          "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
+        }
+      ]
+    },
+    {
+      "name": "Juan Cruz Viotti",
+      "img": "https://avatars.githubusercontent.com/u/2192773?v=4",
+      "bio": "CTO at Intelligence.AI, founder of Sourcemeta, consultant, and author",
+      "title": "Chief Technical Officer",
+      "github": "jviotti",
+      "linkedin": "jviotti",
+      "company": "Intelligence.AI",
+      "country": "🇧🇴",
+      "contributions": [
+        {
+          "type": "project",
+          "title": "Alterschema",
+          "date": {
+            "year": 2022,
+            "month": "May"
+          },
+          "link": "https://alterschema.sourcemeta.com"
+        },
+        {
+          "type": "article",
+          "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
+          "date": {
+            "year": 2022,
+            "month": "October"
+          },
+          "link": "https://json-schema.org/blog/posts/w3c-wot-case-study"
+        },
+        {
+          "type": "project",
+          "title": "Learn JSON Schema",
+          "date": {
+            "year": 2023,
+            "month": "March"
+          },
+          "link": "https://www.learnjsonschema.com"
+        },
+        {
+          "type": "article",
+          "title": "Understanding JSON Schema Lexical and Dynamic Scopes",
+          "date": {
+            "year": 2024,
+            "month": "February"
+          },
+          "link": "https://json-schema.org/blog/posts/understanding-lexical-dynamic-scopes"
+        },
+        {
+          "type": "book",
+          "title": "Unifying Business, Data, and Code: Designing Data Products with JSON Schema",
+          "date": {
+            "year": 2024,
+            "month": "January"
+          },
+          "link": "https://www.oreilly.com/library/view/unifying-business-data/9781098144999/"
+        },
+        {
+          "type": "initiative",
+          "title": "GSoC 2024: Upgrade/Downgrade Rules",
+          "date": {
+            "year": 2024,
+            "month": "March"
+          },
+          "link": "https://github.com/json-schema-org/community/issues/599"
+        }
+      ]
+    },
+    {
+      "name": "Esther Okafor",
+      "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
+      "bio": "I am a QA engineer currently working with Storyblok. I am passionate about quality and making sure software design systems are developed with the highest standards",
+      "title": "Test engineer at Storyblok",
+      "github": "https://github.com/Estherokafor05/My-portfolio",
+      "twitter": "https://x.com/Estherokafor_",
+      "linkedin": "https://www.linkedin.com/in/okaforesther/",
+      "company": "Storyblok",
+      "country": "Nigeria",
+      "contributions": [
+        {
+          "type": "article",
+          "title": "Postman Series - writing assertions and validating responses",
+           "date": {
+            "year": 2024,
+            "month": "May"
+          },
+          "link": "https://estherokafor.com/postman-series-writing-assertions-and-validating-responses"
+        },
+        {
+          "type": "article",
+          "title": "Beyond Assertions: Data Validation using Cypress with JSON Schema in End-to-End Testing",
+          "date": {
+            "year": 2024,
+            "month": "May"
+          },
+          "link": "https://estherokafor.com/beyond-assertions-data-validation-using-cypress-with-json-schema-in-end-to-end-testing"
+        },
+        {
+          "type": "article",
+          "title": "Beyond Basics: Leveraging JSON Schema for API Security Testing",
+          "date": {
+            "year": 2024,
+            "month": "June"
+          },
+          "link": "https://estherokafor.com/beyond-basics-leveraging-json-schema-for-api-security-testing"
+        },
+        {
+          "type": "talk",
+          "title": "Beyond Code: A qa's perspective to API design",
+          "date": {
+            "year": 2024,
+            "month": "July"
+          },
+          "link": "https://www.canva.com/design/DAGJgnhNUYA/GLVTP-Yx7wcBVFjOhsN2uQ/edit?utm_content=DAGJgnhNUYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        }
+      ]
     },
     {
       "name": "Ege Korkan",
@@ -99,4 +281,3 @@
       ]
     }
 ]
-
