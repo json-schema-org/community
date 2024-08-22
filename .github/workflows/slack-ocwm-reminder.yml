@@ -1,22 +1,29 @@
-name: Send reminders to join the OCWM
+name: Send Office Hours Reminders
 
 on:
   schedule:
-    - cron: '0 15 1-7 * 5' #Runs at 15:00, between day 1 and 7 of the month on Friday 
-    - cron: '0 15 1-7 * 2' #Runs at 15:00, between day 1 and 7 of the month on Tuesday
+    # Europe/Americas: Last Friday of previous month, first Friday (if before Tuesday), and day of (first Tuesday), even months
+    - cron: '0 9 25-31 5,7,9,11,1,3 5' # Last Friday of odd months at 9 UTC
+    - cron: '0 9 1-7 6,8,10,12,2,4 5'  # First Friday at 9 UTC in even months
+    - cron: '0 9 1-7 6,8,10,12,2,4 2'  # First Tuesday at 9 UTC in even months
+    # APAC/Americas: Last Friday of previous month, first Friday (if before Tuesday), and day of (first Tuesday), odd months
+    - cron: '0 17 25-31 4,6,8,10,12,2 5' # Last Friday of even months at 17 UTC
+    - cron: '0 17 1-7 7,9,11,1,3,5 5'    # First Friday at 17 UTC in odd months
+    - cron: '0 17 1-7 7,9,11,1,3,5 2'    # First Tuesday at 17 UTC in odd months
 
 jobs:
-  ocwm-reminders:
+  send-reminders:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
-    - name: Set up Node 20
+
+    - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
 
-    - name: Get Token 
+    - name: Get GitHub App Token
       uses: actions/create-github-app-token@v1
       id: get_workflow_token
       with:
@@ -29,57 +36,126 @@ jobs:
     - name: Send reminders
       uses: actions/github-script@v7
       env:
-        MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
+        GITHUB_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         OWNER: ${{ vars.ORGANISATION }}
         REPO: 'community'
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
-        SLACK_WEBHOOK: ${{ vars.SLACK_WEBHOOK_REMINDER }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_OFFICEHOURS }}
       with:
         script: |
-        
-          const octokit = require('@octokit/core').Octokit;
-          const mygithub = new octokit({
-            request: { fetch: fetch,},
-            auth: process.env.MY_TOKEN
-          });
+          const { Octokit } = require("@octokit/core");
+          const github = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-          let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
+          function getFirstTuesdayOfMonth(year, month) {
+            let date = new Date(Date.UTC(year, month, 1));
+            while (date.getUTCDay() !== 2) {
+              date.setUTCDate(date.getUTCDate() + 1);
+            }
+            return date;
+          }
 
-          const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`, {
-          })
+          function getLastTuesdayOfMonth(year, month) {
+            let date = new Date(Date.UTC(year, month + 1, 0)); // Last day of the month
+            while (date.getUTCDay() !== 2) {
+              date.setUTCDate(date.getUTCDate() - 1);
+            }
+            return date;
+          }
 
-          const issueNumber = workMeetings[0].number
-          const newTitle = workMeetings[0].title;
-          const issueDate = newTitle.replace(/Open Community Working Meeting /g, "");
-          
-          //Date of the next meeting
-          const nextMeetingDate = new Date();
-          nextMeetingDate.setDate(nextMeetingDate.getDate() + (2 + 7 - nextMeetingDate.getDay()) % 7);
-          
-          const formattedDate = nextMeetingDate.toISOString().split('T')[0];
-          
-          const reminderText = (new Date().getDay() === 2) ? "today" : formattedDate;
-          
-          // Checking if the reminder should be sent
-          const today = new Date();
-          const firstTuesday = new Date(today.getFullYear(), today.getMonth(), 1);
-          firstTuesday.setDate(firstTuesday.getDate() + (2 + 7 - firstTuesday.getDay()) % 7);
-          const firstFriday = new Date(today.getFullYear(), today.getMonth(), 1);
-          firstFriday.setDate(firstFriday.getDate() + (5 + 7 - firstFriday.getDay()) % 7);
-          
-          if ((today.getDay() === 2 && today.getDate() === firstTuesday.getDate()) || (today.getDay() === 5 && today.getDate() === firstFriday.getDate() && firstFriday < firstTuesday)) {
-            // Notify Slack
-            const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK;
-            const SLACK_MESSAGE = `{
-              "issue": "https://github.com/${process.env.OWNER}/${process.env.REPO}/issues/${issueNumber}",
-              "date": "${reminderText}"
-            }`;
+          function isLastFridayOfMonth(date) {
+            const lastDayOfMonth = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + 1, 0));
+            const lastFriday = new Date(lastDayOfMonth);
+            lastFriday.setUTCDate(lastFriday.getUTCDate() - (lastFriday.getUTCDay() + 2) % 7);
+            return date.getUTCDate() === lastFriday.getUTCDate();
+          }
 
-            await fetch(SLACK_WEBHOOK_URL, {
+          function isFirstFridayOfMonth(date) {
+            return date.getUTCDay() === 5 && date.getUTCDate() <= 7;
+          }
+
+          try {
+            const today = new Date();
+            const currentMonth = today.getUTCMonth();
+            const isEuropeAmericas = [5, 7, 9, 11, 1, 3].includes(currentMonth+1);
+            const isFriday = today.getUTCDay() === 5;
+            const isTuesday = today.getUTCDay() === 2;
+            const isLastFriday = isLastFridayOfMonth(today);
+            const isFirstFriday = isFirstFridayOfMonth(today);
+
+            console.log(`Current date: ${today.toISOString()}, Month: ${currentMonth + 1}, Is Europe/Americas: ${isEuropeAmericas}, Is Friday: ${isFriday}, Is Tuesday: ${isTuesday}, Is Last Friday: ${isLastFriday}, Is First Friday: ${isFirstFriday}`);
+
+            let timezone, time, date;
+            if (isEuropeAmericas) {
+              timezone = "Europe/Americas friendly";
+              time = "10:00 BST";
+            } else {
+              timezone = "APAC/Americas friendly";
+              time = "10:00 PT";
+            }
+
+            const firstTuesdayThisMonth = getFirstTuesdayOfMonth(today.getUTCFullYear(), currentMonth);
+            const lastTuesdayLastMonth = getLastTuesdayOfMonth(today.getUTCFullYear(), currentMonth);
+
+            let shouldSendReminder = false;
+
+            if (isFriday) {
+              if(isLastFriday && today > lastTuesdayLastMonth){
+                shouldSendReminder = true;
+                const firstTuesdayNextMonth = getFirstTuesdayOfMonth(today.getUTCFullYear(), currentMonth + 1);
+                date = firstTuesdayNextMonth.toISOString().split('T')[0];
+              } else if (isFirstFriday && today < firstTuesdayThisMonth) {
+                shouldSendReminder = true;
+                date = firstTuesdayThisMonth.toISOString().split('T')[0];
+              }
+            } else if (isTuesday) {
+              shouldSendReminder = true;
+              date = "today";
+            }
+
+            if (!shouldSendReminder) {
+              console.log("Not the correct day for sending a reminder");
+              return;
+            }
+
+            console.log(`Calculated date for reminder: ${date}`);
+
+            // Fetch the latest open Office Hours issue
+            const targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
+            const { data: workMeetings } = await github.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1&state=open`);
+
+            if (workMeetings.length === 0) {
+              console.log("No open Office Hours issue found");
+              return;
+            }
+
+            const issueNumber = workMeetings[0].number;
+            const issueLink = `https://github.com/${process.env.OWNER}/${process.env.REPO}/issues/${issueNumber}`;
+
+            console.log(`Found issue: ${issueLink}`);
+
+            // Prepare the message for Slack
+            const message = {
+              issue: issueLink,
+              date: date,
+              timezone: timezone,
+              time: time
+            };
+
+            console.log(`Sending message to Slack: ${JSON.stringify(message)}`);
+
+            // Send the message to Slack
+            const response = await fetch(process.env.SLACK_WEBHOOK, {
               method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: SLACK_MESSAGE,
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(message)
             });
+
+            if (!response.ok) {
+              throw new Error(`Failed to send Slack message: ${response.statusText}`);
+            }
+
+            console.log(`Reminder sent for ${timezone} session on ${date}`);
+          } catch (error) {
+            console.error(`An error occurred: ${error.message}`);
+            core.setFailed(error.message);
           }
