@@ -211,7 +211,7 @@
           "link": "https://estherokafor.com/beyond-basics-leveraging-json-schema-for-api-security-testing"
         },
         {
-          "type": "Talk",
+          "type": "talk",
           "title": "Beyond Code: A qa's perspective to API design",
           "date": {
             "year": 2024,
