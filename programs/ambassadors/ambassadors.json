@@ -279,5 +279,63 @@
           "link": "https://github.com/eclipse-thingweb/playground/tree/master/packages/json-spell-checker"
         }
       ]
-    }
+    },
+    {
+      "name": "Jeremy Fiel",
+      "img": "https://avatars.githubusercontent.com/u/32110157?v=4",
+      "bio": "Originally, an international logistics expert with more than 15 years of professional experience, Jeremy transitioned to software, specifically APIs, about 8 years ago. His passion for learning and contributing back to the community is where he found a love for open source projects. He is now a consistent contributor to projects such as [Redocly](https://github.com/redocly) and the [OpenAPI Initiative](https://github.com/OAI) projects, and a very active community member of JSON Schema.",
+      "title": "Principal Software Engineer | OpenAPI | JSON Schema | Arazzo | APIs",
+      "github": "jeremyfiel",
+      "twitter": "jeremyfiel",
+      "linkedin": "https://www.linkedin.com/in/jeremyfiel",
+      "company": "ADP, Inc.",
+      "country": "US",
+      "contributions": [
+        {
+          "type": "project",
+          "title": "Schema author of OpenAPI Initiative's Arazzo Specification v1.0 JSON Schema",
+          "date": {
+            "year": 2024,
+            "month": "August"
+          },
+          "link": "https://github.com/oai/arazzo-specification/schemas/v1.0/schema.yaml"
+        },
+        {
+          "type": "project",
+          "title": "OSS contributor for Redocly CLI",
+          "date": {
+            "year": 2023,
+            "month": "April"
+          },
+          "link": "https://github.com/redocly/redocly-cli"
+        },
+        {
+          "type": "other",
+          "title": "JSON Schema Slack Community Member",
+          "date": {
+            "year": 2021,
+            "month": "November"
+          },
+          "link": "https://json-schema.slack.com"
+        },
+        {
+          "type": "other",
+          "title": "JSON Schema Stack Overflow Community Member",
+          "date": {
+            "year": 2021,
+            "month": "November"
+          },
+          "link": "https://stackoverflow.com/questions/tagged/json-schema"
+        },
+        {
+          "type": "adopter",
+          "title": "Add ADP, Inc. to the JSON Schema Adopters list.",
+          "date": {
+            "year": 2023,
+            "month": "October"
+          },
+          "link": "https://landscape.json-schema.org/"
+        }
+      ]
+    }  
 ]
