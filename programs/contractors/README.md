@@ -2,7 +2,7 @@ This document covers the organizational and operational aspects of the JSON Sche
 
 ### What is the JSON Schema Contractor Program?
 
-The JSON Schema Contractor Program aims to promote official professional services around JSON Schema coming from TSC members and Ambassors, connecting companies with the key people they need to be successful with JSON Schema, while promoting the sustainability of the JSON Schema organization.
+The JSON Schema Contractor Program aims to promote official professional services around JSON Schema coming from TSC members and Ambassadors, connecting companies with the key people they need to be successful with JSON Schema, while promoting the sustainability of the JSON Schema organization.
 
 ### How does the program work?
 
