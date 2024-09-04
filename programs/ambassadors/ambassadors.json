@@ -42,11 +42,11 @@
   {
     "name": "David Biesack",
     "img": "https://avatars.githubusercontent.com/u/545944?s=400&u=26818946106e2d8ae8c0cb5e0b72d6c7f612d268&v=4",
-      "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog, https://apidesignmatters.substack.com/ ",
+    "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog, https://apidesignmatters.substack.com/ ",
     "title": "Chief API Officer",
     "github": "DavidBiesack",
     "mastodon": "@DavidBiesack@fosstodon.org",
-    "linkedin": "davdbiesack",
+    "linkedin": "davidbiesack",
     "company": "Apiture",
     "country": "🇺🇸",
     "contributions": [
