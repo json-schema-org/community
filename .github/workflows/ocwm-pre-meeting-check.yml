@@ -64,12 +64,12 @@ jobs:
 
           // Add a comment to the issue
           await mygithub.request(`POST /repos/${process.env.OWNER}/${process.env.REPO}/issues/${latestIssue.number}/comments`, {
-            body: "The meeting has been cancelled as there is no agenda available."
+            body: "The meeting as been cancelled as there is no agenda for today. Thanks"
           });
           
           // Send a notification to Slack
           const slackPayload = {
-            text: `Meeting cancelled: No agenda found for the Open Community Working Meeting scheduled for today.`
+            text: `The meeting as been cancelled as there is no agenda for today. Thanks`
           };
 
           await fetch(process.env.SLACK_WEBHOOK, {
