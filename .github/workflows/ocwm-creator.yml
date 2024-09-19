@@ -33,7 +33,7 @@ jobs:
       id: create-title
       run: |
         date=$(date -u -d "6 days" +%Y-%m-%d)
-        echo "title=Open Community Working Meeting ${date} - 14:00 PT" >> "$GITHUB_OUTPUT"
+        echo "title=Open Community Working Meeting ${date} - 12:00 PT" >> "$GITHUB_OUTPUT"
 
     - name: Create Issue using Template
       id: create-issue
