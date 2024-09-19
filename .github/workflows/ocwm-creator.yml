@@ -2,7 +2,7 @@ name: Create OCWM weekly
 
 on:
   schedule:
-    - cron: "0 9 * * 2" # Run every Tuesday at 9:00 AM
+    - cron: "0 9 15-21 * 2"  # Runs at 9:00 AM on the 3rd Tuesday of the month
 
   repository_dispatch:
     types: ocwm-creator
@@ -33,7 +33,7 @@ jobs:
       id: create-title
       run: |
         date=$(date -u -d "6 days" +%Y-%m-%d)
-        echo "title=Open Community Working Meeting ${date} - 14:00 PT" >> "$GITHUB_OUTPUT"
+        echo "title=Open Community Working Meeting ${date} - 12:00 PT" >> "$GITHUB_OUTPUT"
 
     - name: Create Issue using Template
       id: create-issue

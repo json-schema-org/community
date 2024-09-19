@@ -69,7 +69,7 @@ We host two different alternate sessions:
 
 More details [here](https://github.com/orgs/json-schema-org/discussions/34/).
 
-**Open Community Working Meeting (Weekly):**
+**Open Community Working Meeting (Monthly every 3rd Monday):**
 
 **Open Community Working Meetings** are a 1 hour, agenda'd only, with a focus on furthering the JSON Schema specification and organization. 
 
@@ -79,8 +79,9 @@ You can always catch up offline by watching the recordings on the JSON Schema Yo
 
 | Asset | Link        |
 |:-----------|:------------|
-| 🔗 Office Hours Meeting Link | [**Zoom Link**](https://postman.zoom.us/j/85358817067?pwd=NmFXTG5oL1paK0VyTEdrNU9TR2RMUT09)<br>
-| 🔗 Open Community Working Meeting Link | [**Zoom Link**](https://www.google.com/url?q=https://postman.zoom.us/j/89562933116?pwd%3DOWlsQ0RrcDY4S1JQU2d2Q2M0aFFlZz09&sa=D&source=calendar&ust=1708431911262691&usg=AOvVaw14JoRXk9cLLBT-_wngWROA)<br>
+| 🔗 APAC/Americas friendly Office Hours Meeting Link | [**Google meet Link**](https://meet.google.com/zfu-mafp-qsp)<br>
+| 🔗 Europe/Americas friendly Office Hours Meeting Link | [**Google meet Link**](https://meet.google.com/aun-brma-sfe)<br>
+| 🔗 Open Community Working Meeting Link | [**Google meet Link**](https://meet.google.com/rag-mhbi-cgt)<br>
 | 🎥 Meeting Recordings | https://www.youtube.com/@JSONSchemaOrgOfficial
 
 ## Getting involved
