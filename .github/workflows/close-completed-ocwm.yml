@@ -2,7 +2,7 @@ name: Close issues with no tasks and a specific label
 
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Runs every Sunday at midnight
+    - cron: '0 0 15-21 * 0'  # Runs at midnight on the third Sunday of the month
 
   repository_dispatch:
     types: close-issues-ocwm

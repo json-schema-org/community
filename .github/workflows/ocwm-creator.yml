@@ -2,7 +2,7 @@ name: Create OCWM weekly
 
 on:
   schedule:
-    - cron: "0 9 * * 2" # Run every Tuesday at 9:00 AM
+    - cron: "0 9 15-21 * 2"  # Runs at 9:00 AM on the 3rd Tuesday of the month
 
   repository_dispatch:
     types: ocwm-creator
