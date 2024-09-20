@@ -2,7 +2,7 @@ name: OCWM Pre-Meeting Check
 
 on:
   schedule:
-    - cron: '50 21 * * 1'  # Runs at 21:50 UTC, which is 10 minutes before 14:00 PT every Monday
+    - cron: '50 18 15-21 * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
 
 jobs:
   check_agenda:
@@ -35,7 +35,7 @@ jobs:
         REPO: 'community'
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
         TEMPLATE_PATH: '../ISSUE_TEMPLATE/open_community_working_meeting.md'
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_GEN_NOTIF }}
       run: |
         const fs = require('fs');
         const octokit = require('@octokit/core').Octokit;
@@ -64,12 +64,12 @@ jobs:
 
           // Add a comment to the issue
           await mygithub.request(`POST /repos/${process.env.OWNER}/${process.env.REPO}/issues/${latestIssue.number}/comments`, {
-            body: "The meeting as been cancelled as there is no agenda for today. Thanks"
+            body: "The meeting has been cancelled as there is no agenda for today. Thanks everyone!"
           });
           
           // Send a notification to Slack
           const slackPayload = {
-            text: `The meeting as been cancelled as there is no agenda for today. Thanks`
+            text: `The meeting has been cancelled as there is no agenda for today. Thanks everyone!`
           };
 
           await fetch(process.env.SLACK_WEBHOOK, {
