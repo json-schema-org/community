@@ -1,4 +1,4 @@
-name: Create OCWM weekly
+name: Create OCWM Monthly
 
 on:
   schedule:
