@@ -2,7 +2,7 @@ name: Search for issues and PR labeled 'agenda' and add them to the agenda
 
 on:
   schedule:
-    - cron: '0 0 8-14 * 0'  # Runs at midnight on the second Sunday of the month
+    - cron: '0 1 * * 1'  # Runs at 1:00 AM every Monday
 
   repository_dispatch:
     types: add-issues-ocwm
@@ -26,6 +26,25 @@ jobs:
 
     - name: Install dependencies
       run: npm install @octokit/core@5.1.0 
+
+    # Step to check if today is the third Monday
+    - name: Check if today is the third Monday
+      id: check-third-monday
+      run: |
+        day=$(date +%d)
+        dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
+        # Check if the day is between 15th and 21st, and if it's Monday (1)
+        if [ "$dow" -ne 1 ]; then
+          echo "Not a Monday, exiting..."
+          exit 0
+        fi
+        if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
+          echo "This is the third Monday of the month!"
+        else
+          echo "Not the third Monday, exiting..."
+          exit 0
+        fi
+
     - name: Adding Issues
       id: add-issues
       uses: actions/github-script@v7
