@@ -28,7 +28,7 @@ jobs:
 
     - name: Check Latest OCWM Issue
       id: check_issue
-      if: env.third_monday == 'true'
+      if: ${{ env.third_monday == 'true' }}
       env:
         MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         OWNER: ${{ vars.ORGANISATION }}
