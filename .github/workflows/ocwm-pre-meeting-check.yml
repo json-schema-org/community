@@ -21,13 +21,7 @@ jobs:
     - name: Install Dependencies
       run: npm install @octokit/core@5.1.0 node-fetch
 
-    - name: Check if today is the third Monday
-      id: check-third-monday
-      run: |
-          echo "third_monday=true" >> $GITHUB_ENV
-
     - name: Check Latest OCWM Issue
-      if: ${{ env.third_monday == 'true' }}
       env:
         MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         OWNER: ${{ vars.ORGANISATION }}
