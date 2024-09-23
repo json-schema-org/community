@@ -24,20 +24,7 @@ jobs:
     - name: Check if today is the third Monday
       id: check-third-monday
       run: |
-        day=$(date +%d)
-        dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
-        # Check if the day is between 15th and 21st, and if it's Monday (1)
-        if [ "$dow" -ne 1 ]; then
-          echo "Not a Monday, exiting..."
-          exit 0
-        fi
-        if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
-          echo "This is the third Monday of the month!"
-          echo "third_monday=true" >> $GITHUB_ENV
-        else:
-          echo "Not the third Monday, exiting..."
-          exit 0
-        fi
+        echo "third_monday=true" >> $GITHUB_ENV
 
     - name: Check Latest OCWM Issue
       id: check_issue
