@@ -36,55 +36,23 @@ jobs:
         TEMPLATE_PATH: '../ISSUE_TEMPLATE/open_community_working_meeting.md'
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_GEN_NOTIF }}
       run: |
-        node -e "
         const fs = require('fs');
-        const fetch = require('node-fetch');
-        const { Octokit } = require('@octokit/core');
+        const octokit = require('@octokit/core').Octokit;
+        const mygithub = new octokit({
+          request: { fetch: fetch, },
+          auth: process.env.MY_TOKEN
+        });
 
-        (async () => {
-          const mygithub = new Octokit({
-            auth: process.env.MY_TOKEN,
-            request: { fetch: fetch }
-          });
+        // Read the template from the markdown file
+        const templateContent = fs.readFileSync(process.env.TEMPLATE_PATH, 'utf8');
 
-          // Read the template from the markdown file
-          const templateContent = fs.readFileSync(process.env.TEMPLATE_PATH, 'utf8');
+        // Fetch the latest issue with OCWM_LABEL
+        const { data: issues } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${encodeURIComponent(process.env.OCWM_LABEL)}&per_page=1`);
 
-          // Fetch the latest issue with OCWM_LABEL
-          const { data: issues } = await mygithub.request(
-            \`GET /repos/\${process.env.OWNER}/\${process.env.REPO}/issues?labels=\${encodeURIComponent(process.env.OCWM_LABEL)}&per_page=1\`
-          );
+        if (issues.length === 0) {
+          console.log("No open community working meeting issues found.");
+          return;
+        }
 
-          if (issues.length === 0) {
-            console.log('No open community working meeting issues found.');
-            return;
-          }
-
-          const latestIssue = issues[0];
-          const issueBody = latestIssue.body;
-
-          // Check if the issue body matches the template
-          if (issueBody.includes(templateContent)) {
-            console.log('Template matched, cancelling the meeting.');
-
-            // Add a comment to the issue
-            await mygithub.request(
-              \`POST /repos/\${process.env.OWNER}/\${process.env.REPO}/issues/\${latestIssue.number}/comments\`,
-              { body: 'The meeting has been cancelled as there is no agenda for today. Thanks everyone!' }
-            );
-
-            // Send a notification to Slack
-            const slackPayload = {
-              text: 'The meeting has been cancelled as there is no agenda for today. Thanks everyone!'
-            };
-
-            await fetch(process.env.SLACK_WEBHOOK, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(slackPayload)
-            });
-          } else {
-            console.log('Agenda found. Meeting will proceed.');
-          }
-        })();
-        "
+        const latestIssue = issues[0];
+        const issueBody = latestIssue.body;
