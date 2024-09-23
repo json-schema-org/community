@@ -29,7 +29,7 @@ jobs:
         OWNER: ${{ vars.ORGANISATION }}
         REPO: 'community'
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
-        TEMPLATE_PATH: '../ISSUE_TEMPLATE/open_community_working_meeting.md'
+        TEMPLATE_PATH: '.github/ISSUE_TEMPLATE/open_community_working_meeting.md'
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_GEN_NOTIF }}
       with:
         script: |
