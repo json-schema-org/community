@@ -3,7 +3,6 @@ name: OCWM Pre-Meeting Check
 on:
   schedule:
     - cron: '50 21 * * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
-  workflow_dispatch:
 
 jobs:
   check_agenda:
@@ -18,10 +17,24 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Get GitHub Token
+      uses: actions/create-github-app-token@v1
+      id: get_workflow_token
+      with:
+        app-id: ${{ vars.APP_ID }}
+        private-key: ${{ secrets.PRIVATE_KEY }}
+
     - name: Install Dependencies
-      run: npm install @octokit/core@5.1.0 node-fetch
+      run: npm install @octokit/core@5.1.0
+
+    - name: Check if today is the third Monday
+      id: check-third-monday
+      run: |
+        echo "third_monday=true" >> $GITHUB_ENV
 
     - name: Check Latest OCWM Issue
+      id: check_issue
+      if: env.third_monday == 'true'
       env:
         MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         OWNER: ${{ vars.ORGANISATION }}
@@ -29,24 +42,49 @@ jobs:
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
         TEMPLATE_PATH: '../ISSUE_TEMPLATE/open_community_working_meeting.md'
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_GEN_NOTIF }}
-      run: |
-        const fs = require('fs');
-        const octokit = require('@octokit/core').Octokit;
-        const mygithub = new octokit({
-          request: { fetch: fetch, },
-          auth: process.env.MY_TOKEN
-        });
-
-        // Read the template from the markdown file
-        const templateContent = fs.readFileSync(process.env.TEMPLATE_PATH, 'utf8');
-
-        // Fetch the latest issue with OCWM_LABEL
-        const { data: issues } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${encodeURIComponent(process.env.OCWM_LABEL)}&per_page=1`);
-
-        if (issues.length === 0) {
-          console.log("No open community working meeting issues found.");
-          return;
-        }
-
-        const latestIssue = issues[0];
-        const issueBody = latestIssue.body;
+      with:
+        script: |
+          const fs = require('fs');
+          const octokit = require('@octokit/core').Octokit;
+          const mygithub = new octokit({
+            request: { fetch: fetch, },
+            auth: process.env.MY_TOKEN
+          });
+  
+          // Read the template from the markdown file
+          const templateContent = fs.readFileSync(process.env.TEMPLATE_PATH, 'utf8');
+  
+          // Fetch the latest issue with OCWM_LABEL
+          const { data: issues } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${encodeURIComponent(process.env.OCWM_LABEL)}&per_page=1`);
+  
+          if (issues.length === 0) {
+            console.log("No open community working meeting issues found.");
+            return;
+          }
+  
+          const latestIssue = issues[0];
+          const issueBody = latestIssue.body;
+  
+          // Check if the issue body matches the template
+          if (issueBody.includes(templateContent)) {
+            console.log("Template matched, cancelling the meeting.");
+  
+            // Add a comment to the issue
+            await mygithub.request(`POST /repos/${process.env.OWNER}/${process.env.REPO}/issues/${latestIssue.number}/comments`, {
+              body: "The meeting has been cancelled as there is no agenda for today. Thanks everyone!"
+            });
+            
+            // Send a notification to Slack
+            const slackPayload = {
+              text: `The meeting has been cancelled as there is no agenda for today. Thanks everyone!`
+            };
+  
+            await fetch(process.env.SLACK_WEBHOOK, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(slackPayload)
+            });
+  
+          } else {
+            console.log("Agenda found. Meeting will proceed.");
+          }
