@@ -2,8 +2,7 @@ name: OCWM Pre-Meeting Check
 
 on:
   schedule:
-    - cron: '50 21 * * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
-  workflow_dispatch:    
+    - cron: '50 21 * * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month   
 
 jobs:
   check_agenda:
@@ -24,6 +23,9 @@ jobs:
       with:
         app-id: ${{ vars.APP_ID }}
         private-key: ${{ secrets.PRIVATE_KEY }}
+        
+    - name: Install Dependencies
+      run: npm install @octokit/core@5.1.0
 
     - name: Check if today is the third Monday
       id: check-third-monday
@@ -42,8 +44,6 @@ jobs:
           exit 0
         fi    
 
-    - name: Install Dependencies
-      run: npm install @octokit/core@5.1.0
 
     - name: Check Latest OCWM Issue
       id: check_issue
