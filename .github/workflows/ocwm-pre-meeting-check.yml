@@ -3,6 +3,7 @@ name: OCWM Pre-Meeting Check
 on:
   schedule:
     - cron: '50 21 * * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
+  workflow_dispatch:  
 
 jobs:
   check_agenda:
