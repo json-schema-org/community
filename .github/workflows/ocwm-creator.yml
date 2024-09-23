@@ -29,11 +29,21 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.8'
+        
     - name: Generate Issue Title
       id: create-title
       run: |
-        date=$(date -u -d "6 days" +%Y-%m-%d)
-        echo "title=Open Community Working Meeting ${date} - 12:00 PT" >> "$GITHUB_OUTPUT"
+        # Get the first day of the next month
+        next_month=$(date -u -d "$(date +%Y-%m-01) +1 month" +%Y-%m-01)
+        
+        # Find the first Monday of the next month
+        first_monday=$(date -u -d "$next_month +$(( (8 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
+        
+        # Calculate the third Monday by adding 14 days to the first Monday
+        third_monday=$(date -u -d "$first_monday +14 days" +%Y-%m-%d)
+        
+        # Output the issue title with the third Monday's date
+        echo "title=Open Community Working Meeting ${third_monday} - 12:00 PT" >> "$GITHUB_OUTPUT"
 
     # Step to check if it's the third Tuesday of the month
     - name: Check if today is the third Tuesday
@@ -45,18 +55,22 @@ jobs:
         first_tuesday=$(cal | awk '/^..$/ {print $3}')
         if [ "$dow" -ne 2 ]; then
           echo "Not a Tuesday, exiting..."
+          echo "::set-output name=is-third-tuesday::false"
           exit 0
         fi
         # Calculate the third Tuesday by checking if the current date is between 15th and 21st
         if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
           echo "This is the third Tuesday of the month!"
+          echo "::set-output name=is-third-tuesday::true"
         else
           echo "Not the third Tuesday, exiting..."
+          echo "::set-output name=is-third-tuesday::false"
           exit 0
         fi
 
     - name: Create Issue using Template
       id: create-issue
+      if: steps.check-third-tuesday.outputs.is-third-tuesday == 'true'
       uses: peter-evans/create-issue-from-file@v5
       with:
         title: ${{ steps.create-title.outputs.title }}
