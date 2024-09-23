@@ -2,7 +2,8 @@ name: OCWM Pre-Meeting Check
 
 on:
   schedule:
-    - cron: '50 18 15-21 * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
+    - cron: '50 21 * * 1'  # Runs at 11:50 AM PT on the 3rd Monday of the month
+  workflow_dispatch:    
 
 jobs:
   check_agenda:
@@ -27,8 +28,27 @@ jobs:
     - name: Install Dependencies
       run: npm install @octokit/core@5.1.0
 
+    - name: Check if today is the third Monday
+      id: check-third-monday
+      run: |
+        day=$(date +%d)
+        dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
+        # Check if the day is between 15th and 21st, and if it's Monday (1)
+        if [ "$dow" -ne 1 ]; then
+          echo "Not a Monday, exiting..."
+          exit 0
+        fi
+        if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
+          echo "This is the third Monday of the month!"
+          echo "third_monday=true" >> $GITHUB_ENV
+        else:
+          echo "Not the third Monday, exiting..."
+          exit 0
+        fi
+
     - name: Check Latest OCWM Issue
       id: check_issue
+      if: env.third_monday == 'true'
       env:
         MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
         OWNER: ${{ vars.ORGANISATION }}
