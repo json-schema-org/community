@@ -18,6 +18,30 @@ jobs:
       with:
         node-version: '20'
 
+    - name: Get GitHub Token
+      uses: actions/create-github-app-token@v1
+      id: get_workflow_token
+      with:
+        app-id: ${{ vars.APP_ID }}
+        private-key: ${{ secrets.PRIVATE_KEY }}
+
+    - name: Check if today is the third Monday
+      id: check-third-monday
+      run: |
+        day=$(date +%d)
+        dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
+        # Check if the day is between 15th and 21st, and if it's Monday (1)
+        if [ "$dow" -ne 1 ]; then
+          echo "Not a Monday, exiting..."
+          exit 0
+        fi
+        if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
+          echo "This is the third Monday of the month!"
+        else
+          echo "Not the third Monday, exiting..."
+          exit 0
+        fi    
+
     - name: Install Dependencies
       run: npm install @octokit/core@5.1.0
 
