@@ -37,16 +37,20 @@ jobs:
         # Check if the day is between 15th and 21st, and if it's Monday (1)
         if [ "$dow" -ne 1 ]; then
           echo "Not a Monday, exiting..."
+          echo "::set-output name=is-third-monday::false"
           exit 0
         fi
         if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
           echo "This is the third Monday of the month!"
+          echo "::set-output name=is-third-monday::true"
         else
           echo "Not the third Monday, exiting..."
+          echo "::set-output name=is-third-monday::false"
           exit 0
         fi
 
     - name: Send reminders
+      if: steps.check-third-monday.outputs.is-third-monday == 'true'
       uses: actions/github-script@v7
       env:
         MY_TOKEN: ${{ steps.get_workflow_token.outputs.token }}
