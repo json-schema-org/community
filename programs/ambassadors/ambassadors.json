@@ -234,6 +234,15 @@
     "country": "Germany",
     "contributions": [
       {
+        "type": "talk",
+        "title": "One Year Update: Using LinkML in Web of Things Specifications",
+        "date": {
+          "year": 2024,
+          "month": "September"
+        },
+        "link": "https://www.w3.org/events/meetings/e5cb0ff4-1696-4367-b9fe-9e74c5034dd3/"
+      },
+      {
         "type": "article",
         "title": "How the W3C Web of Things brings JSON Schema to the Internet of Things",
         "date": {
