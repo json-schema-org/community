@@ -99,7 +99,7 @@ jobs:
           const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
 
           const { data: ocwmissue } = await mygithub.request(`GET /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
-          })
+          });
 
           console.log("OCWM Issue:" + JSON.stringify(ocwmissue));
 
@@ -109,7 +109,7 @@ jobs:
               body: newBody,
               milestone: null,
               state: 'open',
-          })
+          });
 
           const newTitle = ocwmissue.title;
           const issueDate = newTitle.replace(/Open Community Working Meeting /g, "");
