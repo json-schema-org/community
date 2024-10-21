@@ -36,6 +36,15 @@
           "month": "April"
         },
         "link": "https://landscape.json-schema.org/"
+      },
+      {
+        "type": "article",
+        "title": "JSON Schema, OpenAPI & Low Code: A Match Made in Heaven",
+        "date": {
+          "year": 2024,
+          "month": "October"
+        },
+        "link": "https://dashjoin.medium.com/json-schema-openapi-low-code-a-match-made-in-heaven-d29723e543ac"
       }
     ]
   },      
