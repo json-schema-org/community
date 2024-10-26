@@ -2,7 +2,7 @@ name: Create OCWM Monthly
 
 on:
   schedule:
-    - cron: "0 9 * * 2"  # Runs at 9:00 AM every Tuesday
+    - cron: "0 23 * * 1"  # Runs at 11:00 PM every Monday
 
   repository_dispatch:
     types: ocwm-creator
@@ -47,30 +47,28 @@ jobs:
 
     # Step to check if it's the third Tuesday of the month
     - name: Check if today is the third Tuesday
-      id: check-third-tuesday
+      id: check-third-monday
       run: |
         day=$(date +%d)
         dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
-        # Get the first day of this month
-        first_tuesday=$(cal | awk '/^..$/ {print $3}')
-        if [ "$dow" -ne 2 ]; then
-          echo "Not a Tuesday, exiting..."
-          echo "::set-output name=is-third-tuesday::false"
+        # Check if the day is between 15th and 21st, and if it's Monday (1)
+        if [ "$dow" -ne 1 ]; then
+          echo "Not a Monday, exiting..."
+          echo "::set-output name=is-third-monday::false"
           exit 0
         fi
-        # Calculate the third Tuesday by checking if the current date is between 15th and 21st
         if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
-          echo "This is the third Tuesday of the month!"
-          echo "::set-output name=is-third-tuesday::true"
+          echo "This is the third Monday of the month!"
+          echo "::set-output name=is-third-monday::true"
         else
-          echo "Not the third Tuesday, exiting..."
-          echo "::set-output name=is-third-tuesday::false"
+          echo "Not the third Monday, exiting..."
+          echo "::set-output name=is-third-monday::false"
           exit 0
         fi
 
     - name: Create Issue using Template
       id: create-issue
-      if: steps.check-third-tuesday.outputs.is-third-tuesday == 'true'
+      if: steps.check-third-tuesday.outputs.is-third-monday == 'true'
       uses: peter-evans/create-issue-from-file@v5
       with:
         title: ${{ steps.create-title.outputs.title }}
