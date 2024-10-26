@@ -19,7 +19,7 @@ If any organization would like to be added or get removed please make a Pull Req
 
 ## How to add your company
 
-You can add your Company by using the [Adopter form](https://forms.gle/vyFskw1RshJ55LY46) or by submitting a PR editting the [landscape.yml](https://github.com/json-schema-org/landscape/blob/main/landscape.yml) file in the [landscape repository](https://github.com/json-schema-org/landscape/). For more information please check the [contributing guidelines](https://github.com/json-schema-org/landscape/blob/main/CONTRIBUTING.md#adding-a-new-organization-) of the Landscape project.
+You can add your Company by using the [Adopter form](https://forms.gle/HNZs4vt49GWPPGQq5) or by submitting a PR editting the [landscape.yml](https://github.com/json-schema-org/landscape/blob/main/landscape.yml) file in the [landscape repository](https://github.com/json-schema-org/landscape/). For more information please check the [contributing guidelines](https://github.com/json-schema-org/landscape/blob/main/CONTRIBUTING.md#adding-a-new-organization-) of the Landscape project.
 
 Looking for extra credit? We also do [case studies](https://github.com/orgs/json-schema-org/projects/8/views/2) and accept sponsorship via [Open Collective](https://opencollective.com/json-schema).
 
