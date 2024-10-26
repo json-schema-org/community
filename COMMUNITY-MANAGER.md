@@ -2,6 +2,11 @@
 
 Community managers are responsible for managing many aspects of the JSON Schema community. The goal is to achieve and maintain a healthy and growing JSON Schema community where everyone feels welcome and is encouraged to share knowledge and learn from each other. This document outlines the responsibilities of a community manager and the process involved in becoming one.
 
+### Requirements
+
+* Proven track record of contributions and active engagement in the JSON Schema Community.
+* Being an example of Open Source citizenship.
+
 ### Responsibilities
 
 A community manager has the following responsibilities:
