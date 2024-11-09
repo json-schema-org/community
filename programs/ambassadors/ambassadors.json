@@ -355,5 +355,54 @@
         "link": "https://landscape.json-schema.org/"
       }
     ]
-  }  
+  },
+  {
+        "name": "Damodharan J",
+        "img": "https://damo.js.org/pic.jpeg",
+        "bio": "I am fullstack engineer in Zoho with more than a decade experience, architecting, building complex softwares like IDE, Compilers, Low-Code tools",
+        "title": "Member Leadership Staff, Zoho",
+        "github": "https://github.com/damodharanj",
+        "twitter": "https://x.com/twitdamojay",
+        "linkedin": "https://www.linkedin.com/in/damojay/",
+        "company": "Zoho",
+        "country": "India",
+        "contributions": [
+            {
+                "type": "article",
+                "title": "Type Theory Using JSON Schema — Comparison with Typescript",
+                "date": {
+                    "year": 2024,
+                    "month": "September"
+                },
+                "link": "https://medium.com/@damodharanjay/type-theory-using-json-schema-comparison-with-typescript-e9f6cf160a7b"
+            },
+            {
+                "type": "article",
+                "title": "Extending JSON Schema with Custom Vocabulary",
+                "date": {
+                    "year": 2024,
+                    "month": "September"
+                },
+                "link": "https://medium.com/@damodharanjay/extending-json-schema-with-custom-vocabulary-3a5d3c37d9e1"
+            },
+            {
+                "type": "article",
+                "title": "LLM-Based Structured Generation Using JSONSchema",
+                "date": {
+                    "year": 2024,
+                    "month": "November"
+                },
+                "link": "https://medium.com/@damodharanjay/llm-based-structured-generation-using-jsonschema-139568c4f7c9"
+            },
+            {
+                "type": "article",
+                "title": "Custom Vocabulary in JSONSchema: 4 Levels of definition in ajv",
+                "date": {
+                    "year": 2024,
+                    "month": "November"
+                },
+                "link": "https://medium.com/@damodharanjay/custom-keyword-in-jsonschema-4-levels-of-definition-in-ajv-7a9fc410d93f"
+            }
+        ]
+    }
 ]
