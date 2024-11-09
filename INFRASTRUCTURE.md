@@ -48,7 +48,7 @@ The working location for these resources is in the specification repository at h
 We are capturing feedback in the website using a cloudflare worker to receive the data and send it to an Airtable database. The Airtable account is owned and paid for by Postman.
 
 ## The JSON Schema Calendar
-We are using a Google Calendar to share with the Community all the events. This Calendar has been created with a Google Account associated with the email info@json-schema.org.
+We are using a Google Calendar to share with the Community all the events. This Calendar has been created with a Google Account associated with the emails info@json-schema.org and json.schema.community@gmail.com.
 
 ## Bots
 The Slack server has a number of bots which feed data into specific channels.
@@ -77,7 +77,7 @@ For the Community metrics we are using Common Room and Orbit.
 
 ## Email
 
-We are using mailfence to manage the email accounts associated to json-schema.org.
+We are using google for business to manage the email accounts associated to json-schema.org.
 
 
 If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
