@@ -126,11 +126,11 @@
   {
     "name": "Juan Cruz Viotti",
     "img": "https://avatars.githubusercontent.com/u/2192773?v=4",
-    "bio": "CTO at Intelligence.AI, founder of Sourcemeta, consultant, and author",
-    "title": "Chief Technical Officer",
+    "bio": "Founder at Sourcemeta, consultant, and author",
+    "title": "Founder",
     "github": "jviotti",
     "linkedin": "jviotti",
-    "company": "Intelligence.AI",
+    "company": "Sourcemeta",
     "country": "🇧🇴",
     "contributions": [
       {
@@ -186,6 +186,15 @@
           "month": "March"
         },
         "link": "https://github.com/json-schema-org/community/issues/599"
+      },
+      {
+        "type": "talk",
+        "title": "Applying Software Engineering Practices to Schemas",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "http://conference.json-schema.org"
       }
     ],
     "startedOn": {
