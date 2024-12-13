@@ -46,7 +46,11 @@
         },
         "link": "https://dashjoin.medium.com/json-schema-openapi-low-code-a-match-made-in-heaven-d29723e543ac"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "July"
+    }
   },      
   {
     "name": "David Biesack",
@@ -113,7 +117,11 @@
         },
         "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "July"
+    }
   },
   {
     "name": "Juan Cruz Viotti",
@@ -179,7 +187,11 @@
         },
         "link": "https://github.com/json-schema-org/community/issues/599"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Esther Okafor",
@@ -228,7 +240,11 @@
         },
         "link": "https://www.canva.com/design/DAGJgnhNUYA/GLVTP-Yx7wcBVFjOhsN2uQ/edit?utm_content=DAGJgnhNUYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Ege Korkan",
@@ -296,7 +312,11 @@
         },
         "link": "https://github.com/eclipse-thingweb/playground/tree/master/packages/json-spell-checker"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Jeremy Fiel",
@@ -354,6 +374,10 @@
         },
         "link": "https://landscape.json-schema.org/"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "September"
+    }
   }  
 ]
