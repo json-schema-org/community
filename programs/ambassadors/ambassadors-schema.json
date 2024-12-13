@@ -89,8 +89,44 @@
           },
           "required": ["type", "title", "date", "link"]
         }
+      },
+      "startedOn": {
+        "type": "object",
+        "description": "Date of start",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2100,
+            "description": "Year of start"
+          },
+          "month": {
+            "type": "string",
+            "enum": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            "description": "Month of start"
+          }
+        },
+        "required": ["year", "month"]
+      },
+      "lastReviewedOn": {
+        "type": "object",
+        "description": "Date of last reviewed",
+        "properties": {
+          "year": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2100,
+            "description": "Year of last reviewed"
+          },
+          "month": {
+            "type": "string",
+            "enum": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+            "description": "Month of last reviewed"
+          }
+        },
+        "required": ["year", "month"]
       }
     },
-    "required": ["name", "img", "bio", "title", "github", "company", "country", "contributions"]
+    "required": ["name", "img", "bio", "title", "github", "company", "country", "contributions", "startedOn"]
   }
 }
