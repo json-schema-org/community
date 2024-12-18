@@ -49,7 +49,7 @@ Examples:
 - Community-wide recognition.
 - All our respect for your contributions!
 
-### Become an JSON Schema Ambassador
+### Become a JSON Schema Ambassador
 
 The process of becoming an ambassador is very simple. Go to the **community** repository and open a PR to edit the `ambassadors.json` file. The TSC will then evaluate your candidacy!
 
