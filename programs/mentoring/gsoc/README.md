@@ -18,7 +18,7 @@ Project ideas for this year's program are forthcoming. Check back soon [here](gs
 ### Past GSoC editions project ideas
 
 - 2023 [ideas](gsoc-2023.md)
-- 2023 [ideas](gsoc-2024.md)
+- 2024 [ideas](gsoc-2024.md)
 
 ## 🎯 Why choosing a JSON Schema project?
 
