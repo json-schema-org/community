@@ -2,7 +2,7 @@ name: Create OCWM Monthly
 
 on:
   schedule:
-    - cron: "0 23 * * 1"  # Runs at 11:00 PM every Monday
+    - cron: "0 23 * * 2"  # Runs at 11:00 PM every Tuesday
 
   repository_dispatch:
     types: ocwm-creator
@@ -36,39 +36,39 @@ jobs:
         # Get the first day of the next month
         next_month=$(date -u -d "$(date +%Y-%m-01) +1 month" +%Y-%m-01)
         
-        # Find the first Monday of the next month
-        first_monday=$(date -u -d "$next_month +$(( (8 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
+        # Find the first Tuesday of the next month
+        first_tuesday=$(date -u -d "$next_month +$(( (9 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
         
-        # Calculate the third Monday by adding 14 days to the first Monday
-        third_monday=$(date -u -d "$first_monday +14 days" +%Y-%m-%d)
+        # Calculate the third Tuesday by adding 14 days to the first Tuesday
+        third_tuesday=$(date -u -d "$first_tuesday +14 days" +%Y-%m-%d)
         
-        # Output the issue title with the third Monday's date
-        echo "title=Open Community Working Meeting ${third_monday} - 12:00 PT" >> "$GITHUB_OUTPUT"
+        # Output the issue title with the third Tuesday's date
+        echo "title=Open Community Working Meeting ${third_tuesday} - 12:00 PT" >> "$GITHUB_OUTPUT"
 
     # Step to check if it's the third Tuesday of the month
     - name: Check if today is the third Tuesday
-      id: check-third-monday
+      id: check-third-tuesday
       run: |
         day=$(date +%d)
         dow=$(date +%u)  # Day of the week (1 = Monday, ..., 7 = Sunday)
-        # Check if the day is between 15th and 21st, and if it's Monday (1)
-        if [ "$dow" -ne 1 ]; then
-          echo "Not a Monday, exiting..."
-          echo "::set-output name=is-third-monday::false"
+        # Check if the day is between 15th and 21st, and if it's Tuesday (2)
+        if [ "$dow" -ne 2 ]; then
+          echo "Not a Tuesday, exiting..."
+          echo "::set-output name=is-third-tuesday::false"
           exit 0
         fi
         if [ "$day" -ge 15 ] && [ "$day" -le 21 ]; then
-          echo "This is the third Monday of the month!"
-          echo "::set-output name=is-third-monday::true"
+          echo "This is the third Tuesday of the month!"
+          echo "::set-output name=is-third-tuesday::true"
         else
-          echo "Not the third Monday, exiting..."
-          echo "::set-output name=is-third-monday::false"
+          echo "Not the third Tuesday, exiting..."
+          echo "::set-output name=is-third-tuesday::false"
           exit 0
         fi
 
     - name: Create Issue using Template
       id: create-issue
-      if: steps.check-third-tuesday.outputs.is-third-monday == 'true'
+      if: steps.check-third-tuesday.outputs.is-third-tuesday == 'true'
       uses: peter-evans/create-issue-from-file@v5
       with:
         title: ${{ steps.create-title.outputs.title }}
