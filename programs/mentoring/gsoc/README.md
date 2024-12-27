@@ -50,7 +50,13 @@ Got a problem? Reach out to mentors or the community for assistance. Remember, m
 - Consult mentors for guidance on task evaluation.
 
 
-## 🏗 Contributing Guidelines
+## 🫶 How to get involved before GSoC?
 
-Please, check-out the [GSoC Contributior guidelines](CONTRIBUTOR-GUIDANCE.md)
+If you join our organization before GSoC, we invite you to join us contributing to JSON Schema as a great way to start engaging with the Team, learn about the JSON Schema specification and get to know some of our projects.
+
+Please check out our [Contribution guidelines](https://github.com/json-schema-org/.github/blob/main/CONTRIBUTING.md) to know more about how to contribute in each area.
+
+## 🏗 GSoC Contributor Guidance
+
+Please, check-out the [GSoC Contributior Guidance](CONTRIBUTOR-GUIDANCE.md)
 
