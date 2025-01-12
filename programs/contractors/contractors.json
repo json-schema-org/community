@@ -34,5 +34,28 @@
         "url": "https://json-schema.org/blog/posts/understanding-lexical-dynamic-scopes"
       }
     ]
+  },
+  {
+    "name": "Julian Berman",
+    "github": "Julian",
+    "linkedin": "julian-berman",
+    "email": "Julian+JSON.Schema@GrayVines.com",
+    "type": "tsc",
+    "incorporatedIn": [],
+    "bio": "Julian is an experienced engineering leader, JSON Schema TSC member and a member of the JSON Schema core team for over 10 years. He founded the JSON Schema Test Suite and Bowtie projects, helping countless implementers (and users) of all JSON Schema implementations ensure compliance with the specification. He also wrote and maintains the most widely used Python implementation of JSON Schema, along with a large number of projects in its orbit, and is a long-time contributor to the wider open source Python ecosystem. He has deep experience running engineering teams (in previous lives in the context of machine learning for large-enterprise consumer experience marketing). He also is a lecturer at Columbia University, who cares deeply about ensuring technology is accessible and easy to understand for all. Let him help your organization get smarter about how you use JSON Schema, how you collaborate with it across teams, and how you effectively build reliable production systems which leverage JSON Schema.",
+    "links": [
+      {
+        "title": "python-jsonschema, the most widely used Python implementation of JSON Schema for over 10 years",
+        "url": "https://github.com/python-jsonschema/jsonschema/"
+      },
+      {
+        "title": "Bowtie, a meta-validator for using JSON Schema implementations across every programming language in the world",
+        "url": "https://bowtie.report"
+      },
+      {
+        "title": "The official JSON Schema Test Suite, a large collection of compliance tests for the JSON Schema specification used by many or most implementations of JSON Schema",
+        "url": "https://github.com/json-schema-org/JSON-Schema-Test-Suite"
+      }
+    ]
   }
 ]
