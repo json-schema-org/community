@@ -45,6 +45,15 @@
           "month": "October"
         },
         "link": "https://dashjoin.medium.com/json-schema-openapi-low-code-a-match-made-in-heaven-d29723e543ac"
+      },
+      {
+        "type": "article",
+        "title": "Generic and Extensible Web of Things Manager Using JSON Schema & AI",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "https://github.com/dashjoin/djapp-wot"
       }
     ],
     "startedOn": {
@@ -267,6 +276,15 @@
     "company": "Siemens AG",
     "country": "Germany",
     "contributions": [
+      {
+        "type": "article",
+        "title": "Generic and Extensible Web of Things Manager Using JSON Schema & AI",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "https://github.com/dashjoin/djapp-wot"
+      },
       {
         "type": "talk",
         "title": "One Year Update: Using LinkML in Web of Things Specifications",
