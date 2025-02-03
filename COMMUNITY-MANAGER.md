@@ -2,6 +2,11 @@
 
 Community managers are responsible for managing many aspects of the JSON Schema community. The goal is to achieve and maintain a healthy and growing JSON Schema community where everyone feels welcome and is encouraged to share knowledge and learn from each other. This document outlines the responsibilities of a community manager and the process involved in becoming one.
 
+### Requirements
+
+* Proven track record of contributions and active engagement in the JSON Schema Community.
+* Being an example of Open Source citizenship.
+
 ### Responsibilities
 
 A community manager has the following responsibilities:
@@ -32,6 +37,34 @@ A community manager has the following responsibilities:
 ### Duties that require STC approval
 
 * Add new analytics tools
+
+## Process to become a community manager
+
+Self-nominate via a [new issue in the community repository](https://github.com/json-schema-org/community/issues/new) using the label `Programs` and stating why you want to be an community manager, or alternatively, contact an TSC member. A community manager needs approval from TSC using the [standard voting process](https://github.com/json-schema-org/community/blob/main/GOVERNANCE.md#decision-making-via-vote). 
+
+Once a community manager is approved, they will be added to the Community Managers list. It is important to notice that Community Managers does not have TSC voting rights.
+
+## Limits and Expiration
+
+The community manager role expires 12 months from the date it was approved. Reapproval is then required. To minimize the number of people to coordinate between, there is a maximum of three active community managers. 
+
+## Removal
+
+The community manager role is removed in the following cases:
+* Expiration of the 12-month term.
+* STC votes to remove the community manager.
+* The community manager can ask to have themselves removed from the role. 
+
+## Current community managers
+The following community managers have been approved by the TSC:
+
+| Name | GitHub Handle | Slack Handle | Company | Status | Timezone | Term Start | Term End |
+| - | - | -  | - | - | - | - | -
+| Benjamin Granados | [@benjagm](https://github.com/benjagm) | benjamin.granadosm | Celonis | Active | UTC+2/CET | Dec 1st, 2023 | Dec 1st, 2024
+
+### Statuses
+   * Active: Currently an active community manager.
+   * Inactive: Previously held a community manager role.
 
 ### Know more 
 

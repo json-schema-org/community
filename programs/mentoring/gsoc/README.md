@@ -11,13 +11,14 @@ We are a community JSON Schema enthusiast dedicated to maintain, evolve and prom
 
 ## 💡 GSoC Project Ideas
 
-### Current GSoC edition (2024) project ideas
+### Current GSoC edition (2025) project ideas
 
-You can find the project ideas for this year's program [here](gsoc-2024.md).
+Project ideas for this year's program are forthcoming. Check back soon [here](gsoc-2025.md).
 
 ### Past GSoC editions project ideas
 
 - 2023 [ideas](gsoc-2023.md)
+- 2024 [ideas](gsoc-2024.md)
 
 ## 🎯 Why choosing a JSON Schema project?
 
@@ -49,7 +50,13 @@ Got a problem? Reach out to mentors or the community for assistance. Remember, m
 - Consult mentors for guidance on task evaluation.
 
 
-## 🏗 Contributing Guidelines
+## 🫶 How to get involved before GSoC?
 
-Please, check-out the [GSoC Contributior guidelines](CONTRIBUTOR-GUIDANCE.md)
+If you join our organization before GSoC, we invite you to join us contributing to JSON Schema as a great way to start engaging with the Team, learn about the JSON Schema specification and get to know some of our projects.
+
+Please check out our [Contribution guidelines](https://github.com/json-schema-org/.github/blob/main/CONTRIBUTING.md) to know more about how to contribute in each area.
+
+## 🏗 GSoC Contributor Guidance
+
+Please, check-out the [GSoC Contributior Guidance](CONTRIBUTOR-GUIDANCE.md)
 

@@ -1,7 +1,7 @@
 [
   {
     "name": "Andreas Eberhart",
-    "img": "https://media.licdn.com/dms/image/C5603AQFwzjco4Zp2iw/profile-displayphoto-shrink_200_200/0/1522155839427?e=1723680000&v=beta&t=mzwGrHJqCu_doxI4tTZIkH2GtWIeW8iOTD-JDLxwYuA",
+    "img": "https://media.licdn.com/dms/image/v2/C5603AQFwzjco4Zp2iw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1522155839579?e=1739404800&v=beta&t=A3Ki-Ct3mzO_0fTe6w_zWNj5z_1CCX0wpxxuDpCMxXA",
     "bio": "With 25 years of professional experience, Andreas is very proficient in the areas of enterprise cloud, linked & big data, as well as systems architecture and development. He co-founded two startups and drove their growth resulting in two acquisitions by silicon valley giants HP and Veritas. Combined with his extensive background in cutting edge research, he has the unique ability to address projects from technical, time to market, and ROI angles. He holds a PhD in Computer Science from the University of Saarbrücken and a Master in Computer Science from Portland State University.",
     "title": "CEO at Dashjoin",
     "github": "aeberhart",
@@ -45,8 +45,21 @@
           "month": "October"
         },
         "link": "https://dashjoin.medium.com/json-schema-openapi-low-code-a-match-made-in-heaven-d29723e543ac"
+      },
+      {
+        "type": "article",
+        "title": "Generic and Extensible Web of Things Manager Using JSON Schema & AI",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "https://github.com/dashjoin/djapp-wot"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "July"
+    }
   },      
   {
     "name": "David Biesack",
@@ -113,16 +126,20 @@
         },
         "link": "https://www.youtube.com/watch?v=6ukZEUBRpqo"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "July"
+    }
   },
   {
     "name": "Juan Cruz Viotti",
     "img": "https://avatars.githubusercontent.com/u/2192773?v=4",
-    "bio": "CTO at Intelligence.AI, founder of Sourcemeta, consultant, and author",
-    "title": "Chief Technical Officer",
+    "bio": "Founder at Sourcemeta, consultant, and author",
+    "title": "Founder",
     "github": "jviotti",
     "linkedin": "jviotti",
-    "company": "Intelligence.AI",
+    "company": "Sourcemeta",
     "country": "🇧🇴",
     "contributions": [
       {
@@ -178,17 +195,30 @@
           "month": "March"
         },
         "link": "https://github.com/json-schema-org/community/issues/599"
+      },
+      {
+        "type": "talk",
+        "title": "Applying Software Engineering Practices to Schemas",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "http://conference.json-schema.org"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Esther Okafor",
-    "img": "https://avatars.githubusercontent.com/u/40007659?v=4",
+    "img": "https://media.licdn.com/dms/image/v2/D4D03AQGO8M-VFQJvAQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719478757384?e=1739404800&v=beta&t=N6GOewG0on7VdbwaEWMjPkXxY9o0haL5ek5rX9rEHcc",
     "bio": "I am a QA engineer currently working with Storyblok. I am passionate about quality and making sure software design systems are developed with the highest standards",
     "title": "Test engineer at Storyblok",
-    "github": "https://github.com/Estherokafor05/My-portfolio",
-    "twitter": "https://x.com/Estherokafor_",
-    "linkedin": "https://www.linkedin.com/in/okaforesther/",
+    "github": "Estherokafor05/My-portfolio",
+    "twitter": "Estherokafor_",
+    "linkedin": "okaforesther/",
     "company": "Storyblok",
     "country": "Nigeria",
     "contributions": [
@@ -228,20 +258,33 @@
         },
         "link": "https://www.canva.com/design/DAGJgnhNUYA/GLVTP-Yx7wcBVFjOhsN2uQ/edit?utm_content=DAGJgnhNUYA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Ege Korkan",
-    "img": "https://media.licdn.com/dms/image/D4D03AQG03-U--zDJpw/profile-displayphoto-shrink_200_200/0/1707341764311?e=1724889600&v=beta&t=xY0i-IncaI51wlZVJD7fEuSb0LMdR7j0-XlipV7EK6c",
+    "img": "https://media.licdn.com/dms/image/v2/D4D03AQG03-U--zDJpw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1707341764311?e=1739404800&v=beta&t=jO5SgCnwdAKU1sRapA7-DzVq-p4tzu5GvNV_aJnci-k",
     "bio": "Research and standardization focused engineer at Siemens with a passion to drive interoperability across all levels.",
     "title": "Web of Things Expert at Siemens",
     "github": "egekorkan",
     "twitter": "egekorkan",
     "linkedin": "ege-korkan",
-    "mastodon":"https://mastodon.social/@egekorkan",
+    "mastodon":"@egekorkan@mastodon.social",
     "company": "Siemens AG",
     "country": "Germany",
     "contributions": [
+      {
+        "type": "article",
+        "title": "Generic and Extensible Web of Things Manager Using JSON Schema & AI",
+        "date": {
+          "year": 2024,
+          "month": "December"
+        },
+        "link": "https://github.com/dashjoin/djapp-wot"
+      },
       {
         "type": "talk",
         "title": "One Year Update: Using LinkML in Web of Things Specifications",
@@ -296,7 +339,11 @@
         },
         "link": "https://github.com/eclipse-thingweb/playground/tree/master/packages/json-spell-checker"
       }
-    ]
+    ],
+    "startedOn": {
+        "year": 2024,
+        "month": "August"
+    }
   },
   {
     "name": "Jeremy Fiel",
@@ -403,6 +450,10 @@
                 },
                 "link": "https://medium.com/@damodharanjay/custom-keyword-in-jsonschema-4-levels-of-definition-in-ajv-7a9fc410d93f"
             }
-        ]
+        ],
+        "startedOn": {
+          "year": 2024,
+          "month": "September"
+        }
     }
 ]

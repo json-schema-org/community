@@ -79,9 +79,9 @@ You can always catch up offline by watching the recordings on the JSON Schema Yo
 
 | Asset | Link        |
 |:-----------|:------------|
-| 🔗 APAC/Americas friendly Office Hours Meeting Link | [**Google meet Link**](https://meet.google.com/iku-areu-ide)<br>
-| 🔗 Europe/Americas friendly Office Hours Meeting Link | [**Google meet Link**](https://meet.google.com/dcx-ijyy-ahd)<br>
-| 🔗 Open Community Working Meeting Link | [**Google meet Link**](https://meet.google.com/xsn-rgwu-jvk)<br>
+| 🔗 APAC/Americas friendly Office Hours Meeting Link | [**Google meet Link**](http://meet.google.com/rmw-wgdx-bfc)<br>
+| 🔗 Europe/Americas friendly Office Hours Meeting Link | [**Google meet Link**](http://meet.google.com/ofg-mtnn-dqc)<br>
+| 🔗 Open Community Working Meeting Link | [**Google meet Link**](https://meet.google.com/raz-ptdn-ewf)<br>
 | 🎥 Meeting Recordings | https://www.youtube.com/@JSONSchemaOrgOfficial
 
 ## Getting involved
