@@ -36,14 +36,14 @@ jobs:
         # Get the first day of the next month
         next_month=$(date -u -d "$(date +%Y-%m-01) +1 month" +%Y-%m-01)
         
-        # Find the first Tuesday of the next month
-        first_tuesday=$(date -u -d "$next_month +$(( (9 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
-        
-        # Calculate the third Tuesday by adding 14 days to the first Tuesday
-        third_tuesday=$(date -u -d "$first_tuesday +14 days" +%Y-%m-%d)
-        
-        # Output the issue title with the third Tuesday's date
-        echo "title=Open Community Working Meeting ${third_tuesday} - 12:00 PT" >> "$GITHUB_OUTPUT"
+        # Find the first Monday of the next month
+        first_monday=$(date -u -d "$next_month +$(( (8 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
+
+        # Calculate the third Monday by adding 14 days to the first Monday
+        third_monday=$(date -u -d "$first_monday +14 days" +%Y-%m-%d)
+
+        # Output the issue title with the third Monday's date
+        echo "title=Open Community Working Meeting ${third_monday} - 12:00 PT" >> "$GITHUB_OUTPUT"
 
     # Step to check if it's the third Tuesday of the month
     - name: Check if today is the third Tuesday
