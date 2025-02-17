@@ -5,7 +5,7 @@ about: Regular Open Community Working Meetings Issue - This template is for thos
 
 # Open Community Working Meeting 2022-MM-DD - 12:00 PT
 
-Google Meet joining info - Video call link: https://meet.google.com/xsn-rgwu-jvk
+Google Meet joining info - Video call link: https://meet.google.com/raz-ptdn-ewf
 
 You can find these events scheduled on our **[JSON Schema Community Calendar](https://calendar.google.com/calendar/u/0/embed?src=info@json-schema.org)**.
 
