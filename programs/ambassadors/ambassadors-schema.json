@@ -39,10 +39,6 @@
         "type": "string",
         "description": "LinkedIn profile URL of the contributor"
       },
-      "website": {
-        "type": "string",
-        "description": "A full URL to the contributor personal website"
-      },
       "company": {
         "type": "string",
         "description": "Company where the contributor works"
