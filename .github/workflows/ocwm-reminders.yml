@@ -57,7 +57,7 @@ jobs:
         OWNER: ${{ vars.ORGANISATION }}
         REPO: 'community'
         OCWM_LABEL: ${{ vars.OCWM_LABEL }}
-        SLACK_WEBHOOK: ${{ vars.SLACK_WEBHOOK_REMINDER }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_REMINDER }}
       with:
         script: |
         
