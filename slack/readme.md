@@ -1,13 +1,13 @@
-This folder relates to Slack things.
+This folder contains files used for Slack.
 
-The things:
+Contents:
 
-`greeting`: A text file containing the greeting sent to users who join our Slack server.
+`greeting`:A text file containing the welcome message sent to users who join our Slack server.
 
-`other channels`: A text file containing info on some of our Slack server's channels.
+`other channels`: A text file providing information about some of our Slack server's channels.
 
-`greeting.slackworkflow`: A workflow exported from Slack for the greeting message. It can be imported should we somehow loose it. Given the format and specific token requirements, it doesn't make sense to maintain the greeting message in this file. Consider it a reference and backup. Maintain in the `greeting` text file and manually update Slack on change.
+`greeting.slackworkflow`: A Slack workflow export of the greeting message. It can be re-imported if it's ever lost.Due to specific token and formatting requirements, it's not recommended to maintain the greeting message directly in this file.Consider this file a reference and backup. Use the greeting text file as the source of truth and manually update Slack whenever changes are made.
 
-We could later manage this by creating our own Slack bot, but using Workflows will do for now.
+In the future, we may consider building our own Slack bot, but using Slack Workflows is sufficient for now.
 
-We needed to migrate from Greetbot because they are [shutting down](https://medium.com/greetbot-blog/after-5-million-hellos-its-time-to-say-goodbye-8b82e40b5701).
+We migrated from Greetbot because the service has been [shutting down](https://medium.com/greetbot-blog/after-5-million-hellos-its-time-to-say-goodbye-8b82e40b5701).
