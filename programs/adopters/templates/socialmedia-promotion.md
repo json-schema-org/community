@@ -6,7 +6,7 @@ XXXXXXX is a _______
 
 https://
 
-Visit our landscape and discover more orgnizations using JSON Schema : https://landscape.json-schema.org
+Visit our landscape and discover more organizations using JSON Schema: https://landscape.json-schema.org
 
 ### Linkedin Template
 
@@ -16,7 +16,7 @@ _______ is a ....
 
 More about _______ 👉 https://
 
-Check out the JSON Schema Landscape to explore the leading orgnizations using JSON Schema: https://landscape.json-schema.org/
+Check out the JSON Schema Landscape to explore the leading organizations using JSON Schema: https://landscape.json-schema.org/
 
 #ecosystem #jsonschema #adopters #production
 
@@ -27,6 +27,6 @@ Check out the JSON Schema Landscape to explore the leading orgnizations using JS
 
 ______ is a ....
 
-Check out the JSON Schema Landscape to explore the leading orgnizations using JSON Schema: https://landscape.json-schema.org/
+Check out the JSON Schema Landscape to explore the leading organizations using JSON Schema: https://landscape.json-schema.org/
 
 Is your Organization using JSON Schema? Please join the Adopters group in the JSON Schema Landscape and help us to grow the JSON Schema Ecosystem by sharing your use case.
