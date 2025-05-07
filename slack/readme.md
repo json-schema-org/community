@@ -2,7 +2,7 @@ This folder contains files used for Slack.
 
 Contents:
 
-`greeting`:A text file containing the welcome message sent to users who join our Slack server.
+`greeting`: A text file containing the welcome message sent to users who join our Slack server.
 
 `other channels`: A text file providing information about some of our Slack server's channels.
 
