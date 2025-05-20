@@ -3,7 +3,7 @@ name: Open Community Working Meeting
 about: Regular Open Community Working Meetings Issue - This template is for those setting up an OCWM only.
 ---
 
-# Open Community Working Meeting 2022-MM-DD - 12:00 PT
+# Open Community Working Meeting 2022-MM-DD - 13:00 PT
 
 Google Meet joining info - Video call link: https://meet.google.com/raz-ptdn-ewf
 
