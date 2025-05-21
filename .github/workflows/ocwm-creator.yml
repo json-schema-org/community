@@ -43,7 +43,7 @@ jobs:
         third_monday=$(date -u -d "$first_monday +14 days" +%Y-%m-%d)
 
         # Output the issue title with the third Monday's date
-        echo "title=Open Community Working Meeting ${third_monday} - 12:00 PT" >> "$GITHUB_OUTPUT"
+        echo "title=Open Community Working Meeting ${third_monday} - 13:00 PT" >> "$GITHUB_OUTPUT"
 
     # Step to check if it's the third Tuesday of the month
     - name: Check if today is the third Tuesday
