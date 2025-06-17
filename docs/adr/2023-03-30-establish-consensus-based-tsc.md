@@ -4,7 +4,7 @@
 * Deciders: @relequestual, @awwright, @gregsdennis, @Julian, @jdesrosiers, @karenetheridge
 * Date: 2023-03-30
 
-Story: In order to fully onboard with the OpenJS Foundation, and in order to have proper governance, we should have a charter: https://github.com/json-schema-org/community/issues/274
+Story:In order to have proper governance, we should have a charter: https://github.com/json-schema-org/community/issues/274
 
 ## Context and Problem Statement
 
@@ -14,11 +14,9 @@ Lack of clear and documented governance makes it very difficult in some situatio
 As the number of people who can work on this full or part time grows, the organizational needs will evolve, requiring governance for long term sustainability.
 Having a clear and documented governance model will allow us to make clear progress with an unambiguous process defined.
 
-When we joined the OpenJS Foundation, we committed to creating a charter. They provide a template for use, which several projects have used. We should use it as our basis, but we may also want to consider additional elements or sections.
-
 ## Decision Drivers <!-- optional -->
 
-- JSON Schema committed to forming a governance model as part of a charter when we joined the OpenJS Foundation
+- JSON Schema committed to forming a governance model in effort to elevate and mature our organization
 - It has sometimes been difficult to reach decisions on tricky topics, with no clear way to resolve divisive issues
 - Undocumented process can lead to an imbalance of power which is undesirable
 - Defining a process can help make sure everyone has space to be heard
