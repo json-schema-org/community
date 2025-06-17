@@ -4,7 +4,7 @@
 ## 0: Guiding Principles
 The JSON Schema project strives to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
-Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how the TSC wish to operate. As such, the JSON Schema project define the following charter which includes aspects of the governance model to which the TSC subscribe and by which the TSC operate.
+Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how the TSC wish to operate. As such, the JSON Schema project defines the following charter which includes aspects of the governance model to which the TSC subscribe and by which the TSC operate.
 
 ## 1: Scope
 JSON Schema aims to enable the confident and reliable use of the JSON data format. It does this primarily by providing specification documents which define a declarative language that allows annotation and validation of JSON documents.
