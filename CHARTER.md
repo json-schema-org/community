@@ -2,7 +2,7 @@
 <!-- This document is managed in the json-schema-org/community GitHub repository. Please do NOT modify this file in another repository as changes may be overridden. -->
 
 ## 0: Guiding Principles
-The JSON Schema project is part of the OpenJS Foundation. The JSON Schema project strives to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
+The JSON Schema project strives to be open and transparent as much as is possible, and wish to enable anyone to interact and engage with any area of our work.
 
 Having no structure in place usually leads to one that is informal and undocumented, making it difficult to meet our own expectations of how the TSC wish to operate. As such, the JSON Schema project define the following charter which includes aspects of the governance model to which the TSC subscribe and by which the TSC operate.
 
@@ -44,11 +44,9 @@ Secondary Concerns
 ### 1.2: Out-of-Scope
 Neither standards that the JSON Schema project uses (such as JSON and IRI) nor standards or projects that use JSON Schema (such as OpenAPI or AsyncAPI) are in scope, nor does the JSON Schema project have any control over them.
 
-## 2: Relationship with OpenJS Foundation CPC.
-Most large, complex open source communities have both a business and a technical governance model. Technical leadership for the projects within the OpenJS Foundation is delegated to the projects through their project charters by the OpenJS Cross Project Council (CPC). In the case of the JSON Schema project, it is delegated to the JSON Schema Technical Steering Committee ("TSC").
+## 2: Lieu of a Board
 
-### 2.1 Other Formal Project Relationships
-Section Intentionally Left Blank
+In lieu of a separate Business Governance Board, the TSC assumes all authority in decision making.
 
 ## 3: JSON Schema Governing Body (TSC)
 The JSON Schema Technical Steering Committee (TSC) is initially established from the observed major contributors who are currently active and in good standing.
@@ -79,10 +77,8 @@ In any period where such a committee is not yet formed, the TSC must assume temp
 
 In joining the TSC, members commit to communicate on a regular basis and respond to issues raised by the TSC in a timely manner. If they are no longer able or willing to make such a commitment, they should discuss this with the TSC or a TSC Chair.
 
-### 4.1 Project Operations & Management
-The TSC and entire technical community will follow any processes as may be specified by the OpenJS Foundation Board or the CPC relating to the intake and license compliance review of contributions, including the OpenJS Foundation IP Policy.
 
-#### Decision-making
+## 4.1 Decision-making
 
 The TSC follows a consensus-seeking decision making model in which joint decisions are agreed upon by all members whenever possible.
 In some situations, a vote may be preferable, however a formal vote is expected to be an infrequent occurrence invoked only when consensus cannot be reached after multiple attempts to reach TSC consensus.
@@ -98,10 +94,6 @@ Private decisions should also be documented in a private location accessible to 
 
 Code of Conduct incidents must be reported to the TSC by the Code of Conduct committee.
 Reports must remain anonymous, as per the Code of Conduct, but should be documented in a manner similar to private TSC decisions as mentioned.
-
-## 5: Definitions
-
-TSC: The JSON Schema Technical Steering Committee, delegated technical leadership for the JSON Schema project by the OpenJS Foundation.
 
 ---
 
