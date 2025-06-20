@@ -77,7 +77,15 @@ For the Community metrics we are using Common Room.
 
 ## Email
 
-We are using google for business to manage the email accounts associated to json-schema.org.
+We are using Google Workspace to manage the email accounts associated to json-schema.org.
 
 
 If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
+
+## Billing
+
+Some parts of the above require billing. For now this is only Google Workspace.
+Previously we had access to virtual cards through Open Collective, but that program has shuttered.
+We have no legal entity by which we can create bank accounts.
+Currently billing is done by Ben Hutton and claimed through our Open Collective.
+If asked for an address, we should use that defined by the Open Source Collective.
