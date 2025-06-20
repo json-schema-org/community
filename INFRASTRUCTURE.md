@@ -9,10 +9,10 @@ This does not include social media profiles.
 
 ## Why?
 
-It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboarding-checklist).
+Originally as part of onboarding to the OpenJS Foundation, but now because we recognise it is open, transparant, and helpful.
 It's also probably good practice.
 
-This enables members of the JSON Schema team, and the OpenJS Foundation, to have oversight and management of such infrastructure should it be required.
+This enables members of the JSON Schema team to have oversight and management of such infrastructure should it be required.
 
 ## Who?
 
@@ -57,7 +57,7 @@ The Slack server has a number of bots which feed data into specific channels.
 
 * The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
-* The bot for #reddit-mentions runs from Zapier under @benjagm 's account. 
+* The bot for #reddit-mentions runs from Zapier under @benjagm 's account.
 
 * The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
 
@@ -67,7 +67,7 @@ At the time, there was no official app integration.
 
 * The bot for notifying new youtube videos in the #announcements channel in Slack uses Zapier.
 
-* The notifications with website users feedback uses Airtable automations. 
+* The notifications with website users feedback uses Airtable automations.
 
 ## Metrics
 
