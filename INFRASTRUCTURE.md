@@ -9,10 +9,10 @@ This does not include social media profiles.
 
 ## Why?
 
-It's part of the required tasks to be completed by the OpenJS Foundation, forming an item of the [onboarding checklist](https://github.com/openjs-foundation/cross-project-council/blob/main/PROJECT_PROGRESSION.md#onboarding-checklist).
+Originally as part of onboarding to the OpenJS Foundation, but now because we recognise it is open, transparant, and helpful.
 It's also probably good practice.
 
-This enables members of the JSON Schema team, and the OpenJS Foundation, to have oversight and management of such infrastructure should it be required.
+This enables members of the JSON Schema team to have oversight and management of such infrastructure should it be required.
 
 ## Who?
 
@@ -57,7 +57,7 @@ The Slack server has a number of bots which feed data into specific channels.
 
 * The bot for #stack-overflow runs from If This Then That under @relequestual 's account. It should probably be migrated to Zapier.
 
-* The bot for #reddit-mentions runs from Zapier under @benjagm 's account. 
+* The bot for #reddit-mentions runs from Zapier under @benjagm 's account.
 
 * The #github channel bot uses the official Github Slack app, and runs all Github events from all of our repositories, apart from GitHub Discussions.
 
@@ -67,17 +67,25 @@ At the time, there was no official app integration.
 
 * The bot for notifying new youtube videos in the #announcements channel in Slack uses Zapier.
 
-* The notifications with website users feedback uses Airtable automations. 
+* The notifications with website users feedback uses Airtable automations.
 
 ## Metrics
 
-The website metrics previously available in Google Analytics are now in Plausible.
+The website metrics are available in Google Analytics. For a time they were in Plausible.
 
-For the Community metrics we are using Common Room and Orbit.
+For the Community metrics we are using Common Room.
 
 ## Email
 
-We are using google for business to manage the email accounts associated to json-schema.org.
+We are using Google Workspace to manage the email accounts associated to json-schema.org.
 
 
 If you believe something is missing from this documentation, [please file an issue](https://github.com/json-schema-org/community/issues/new?assignees=&labels=&template=action_item.md).
+
+## Billing
+
+Some parts of the above require billing. For now this is only Google Workspace.
+Previously we had access to virtual cards through Open Collective, but that program has shuttered.
+We have no legal entity by which we can create bank accounts.
+Currently billing is done by Ben Hutton and claimed through our Open Collective.
+If asked for an address, we should use that defined by the Open Source Collective.
