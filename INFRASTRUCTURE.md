@@ -71,9 +71,9 @@ At the time, there was no official app integration.
 
 ## Metrics
 
-The website metrics previously available in Google Analytics are now in Plausible.
+The website metrics are available in Google Analytics. For a time they were in Plausible.
 
-For the Community metrics we are using Common Room and Orbit.
+For the Community metrics we are using Common Room.
 
 ## Email
 
