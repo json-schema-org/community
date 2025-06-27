@@ -60,7 +60,10 @@ The following community managers have been approved by the TSC:
 
 | Name | GitHub Handle | Slack Handle | Company | Status | Timezone | Term Start | Term End |
 | - | - | -  | - | - | - | - | -
-| Benjamin Granados | [@benjagm](https://github.com/benjagm) | benjamin.granadosm | Celonis | Active | UTC+2/CET | Dec 1st, 2023 | Dec 1st, 2024
+| Onyedikachi (Hope) Amaechi-Okorie| [@Honyii](https://github.com/Honyii)  | @onyedikachi hope   | JSON Schema | Active | UTC+2/CET | June 15th, 2025 | TBD
+| Benjamin Granados                | [@benjagm](https://github.com/benjagm)| benjamin.granadosm  | Celonis | Inactive | UTC+2/CET | Dec 1st, 2023 | June 15th, 2025
+
+
 
 ### Statuses
    * Active: Currently an active community manager.
