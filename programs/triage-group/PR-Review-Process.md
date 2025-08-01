@@ -10,6 +10,8 @@ Use this guide as a reference to:
 - Communicate effectively during the review process
 - Improve turnaround time and reduce merge conflicts
 
+Please note that we are using [this](https://github.com/orgs/json-schema-org/projects/41) project board, which implements the workflow described below.
+
 ---
 
 ## 🔄 Types of PR Lifecycle Status
