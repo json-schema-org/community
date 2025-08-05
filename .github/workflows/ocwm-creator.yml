@@ -33,14 +33,19 @@ jobs:
     - name: Generate Issue Title
       id: create-title
       run: |
+        echo "Starting Issue Title Generation..."
+        
         # Get the first day of the next month
         next_month=$(date -u -d "$(date +%Y-%m-01) +1 month" +%Y-%m-01)
+        echo "Next month first day: $next_month"
         
         # Find the first Monday of the next month
         first_monday=$(date -u -d "$next_month +$(( (8 - $(date -u -d "$next_month" +%u)) % 7 )) days" +%Y-%m-%d)
+        echo "First Monday of next month: $first_monday"
 
         # Calculate the third Monday by adding 14 days to the first Monday
         third_monday=$(date -u -d "$first_monday +14 days" +%Y-%m-%d)
+        echo "Third Monday of next month: $third_monday"
 
         # Output the issue title with the third Monday's date
         echo "title=Open Community Working Meeting ${third_monday} - 13:00 PT" >> "$GITHUB_OUTPUT"
@@ -94,9 +99,13 @@ jobs:
             auth: process.env.MY_TOKEN
           });
 
-          console.log("Token:" + process.env.MY_TOKEN);
+          console.log("Token available:", process.env.MY_TOKEN ? "Yes (masked)" : "No");
+          console.log("Slack webhook available:", process.env.SLACK_WEBHOOK ? "Yes (masked)" : "No");
+          
           const ocwmnumber = ${{ steps.create-issue.outputs.issue-number }};
+          console.log("Issue number:", ocwmnumber);
 
+          console.log("Fetching issue details...");
           const { data: ocwmissue } = await mygithub.request(`GET /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
           });
 
@@ -104,14 +113,19 @@ jobs:
 
           const newBody = `## ${ocwmissue.title}\n\n${ocwmissue.body.split('\n').slice(6).join('\n')}`;
           
+          console.log("Updating issue body...");
           await mygithub.request(`PATCH /repos/${context.repo.owner}/${context.repo.repo}/issues/${ ocwmnumber }`, {
               body: newBody,
               milestone: null,
               state: 'open',
           });
+          console.log("Issue body updated successfully");
 
           const newTitle = ocwmissue.title;
           const issueDate = newTitle.replace(/Open Community Working Meeting /g, "");
+          
+          console.log("Extracted date from title:", issueDate);
+          console.log("Issue URL for Slack:", ocwmissue.html_url);
           
           // Notify Slack
           const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK;
@@ -120,10 +134,26 @@ jobs:
             "date": "${issueDate}"
           }`;
 
-          await fetch(SLACK_WEBHOOK_URL, {
+          console.log("Slack message payload:", SLACK_MESSAGE);
+
+          console.log("Sending Slack notification...");
+          const slackResponse = await fetch(SLACK_WEBHOOK_URL, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: SLACK_MESSAGE,
           });
+
+          console.log("Slack response status:", slackResponse.status);
+          console.log("Slack response status text:", slackResponse.statusText);
+          
+          if (!slackResponse.ok) {
+            const errorText = await slackResponse.text();
+            console.error("Slack notification failed:", errorText);
+            throw new Error(`Slack notification failed: ${slackResponse.status} ${slackResponse.statusText}`);
+          } else {
+            const responseText = await slackResponse.text();
+            console.log("Slack notification sent successfully");
+            console.log("Slack response:", responseText);
+          }
