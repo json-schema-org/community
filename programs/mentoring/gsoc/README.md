@@ -13,7 +13,7 @@ We are a community JSON Schema enthusiast dedicated to maintain, evolve and prom
 
 ### Current GSoC edition (2025) project ideas
 
-Project ideas for this year's program are forthcoming. Check back soon [here](gsoc-2025.md).
+Project ideas for this year is live. Check [here](gsoc-2025.md).
 
 ### Past GSoC editions project ideas
 
