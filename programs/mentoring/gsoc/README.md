@@ -11,14 +11,15 @@ We are a community JSON Schema enthusiast dedicated to maintain, evolve and prom
 
 ## 💡 GSoC Project Ideas
 
-### Current GSoC edition (2025) project ideas
+### Current GSoC edition (2026) project ideas
 
-Project ideas for this year is live. Check [here](gsoc-2025.md).
+Project ideas for this year's program are forthcoming. Check back soon [here](gsoc-2026.md).
 
 ### Past GSoC editions project ideas
 
 - 2023 [ideas](gsoc-2023.md)
 - 2024 [ideas](gsoc-2024.md)
+- 2025 [ideas](gsoc-2025.md)
 
 ## 🎯 Why choosing a JSON Schema project?
 
