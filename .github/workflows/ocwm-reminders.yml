@@ -67,14 +67,35 @@ jobs:
             auth: process.env.MY_TOKEN
           });
 
+          console.log("Starting Send reminders step");
+          console.log("Token available:", process.env.MY_TOKEN ? "Yes (masked)" : "No");
+          console.log("Slack webhook available:", process.env.SLACK_WEBHOOK ? "Yes (masked)" : "No");
+          console.log("Owner:", process.env.OWNER);
+          console.log("Repository:", process.env.REPO);
+          console.log("OCWM Label:", process.env.OCWM_LABEL);
+
           let targetLabel = encodeURIComponent(process.env.OCWM_LABEL);
 
+          console.log("Fetching working meetings from GitHub API...");
           const { data: workMeetings } = await mygithub.request(`GET /repos/${process.env.OWNER}/${process.env.REPO}/issues?labels=${targetLabel}&per_page=1`, {
           })
 
-          const issueNumber = workMeetings[0].number
+          console.log("Number of work meetings found:", workMeetings.length);
+          
+          if (workMeetings.length === 0) {
+            console.error("No working meetings found with label:", process.env.OCWM_LABEL);
+            throw new Error("No working meetings found");
+          }
+
+          const issueNumber = workMeetings[0].number;
           const newTitle = workMeetings[0].title;
+          const issueUrl = workMeetings[0].html_url;
           const issueDate = newTitle.replace(/Open Community Working Meeting /g, "");
+          
+          console.log("Found issue number:", issueNumber);
+          console.log("Issue title:", newTitle);
+          console.log("Issue URL:", issueUrl);
+          console.log("Extracted date from title:", issueDate);
           
           // Notify Slack
           const SLACK_WEBHOOK_URL = process.env.SLACK_WEBHOOK;
@@ -83,10 +104,26 @@ jobs:
             "date": "${issueDate}"
           }`;
 
-          await fetch(SLACK_WEBHOOK_URL, {
+          console.log("Slack message payload:", SLACK_MESSAGE;
+
+          console.log("Sending Slack reminder notification...");
+          const slackResponse = await fetch(SLACK_WEBHOOK_URL, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: SLACK_MESSAGE,
           });
+
+          console.log("Slack response status:", slackResponse.status);
+          console.log("Slack response status text:", slackResponse.statusText);
+          
+          if (!slackResponse.ok) {
+            const errorText = await slackResponse.text();
+            console.error("Slack reminder notification failed:", errorText);
+            throw new Error(`Slack reminder notification failed: ${slackResponse.status} ${slackResponse.statusText}`);
+          } else {
+            const responseText = await slackResponse.text();
+            console.log("Slack reminder notification sent successfully");
+            console.log("Slack response:", responseText);
+          }
