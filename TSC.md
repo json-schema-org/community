@@ -1,0 +1,3 @@
+This file lists the members of the JSON Schema Technical Steering Committee (TSC).
+
+The initial TSC members are [Ben Hutton](https://github.com/relequestual), [Austin Wright](https://github.com/awwright), [Greg Dennis](https://github.com/gregsdennis), [Julian Berman](https://github.com/Julian), [Jason Desrosiers](https://github.com/jdesrosiers), and [Karen Etheridge](https://github.com/karenetheridge), with Ben Hutton being the initial chair.
