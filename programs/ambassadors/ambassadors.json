@@ -64,7 +64,7 @@
   {
     "name": "David Biesack",
     "img": "https://avatars.githubusercontent.com/u/545944?s=400&u=26818946106e2d8ae8c0cb5e0b72d6c7f612d268&v=4",
-    "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog, https://apidesignmatters.substack.com/ ",
+    "bio": "Chief API Officer at APiture (I design banking APIs with OpenAPI 3.1, JSON Schema 2020/12) and author of the API Design Matters blog",
     "title": "Chief API Officer",
     "github": "DavidBiesack",
     "mastodon": "@DavidBiesack@fosstodon.org",
@@ -348,8 +348,8 @@
   {
     "name": "Jeremy Fiel",
     "img": "https://avatars.githubusercontent.com/u/32110157?v=4",
-    "bio": "Originally, an international logistics expert with more than 15 years of professional experience, Jeremy transitioned to software, specifically APIs, about 8 years ago. His passion for learning and contributing back to the community is where he found a love for open source projects. He is now a consistent contributor to projects such as [Redocly](https://github.com/redocly) and the [OpenAPI Initiative](https://github.com/OAI) projects, and a very active community member of JSON Schema.",
-    "title": "Principal Software Engineer | OpenAPI | JSON Schema | Arazzo | APIs",
+    "bio": "Originally, an international logistics expert with more than 15 years of professional experience, Jeremy transitioned to software, specifically APIs, about 8 years ago. His passion for learning and contributing back to the community is where he found a love for open source projects. He is now a consistent contributor to projects such as Redocly and the OpenAPI Initiative projects, and a very active community member of JSON Schema.",
+    "title": "Principal Software Engineer | OpenAPI | JSON Schema | Arazzo | APIs ",
     "github": "jeremyfiel",
     "twitter": "jeremyfiel",
     "linkedin": "jeremyfiel",
