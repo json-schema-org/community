@@ -33,7 +33,7 @@ Community sponsors is a special tier for companies under 20 employees. Community
 
 Bronze sponsors donate $100 per month to the project, and get the following benefits:
 
-- Visibility on the front page of [https://json-schema.org](https://json-schema.org) in the "sponsors" section (about 110,000 views/month on November, 2023).
+- Visibility on the front page of [https://json-schema.org](https://json-schema.org/#bronze-sponsors) in the "sponsors" section (about 110,000 views/month on November, 2023).
 - Visibility on the GitHub main project page in the "sponsors" section.
 - "Thank you" tweet from [@jsonschema](https://twitter.com/jsonschema).
 - "Thank you" post in Linkedin from [@jsonschema](https://www.linkedin.com/company/jsonschema).
@@ -44,6 +44,7 @@ There is a limit to 10 silver sponsors.
 
 Silver sponsors donate $500 per month to the project, and get the following benefits:
 
+- Visibility on the front page of [https://json-schema.org](https://json-schema.org/#silver-sponsors) in the "sponsors" section.
 - Same benefits as bronze sponsors.
 - A mention on the Newsletter.
 - Possibility of getting expert advice from the team.
@@ -55,6 +56,7 @@ There is a limit to 3 gold sponsors.
 
 Gold sponsors donate $1,000 per month to the project, and get the following benefits:
 
+- Visibility on the front page of [https://json-schema.org](https://json-schema.org/#gold-sponsors) in the "sponsors" section.
 - Same benefits as silver sponsors.
 - Company logo in the footer of the Newsletter.
 - Company logo on all [https://json-schema.org](https://json-schema.org) page footers.
