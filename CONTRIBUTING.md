@@ -25,7 +25,6 @@ Here are some areas where you can contribute:
  * 🏗 [Website development](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-website)
  * 🎨 [Improving The Design](https://github.com/json-schema-org/website/blob/main/CONTRIBUTING.md#-improving-the-design)
  * 😍 [Collaborating with Community Management tasks](https://github.com/json-schema-org/community)
- * 🚀 [Adding a new Adopter](https://github.com/json-schema-org/community/blob/main/ADOPTERS.md)
  * 🌈 Other JSON Schema projects you can contribute to:
    * [JSON Schema Conference](https://github.com/json-schema-org/conference/blob/main/CONTRIBUTING.md).
    * [Tour of JSON Schema](https://github.com/json-schema-org/tour/blob/main/CONTRIBUTING.md).
