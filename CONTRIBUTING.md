@@ -77,6 +77,38 @@ The process is designed to be lightweight, and a template is provided for ease o
 
 Please check the [triage process](https://github.com/json-schema-org/.github/blob/main/TRIAGE.md) to learn how we review and label incoming issues . 
 
+### Slack and GitHub Etiquette Guidelines
+
+ # Slack Etiquette
+
+* Use channels, not DMs: If a discussion involves multiple people or could benefit others, keep it in public channels for transparency and wider visibility.
+
+* Use threads for discussions: Keep conversations organized and avoid spamming the main channel.
+
+* Avoid unnecessary mentions: Use @here only to notify online members if urgent. Avoid @channel unless absolutely necessary, as it notifies everyone regardless of status or timezone.
+
+* Be patient and respectful: Consider others’ time zones and availability; respond thoughtfully.
+
+* Format messages: Use code blocks (triple backticks
+
+* Avoid excessive DMs: If possible, ask publicly before sending private messages.
+
+* Use clear channel names and purpose: Channels should have descriptive names and pinned guidelines when applicable.
+
+ # GitHub Etiquette
+
+* Avoid unnecessary mentions: Tag only those who are directly involved to respect their time.
+
+* Wait for triage: For first-time contributors, do not start working on an issue before it is triaged and assigned.
+
+* Provide clear context in PRs and issues: Describe what, why, and how clearly in titles and descriptions.
+
+* Follow up or unassign: If assigned an issue but unable to work on it, unassign yourself or notify maintainers promptly.
+
+* Respect maintainers' bandwidth: Give reasonable time for reviews before nudging, and avoid repeated tagging.
+
+* Search before creating issues or PRs: Avoid duplicates by checking existing issues and PRs before opening new ones.
+
 ### Feedback
 
 Feedback on this process can be made informally through our [Slack server](https://json-schema.org/slack) and formally using our [Community Discussions](https://github.com/json-schema-org/community/discussions).
